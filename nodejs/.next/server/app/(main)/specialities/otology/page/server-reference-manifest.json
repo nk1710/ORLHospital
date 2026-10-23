@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "007519aec04bfa7a4963caf7a164015a90e43d3f71": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+    },
+    "00e6f1820c11c628d83ff594660006cd8dfb1f662a": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+    }
+  },
+  "edge": {}
+}

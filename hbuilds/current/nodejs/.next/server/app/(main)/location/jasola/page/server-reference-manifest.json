@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00a7d59ab6077f04d4fd757edb8724ee70b4b5f06a": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/location/jasola/page.js"
+    },
+    "00dcace677ee76f1e3c2b8f393be9d09ab854bf9ea": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/location/jasola/page.js"
+    }
+  },
+  "edge": {}
+}

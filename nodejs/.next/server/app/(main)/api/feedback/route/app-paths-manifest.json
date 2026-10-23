@@ -1,0 +1,3 @@
+{
+  "/(main)/api/feedback/route": "app/(main)/api/feedback/route.js"
+}

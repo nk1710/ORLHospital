@@ -1,0 +1,20 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/conditions/page": {
+          "moduleId": 847509,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/conditions/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[3994,["/_next/static/chunks/8b3cef82a28b2042.js","/_next/static/chunks/1e56f4b6919af089.js"],"default"]
+3:I[100385,["/_next/static/chunks/8b3cef82a28b2042.js","/_next/static/chunks/1e56f4b6919af089.js"],"default"]
+4:I[208720,["/_next/static/chunks/a24d860da7fa7ecc.js","/_next/static/chunks/1eb228584806f816.js","/_next/static/chunks/f3ddd9dd400edaaa.js","/_next/static/chunks/932082fdada350af.js","/_next/static/chunks/42e05357fb5bd7e5.js"],"default"]
+0:{"buildId":"build-1792603351652","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/932082fdada350af.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/42e05357fb5bd7e5.js","async":true}]],["$","section",null,{"className":"bg-gray-50 py-10 px-4","children":["$","div",null,{"className":"max-w-7xl mx-auto grid md:grid-cols-3 gap-8","children":[["$","div",null,{"className":"md:col-span-2 space-y-6","children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}],["$","div",null,{"className":"md:col-span-1","children":["$","$L4",null,{}]}]]}]}]]}],"loading":null,"isPartial":false}

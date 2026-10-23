@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(main)/layout,_N_T_/(main)/conditions/layout,_N_T_/(main)/conditions/vertigo/layout,_N_T_/(main)/conditions/vertigo/page,_N_T_/conditions/vertigo"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KG1haW4p/conditions/vertigo/__PAGE__",
+    "/!KG1haW4p/conditions/vertigo",
+    "/!KG1haW4p/conditions",
+    "/!KG1haW4p",
+    "/_index",
+    "/_head"
+  ]
+}

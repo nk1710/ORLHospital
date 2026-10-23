@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/feedback/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "004502f0eefd193bf4cfbf8669a5ff74c18e51f3de": {
+      "workers": {
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/feedback/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+    },
+    "00c40f5acec296ee314207e667b6c29a2fed2f9edb": {
+      "workers": {
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/feedback/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+    }
+  },
+  "edge": {}
+}

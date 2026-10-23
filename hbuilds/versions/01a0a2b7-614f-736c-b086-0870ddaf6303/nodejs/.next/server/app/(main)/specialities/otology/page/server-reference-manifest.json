@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00485f46967a9267ce2e58ffc22eb56a2651084ab3": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/otology/page.js"
+    },
+    "007134ce6c21145fbd0d7492221f554568d7c2ed6a": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/otology/page.js"
+    }
+  },
+  "edge": {}
+}

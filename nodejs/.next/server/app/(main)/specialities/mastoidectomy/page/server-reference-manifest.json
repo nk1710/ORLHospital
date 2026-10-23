@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "0019d3bb97536eadb9aa13ec295cc582dc3247981c": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+    },
+    "0067ff191da737892810fda321e2caedc12c61831f": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+    }
+  },
+  "edge": {}
+}

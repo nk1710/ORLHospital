@@ -1,0 +1,8 @@
+{
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/contact/page": "app/(main)/contact/page.js",
+  "/(main)/gallery/page": "app/(main)/gallery/page.js",
+  "/(main)/about/drdhirendrasinghkushwah/page": "app/(main)/about/drdhirendrasinghkushwah/page.js",
+  "/(main)/facilities/page": "app/(main)/facilities/page.js",
+  "/(main)/specialities/cochlear-hearing-implants/page": "app/(main)/specialities/cochlear-hearing-implants/page.js"
+}

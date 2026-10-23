@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "0054b33c0eb27f04f0ad4b8fb20166c5bb1e664589": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/septoplasty/page.js"
+    },
+    "00b2a37f7e34189352d725d727e56a7ed864698211": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/septoplasty/page.js"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "009bb0777abe58266d606c5f89ec172f835c878fd5": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+    },
+    "00b0a25e74584dae42c9528bb2db91490a8ff9f5bd": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+    }
+  },
+  "edge": {}
+}

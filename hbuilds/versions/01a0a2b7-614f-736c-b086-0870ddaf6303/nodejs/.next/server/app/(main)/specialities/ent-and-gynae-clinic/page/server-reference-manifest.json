@@ -1,0 +1,20 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/ent-and-gynae-clinic/page": {
+          "moduleId": 704630,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ent-and-gynae-clinic/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    }
+  },
+  "edge": {}
+}

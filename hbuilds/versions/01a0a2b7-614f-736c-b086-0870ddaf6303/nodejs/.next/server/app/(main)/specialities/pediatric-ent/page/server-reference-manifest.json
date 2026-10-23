@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00571eca139ebca24b7c4dab0a63bc2d9432736ed5": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+    },
+    "0062f5fc081c5c389ad8348b00b7aad59e035159d2": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+    }
+  },
+  "edge": {}
+}

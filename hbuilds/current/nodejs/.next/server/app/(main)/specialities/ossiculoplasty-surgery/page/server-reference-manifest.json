@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "004813d01b9d26db141abfa28d239cbcff3aa0ef21": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+    },
+    "00b9ffc9922cf6576c5bc5d7de1981903ff3c632d8": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+    }
+  },
+  "edge": {}
+}

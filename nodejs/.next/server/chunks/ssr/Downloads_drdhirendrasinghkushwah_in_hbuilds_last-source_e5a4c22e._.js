@@ -1,0 +1,3 @@
+module.exports=[484543,a=>{"use strict";var b=a.i(548033);a.i(415778);var c=a.i(157025);async function d(){(0,c.redirect)("/about/drdhirendrasinghkushwah")}(0,a.i(464345).ensureServerEntryExports)([d]),(0,b.registerServerReference)(d,"00fc2733784b73f5795bcb1d49d227a8d13a6a4f30",null),a.s(["default",()=>d])},81178,a=>{"use strict";var b=a.i(398535),c=a.i(484543);a.s([],574439),a.i(574439),a.s(["00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead",()=>b.default,"00fc2733784b73f5795bcb1d49d227a8d13a6a4f30",()=>c.default],81178)}];
+
+//# sourceMappingURL=Downloads_drdhirendrasinghkushwah_in_hbuilds_last-source_e5a4c22e._.js.map

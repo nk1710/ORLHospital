@@ -1,0 +1,35 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/location/page": {
+          "moduleId": 62131,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "0076e9fc043fa2ae76088701fa47032fc919c73233": {
+      "workers": {
+        "app/(main)/location/page": {
+          "moduleId": 62131,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/location/page.js"
+    }
+  },
+  "edge": {}
+}

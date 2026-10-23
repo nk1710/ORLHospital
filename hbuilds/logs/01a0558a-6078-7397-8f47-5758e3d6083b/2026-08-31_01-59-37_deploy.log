@@ -1,0 +1,606 @@
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 911 packages, and audited 912 packages in 13s
+
+289 packages are looking for funding
+  run `npm fund` for details
+
+23 vulnerabilities (4 low, 3 moderate, 16 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> ent-website@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 14.4s
+  Running TypeScript ...
+  Collecting page data using 63 workers ...
+[DB ENV CHECK] {
+  host: '127.0.0.1',
+  user: 'u337227193_drdhirendra',
+  database: 'u337227193_drdhirendra',
+  port: '3306',
+  passwordExists: true,
+  passwordLength: 16
+}
+[DB Migration] Checking columns of users table...
+[DB Migration] role column already exists.
+[DB Migration] Migration failed: ReferenceError: email is not defined
+    at e (.next/server/chunks/ssr/_fe91bb9b._.js:5:265719)
+  Generating static pages using 63 workers (0/124) ...
+[DB ENV CHECK] {
+  host: '127.0.0.1',
+  user: 'u337227193_drdhirendra',
+  database: 'u337227193_drdhirendra',
+  port: '3306',
+  passwordExists: true,
+  passwordLength: 16
+}
+[DB Migration] Checking columns of users table...
+[DB ENV CHECK] {
+  host: '127.0.0.1',
+  user: 'u337227193_drdhirendra',
+  database: 'u337227193_drdhirendra',
+  port: '3306',
+  passwordExists: true,
+  passwordLength: 16
+}
+[DB Migration] Checking columns of users table...
+[DB Migration] role column already exists.
+[DB Migration] Migration failed: ReferenceError: email is not defined
+    at e (.next/server/chunks/ssr/_fe91bb9b._.js:5:265719)
+[DB Migration] role column already exists.
+  Generating static pages using 63 workers (31/124) 
+[DB Migration] Migration failed: ReferenceError: email is not defined
+    at e (.next/server/chunks/ssr/_fe91bb9b._.js:5:265719)
+[
+  {
+    id: 27,
+    title: 'Cochlear Implant Surgery',
+    slug: 'cochlear-implant-surgery',
+    excerpt: 'Hearing plays a vital role in communication, learning, and social interaction. When hearing loss becomes severe or profound, traditional hearing aids..',
+    content: '<h1>Top Cochlear and Hearing Implant Surgeon in India – Dr. Dhirendra Singh Kushwah</h1>\r\n' +
+      '                <p>Dr. Dhirendra Singh Kushwah is a highly experienced <strong>cochlear implant surgeon in\r\n' +
+      '                    India,</strong> known for his skill in advanced <strong>Cochlear and Hearing Implants\r\n' +
+      '                    Surgery.</strong> With years of dedicated practice, he has helped both children and adults regain\r\n' +
+      '                  their ability to hear clearly and live confidently.\r\n' +
+      '                  His approach focuses on accurate diagnosis, advanced technology, and complete <strong>hearing\r\n' +
+      '                    rehabilitation services,</strong> ensuring every patient receives safe, comfortable, and\r\n' +
+      '                  personalized care.</p>\r\n' +
+      '\r\n' +
+      '                <p><strong><a href="https://www.youtube.com/@dr.dhirendrasingh" target="_blank">Let’s Understand by Our\r\n' +
+      '                      videos & For more Inforemation Click here Below link and Subscribe our channel.</a></strong></p>\r\n' +
+      '\r\n' +
+      '                <iframe width="100%" height="315" src="https://www.youtube.com/embed/FiRuF6BSx70?si=lkptWxJFdEkegp0G"\r\n' +
+      '                  title="YouTube video player" frameborder="0"\r\n' +
+      '                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\r\n' +
+      '                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>\r\n' +
+      '                <br><br>\r\n' +
+      '                <h2>What Is a Cochlear & Hearing Implant?</h2>\r\n' +
+      '                <p>A <strong>Cochlear and Hearing Implant</strong> is a small electronic device that helps people with\r\n' +
+      '                  severe or permanent hearing loss hear sounds again.\r\n' +
+      '                  Unlike normal hearing aids (which only make sounds louder), a cochlear implant <strong>directly\r\n' +
+      '                    stimulates the hearing nerve, </strong>allowing the brain to understand sound more clearly.</p>\r\n' +
+      '                <p>There are two main parts:</p>\r\n' +
+      '                <ul>\r\n' +
+      '                  <li>External part – sits behind the ear and captures sound.</li>\r\n' +
+      '                  <li>Internal part – surgically placed under the skin to send sound signals to the hearing nerve.</li>\r\n' +
+      '                </ul>\r\n' +
+      '                <p>This makes cochlear implants one of the most advanced technologies for hearing restoration.</p>\r\n' +
+      '                <p>A cochlear implant is for anyone who has lost the ability to hear clearly and cannot improve with\r\n' +
+      '                  hearing aids.</p>\r\n' +
+      '                <h2>Why Are Cochlear & Hearing Implants Important?</h2>\r\n' +
+      '                <p>Cochlear implants are important because they:</p>\r\n' +
+      '                <ul>\r\n' +
+      '                  <li>Restore hearing when hearing aids don’t work</li>\r\n' +
+      '                  <li>Help children develop speech and language</li>\r\n' +
+      '                  <li>Improve communication and confidence</li>\r\n' +
+      '                  <li>Reduce social isolation</li>\r\n' +
+      '                  <li>Allow people to hear sounds, voices, music, and conversations</li>\r\n' +
+      '                  <li>Improve quality of life and independence</li>\r\n' +
+      '                </ul>\r\n' +
+      '                <p>For many people, cochlear implants are the only way to regain meaningful hearing.</p>\r\n' +
+      '                <h2>Who Needs a Cochlear & Hearing Implant?</h2>\r\n' +
+      '                <p>A cochlear implant is recommended for:</p>\r\n' +
+      '                <p>1. Children with severe hearing loss: Especially those born deaf or who lose hearing early. Early\r\n' +
+      '                  implantation helps them learn speech normally.</p>\r\n' +
+      '                <p>2. Adults with profound hearing loss:People who cannot understand speech even with strong hearing\r\n' +
+      '                  aids benefit greatly.</p>\r\n' +
+      '                <p>3. Elderly patients with nerve-related deafness: It helps them stay connected and avoid communication\r\n' +
+      '                  barriers.</p>\r\n' +
+      '                <p>4. Patients who do not benefit from hearing aids: If hearing aids amplify sound but speech still\r\n' +
+      '                  feels unclear or muffled, a cochlear implant may be the best option.</p>\r\n' +
+      '                <p>5. People with inner ear damage or nerve-related problems: Conditions like genetic hearing loss,\r\n' +
+      '                  infections, trauma, or sudden deafness often require implant surgery.</p>\r\n' +
+      '                <h2>Benefits of Choosing Cochlear Implant Surgery</h2>\r\n' +
+      '                <p>Patients experience:</p>\r\n' +
+      '                <ul>\r\n' +
+      '                  <li>Improved hearing clarity</li>\r\n' +
+      '                  <li>Better speech understanding</li>\r\n' +
+      '                  <li>Enhanced communication</li>\r\n' +
+      '                  <li>More independence in daily life</li>\r\n' +
+      '                  <li>Better social and emotional well-being</li>\r\n' +
+      '                </ul>\r\n' +
+      '                <p>These outcomes make cochlear implants one of the most effective hearing restoration surgery options\r\n' +
+      '                  available today.</p>\r\n' +
+      '                <h2>Conditions Treated</h2>\r\n' +
+      '                <p>Dr. Kushwah provides treatment for:</p>\r\n' +
+      '                <ul>\r\n' +
+      '                  <li>Severe to profound sensorineural hearing loss</li>\r\n' +
+      '                  <li>Birth-related hearing disorders</li>\r\n' +
+      '                  <li>Sudden hearing loss</li>\r\n' +
+      '                  <li>Trauma-related ear damage</li>\r\n' +
+      '                  <li>Inner ear disorders requiring implant surgery</li>\r\n' +
+      '                </ul>\r\n' +
+      '                <p>Each case is handled with precision, empathy, and the latest medical practices.</p>\r\n' +
+      '                <h3>Book Your Appointment With Top Cochlear Implant Specialist in India</h3>\r\n' +
+      '                <p>If you or your loved one is struggling with severe hearing loss, consulting an experienced cochlear\r\n' +
+      '                  implant specialist like Dr. Dhirendra Singh Kushwah can be life-changing. His expertise, advanced\r\n' +
+      '                  methods, and patient-centric care make him a leading hearing implant surgeon in India.\r\n' +
+      '                </p>\r\n' +
+      '                <p><a href="https://youtube.com/shorts/GveGRDuhfIQ?si=IjawHfqxqqthEKu8" target="_blank">Check Our\r\n' +
+      '                    Patient Testimonial</a></p>\r\n' +
+      '\r\n' +
+      '                <iframe width="100%" height="315" src="https://www.youtube.com/embed/cr6XCPzl1Nk?si=6_l7HvJt8gWLRnIE"\r\n' +
+      '                  title="YouTube video player" frameborder="0"\r\n' +
+      '                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\r\n' +
+      '                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>\r\n' +
+      '                <br>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: 'images/cohlear-implants-surgery.webp',
+    featured_image: 'images/cohlear-implants-surgery.webp',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-04-23T18:10:35.000Z,
+    updated_at: 2026-04-24T07:18:23.000Z,
+    published_at: null
+  },
+  {
+    id: 25,
+    title: 'Understanding Skull Base Surgery',
+    slug: 'understanding-skull-base-surgery',
+    excerpt: 'Skull base surgery is a complex and highly specialized field of medicine that addresses disorders and diseases affecting the base of the skull, which includes...',
+    content: '<h2>Skull Base Surgery in India</h2>\n' +
+      '<h2>Exploring Skull Base Surgery in India: Advancements and Innovations</h2>\n' +
+      '<p><img class="blog-image" src="https://drdhirendrasinghkushwah.in/images/blog2.jpg" alt="Exploring Skull Base Surgery in India"></p>\n' +
+      '<p>The Indian surge uses state of the art technologies and has lately distinguished itself as a hotspot for advanced medical procedures including SKB. This is an enormously narrow branch of neurosurgery that deals with pathologies of the skull base, an area that offers a very controversial surgery because of the great additional complexity of the anatomy of that area and the risk of damaging such important structures. Due to the advancement of medical technology and surgical procedures in India has made it an attractive destination for patients seeking services of contemporary skull base surgery from all across the globe</p>\n' +
+      '<h1>Understanding Skull Base Surgery</h1>\n' +
+      '<p>Skull base surgery is surgery of tumor, vascular malformation, and other pathologies at the base of the skull and spinal column. This region is important because it contains structure like the brainstem, cranial nerve and major vessels. Due to the fact that it is a sensitive area and accused of being complicated, operations involving the skull base are best handled with a lot of professionalism.</p>\n' +
+      '<h1>Types of Conditions Treated:</h1>\n' +
+      '<p><strong>Tumors:</strong>&nbsp;These include meningiomas, schwannomas, and chordomas.<br><br><strong>Vascular Malformations:</strong>&nbsp;Conditions like arteriovenous malformations (AVMs) or aneurysms.<br><br><strong>Trauma:</strong>&nbsp;Injuries to the base of the skull often require intricate reconstruction.<br><br><strong>The Rise of Advanced Techniques in India</strong><br><br>India&rsquo;s medical community has made significant strides in skull base surgery, incorporating innovative techniques and technologies. Key developments include:<br><br><strong>1. Endoscopic Skull Base Surgery</strong><br><br>Techniques such as endoscopy has been used to treat lesions at the base of the skull due to it giving the surgeons an opportunity to perform the surgeries with minimal incisions. This approach leads to shorter recovery time as well as reduced incidence of complications. The Indian surgical team is among the most sophisticated in utilizing complex endoscopic gadgets and proficient instrument in executing sensitive operations.<br><strong>2. Navigation Systems</strong><br><br>Igli and Staecker have stated that skills base surgeries have been made more accurate through utilization of Image &ndash; guided navigation system. These have been developed to combine real-time imaging that helps the surgeons in mapping of the structures to be operated on, and the avoidance of some very sensitive areas to enhance surgical procedures.<br><br><strong>3. Robotic Surgery</strong><br><br>Robotic-assisted surgery is gradually finding its path in skull base operations. Robot systems provide unparalleled precision and reach which can unlock difficult to access areas; help lead to enhanced results and quicker healing periods.</p>\n' +
+      '<h1>Leading Institutions and Expertise</h1>\n' +
+      '<p>Several Indian institutions are renowned for their expertise in skull base surgery:<br><br><strong>1. All India Institute of Medical Sciences (AIIMS), New Delhi</strong><br><br>AIIMS is one of the oldest medical colleges in India and is famous for teaching and research work around the globe. The department of neurosurgery in this institute is highly specialized in the skull base surgery and is using recent advancements in technique and technology.<br><br><strong>2. Apollo Hospitals</strong><br><br>Apollo is a group of hospitals with branches all over the country along with well-equipped surgical ones and skilled neurosurgeons. Its policy of using the latest equipment and exploring advanced methods has earned the hospital a reputation for the treatment of serious conditions of the skull base.<br><br><strong>3. Fortis Healthcare</strong><br><br>Some of Fortis Healthcare facilities as neurosurgery care are highly advanced &ndash; Bangalore and Mumbai especially. Professional and efficient crews as well as a multidisciplinary filed is appreciated for the ability to work with complicated operations with the skull base.</p>\n' +
+      '<h1>The Global Appeal</h1>\n' +
+      '<p>India has become recognized globally for offering quality and yet cheaper remedies to health problems in hospitals and clinics. Many hospitals in the country have state of art equipments and services which can openly compete with many western countries yet the costs are considerably low. Also, there is ample talent in Neurosurgery in India because many Indian neurosurgeons are educated abroad and/or more tech-savvy.</p>\n' +
+      '<h1>Patient Experience and Care</h1>\n' +
+      '<p>Patient Experience and Care This is considerate particularly with regard to patient care because of the delicateness in the practice of skull base surgery and the hazardous consequences that may well ensue. Indian hospitals give all round solutions right from preparatory examination for a surgery, proper therapeutic regime and follow up care and physiotherapy after surgery. Every patient is evaluated and treated in different aspects because of the various specialties involved in a patient&rsquo;s treatment.</p>\n' +
+      '<h1>Conclusion</h1>\n' +
+      '<p>However, the present study discovered that India&rsquo;s skull base surgery is a mix of innovative surgical tools, professional experience, and personalized treatment. Technological progress in surgical procedures along with the principle of delivering top-notch medical care makes India an ideal country for patients seeking treatment of complex skull base diseases. With advancing technology and surgical skills, the future of skull base surgery in India seems bright and holds out a ray of hope of a healthy new life to many possible patients all over the world.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/blog2.jpg',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-29T19:29:48.000Z,
+    updated_at: 2026-04-13T20:56:20.000Z,
+    published_at: null
+  },
+  {
+    id: 24,
+    title: 'Mastoidectomy Surgery In Delhi, India',
+    slug: 'mastoidectomy-surgery-in-delhi-india',
+    excerpt: 'Mastoidectomy is a delicate ear surgery that helps remove infected tissues from the mastoid bone, especially in conditions like chronic ear infection or cholesteatoma...',
+    content: '<h1>Best Mastoidectomy Surgeon In Delhi, India<br>Top Mastoidectomy Specialist in India - Dr. Dhirendra Singh Kushwah</h1>\n' +
+      '<p>Mastoidectomy is a delicate ear surgery that helps remove infected tissues from the mastoid bone, especially in conditions like chronic ear infection or cholesteatoma. If not treated on time, these infections can spread deeper and affect hearing, balance, and overall health. This is why choosing an experienced&nbsp;<strong>Mastoidectomy Specialist in India</strong>&nbsp;is extremely important.&nbsp;<strong>Dr. Dhirendra Singh Kushwah</strong>&nbsp;is known for providing advanced, safe, and effective mastoid surgery with modern techniques. His expertise, patient-focused approach, and years of surgical experience make him one of the most trusted names for&nbsp;<strong>Mastoidectomy Surgery in India.</strong></p>\n' +
+      '<p><strong><a href="https://www.youtube.com/@dr.dhirendrasingh" target="_blank" rel="noopener">Let&rsquo;s Understand by Our videos &amp; For more Inforemation Click here Below link and Subscribe our channel.</a></strong></p>\n' +
+      '<p><br><iframe title="YouTube video player" src="https://www.youtube.com/embed/Jn8l7h5fPQ8?si=ceCIBS7BOqIA6xWb" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe><br><br></p>\n' +
+      '<h2>Benefits of Mastoidectomy Surgery</h2>\n' +
+      '<p>Choosing the right Mastoidectomy Surgeon in India helps you achieve:</p>\n' +
+      '<ul>\n' +
+      '<li>Relief from persistent ear pain &amp; infection</li>\n' +
+      '<li>Prevention of further complications</li>\n' +
+      '<li>Improved hearing and ear function</li>\n' +
+      '<li>Reduced risk of infection spreading to nearby structures</li>\n' +
+      '</ul>\n' +
+      '<h2>Signs You May Need Mastoid Surgery</h2>\n' +
+      '<p>You should consult a Mastoidectomy Specialist in India if you have:</p>\n' +
+      '<ul>\n' +
+      '<li>Continuous ear discharge</li>\n' +
+      '<li>Hearing loss or muffled hearing</li>\n' +
+      '<li>Repeated ear infections</li>\n' +
+      '<li>Swelling or pain behind the ear</li>\n' +
+      '<li>Cholesteatoma diagnosis</li>\n' +
+      '</ul>\n' +
+      '<p>Early evaluation ensures faster recovery and better long-term ear health.</p>\n' +
+      '<h2>Why Choose Dr. Dhirendra Singh Kushwah for Mastoidectomy?</h2>\n' +
+      '<p>Dr. Dhirendra Singh Kushwah combines medical excellence with compassionate care. He ensures that every patient understands their condition and receives the most suitable treatment plan.</p>\n' +
+      '<p>Here&rsquo;s what makes him stand out:</p>\n' +
+      '<ul>\n' +
+      '<li>Expert in mastoid and middle ear surgeries</li>\n' +
+      '<li>Uses minimally invasive and modern surgical tools</li>\n' +
+      '<li>High success rate in restoring ear health</li>\n' +
+      '<li>Personalized post-surgery care</li>\n' +
+      '<li>Accurate diagnosis with advanced ENT imaging</li>\n' +
+      '</ul>\n' +
+      '<p>Whether it&rsquo;s chronic otitis media, ear discharge, cholesteatoma, or repeated infections, he ensures safe and effective treatment for all age groups.</p>\n' +
+      '<h3>Book Your Consultation with Leading Mastoidectomy Specialist in India</h3>\n' +
+      '<p>Book your consultation today with one of leading&nbsp;<strong>Mastoidectomy Specialists in India</strong> and take the first step toward healthier ears. With expert diagnosis, advanced surgical techniques, and personalized care, you receive the safest and most effective treatment for chronic ear infections or cholesteatoma. Early evaluation ensures faster recovery and long-lasting relief&mdash;schedule your appointment now for trusted, professional ear care.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/mastoidectomy.webp',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-29T19:23:06.000Z,
+    updated_at: 2026-04-13T20:55:33.000Z,
+    published_at: null
+  },
+  {
+    id: 23,
+    title: 'Nose And Sinus (Rhinology) Surgery In Delhi',
+    slug: 'nose-and-sinus-rhinology-surgery-in-delhi',
+    excerpt: 'Living with constant nasal blockage, sinus pressure, or breathing problems can affect your daily life..',
+    content: '<h1>Best Nose and Sinus Surgeon in India &ndash; Dr. Dhirendra Singh Kushwah</h1>\n' +
+      '<p>Experienced Rhinology Specialist in India for Advanced Nose &amp; Sinus Care</p>\n' +
+      '<p>Living with constant nasal blockage, sinus pressure, or breathing problems can affect your daily life. That&rsquo;s why choosing the right&nbsp;<strong>Nose and Sinus Surgeon in India&nbsp;</strong>is important.&nbsp;<strong>Dr. Dhirendra Singh Kushwah</strong>&nbsp;is a trusted name in the field of nose and sinus care, known for his expertise, advanced surgical skills, and patient-focused approach. As a leading&nbsp;<strong>Rhinology Specialist in India,</strong>&nbsp;he treats a wide range of nasal and sinus disorders&mdash;from chronic sinusitis to complex nasal deformities&mdash;using modern and minimally invasive techniques. People often&nbsp;<strong>need a Nose and Sinus Surgeon&nbsp;</strong>because nasal and sinus problems can seriously affect daily life. These conditions may seem small at first, but they can lead to long-term breathing issues, discomfort, and poor quality of life if not treated properly.</p>\n' +
+      '<p><strong><a href="https://www.youtube.com/@dr.dhirendrasingh" target="_blank" rel="noopener">Let&rsquo;s Understand by Our videos &amp; For more Inforemation Click here Below link and Subscribe our channel.</a></strong></p>\n' +
+      '<p><br><iframe title="YouTube video player" src="https://www.youtube.com/embed/f8Si15IIe54?si=z7g2xavGgrZatspe" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>\n' +
+      '<h2>Here are the top reasons why people need a Nose and Sinus Surgeon in India:</h2>\n' +
+      '<p>1. Breathing Problems - Blocked nose, deviated septum, or enlarged turbinates make it hard to breathe. A surgeon helps correct these issues so you can breathe easily again.</p>\n' +
+      '<p>2. Chronic Sinus Infections - If sinus infections keep coming back despite medicines, surgery may be needed to open the blocked sinus passages and give long-term relief.</p>\n' +
+      '<p>3. Constant Headaches &amp; Facial Pressure - Sinus-related headaches or pressure around the eyes, forehead, and cheeks can be due to blocked sinuses. A sinus surgeon can identify the cause and fix it.</p>\n' +
+      '<p>4. Snoring &amp; Sleep Issues - Structural problems inside the nose can cause snoring or sleep disturbances. Surgical correction improves airflow and better sleep.</p>\n' +
+      '<p>5. Nasal Polyps -Soft, non-cancerous growths inside the nose often return after medicines. Surgery may be needed to remove them and restore normal breathing.</p>\n' +
+      '<p>6. Deviated Septum - Many people are born with or develop a crooked septum. This causes breathing difficulty, infections, and even nosebleeds. Septoplasty corrects it safely.</p>\n' +
+      '<p>7. Long-Term Allergies - When allergies cause swelling inside the nose and block airways, patients may need surgical intervention for lasting improvement.</p>\n' +
+      '<p>8. Loss of Smell or Taste - Sinus swelling, infections, or polyps can reduce your sense of smell and taste. Treatment by an expert surgeon helps restore senses.</p>\n' +
+      '<p>9. Better Quality of Life</p>\n' +
+      '<p>Once nasal and sinus problems are treated, people experience:</p>\n' +
+      '<p>✔ Better sleep</p>\n' +
+      '<p>✔ No more frequent infections</p>\n' +
+      '<p>✔ Improved breathing</p>\n' +
+      '<p>✔ More energy</p>\n' +
+      '<p>✔ Lesser medication use</p>\n' +
+      '<p>In short, people need a Nose and Sinus Surgeon in India to treat problems that medicines alone cannot fix and to ensure long-term relief from nasal and sinus disorders.</p>\n' +
+      '<h2>Why Patients Trust Dr. Dhirendra Singh Kushwah for Nose &amp; Sinus Treatment</h2>\n' +
+      '<p>1. Expertise in Rhinology and Sinus Surgery</p>\n' +
+      '<p>Dr. Kushwah is an experienced Rhinology Surgeon in India offering comprehensive evaluations and personalized treatment plans. His deep understanding of nasal anatomy helps diagnose problems accurately and treat them effectively.</p>\n' +
+      '<p>2. Advanced Techniques for Better and Faster Recovery</p>\n' +
+      '<p>He specializes in modern solutions such as:</p>\n' +
+      '<ul>\n' +
+      '<li>Functional Endoscopic Sinus Surgery (FESS)</li>\n' +
+      '<li>Septoplasty</li>\n' +
+      '<li>Turbinate Reduction</li>\n' +
+      '<li>Nasal Polyp Removal</li>\n' +
+      '<li>Balloon Sinuplasty</li>\n' +
+      '</ul>\n' +
+      '<p>These advanced techniques help reduce pain, improve breathing, and promote faster healing.</p>\n' +
+      '<p>3. Trusted Nose Surgery Specialist in India</p>\n' +
+      '<p>Patients dealing with deviated septum, nasal obstruction, sinus infections, or allergies receive complete care under one roof. His experience as a Nose Surgery Specialist in India ensures a safe and comfortable treatment journey.</p>\n' +
+      '<p>4. Holistic &amp; Patient-Friendly Approach</p>\n' +
+      '<p>Dr. Kushwah believes in explaining every condition clearly so patients feel confident and informed. His treatments focus on long-term relief, not just temporary solutions</p>\n' +
+      '<h3>Book Consultation With a Leading Nose and Sinus Surgery Specialist in India Today</h3>\n' +
+      '<p>If you are experiencing frequent sinus issues, difficulty in breathing, or persistent nasal discomfort, consulting a specialist can bring real relief. Dr. Dhirendra Singh Kushwah&rsquo;s experience as a Nose and Sinus Surgery Specialist in India makes him one of the most dependable experts for accurate diagnosis and advanced treatment.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/Rhinology.webp',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-25T14:33:42.000Z,
+    updated_at: 2026-04-13T20:55:09.000Z,
+    published_at: null
+  },
+  {
+    id: 21,
+    title: 'Which ENT Issues Are Most Common In The Summer?',
+    slug: 'which-ent-issues-are-most-common-in-the-summer',
+    excerpt: 'Summer is a season of sun, fun, and outdoor activities. However, the warm weather also brings about certain ENT (Ear, Nose, and Throat) issues that are more prevalent.',
+    content: '<h1>What Are The ENT Problems More Pronouncing in Summer Seasons?</h1>\n' +
+      '<p><img class="blog-image" src="https://drdhirendrasinghkushwah.in/images/blog4.jpg" alt="The Importance of Cochlear Implants"></p>\n' +
+      '<p>Summer is a season of sun and vacation and numbers of activities are hold outside. However, for some reason, warm weather invites some specific ENT problems that are associated with this season of the year. Knowing some of these possible complications will enable you to avoid them or if they happen, then they can be remedied early.</p>\n' +
+      '<h1>1.&nbsp;<strong>Swimmer&rsquo;s ear, or Otitis Externa</strong></h1>\n' +
+      '<p>Swimmer&rsquo;s ear is an inflammation of the outer auditory canal, which develops as a result of staying water in the ear after swimming frequently. The presence of moisture soften the skin making it to be a nice place for bacteria and fungi to thrive thus causing inflammation and discomfort. Some of the signs of ear infection include, pain in the ear, skin inflammation, skin redness, and even discharge. Swimmer&rsquo;s ear can be prevented by ensuring you clean your ears with a towel after taking a bath or swimming and avoiding putting any foreign objects in the ear canal.</p>\n' +
+      '<h1>2.&nbsp;<strong>Allergic Rhinitis</strong></h1>\n' +
+      '<p>Jungle is the best season for allergies with particular regard to pollen allergies which result to allergic rhinitis. Some of the signs include; sneezing, nasal discharge, nasal congestion, itchy eyes, and throat discomfort. Some of the approaches to use in the treatment of allergic rhinitis include avoiding activities that expose you to the elements during days of high pollen counts, or using air cleaners, or taking antihistamines, oral medications, or any other medications recommended by a physician</p>\n' +
+      '<h1>3.&nbsp;<strong>Sinusitis</strong></h1>\n' +
+      '<p>Sinusitis is conditions where the lining of the sinus become inflamed for instance by; allergy, infection, or presence of pollutants. This is especially so when taking a bath during the summer because humidity and exposure to allergens can make sinus problems worse. Headaches, facial pain, difficulty in breathing through the nose, and thick and block nasal discharge are other signs. Proper hydration and intake of medical solutions as well avoiding allergens can treat sinusitis</p>\n' +
+      '<h1>4.&nbsp;<strong>Sore Throat and Tonsillitis</strong></h1>\n' +
+      '<p>They may also get a sore throat due to taking cold drinks, exposure to air conditioning or contraction of seasonal allergic agents that cause tonsillitis during summer. These may include throat ache, swallowing problems or sometimes fever. The nonsurgical treatments include warm drinks, excluding cold food products, and using throat lozenges. However, if the symptoms are still present, it&rsquo;s recommended that one see a physician.</p>\n' +
+      '<h1>5.&nbsp;<strong>Dehydration and Vocal Cord Issues</strong></h1>\n' +
+      '<p>Of the side effects: Dehydration and vocal cords problems. Summer brings hot weather thus making people lose a lot of water in their body which can cause problems in your vocal cords and make your voice crack or even strain. Namely one should drink enough water and should not overstrain the vocal cords in the conditions of low humidity.</p>\n' +
+      '<p>Although junior is not devoid of certain ear, nose and throat complications, one can avoid these thus maximizing on the full utilization of summer. However, if you have any constant symptoms or they worsen at any one time, you should visit an ENT doctor for the appropriate diagnosis and treatment.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/blog4.jpg',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-25T14:24:53.000Z,
+    updated_at: 2026-04-13T20:49:27.000Z,
+    published_at: null
+  },
+  {
+    id: 20,
+    title: 'Septoplasty ( Pain Free Pack Less Septoplasty )',
+    slug: 'septoplasty-pain-free-pack-less-septoplasty',
+    excerpt: 'Hearing loss can significantly impact the quality of life, communication, and overall well-being of an individual. For those who cannot benefit from conventional hearing.',
+    content: '<h1>Revolutionizing Nasal Surgery: The Pain-Free, Pack-Less Septoplasty</h1>\n' +
+      '<p><img class="blog-image" src="https://drdhirendrasinghkushwah.in/images/blog3.jpg" alt="Revolutionizing Nasal Surgery"></p>\n' +
+      '<p>When it comes to nasal surgeries, it has been long accepted that traditional septoplasty&mdash;for the treatment of the deviated septum, at least&mdash;is followed by quite painful recovery period. Earlier, septoplasty used to be a painful procedure involving packing, but newer painless, packless septoplasty is breaking the coin with better experiences for most.</p>\n' +
+      '<h1>Understanding Septoplasty</h1>\n' +
+      '<p>Septoplasty is a surgical operation to reshape the septum &ndash; the structure of cartilage and bone dividing the two halves of the nose. Different problems can occur as a result of a deviated septum, for example, protracted congestion, problem connected with breathing, constant attacks of sinusitis, and even sleep disorders. Septoplasty is an operation sought to correct the position of the septum so as to ease the above symptoms.<br><br>In the past, the nasal operation that Dr.Lied performed was a combination of several operations, which include; use of nasal packing as a way of controlling the bleeding and holding up the newly rearranged septum. Nasal packing has its way of working and although it has been identified to be effective, it perhaps socially awkward, uncomfortable and inconvenient to the client and therefore negatively impacts their recovery experience.</p>\n' +
+      '<h1>The Evolution: Pain-Free, Pack-Less Septoplasty</h1>\n' +
+      '<p>The modern technologies and state-of-the-art technologies in septoplasty have advanced to painless surgeries without packs. This innovative approach emphasizes comfort of patients and software use for making recovery as simple as possible. Here&rsquo;s how it&rsquo;s changing the landscape of septoplasty:<br><br><strong>1. Minimally Invasive Techniques</strong><br><br>Contemporary septorhinoplasty approaches are relatively less invasive, and this means that patients develop few if any scar lesions at the operative site. Modern surgical tools and optical control make it possible to do fine corrections at minimal interferes thus reducing pain and time for recuperation.<br><br><strong>2. Absorbable Materials</strong><br><br>Septoplasty has largely been introduced as a painless surgical technique, one of which involves use of absorbable material instead of nasal packing. An advantage with these materials is that they offer the required support to the septum without having to be removed since they naturally dissolve. This reduces the distressing and possible complications of packing removal during the treatment process.<br><br><strong>3. Enhanced Pain Management</strong><br><br>Thanks to recent innovations in the management of pain, patients that undergo septoplasty will have little discomforts to complain of. Local anesthetic options together with adequate control of postoperative pain make the process less painful during surgery and after it. Surgeons also have the ability to use methods keep harm to the nasal tissues to the minimum and so there will be little pain.<br><br><strong>4. Quick Recovery and Minimal Downtime</strong><br><br>Fewer patients require nasal packing, and other minimally invasive procedures are less likely to result in complications and a lengthened recovery period. They may experience, less swelling and bruising than with older practices and are also able to resume their daily routines more quickly. What many of the patients say is the understanding that their quality of life improves due to faster recovery and the reduction of the time required for it significantly.</p>\n' +
+      '<h1>The Procedure: What to Expect</h1>\n' +
+      '<p>A minimally invasive, braceless septoplasty operation is meant to be as painless and quick as it can get. Here&rsquo;s a brief overview of what you can expect:<br><br><strong>Preoperative Consultation:</strong>&nbsp;Your surgeon will estimate the shape and position of the septum inside your nose, your complaints, and devise a course of action for the septoplasty.<br><br><strong>Anesthesia:</strong>&nbsp;The surgery is usually undertaken under local anaesthesia with or without administration of sedation or under general anaesthesia depending with your conditions.<br><br><strong>Surgical Procedure:</strong>&nbsp;Then the surgeon will make small incisions inside the nasal septum in order to correct the deviation. Sophisticated procedures and biodegradable materials will be applied for septum management rather than conventional packing.<br><br><strong>Postoperative Care:</strong>&nbsp;Expect details on how best to keep your nose during the recovery process such as washing/irrigating your nose, and the kind of activities to avoid afterward due to possible nasal pain.<br><br><strong>Follow-Up:</strong>&nbsp;Follow up visits will help your recovery and address your worries or fears about the progression of the post-surgery healing process.</p>\n' +
+      '<h1>Benefits of Pain-Free, Pack-Less Septoplasty</h1>\n' +
+      '<p>Reduced Discomfort: Techniques now are less and invasive compared to the past where modern anesthetic and pain control management has reduced pain much the time of surgery and after.<br><br><strong>No Nasal Packing:</strong>&nbsp;New, absorbent material remove the tendency for nasal packing, which leads to various complications and discomfort.<br><br><strong>Faster Recovery:</strong>&nbsp;It is quicker to recover usually from surgery or any form of invasive process and they are again in their usual activities as one prefers.<br><br><strong>Improved Quality of Life:&nbsp;</strong>Better nasal patency and nasal comfort improve one&rsquo;s quality of life.</p>\n' +
+      '<h1>Conclusion</h1>\n' +
+      '<p>Septoplasty without pain and without the use of packs is another major development in nasal and sinus surgery which provide patients with more effective treatment for a deviated septum without pain and with less time spent in post-operative recovery. The trend toward less invasive procedures, better materials, and enhanced approaches to pain management as part of this new approach is something that is changing the way surgery is done; patients are breathing easier and coming through procedures quicker.<br><br>If you are an adverterter of septoplasty surgery or afraid of the regular postoperative experience, pain-free, pack-less septoplasty could be the answer. This is an innovative approach to treating the condition speak to a qualified ENT specialist to learn more about the process and become the first in line to benefit from the development.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/blog3.jpg',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-25T14:23:22.000Z,
+    updated_at: 2026-04-13T20:48:53.000Z,
+    published_at: null
+  },
+  {
+    id: 18,
+    title: 'The Importance of Cochlear Implants',
+    slug: 'the-importance-of-cochlear-implants',
+    excerpt: 'Hearing loss can significantly impact the quality of life, communication, and overall well-being of an individual. For those who cannot benefit from conventional hearing.',
+    content: '<h1>The Importance of Cochlear Implants: Transforming Lives Through Sound</h1>\n' +
+      '<p><img class="blog-image" src="https://drdhirendrasinghkushwah.in/images/blog1.jpg" alt="The Importance of Cochlear Implants"></p>\n' +
+      '<p>In a world where communication plays a pivotal role in almost every aspect of life, hearing loss can present significant challenges. For those with profound hearing loss or deafness, cochlear implants offer a revolutionary solution. Unlike hearing aids, which amplify sound, cochlear implants bypass damaged portions of the ear and directly stimulate the auditory nerve, enabling individuals to experience sound. The impact of these devices extends far beyond simply restoring hearing; they profoundly enhance the quality of life, social interaction, and cognitive development.</p>\n' +
+      '<h1>Understanding Cochlear Implants</h1>\n' +
+      '<p>A cochlear implant is a small, complex electronic device that consists of two main components: worn externally attached behind the ear and an implant that is inserted subcutaneously. The external part of the system apprehends the sound signals and similarly transforms them into electrical signals. They are then relayed to the internal device which directly activates auditory nerves. This process enables those with impairments in hearing or are extremely hard of hearing to have an Acoustical perception.</p>\n' +
+      '<h1>Why Cochlear Implants Are Important?</h1>\n' +
+      '<h3>1. Health Promotion in Relation to Hearing and Communication</h3>\n' +
+      '<p>Most of the patients with profound loss of hearing do not benefit from conventional hearing aids. A cochlear implant is the best solution to the problem of hearing that can very much enhance hearing capabilities and even speech and other sounds. This is especially dear for kids, particularly because auditory learning is a crucial part of childhood and it will continue to serve as an important form of learning throughout the kid&rsquo;s time at school. Since cochlear implants concern the auditory system and enable users to hear each other, everyone gains a more successful way of communication instead of being isolated as it happens with hearing impaired people.</p>\n' +
+      '<h3>2. Enhancing Cognitive Development in Children</h3>\n' +
+      '<p>Auditory learning is one of the significant aspects of learning in the young children, since they mostly acquire most of their knowledge through being taught or by listening. Kids who undergo cochlear implant surgeries at a tender age will easily learn to talk and communicate as any other normally hearing children. These interventions can help also increase teaching achievements since children with cochlear implants have better learning capabilities to participate in classroom activities and other social sectors.</p>\n' +
+      '<h3>3. Improving Quality of Life</h3>\n' +
+      '<p>Anyone who has experienced a disability on this aspect of communication can tell you that being able to hear, as well as to speak, is most crucial to one&rsquo;s well-being. Cochlear implants improve users&rsquo; ability to be active in social events, to speak with others, and for listening to music and other sounds. This in turn can cause more positive psychological status, and decrease feelings of aloneness and depression which are common in individuals having problems with their hearing.</p>\n' +
+      '<h3>4. Supporting Independence and Safety</h3>\n' +
+      '<p>Auditory skills are essential for success across multiple aspects of modern living touching even fundamental aspects such as security and navigation. Potential benefits of cochlear implants include; The users feel more self dependent because they are capable of moving more freely in the society. For example, capability to meg physical alarms, traffic noises, spoken instructions increases safety and the possibilities of leading an independent life.</p>\n' +
+      '<h3>5. The Economic and Social Benefits</h3>\n' +
+      '<p>First of all, as mentioned earlier, cochlear implants also have effects on other aspects: economic and social. Providing communication opportunities to the hearing-impaired citizens, cochlear implants enhance workforce yield and social economical returns of overcoming untreated Hearing Loss condition. However, the effect of cochlear implants on social integration gives cohesion to the societies, and enhances integration.</p>\n' +
+      '<h1>Challenges and Considerations</h1>\n' +
+      '<p>Despite Cochlear implants&rsquo; features, not everything is as rosy as it sounds though. Implantation is not a decision that is made without regard for certain factors /parameters such as age, the degree of hearing impairment, and general physical and neurological health of the patient. As with most devices of this kind, use of the implant must be followed by a period of rehabilitation and auditory training for optimal results to be achieved following surgery. Moreover, cochlear implant surgery may be expensive for some people, but most insurance providers pay for it.</p>\n' +
+      '<h1>Conclusion</h1>\n' +
+      '<p>Cochlear implants are not only pieces of equipment; rather they are tools which release a world of sound and soundless communication for the profoundly deaf. Cochlear implants serve an important function of enabling hearing, better concentration, and greater functionality of human life. With the advancement of technology today, the future will only be brighter for these amazing devices which help those people interact with surrounding environment.</p>\n' +
+      '<p>Whether for a child learning to speak, an adult regaining the joy of conversation, or a senior maintaining independence, cochlear implants are a testament to the power of innovation in transforming lives.</p>',
+    meta_title: null,
+    meta_description: null,
+    meta_keywords: null,
+    og_title: null,
+    og_description: null,
+    og_image: null,
+    featured_image: 'images/blog1.jpg',
+    image_alt: null,
+    author_name: null,
+    author_slug: null,
+    canonical_url: null,
+    robots: 'index, follow',
+    schema_type: 'Article',
+    category_id: null,
+    reading_time: null,
+    status: 'published',
+    created_at: 2026-03-25T14:19:50.000Z,
+    updated_at: 2026-04-13T20:48:03.000Z,
+    published_at: null
+  }
+]
+  Generating static pages using 63 workers (62/124) 
+  Generating static pages using 63 workers (93/124) 
+SMTP Server is ready
+SMTP Server is ready
+[DB ENV CHECK] {
+  host: '127.0.0.1',
+  user: 'u337227193_drdhirendra',
+  database: 'u337227193_drdhirendra',
+  port: '3306',
+  passwordExists: true,
+  passwordLength: 16
+}
+[DB Migration] Checking columns of users table...
+[DB Migration] role column already exists.
+[DB Migration] Migration failed: ReferenceError: email is not defined
+    at e (.next/server/chunks/ssr/_fe91bb9b._.js:5:265719)
+✓ Generating static pages using 63 workers (124/124) in 1216.2ms
+  Finalizing page optimization ...
+
+Route (app)                                               Revalidate  Expire
+┌ ○ /
+├ ○ /_not-found
+├ ● /[location]/[problem]
+│ ├ /jasola/sinusitis
+│ ├ /jasola/hearing-loss
+│ ├ /jasola/tonsillitis
+│ └ [+22 more paths]
+├ ○ /about/drdhirendrasinghkushwah
+├ ƒ /api/blog
+├ ƒ /api/blog/[slug]
+├ ƒ /api/blog/id/[id]
+├ ƒ /api/call-request
+├ ƒ /api/cluster/condition
+├ ƒ /api/cluster/location
+├ ƒ /api/cluster/symptom
+├ ƒ /api/cluster/treatment
+├ ƒ /api/contact
+├ ƒ /api/db-check
+├ ƒ /api/entities/condition-relations
+├ ƒ /api/entities/conditions
+├ ƒ /api/entities/locations
+├ ƒ /api/entities/symptoms
+├ ƒ /api/entities/treatments
+├ ƒ /api/faq
+├ ƒ /api/feedback
+├ ƒ /api/form-submit
+├ ƒ /api/pages
+├ ƒ /api/pages/[id]
+├ ƒ /api/queries
+├ ƒ /api/reviews
+├ ƒ /api/search-console
+├ ○ /auth/login
+├ ○ /auth/register
+├ ○ /blog                                                         1m      1y
+├ ● /blog/[slug]                                                  1m      1y
+│ ├ /blog/the-importance-of-cochlear-implants                     1m      1y
+│ ├ /blog/septoplasty-pain-free-pack-less-septoplasty             1m      1y
+│ ├ /blog/which-ent-issues-are-most-common-in-the-summer          1m      1y
+│ └ [+4 more paths]
+├ ○ /career
+├ ○ /city
+├ ○ /conditions
+├ ƒ /conditions/[category]
+├ ○ /conditions/ear
+├ ○ /conditions/ear-hearing
+├ ○ /conditions/ear-infections
+├ ○ /conditions/head-neck
+├ ○ /conditions/hearingloss
+├ ○ /conditions/nose-sinus
+├ ○ /conditions/paediatric-ent
+├ ○ /conditions/sinusitis
+├ ○ /conditions/skull-base
+├ ○ /conditions/throat-voice
+├ ○ /conditions/vertigo
+├ ○ /conditions/voice-throat-disorders-treatment-delhi
+├ ○ /conditions/we-care
+├ ○ /contact
+├ ○ /dashboard
+├ ○ /dashboard/blog
+├ ○ /dashboard/blog/create
+├ ○ /dashboard/blog/edit
+├ ƒ /dashboard/clusters
+├ ƒ /dashboard/clusters/create/[type]
+├ ƒ /dashboard/clusters/edit/[id]
+├ ○ /dashboard/faq
+├ ○ /dashboard/faq/create
+├ ○ /dashboard/pages
+├ ○ /dashboard/pages/create
+├ ○ /dashboard/pages/create-old
+├ ƒ /dashboard/pages/edit/[id]
+├ ○ /dashboard/queries
+├ ○ /dashboard/settings
+├ ○ /facilities
+├ ○ /faq
+├ ○ /featuredblog
+├ ○ /feedback
+├ ○ /gallery
+├ ○ /location
+├ ○ /location/arjun-nagar
+├ ○ /location/cr-park
+├ ○ /location/dhampur
+├ ○ /location/jasola
+├ ○ /location/palwal
+├ ○ /problems
+├ ○ /robots.txt
+├ ƒ /sitemap-dynamic.xml
+├ ○ /sitemap-page                                                 1d      1y
+├ ƒ /sitemap-pseo.xml
+├ ƒ /sitemap-static.xml
+├ ○ /sitemap.xml
+├ ○ /specialities
+├ ○ /specialities/cochlear-hearing-implants
+├ ○ /specialities/ent-and-gynae-clinic
+├ ○ /specialities/head-neck-surgery
+├ ○ /specialities/laryngology
+├ ○ /specialities/mastoidectomy
+├ ○ /specialities/neuro-otology
+├ ○ /specialities/nose-sinus-rhinology
+├ ○ /specialities/ossiculoplasty-surgery
+├ ○ /specialities/otology
+├ ○ /specialities/pediatric-ent
+├ ○ /specialities/septoplasty
+├ ○ /specialities/skull-base-surgery
+├ ○ /specialities/stapedotomy-surgery
+├ ○ /specialities/tonsillectomy-surgery
+├ ○ /specialities/tympanoplasty-surgery
+├ ○ /surgery
+├ ○ /training-programs
+└ ○ /treatment
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

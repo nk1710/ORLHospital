@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(main)/layout,_N_T_/(main)/conditions/layout,_N_T_/(main)/conditions/throat-voice/layout,_N_T_/(main)/conditions/throat-voice/page,_N_T_/conditions/throat-voice"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KG1haW4p/conditions/throat-voice/__PAGE__",
+    "/!KG1haW4p/conditions/throat-voice",
+    "/!KG1haW4p/conditions",
+    "/!KG1haW4p",
+    "/_index",
+    "/_head"
+  ]
+}

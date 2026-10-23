@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(main)/layout,_N_T_/(main)/conditions/layout,_N_T_/(main)/conditions/voice-throat-disorders-treatment-delhi/layout,_N_T_/(main)/conditions/voice-throat-disorders-treatment-delhi/page,_N_T_/conditions/voice-throat-disorders-treatment-delhi"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KG1haW4p/conditions/voice-throat-disorders-treatment-delhi/__PAGE__",
+    "/!KG1haW4p/conditions/voice-throat-disorders-treatment-delhi",
+    "/!KG1haW4p/conditions",
+    "/!KG1haW4p",
+    "/_index",
+    "/_head"
+  ]
+}

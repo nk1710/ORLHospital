@@ -1,0 +1,35 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741951,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/featuredblog/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00ca7aac734875a700661e8974c89c93c6194e17bc": {
+      "workers": {
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741951,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/homee/FeaturedBlog.js"
+        }
+      },
+      "layer": {
+        "app/(main)/featuredblog/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/homee/FeaturedBlog.js"
+    }
+  },
+  "edge": {}
+}

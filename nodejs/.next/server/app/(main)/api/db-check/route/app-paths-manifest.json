@@ -1,0 +1,3 @@
+{
+  "/(main)/api/db-check/route": "app/(main)/api/db-check/route.js"
+}

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(main)/layout,_N_T_/(main)/location/layout,_N_T_/(main)/location/palwal/layout,_N_T_/(main)/location/palwal/page,_N_T_/location/palwal"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KG1haW4p/location/palwal/__PAGE__",
+    "/!KG1haW4p/location/palwal",
+    "/!KG1haW4p/location",
+    "/!KG1haW4p",
+    "/_index",
+    "/_head"
+  ]
+}

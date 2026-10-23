@@ -1,0 +1,1139 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/[location]/[problem]/page": {
+          "moduleId": 832597,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/about/drdhirendrasinghkushwah/page": {
+          "moduleId": 880023,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/blog/[slug]/page": {
+          "moduleId": 990751,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/blog/page": {
+          "moduleId": 991440,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/career/page": {
+          "moduleId": 781598,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/city/page": {
+          "moduleId": 535404,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/[category]/page": {
+          "moduleId": 916285,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/allergies/page": {
+          "moduleId": 543574,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear-hearing/page": {
+          "moduleId": 845577,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear-infections/page": {
+          "moduleId": 966350,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear/page": {
+          "moduleId": 221688,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/head-neck/page": {
+          "moduleId": 404615,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/hearingloss/page": {
+          "moduleId": 221697,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/nasal-blockage/page": {
+          "moduleId": 871083,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/nose-sinus/page": {
+          "moduleId": 419509,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/paediatric-ent/page": {
+          "moduleId": 847551,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/page": {
+          "moduleId": 375745,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/sinusitis/page": {
+          "moduleId": 616028,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/skull-base/page": {
+          "moduleId": 931658,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/throat-voice/page": {
+          "moduleId": 273208,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/tonsillitis/page": {
+          "moduleId": 201226,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/vertigo/page": {
+          "moduleId": 733201,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/voice-disorders/page": {
+          "moduleId": 226510,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/voice-throat-disorders-treatment-delhi/page": {
+          "moduleId": 398268,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/we-care/page": {
+          "moduleId": 21584,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/facilities/page": {
+          "moduleId": 943702,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/faq/page": {
+          "moduleId": 747812,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741951,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/feedback/page": {
+          "moduleId": 479903,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/gallery/page": {
+          "moduleId": 143738,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/dhampur/page": {
+          "moduleId": 707502,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/page": {
+          "moduleId": 62131,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/location/palwal/page": {
+          "moduleId": 282317,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/page": {
+          "moduleId": 111581,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/problems/page": {
+          "moduleId": 590965,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/sitemap-page/page": {
+          "moduleId": 636456,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/ent-and-gynae-clinic/page": {
+          "moduleId": 704630,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/page": {
+          "moduleId": 642632,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/tonsillectomy-surgery/page": {
+          "moduleId": 678486,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/surgery/page": {
+          "moduleId": 353725,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/training-programs/page": {
+          "moduleId": 919022,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        },
+        "app/(main)/treatment/page": {
+          "moduleId": 654430,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/[location]/[problem]/page": "rsc",
+        "app/(main)/about/drdhirendrasinghkushwah/page": "rsc",
+        "app/(main)/blog/[slug]/page": "rsc",
+        "app/(main)/blog/page": "rsc",
+        "app/(main)/career/page": "rsc",
+        "app/(main)/city/page": "rsc",
+        "app/(main)/conditions/[category]/page": "rsc",
+        "app/(main)/conditions/allergies/page": "rsc",
+        "app/(main)/conditions/ear-hearing/page": "rsc",
+        "app/(main)/conditions/ear-infections/page": "rsc",
+        "app/(main)/conditions/ear/page": "rsc",
+        "app/(main)/conditions/head-neck/page": "rsc",
+        "app/(main)/conditions/hearingloss/page": "rsc",
+        "app/(main)/conditions/nasal-blockage/page": "rsc",
+        "app/(main)/conditions/nose-sinus/page": "rsc",
+        "app/(main)/conditions/paediatric-ent/page": "rsc",
+        "app/(main)/conditions/page": "rsc",
+        "app/(main)/conditions/sinusitis/page": "rsc",
+        "app/(main)/conditions/skull-base/page": "rsc",
+        "app/(main)/conditions/throat-voice/page": "rsc",
+        "app/(main)/conditions/tonsillitis/page": "rsc",
+        "app/(main)/conditions/vertigo/page": "rsc",
+        "app/(main)/conditions/voice-disorders/page": "rsc",
+        "app/(main)/conditions/voice-throat-disorders-treatment-delhi/page": "rsc",
+        "app/(main)/conditions/we-care/page": "rsc",
+        "app/(main)/contact/page": "rsc",
+        "app/(main)/facilities/page": "rsc",
+        "app/(main)/faq/page": "rsc",
+        "app/(main)/featuredblog/page": "rsc",
+        "app/(main)/feedback/page": "rsc",
+        "app/(main)/gallery/page": "rsc",
+        "app/(main)/location/arjun-nagar/page": "rsc",
+        "app/(main)/location/cr-park/page": "rsc",
+        "app/(main)/location/dhampur/page": "rsc",
+        "app/(main)/location/jasola/page": "rsc",
+        "app/(main)/location/page": "rsc",
+        "app/(main)/location/palwal/page": "rsc",
+        "app/(main)/page": "rsc",
+        "app/(main)/problems/page": "rsc",
+        "app/(main)/sitemap-page/page": "rsc",
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc",
+        "app/(main)/specialities/ent-and-gynae-clinic/page": "rsc",
+        "app/(main)/specialities/head-neck-surgery/page": "rsc",
+        "app/(main)/specialities/laryngology/page": "rsc",
+        "app/(main)/specialities/mastoidectomy/page": "rsc",
+        "app/(main)/specialities/neuro-otology/page": "rsc",
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc",
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc",
+        "app/(main)/specialities/otology/page": "rsc",
+        "app/(main)/specialities/page": "rsc",
+        "app/(main)/specialities/pediatric-ent/page": "rsc",
+        "app/(main)/specialities/septoplasty/page": "rsc",
+        "app/(main)/specialities/skull-base-surgery/page": "rsc",
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc",
+        "app/(main)/specialities/tonsillectomy-surgery/page": "rsc",
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc",
+        "app/(main)/surgery/page": "rsc",
+        "app/(main)/training-programs/page": "rsc",
+        "app/(main)/treatment/page": "rsc"
+      },
+      "filename": "src/components/layout/Footer.js",
+      "exportedName": "default"
+    },
+    "000c2e88e8d19478905048cac0aacd3c36307a5a3f": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "filename": "src/app/(main)/contact/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "003306c1f97de33fcc74e3b07e47cc6ee39ee0da5f": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "filename": "src/app/(main)/contact/page.js",
+      "exportedName": "default"
+    },
+    "00ca7aac734875a700661e8974c89c93c6194e17bc": {
+      "workers": {
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741951,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/homee/FeaturedBlog.js"
+        }
+      },
+      "layer": {
+        "app/(main)/featuredblog/page": "rsc"
+      },
+      "filename": "src/components/homee/FeaturedBlog.js",
+      "exportedName": "default"
+    },
+    "0076e9fc043fa2ae76088701fa47032fc919c73233": {
+      "workers": {
+        "app/(main)/location/page": {
+          "moduleId": 62131,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/page.js",
+      "exportedName": "default"
+    },
+    "009507ed897fb7c5b1e2c45efc2257afc45300da85": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/arjun-nagar/page.js",
+      "exportedName": "default"
+    },
+    "00ab371b8353fbacb978c9ef779e3acadba917fb5b": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/arjun-nagar/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "002a853126c7202e2c0a4be9166b6054a60cf90e9f": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/cr-park/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00a816271d1cd71b5d825fbf260adfae3ad7269ced": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/cr-park/page.js",
+      "exportedName": "default"
+    },
+    "00a7d59ab6077f04d4fd757edb8724ee70b4b5f06a": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/jasola/page.js",
+      "exportedName": "default"
+    },
+    "00dcace677ee76f1e3c2b8f393be9d09ab854bf9ea": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 660268,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "filename": "src/app/(main)/location/jasola/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00d27b6d79ce5c8e8a22d4bbc03d34061c860c0b9a": {
+      "workers": {
+        "app/(main)/specialities/page": {
+          "moduleId": 642632,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/page.js",
+      "exportedName": "default"
+    },
+    "000986f4431716477a87277bc12b289b1558852ae7": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "002c90ad7ffdcb0d5e11bb56a7b64621af04d24a16": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js",
+      "exportedName": "default"
+    },
+    "001c4257ef6e154e4e03ff0c96092dd80360064cfd": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/head-neck-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "003d8b0b368ed7e9e927392288924e928c3fd3f03f": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/head-neck-surgery/page.js",
+      "exportedName": "default"
+    },
+    "001d5b3e089bf495cca5d8543a0d176b6550aa39b3": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/laryngology/page.js",
+      "exportedName": "default"
+    },
+    "0054415dc614bcdf8f6721e3b1c6a64f98d2fc27d2": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/laryngology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "005badd468be8ab88b19036d16ea35d34e3336e1de": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/mastoidectomy/page.js",
+      "exportedName": "default"
+    },
+    "00ac375e3e51980f39e9d5a4ca1bebae7d7721da29": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/mastoidectomy/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "001cdd4f8d98f956f609ee3b1d7c29f87e938471c9": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/neuro-otology/page.js",
+      "exportedName": "default"
+    },
+    "0044832c36cfe0032429dea46b31a417c3a7d5bffc": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/neuro-otology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00a80749ef72d3ff6e624db284cc5d7cca2787bd0d": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js",
+      "exportedName": "default"
+    },
+    "00b35bedd2944a5de3b0ef5ba3a4ee8466be357699": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "004813d01b9d26db141abfa28d239cbcff3aa0ef21": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js",
+      "exportedName": "default"
+    },
+    "00b9ffc9922cf6576c5bc5d7de1981903ff3c632d8": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 376942,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/ossiculoplasty-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00485f46967a9267ce2e58ffc22eb56a2651084ab3": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/otology/page.js",
+      "exportedName": "default"
+    },
+    "007134ce6c21145fbd0d7492221f554568d7c2ed6a": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 772222,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/otology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00571eca139ebca24b7c4dab0a63bc2d9432736ed5": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/pediatric-ent/page.js",
+      "exportedName": "default"
+    },
+    "0062f5fc081c5c389ad8348b00b7aad59e035159d2": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 268353,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/pediatric-ent/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "0054b33c0eb27f04f0ad4b8fb20166c5bb1e664589": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/septoplasty/page.js",
+      "exportedName": "default"
+    },
+    "00b2a37f7e34189352d725d727e56a7ed864698211": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 986031,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/septoplasty/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "009bb0777abe58266d606c5f89ec172f835c878fd5": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/skull-base-surgery/page.js",
+      "exportedName": "default"
+    },
+    "00b0a25e74584dae42c9528bb2db91490a8ff9f5bd": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 622475,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/skull-base-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "0021c2b238e20aef0c4538cd4723f2c3d28d5df385": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "0068e5db17e913306fb7f864636c60c87a1e196a11": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js",
+      "exportedName": "default"
+    },
+    "001f8583a3a5f5703a5cfece4f767d2536f81762d4": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00f31ade4e3250a794bbf4fdb7c6e973c85c3aaaa8": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js",
+      "exportedName": "default"
+    },
+    "0082153c7bf25377859392a9be2a15543092ded3b8": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 546420,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/auth/register/page": {
+          "moduleId": 969573,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/create/page": {
+          "moduleId": 715638,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/edit/page": {
+          "moduleId": 81903,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/page": {
+          "moduleId": 891756,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/create/[type]/page": {
+          "moduleId": 847679,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/edit/[id]/page": {
+          "moduleId": 780221,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/page": {
+          "moduleId": 604383,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/faq/create/page": {
+          "moduleId": 185405,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/faq/page": {
+          "moduleId": 898926,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/page": {
+          "moduleId": 482312,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/create-old/page": {
+          "moduleId": 715982,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/create/page": {
+          "moduleId": 164559,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/edit/[id]/page": {
+          "moduleId": 37260,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/page": {
+          "moduleId": 743284,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/queries/page": {
+          "moduleId": 967698,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        },
+        "app/dashboard/settings/page": {
+          "moduleId": 560668,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser",
+        "app/auth/register/page": "action-browser",
+        "app/dashboard/blog/create/page": "action-browser",
+        "app/dashboard/blog/edit/page": "action-browser",
+        "app/dashboard/blog/page": "action-browser",
+        "app/dashboard/clusters/create/[type]/page": "action-browser",
+        "app/dashboard/clusters/edit/[id]/page": "action-browser",
+        "app/dashboard/clusters/page": "action-browser",
+        "app/dashboard/faq/create/page": "action-browser",
+        "app/dashboard/faq/page": "action-browser",
+        "app/dashboard/page": "action-browser",
+        "app/dashboard/pages/create-old/page": "action-browser",
+        "app/dashboard/pages/create/page": "action-browser",
+        "app/dashboard/pages/edit/[id]/page": "action-browser",
+        "app/dashboard/pages/page": "action-browser",
+        "app/dashboard/queries/page": "action-browser",
+        "app/dashboard/settings/page": "action-browser"
+      },
+      "filename": "src/app/dashboard/action.js",
+      "exportedName": "logoutAction"
+    },
+    "604abaa9210d94d1aa5e9bbf8a514f0f218e008ba9": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 546420,
+          "async": false,
+          "exportedName": "loginAction",
+          "filename": "src/app/auth/login/actions.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      },
+      "filename": "src/app/auth/login/actions.js",
+      "exportedName": "loginAction"
+    },
+    "60569ccb2f184ca47f212eed1ac6322a3d64860806": {
+      "workers": {
+        "app/auth/register/page": {
+          "moduleId": 969573,
+          "async": false,
+          "exportedName": "registerAction",
+          "filename": "src/app/auth/register/actions.js"
+        }
+      },
+      "layer": {
+        "app/auth/register/page": "action-browser"
+      },
+      "filename": "src/app/auth/register/actions.js",
+      "exportedName": "registerAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "9cVtfPrhN0tC9K8rZJEUCmAQGlNXv6GQeDcbbqV9RO4="
+}

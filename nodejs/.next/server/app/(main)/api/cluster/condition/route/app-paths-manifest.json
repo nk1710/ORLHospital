@@ -1,0 +1,3 @@
+{
+  "/(main)/api/cluster/condition/route": "app/(main)/api/cluster/condition/route.js"
+}

@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "000986f4431716477a87277bc12b289b1558852ae7": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+    },
+    "002c90ad7ffdcb0d5e11bb56a7b64621af04d24a16": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 498504,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+    }
+  },
+  "edge": {}
+}

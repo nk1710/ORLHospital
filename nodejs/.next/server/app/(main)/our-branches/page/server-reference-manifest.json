@@ -1,0 +1,35 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/our-branches/page": {
+          "moduleId": 542640,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/our-branches/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "007e75f68cfeb677a5973a21960bc114fddceba18b": {
+      "workers": {
+        "app/(main)/our-branches/page": {
+          "moduleId": 542640,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/our-branches/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/our-branches/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/our-branches/page.js"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0082153c7bf25377859392a9be2a15543092ded3b8": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 546420,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/dashboard/action.js"
+    },
+    "604abaa9210d94d1aa5e9bbf8a514f0f218e008ba9": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 546420,
+          "async": false,
+          "exportedName": "loginAction",
+          "filename": "src/app/auth/login/actions.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      },
+      "exportedName": "loginAction",
+      "filename": "src/app/auth/login/actions.js"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "009507ed897fb7c5b1e2c45efc2257afc45300da85": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/location/arjun-nagar/page.js"
+    },
+    "00ab371b8353fbacb978c9ef779e3acadba917fb5b": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 47202,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/location/arjun-nagar/page.js"
+    }
+  },
+  "edge": {}
+}

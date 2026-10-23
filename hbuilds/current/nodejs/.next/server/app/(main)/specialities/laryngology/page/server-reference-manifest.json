@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "001d5b3e089bf495cca5d8543a0d176b6550aa39b3": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/laryngology/page.js"
+    },
+    "0054415dc614bcdf8f6721e3b1c6a64f98d2fc27d2": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 150351,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/laryngology/page.js"
+    }
+  },
+  "edge": {}
+}

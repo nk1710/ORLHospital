@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "002a853126c7202e2c0a4be9166b6054a60cf90e9f": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/location/cr-park/page.js"
+    },
+    "00a816271d1cd71b5d825fbf260adfae3ad7269ced": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 363651,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/location/cr-park/page.js"
+    }
+  },
+  "edge": {}
+}

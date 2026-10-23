@@ -1,0 +1,20 @@
+{
+  "node": {
+    "009e743f8e2c7a35289db7123370f39549b6d7677d": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 883607,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+    }
+  },
+  "edge": {}
+}

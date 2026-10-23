@@ -1,0 +1,20 @@
+{
+  "node": {
+    "0082153c7bf25377859392a9be2a15543092ded3b8": {
+      "workers": {
+        "app/dashboard/queries/page": {
+          "moduleId": 967698,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/dashboard/queries/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/dashboard/action.js"
+    }
+  },
+  "edge": {}
+}

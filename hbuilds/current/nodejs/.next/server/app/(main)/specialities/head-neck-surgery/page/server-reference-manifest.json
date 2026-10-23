@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "001c4257ef6e154e4e03ff0c96092dd80360064cfd": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+    },
+    "003d8b0b368ed7e9e927392288924e928c3fd3f03f": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 141043,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/head-neck-surgery/page.js"
+    }
+  },
+  "edge": {}
+}

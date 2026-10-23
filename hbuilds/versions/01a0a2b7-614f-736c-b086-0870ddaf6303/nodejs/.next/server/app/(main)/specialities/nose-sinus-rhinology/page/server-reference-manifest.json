@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00a80749ef72d3ff6e624db284cc5d7cca2787bd0d": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+    },
+    "00b35bedd2944a5de3b0ef5ba3a4ee8466be357699": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 74956,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+    }
+  },
+  "edge": {}
+}

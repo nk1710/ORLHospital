@@ -1,0 +1,3 @@
+module.exports=[584616,a=>{"use strict";var b=a.i(907997),c=a.i(137936);async function d(){return(0,b.jsx)("div",{children:(0,b.jsx)("h2",{children:"Locations"})})}(0,a.i(713095).ensureServerEntryExports)([d]),(0,c.registerServerReference)(d,"0076e9fc043fa2ae76088701fa47032fc919c73233",null),a.s(["default",()=>d])},62131,a=>{"use strict";var b=a.i(836847),c=a.i(584616);a.s([],847672),a.i(847672),a.s(["0076e9fc043fa2ae76088701fa47032fc919c73233",()=>c.default,"007a67ac1014dccdee29d67f53f869b1f0baf2d39d",()=>b.default],62131)}];
+
+//# sourceMappingURL=_c34724a7._.js.map

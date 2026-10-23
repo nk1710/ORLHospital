@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "005badd468be8ab88b19036d16ea35d34e3336e1de": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+    },
+    "00ac375e3e51980f39e9d5a4ca1bebae7d7721da29": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 617092,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/mastoidectomy/page.js"
+    }
+  },
+  "edge": {}
+}

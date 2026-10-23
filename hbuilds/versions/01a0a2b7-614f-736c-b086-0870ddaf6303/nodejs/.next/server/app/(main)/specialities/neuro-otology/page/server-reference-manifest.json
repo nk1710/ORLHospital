@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "001cdd4f8d98f956f609ee3b1d7c29f87e938471c9": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+    },
+    "0044832c36cfe0032429dea46b31a417c3a7d5bffc": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 365901,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/neuro-otology/page.js"
+    }
+  },
+  "edge": {}
+}

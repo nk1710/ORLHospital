@@ -1,0 +1,1363 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/[location]/[problem]/page": {
+          "moduleId": 720791,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/about/drdhirendrasinghkushwah/page": {
+          "moduleId": 723778,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/about/page": {
+          "moduleId": 81178,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/blog/[slug]/page": {
+          "moduleId": 62341,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/blog/page": {
+          "moduleId": 40198,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/career/page": {
+          "moduleId": 900331,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/city/page": {
+          "moduleId": 959128,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/[category]/page": {
+          "moduleId": 946345,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/allergies/page": {
+          "moduleId": 565486,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear-hearing/page": {
+          "moduleId": 116781,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear-infections/page": {
+          "moduleId": 145598,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/ear/page": {
+          "moduleId": 161955,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/head-neck/page": {
+          "moduleId": 32592,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/hearingloss/page": {
+          "moduleId": 483519,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/nasal-blockage/page": {
+          "moduleId": 961733,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/nose-sinus/page": {
+          "moduleId": 359193,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/paediatric-ent/page": {
+          "moduleId": 910796,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/page": {
+          "moduleId": 847509,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/sinusitis/page": {
+          "moduleId": 37414,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/skull-base/page": {
+          "moduleId": 110008,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/throat-voice/page": {
+          "moduleId": 443935,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/tonsillitis/page": {
+          "moduleId": 656621,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/vertigo/page": {
+          "moduleId": 271964,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/voice-disorders/page": {
+          "moduleId": 566147,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/voice-throat-disorders-treatment-delhi/page": {
+          "moduleId": 116510,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/conditions/we-care/page": {
+          "moduleId": 192392,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/contact/page": {
+          "moduleId": 928385,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/facilities/page": {
+          "moduleId": 54792,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741871,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/gallery/page": {
+          "moduleId": 357430,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 519012,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/dhampur/page": {
+          "moduleId": 419751,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/jasola/page": {
+          "moduleId": 573075,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/page": {
+          "moduleId": 946594,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/location/palwal/page": {
+          "moduleId": 963108,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/our-branches/page": {
+          "moduleId": 542640,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/page": {
+          "moduleId": 40500,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/problems/page": {
+          "moduleId": 468188,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/sitemap-page/page": {
+          "moduleId": 663984,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/ent-and-gynae-clinic/page": {
+          "moduleId": 203768,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 851139,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 517221,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 281966,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 803115,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 841119,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/page": {
+          "moduleId": 981117,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 583904,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 21118,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 312188,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/tonsillectomy-surgery/page": {
+          "moduleId": 347735,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 142679,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/surgery/page": {
+          "moduleId": 458681,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/training-programs/page": {
+          "moduleId": 858388,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        },
+        "app/(main)/treatment/page": {
+          "moduleId": 565020,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/[location]/[problem]/page": "rsc",
+        "app/(main)/about/drdhirendrasinghkushwah/page": "rsc",
+        "app/(main)/about/page": "rsc",
+        "app/(main)/blog/[slug]/page": "rsc",
+        "app/(main)/blog/page": "rsc",
+        "app/(main)/career/page": "rsc",
+        "app/(main)/city/page": "rsc",
+        "app/(main)/conditions/[category]/page": "rsc",
+        "app/(main)/conditions/allergies/page": "rsc",
+        "app/(main)/conditions/ear-hearing/page": "rsc",
+        "app/(main)/conditions/ear-infections/page": "rsc",
+        "app/(main)/conditions/ear/page": "rsc",
+        "app/(main)/conditions/head-neck/page": "rsc",
+        "app/(main)/conditions/hearingloss/page": "rsc",
+        "app/(main)/conditions/nasal-blockage/page": "rsc",
+        "app/(main)/conditions/nose-sinus/page": "rsc",
+        "app/(main)/conditions/paediatric-ent/page": "rsc",
+        "app/(main)/conditions/page": "rsc",
+        "app/(main)/conditions/sinusitis/page": "rsc",
+        "app/(main)/conditions/skull-base/page": "rsc",
+        "app/(main)/conditions/throat-voice/page": "rsc",
+        "app/(main)/conditions/tonsillitis/page": "rsc",
+        "app/(main)/conditions/vertigo/page": "rsc",
+        "app/(main)/conditions/voice-disorders/page": "rsc",
+        "app/(main)/conditions/voice-throat-disorders-treatment-delhi/page": "rsc",
+        "app/(main)/conditions/we-care/page": "rsc",
+        "app/(main)/contact/page": "rsc",
+        "app/(main)/facilities/page": "rsc",
+        "app/(main)/faq/page": "rsc",
+        "app/(main)/featuredblog/page": "rsc",
+        "app/(main)/feedback/page": "rsc",
+        "app/(main)/gallery/page": "rsc",
+        "app/(main)/location/arjun-nagar/page": "rsc",
+        "app/(main)/location/cr-park/page": "rsc",
+        "app/(main)/location/dhampur/page": "rsc",
+        "app/(main)/location/jasola/page": "rsc",
+        "app/(main)/location/page": "rsc",
+        "app/(main)/location/palwal/page": "rsc",
+        "app/(main)/our-branches/page": "rsc",
+        "app/(main)/page": "rsc",
+        "app/(main)/problems/page": "rsc",
+        "app/(main)/sitemap-page/page": "rsc",
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc",
+        "app/(main)/specialities/ent-and-gynae-clinic/page": "rsc",
+        "app/(main)/specialities/head-neck-surgery/page": "rsc",
+        "app/(main)/specialities/laryngology/page": "rsc",
+        "app/(main)/specialities/mastoidectomy/page": "rsc",
+        "app/(main)/specialities/neuro-otology/page": "rsc",
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc",
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc",
+        "app/(main)/specialities/otology/page": "rsc",
+        "app/(main)/specialities/page": "rsc",
+        "app/(main)/specialities/pediatric-ent/page": "rsc",
+        "app/(main)/specialities/septoplasty/page": "rsc",
+        "app/(main)/specialities/skull-base-surgery/page": "rsc",
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc",
+        "app/(main)/specialities/tonsillectomy-surgery/page": "rsc",
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc",
+        "app/(main)/surgery/page": "rsc",
+        "app/(main)/training-programs/page": "rsc",
+        "app/(main)/treatment/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js",
+      "exportedName": "default"
+    },
+    "00fc2733784b73f5795bcb1d49d227a8d13a6a4f30": {
+      "workers": {
+        "app/(main)/about/page": {
+          "moduleId": 81178,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/about/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/about/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/about/page.js",
+      "exportedName": "default"
+    },
+    "004620a944642c5ea3585fba9714e0b68d11ad93b9": {
+      "workers": {
+        "app/(main)/career/page": {
+          "moduleId": 900331,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/career/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/career/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/career/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "009ed381beac436220c1b8b068c78b3fc72d0a7117": {
+      "workers": {
+        "app/(main)/career/page": {
+          "moduleId": 900331,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/career/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/career/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/career/page.js",
+      "exportedName": "default"
+    },
+    "0028c524b335c144fe9b39ac72671ef859e81661d4": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 928385,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/contact/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e30764e0a06b4dc29d98f26839279b16c684ffd3": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 928385,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/contact/page.js",
+      "exportedName": "default"
+    },
+    "002386586ea3cf414a4e23c592a6a92d3ce6409be3": {
+      "workers": {
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/faq/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "003552243c45c7b4aa04dd04326944edc17ff41b08": {
+      "workers": {
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/faq/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js",
+      "exportedName": "default"
+    },
+    "0033965b80385543125bfd552c0758e53afb318241": {
+      "workers": {
+        "app/(main)/featuredblog/page": {
+          "moduleId": 741871,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/homee/FeaturedBlog.js"
+        }
+      },
+      "layer": {
+        "app/(main)/featuredblog/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/homee/FeaturedBlog.js",
+      "exportedName": "default"
+    },
+    "004502f0eefd193bf4cfbf8669a5ff74c18e51f3de": {
+      "workers": {
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/feedback/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js",
+      "exportedName": "default"
+    },
+    "00c40f5acec296ee314207e667b6c29a2fed2f9edb": {
+      "workers": {
+        "app/(main)/feedback/page": {
+          "moduleId": 698972,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/feedback/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/feedback/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00115df6411ab3c4cfd7235c3904eab1d5c467b8e7": {
+      "workers": {
+        "app/(main)/gallery/page": {
+          "moduleId": 357430,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/gallery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/gallery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/gallery/page.js",
+      "exportedName": "default"
+    },
+    "00d0ae7f410fd5f0a95fd05473b956fdfe6dd6f040": {
+      "workers": {
+        "app/(main)/gallery/page": {
+          "moduleId": 357430,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/gallery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/gallery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/gallery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "004320063bcb37f18d9e9fcc9dcc34a657f351557c": {
+      "workers": {
+        "app/(main)/location/page": {
+          "moduleId": 946594,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/page.js",
+      "exportedName": "default"
+    },
+    "00eae0072fb8ffce1c9da8be429f61b030d2f0e43e": {
+      "workers": {
+        "app/(main)/location/page": {
+          "moduleId": 946594,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e6852f0bc7bd69969d63d2f6895eae3d450aae59": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js",
+      "exportedName": "default"
+    },
+    "00f29eb88c74d5dc917ce48497ecad29dfe7649cec": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "0033409a41557d39c705e49b39843b7170d61422f0": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 519012,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/cr-park/page.js",
+      "exportedName": "default"
+    },
+    "00346ab992f49aaa5b3e7bc31059adf9cdf8189ac5": {
+      "workers": {
+        "app/(main)/location/cr-park/page": {
+          "moduleId": 519012,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/cr-park/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/cr-park/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/cr-park/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "005402e0aabb401bcfaa4cadd857b08598e815843d": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 573075,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/jasola/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00c76ca89969af77968345144f106f95c5f7fb6564": {
+      "workers": {
+        "app/(main)/location/jasola/page": {
+          "moduleId": 573075,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/jasola/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/jasola/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/jasola/page.js",
+      "exportedName": "default"
+    },
+    "007e75f68cfeb677a5973a21960bc114fddceba18b": {
+      "workers": {
+        "app/(main)/our-branches/page": {
+          "moduleId": 542640,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/our-branches/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/our-branches/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/our-branches/page.js",
+      "exportedName": "default"
+    },
+    "002ef69620cbc4f23a3cb2c2d1b3d5c1a3dda11286": {
+      "workers": {
+        "app/(main)/specialities/page": {
+          "moduleId": 981117,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00c852d55f8e5a96eaa07c471ca0c80685b70b3bff": {
+      "workers": {
+        "app/(main)/specialities/page": {
+          "moduleId": 981117,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/page.js",
+      "exportedName": "default"
+    },
+    "009591081f34c3aced8956c1e8a1cfe08da6cac955": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00fabea4b3865705ec8f2f51c7502d996e8f3079e6": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js",
+      "exportedName": "default"
+    },
+    "004a8502f53f93b986e6fed9bd9627d50a84278fe5": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 851139,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/head-neck-surgery/page.js",
+      "exportedName": "default"
+    },
+    "00dd49c3fcfc889cc7073eb33ed4a4f5659e7a48f0": {
+      "workers": {
+        "app/(main)/specialities/head-neck-surgery/page": {
+          "moduleId": 851139,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/head-neck-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/head-neck-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/head-neck-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00252a25df0aef878ded27dda1b79aec3cf7759829": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 517221,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/laryngology/page.js",
+      "exportedName": "default"
+    },
+    "003cb1b7d30b2ef0eb2e38c31d642072a7b424f84c": {
+      "workers": {
+        "app/(main)/specialities/laryngology/page": {
+          "moduleId": 517221,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/laryngology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/laryngology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/laryngology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "0019d3bb97536eadb9aa13ec295cc582dc3247981c": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js",
+      "exportedName": "default"
+    },
+    "0067ff191da737892810fda321e2caedc12c61831f": {
+      "workers": {
+        "app/(main)/specialities/mastoidectomy/page": {
+          "moduleId": 697756,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/mastoidectomy/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/mastoidectomy/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00cdc7b81034f84d1b03f0ef4b00238ef55506784a": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 281966,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/neuro-otology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e41b3fd89cf36748e630e4ed9c2dd604233ea21d": {
+      "workers": {
+        "app/(main)/specialities/neuro-otology/page": {
+          "moduleId": 281966,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/neuro-otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/neuro-otology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/neuro-otology/page.js",
+      "exportedName": "default"
+    },
+    "007407c66c9ccffe930b1244b320d59b4690a32716": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 803115,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/nose-sinus-rhinology/page.js",
+      "exportedName": "default"
+    },
+    "009c88891437198114779e1cb7fbf5f223c8c2e42b": {
+      "workers": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": {
+          "moduleId": 803115,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/nose-sinus-rhinology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/nose-sinus-rhinology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/nose-sinus-rhinology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "009193d1e482847a88a0db522d38c76ed63b5ca095": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 841119,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/ossiculoplasty-surgery/page.js",
+      "exportedName": "default"
+    },
+    "00c86b1435c16cdd843295fe9f9fee09206983010d": {
+      "workers": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": {
+          "moduleId": 841119,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/ossiculoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/ossiculoplasty-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/ossiculoplasty-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "007519aec04bfa7a4963caf7a164015a90e43d3f71": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e6f1820c11c628d83ff594660006cd8dfb1f662a": {
+      "workers": {
+        "app/(main)/specialities/otology/page": {
+          "moduleId": 588516,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/otology/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/otology/page.js",
+      "exportedName": "default"
+    },
+    "00c493821eb4ae44d34918f5f1bdfdb3db2516dd40": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 583904,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/pediatric-ent/page.js",
+      "exportedName": "default"
+    },
+    "00d07509640d23a2e8ccd0141ab1bc5743ca9526f5": {
+      "workers": {
+        "app/(main)/specialities/pediatric-ent/page": {
+          "moduleId": 583904,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/pediatric-ent/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/pediatric-ent/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/pediatric-ent/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "002f92aca5c6914eada76b1718a68e99e5ea40aa97": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e1f3e9debf9036a5e2baa1370aeeb4db1ea3d20b": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js",
+      "exportedName": "default"
+    },
+    "002faf75089d89f28085bc05c7053987ea3d4a3717": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 21118,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/skull-base-surgery/page.js",
+      "exportedName": "default"
+    },
+    "005a11f860fca3c78a70e14f6ac6df2506b91611ea": {
+      "workers": {
+        "app/(main)/specialities/skull-base-surgery/page": {
+          "moduleId": 21118,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/skull-base-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/skull-base-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/skull-base-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "007166776e05a4468798d69969e6c34be36d7fcfb2": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 312188,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/stapedotomy-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00c926aa1377f589fa4e3ea67b55bdc0a4ee0a6155": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 312188,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/stapedotomy-surgery/page.js",
+      "exportedName": "default"
+    },
+    "0017cd1a8f862af9222cc6971ec08af8d8eb46b2b8": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 142679,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/tympanoplasty-surgery/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00e4be06ae1561ea3e69f4f28cc140f418088b87ab": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 142679,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/tympanoplasty-surgery/page.js",
+      "exportedName": "default"
+    },
+    "002f9519182d629c11dd7a3d7d23eb42bbec869671": {
+      "workers": {
+        "app/(main)/training-programs/page": {
+          "moduleId": 858388,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/training-programs/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/training-programs/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/training-programs/page.js",
+      "exportedName": "generateMetadata"
+    },
+    "00caa5e6cfbbab32bca298995e11bc6f999b222981": {
+      "workers": {
+        "app/(main)/training-programs/page": {
+          "moduleId": 858388,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/training-programs/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/training-programs/page": "rsc"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/training-programs/page.js",
+      "exportedName": "default"
+    },
+    "009e743f8e2c7a35289db7123370f39549b6d7677d": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 250708,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/auth/register/page": {
+          "moduleId": 315975,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/create/page": {
+          "moduleId": 944239,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/edit/page": {
+          "moduleId": 567584,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/blog/page": {
+          "moduleId": 875454,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/create/[type]/page": {
+          "moduleId": 595120,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/edit/[id]/page": {
+          "moduleId": 815249,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/clusters/page": {
+          "moduleId": 929799,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/faq/create/page": {
+          "moduleId": 344913,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/faq/page": {
+          "moduleId": 558494,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/page": {
+          "moduleId": 883607,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/create-old/page": {
+          "moduleId": 667788,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/create/page": {
+          "moduleId": 150423,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/edit/[id]/page": {
+          "moduleId": 222448,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/pages/page": {
+          "moduleId": 619478,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/queries/page": {
+          "moduleId": 410153,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        },
+        "app/dashboard/settings/page": {
+          "moduleId": 593056,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser",
+        "app/auth/register/page": "action-browser",
+        "app/dashboard/blog/create/page": "action-browser",
+        "app/dashboard/blog/edit/page": "action-browser",
+        "app/dashboard/blog/page": "action-browser",
+        "app/dashboard/clusters/create/[type]/page": "action-browser",
+        "app/dashboard/clusters/edit/[id]/page": "action-browser",
+        "app/dashboard/clusters/page": "action-browser",
+        "app/dashboard/faq/create/page": "action-browser",
+        "app/dashboard/faq/page": "action-browser",
+        "app/dashboard/page": "action-browser",
+        "app/dashboard/pages/create-old/page": "action-browser",
+        "app/dashboard/pages/create/page": "action-browser",
+        "app/dashboard/pages/edit/[id]/page": "action-browser",
+        "app/dashboard/pages/page": "action-browser",
+        "app/dashboard/queries/page": "action-browser",
+        "app/dashboard/settings/page": "action-browser"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/action.js",
+      "exportedName": "logoutAction"
+    },
+    "60a03647ab2be0cde229b73679a22f5a3311006afd": {
+      "workers": {
+        "app/auth/login/page": {
+          "moduleId": 250708,
+          "async": false,
+          "exportedName": "loginAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/auth/login/actions.js"
+        }
+      },
+      "layer": {
+        "app/auth/login/page": "action-browser"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/auth/login/actions.js",
+      "exportedName": "loginAction"
+    },
+    "607f638664dadd832c1002c0beefda37bbf5a6a145": {
+      "workers": {
+        "app/auth/register/page": {
+          "moduleId": 315975,
+          "async": false,
+          "exportedName": "registerAction",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/auth/register/actions.js"
+        }
+      },
+      "layer": {
+        "app/auth/register/page": "action-browser"
+      },
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/auth/register/actions.js",
+      "exportedName": "registerAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "35uI0bmFk7rTzi1kVrZ7aW8HRqndQA6aDy67XTglOn4="
+}

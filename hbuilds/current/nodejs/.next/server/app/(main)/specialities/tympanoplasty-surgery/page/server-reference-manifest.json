@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "001f8583a3a5f5703a5cfece4f767d2536f81762d4": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+    },
+    "00f31ade4e3250a794bbf4fdb7c6e973c85c3aaaa8": {
+      "workers": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": {
+          "moduleId": 874799,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/tympanoplasty-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/tympanoplasty-surgery/page.js"
+    }
+  },
+  "edge": {}
+}

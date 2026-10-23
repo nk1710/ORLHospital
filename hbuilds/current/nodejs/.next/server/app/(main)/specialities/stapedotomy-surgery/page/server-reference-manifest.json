@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "0021c2b238e20aef0c4538cd4723f2c3d28d5df385": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+    },
+    "0068e5db17e913306fb7f864636c60c87a1e196a11": {
+      "workers": {
+        "app/(main)/specialities/stapedotomy-surgery/page": {
+          "moduleId": 889890,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/stapedotomy-surgery/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/stapedotomy-surgery/page.js"
+    }
+  },
+  "edge": {}
+}

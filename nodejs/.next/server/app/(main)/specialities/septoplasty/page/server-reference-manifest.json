@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "002f92aca5c6914eada76b1718a68e99e5ea40aa97": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+    },
+    "00e1f3e9debf9036a5e2baa1370aeeb4db1ea3d20b": {
+      "workers": {
+        "app/(main)/specialities/septoplasty/page": {
+          "moduleId": 260617,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/septoplasty/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/septoplasty/page.js"
+    }
+  },
+  "edge": {}
+}

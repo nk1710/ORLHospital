@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../../Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/dashboard/blog/edit/page.js"],"sourcesContent":["export default function Page(){\n    return(\n        <div><h1>edit blog</h1></div>\n    )\n}"],"names":[],"mappings":"+XAAe,SAAS,IACpB,MACI,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,UAAI,CAAA,EAAA,EAAA,GAAA,EAAC,KAAA,UAAG,eAEjB"}

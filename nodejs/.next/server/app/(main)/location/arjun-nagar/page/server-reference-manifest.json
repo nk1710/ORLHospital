@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "00e6852f0bc7bd69969d63d2f6895eae3d450aae59": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+    },
+    "00f29eb88c74d5dc917ce48497ecad29dfe7649cec": {
+      "workers": {
+        "app/(main)/location/arjun-nagar/page": {
+          "moduleId": 923650,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/location/arjun-nagar/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/location/arjun-nagar/page.js"
+    }
+  },
+  "edge": {}
+}

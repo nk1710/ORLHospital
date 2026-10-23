@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/faq/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "002386586ea3cf414a4e23c592a6a92d3ce6409be3": {
+      "workers": {
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/faq/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+    },
+    "003552243c45c7b4aa04dd04326944edc17ff41b08": {
+      "workers": {
+        "app/(main)/faq/page": {
+          "moduleId": 203608,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/faq/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/faq/page.js"
+    }
+  },
+  "edge": {}
+}

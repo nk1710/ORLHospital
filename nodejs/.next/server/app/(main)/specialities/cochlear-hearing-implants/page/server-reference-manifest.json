@@ -1,0 +1,50 @@
+{
+  "node": {
+    "00cd8d8d8ddcbdae29b01cde19b3f3ba3fd0db4ead": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/components/layout/Footer.js"
+    },
+    "009591081f34c3aced8956c1e8a1cfe08da6cac955": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+    },
+    "00fabea4b3865705ec8f2f51c7502d996e8f3079e6": {
+      "workers": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": {
+          "moduleId": 419088,
+          "async": false,
+          "exportedName": "default",
+          "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/cochlear-hearing-implants/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "Downloads/drdhirendrasinghkushwah.in/hbuilds/last-source/src/app/(main)/specialities/cochlear-hearing-implants/page.js"
+    }
+  },
+  "edge": {}
+}

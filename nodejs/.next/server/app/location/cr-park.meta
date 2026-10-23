@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(main)/layout,_N_T_/(main)/location/layout,_N_T_/(main)/location/cr-park/layout,_N_T_/(main)/location/cr-park/page,_N_T_/location/cr-park"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KG1haW4p/location/cr-park/__PAGE__",
+    "/!KG1haW4p/location/cr-park",
+    "/!KG1haW4p/location",
+    "/!KG1haW4p",
+    "/_index",
+    "/_head"
+  ]
+}

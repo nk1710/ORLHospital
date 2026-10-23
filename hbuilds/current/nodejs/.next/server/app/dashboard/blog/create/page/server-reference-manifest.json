@@ -1,0 +1,20 @@
+{
+  "node": {
+    "0082153c7bf25377859392a9be2a15543092ded3b8": {
+      "workers": {
+        "app/dashboard/blog/create/page": {
+          "moduleId": 715638,
+          "async": false,
+          "exportedName": "logoutAction",
+          "filename": "src/app/dashboard/action.js"
+        }
+      },
+      "layer": {
+        "app/dashboard/blog/create/page": "action-browser"
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/dashboard/action.js"
+    }
+  },
+  "edge": {}
+}

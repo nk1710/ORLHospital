@@ -1,0 +1,35 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/specialities/page": {
+          "moduleId": 642632,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "00d27b6d79ce5c8e8a22d4bbc03d34061c860c0b9a": {
+      "workers": {
+        "app/(main)/specialities/page": {
+          "moduleId": 642632,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/specialities/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/specialities/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/specialities/page.js"
+    }
+  },
+  "edge": {}
+}

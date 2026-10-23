@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007a67ac1014dccdee29d67f53f869b1f0baf2d39d": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/components/layout/Footer.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/components/layout/Footer.js"
+    },
+    "000c2e88e8d19478905048cac0aacd3c36307a5a3f": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "generateMetadata",
+          "filename": "src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "exportedName": "generateMetadata",
+      "filename": "src/app/(main)/contact/page.js"
+    },
+    "003306c1f97de33fcc74e3b07e47cc6ee39ee0da5f": {
+      "workers": {
+        "app/(main)/contact/page": {
+          "moduleId": 291046,
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/(main)/contact/page.js"
+        }
+      },
+      "layer": {
+        "app/(main)/contact/page": "rsc"
+      },
+      "exportedName": "default",
+      "filename": "src/app/(main)/contact/page.js"
+    }
+  },
+  "edge": {}
+}
