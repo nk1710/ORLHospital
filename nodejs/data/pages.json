@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Best ENT Surgeon in Jasola Vihar, South Delhi",
+    "condition_id": 1,
+    "condition": "Chronic Sinusitis",
+    "symptom_id": 1,
+    "symptom": "Nasal Congestion",
+    "treatment_id": 1,
+    "treatment": "FESS Surgery",
+    "location_id": 1,
+    "location": "Jasola Vihar",
+    "meta_title": "Best ENT Doctor in Jasola Vihar Delhi - Dr. Kushwah",
+    "meta_description": "Top ENT specialist for sinus, ear and throat treatment in Jasola Vihar South Delhi."
+  },
+  {
+    "id": 2,
+    "title": "Eardrum Repair Surgery & Tympanoplasty in CR Park, Delhi",
+    "condition_id": 2,
+    "condition": "Eardrum Perforation",
+    "symptom_id": 2,
+    "symptom": "Ear Discharge",
+    "treatment_id": 2,
+    "treatment": "Tympanoplasty",
+    "location_id": 2,
+    "location": "CR Park",
+    "meta_title": "Tympanoplasty Specialist in CR Park Delhi",
+    "meta_description": "Expert eardrum perforation repair and hearing restoration surgery by Dr. Kushwah."
+  },
+  {
+    "id": 3,
+    "title": "Sinus and Allergy Clinic in Safdarjung Enclave / Arjun Nagar",
+    "condition_id": 1,
+    "condition": "Chronic Sinusitis",
+    "symptom_id": 1,
+    "symptom": "Nasal Blockage",
+    "treatment_id": 3,
+    "treatment": "Septoplasty",
+    "location_id": 3,
+    "location": "Arjun Nagar",
+    "meta_title": "Sinus & Allergy Specialist in Safdarjung Enclave",
+    "meta_description": "Advanced endoscopic sinus surgery and allergy treatment near Safdarjung Hospital."
+  },
+  {
+    "id": 4,
+    "title": "Advanced ENT Hospital in Palwal, Haryana",
+    "condition_id": 4,
+    "condition": "Chronic Tonsillitis",
+    "symptom_id": 3,
+    "symptom": "Throat Pain",
+    "treatment_id": 4,
+    "treatment": "Coblation Tonsillectomy",
+    "location_id": 4,
+    "location": "Palwal",
+    "meta_title": "Leading ENT Hospital in Palwal Haryana",
+    "meta_description": "Complete ear, nose, throat and pediatric surgical care at Palwal ENT centre."
+  }
+]

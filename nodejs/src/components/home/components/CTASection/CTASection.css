@@ -1,0 +1,129 @@
+.cta-hospital-section {
+  background: linear-gradient(135deg, #071220 0%, #004d57 100%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-content-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0, 180, 200, 0.2);
+  color: #38d6ea;
+  border: 1px solid rgba(56, 214, 234, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-hospital-section h2 {
+  color: #ffffff;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.cta-hospital-section p {
+  color: #e2e8f0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.cta-hospital-section strong {
+  color: #38d6ea;
+}
+
+.cta-trust-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.cta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f1f5f9;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-call-emergency {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #071220;
+  font-size: 14.5px;
+  font-weight: 800;
+  padding: 14px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-call-emergency:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn-book-consult {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00b4c8;
+  color: #071220;
+  font-size: 14.5px;
+  font-weight: 800;
+  padding: 14px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0, 180, 200, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-book-consult:hover {
+  background: #38d6ea;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 180, 200, 0.45);
+}
+
+@media (max-width: 640px) {
+  .cta-hospital-section {
+    padding: 50px 0;
+  }
+  .cta-actions {
+    flex-direction: column;
+  }
+  .btn-call-emergency,
+  .btn-book-consult {
+    width: 100%;
+    justify-content: center;
+  }
+}

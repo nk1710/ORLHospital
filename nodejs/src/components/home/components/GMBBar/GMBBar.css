@@ -1,0 +1,76 @@
+.gmb-bar {
+  background: linear-gradient(135deg, #071220 0%, #0c1c33 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gmb-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.appointment-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.appointment-grid input,
+.appointment-grid select {
+  padding-left: 14px !important;
+  font-size: 13.5px;
+}
+
+.appointment-grid select option {
+  background-color: #0c1c33 !important;
+  color: #ffffff !important;
+  padding: 10px;
+}
+
+.submit-btn {
+  height: 44px;
+  width: 100%;
+  border-radius: 8px;
+  background: #00b4c8;
+  color: #071220;
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 180, 200, 0.3);
+}
+
+.submit-btn:hover {
+  background: #38d6ea;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 180, 200, 0.45);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 1200px) {
+  .appointment-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .appointment-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .gmb-bar {
+    padding: 24px 0;
+  }
+}

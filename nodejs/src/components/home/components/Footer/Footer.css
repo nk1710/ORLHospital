@@ -1,0 +1,80 @@
+footer {
+  background: #060f1c;
+  color: rgba(255,255,255,.65);
+  padding: 64px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1.2fr 1.2fr 1.5fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--teal-lt);
+  margin-bottom: 6px;
+}
+.footer-brand-title {
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  margin-bottom: 14px;
+}
+.footer-about { font-size: 14px; line-height: 1.7; margin-bottom: 18px; }
+.footer-about strong { color: rgba(255,255,255,.8); }
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.7);
+  margin-bottom: 7px;
+}
+.footer-contact-row a { color: rgba(255,255,255,.7); text-decoration: none; }
+.footer-contact-row a:hover { color: var(--teal-lt); }
+footer h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,.35);
+  margin-bottom: 16px;
+}
+.footer-links li { margin-bottom: 9px; }
+.footer-links a {
+  font-size: 14px;
+  color: rgba(255,255,255,.6);
+  transition: color .2s;
+  text-decoration: none;
+}
+.footer-links a:hover { color: var(--teal-lt); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12.5px;
+}
+.footer-schema-note { font-size: 11.5px; color: rgba(255,255,255,.25); }
+.footer-nap {
+  margin-top: 28px;
+  padding: 18px 20px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 10px;
+}
+.footer-nap h4 { margin-bottom: 10px; }
+.footer-nap p { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.7; }
+.footer-nap a { color: rgba(255,255,255,.5); text-decoration: none; }
+
+@media (max-width: 1020px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}

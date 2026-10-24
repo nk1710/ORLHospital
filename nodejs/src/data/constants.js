@@ -1,0 +1,17 @@
+export const SPECIALITIES = [
+  // { href: "/specialities/ent-and-gynae-clinic", label: "ENT & Gynae" },
+  { href: "/specialities/otology", label: "Ear (Otology)" },
+  { href: "/specialities/tympanoplasty-surgery", label: "Tympanoplasty Surgery" },
+  { href: "/specialities/ossiculoplasty-surgery", label: "Ossiculoplasty Surgery" },
+  { href: "/specialities/mastoidectomy", label: "Mastoidectomy Surgery" },
+  { href: "/specialities/tonsillectomy-surgery", label: "Tonsillectomy Surgery" },
+  { href: "/specialities/stapedotomy-surgery", label: "Stapedotomy Surgery" },
+  { href: "/specialities/cochlear-hearing-implants", label: "Cochlear & Hearing Implants" },
+  { href: "/specialities/skull-base-surgery", label: "Skull Base Surgery" },
+  { href: "/specialities/nose-sinus-rhinology", label: "Nose & Sinus (Rhinology)" },
+  { href: "/specialities/septoplasty", label: "Septoplasty (Pain free pack less septoplasty)" },
+  { href: "/specialities/laryngology", label: "Voice & Throat (Laryngology)" },
+  { href: "/specialities/neuro-otology", label: "Dizziness Vertigo / Neuro-otology" },
+  { href: "/specialities/pediatric-ent", label: "Pediatric ENT" },
+  { href: "/specialities/head-neck-surgery", label: "Head & Neck" },
+];

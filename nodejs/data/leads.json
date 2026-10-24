@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ENQ-4568",
+    "name": "Suresh Gupta",
+    "phone": "9812345678",
+    "email": "suresh.g@gmail.com",
+    "city": "Jasola Vihar, South Delhi",
+    "department": "Ear & Hearing (Tympanoplasty)",
+    "message": "",
+    "type": "appointment",
+    "status": "New",
+    "created_at": "2026-10-24T03:08:34.568Z"
+  },
+  {
+    "id": "ENQ-1042",
+    "name": "Rajesh Sharma",
+    "phone": "9810142857",
+    "email": "rajesh.sharma@gmail.com",
+    "city": "Jasola Vihar, South Delhi",
+    "department": "Nose & Sinus (Sinusitis / FESS)",
+    "message": "Suffering from severe nasal blockage and chronic sinus headache for 3 months. Requesting OPD consultation at Jasola.",
+    "type": "appointment",
+    "status": "Contacted",
+    "created_at": "2026-10-24T07:15:00.000Z"
+  },
+  {
+    "id": "ENQ-1041",
+    "name": "Sunita Verma",
+    "phone": "9871234509",
+    "email": "sunita.v@outlook.com",
+    "city": "CR Park, South Delhi",
+    "department": "Ear & Hearing (Tympanoplasty)",
+    "message": "Eardrum perforation in right ear with persistent discharge. Referred for tympanoplasty surgery consultation.",
+    "type": "appointment",
+    "status": "Contacted",
+    "created_at": "2026-10-23T18:40:00.000Z"
+  },
+  {
+    "id": "ENQ-1040",
+    "name": "Amitabh Roy",
+    "phone": "9958761234",
+    "email": "a.roy@tcs.com",
+    "city": "Safdarjung Enclave / Arjun Nagar",
+    "department": "Throat & Voice (Hoarseness)",
+    "message": "Voice change and throat pain lasting over 4 weeks. Need endoscopic laryngoscopy evaluation.",
+    "type": "appointment",
+    "status": "Confirmed",
+    "created_at": "2026-10-23T14:20:00.000Z"
+  },
+  {
+    "id": "ENQ-1039",
+    "name": "Pooja Deshmukh",
+    "phone": "9818892341",
+    "email": "pooja.desh@gmail.com",
+    "city": "Palwal, Haryana",
+    "department": "Pediatric ENT (Tonsils / Adenoids)",
+    "message": "My 6-year-old child snores heavily and has recurrent throat infections. Need specialist appointment at Palwal hospital.",
+    "type": "appointment",
+    "status": "New",
+    "created_at": "2026-10-23T11:05:00.000Z"
+  },
+  {
+    "id": "ENQ-1038",
+    "name": "Vikram Chauhan",
+    "phone": "9312245678",
+    "email": "vikramc@gmail.com",
+    "city": "Jasola Vihar, South Delhi",
+    "department": "Vertigo & Balance Disorders",
+    "message": "Sudden spinning episodes when turning head in bed. Need BPPV maneuver checkup.",
+    "type": "callback",
+    "status": "Contacted",
+    "created_at": "2026-10-22T16:30:00.000Z"
+  },
+  {
+    "id": "ENQ-1037",
+    "name": "Kavita Singhal",
+    "phone": "9811443210",
+    "email": "ksinghal@yahoo.in",
+    "city": "Dhampur, UP",
+    "department": "Hearing Loss & Audiometry",
+    "message": "Bilateral gradual hearing loss for father aged 68. Need audiometry and hearing aid consultation at Dhampur OPD.",
+    "type": "appointment",
+    "status": "Completed",
+    "created_at": "2026-10-22T10:15:00.000Z"
+  },
+  {
+    "id": "ENQ-1036",
+    "name": "Mohammad Irfan",
+    "phone": "9899012345",
+    "email": "m.irfan@gmail.com",
+    "city": "Okhla / Jasola",
+    "department": "Nose & Sinus (Septoplasty)",
+    "message": "Deviated nasal septum causing right side breathing obstruction. Wanted surgery cost estimate and recovery time.",
+    "type": "callback",
+    "status": "Confirmed",
+    "created_at": "2026-10-21T15:45:00.000Z"
+  },
+  {
+    "id": "ENQ-1035",
+    "name": "Dr. Ananya Sen",
+    "phone": "9717789012",
+    "email": "ananya.sen@aiims.edu",
+    "city": "CR Park, South Delhi",
+    "department": "Allergies & Nasal Polyps",
+    "message": "Severe seasonal allergic rhinitis with nasal polyp recurrence. Need specialist opinion.",
+    "type": "appointment",
+    "status": "Completed",
+    "created_at": "2026-10-21T09:20:00.000Z"
+  }
+]

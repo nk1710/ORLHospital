@@ -1,0 +1,115 @@
+{
+  "conditions": [
+    {
+      "id": 1,
+      "name": "Chronic Sinusitis",
+      "slug": "sinusitis"
+    },
+    {
+      "id": 2,
+      "name": "Eardrum Perforation",
+      "slug": "hearing-loss"
+    },
+    {
+      "id": 3,
+      "name": "Deviated Nasal Septum",
+      "slug": "nasal-polyps"
+    },
+    {
+      "id": 4,
+      "name": "Chronic Tonsillitis",
+      "slug": "tonsillitis"
+    },
+    {
+      "id": 5,
+      "name": "Benign Positional Vertigo",
+      "slug": "vertigo"
+    }
+  ],
+  "symptoms": [
+    {
+      "id": 1,
+      "name": "Nasal Congestion & Blockage",
+      "slug": "nasal-blockage"
+    },
+    {
+      "id": 2,
+      "name": "Ear Discharge & Reduced Hearing",
+      "slug": "ear-discharge"
+    },
+    {
+      "id": 3,
+      "name": "Throat Pain & Difficulty Swallowing",
+      "slug": "throat-pain"
+    },
+    {
+      "id": 4,
+      "name": "Spinning Sensation / Dizziness",
+      "slug": "dizziness"
+    },
+    {
+      "id": 5,
+      "name": "Loud Snoring & Daytime Sleepiness",
+      "slug": "snoring"
+    }
+  ],
+  "treatments": [
+    {
+      "id": 1,
+      "name": "Endoscopic Sinus Surgery (FESS)",
+      "slug": "fess-surgery"
+    },
+    {
+      "id": 2,
+      "name": "Tympanoplasty (Eardrum Repair)",
+      "slug": "tympanoplasty-surgery"
+    },
+    {
+      "id": 3,
+      "name": "Septoplasty & Turbinoplasty",
+      "slug": "septoplasty"
+    },
+    {
+      "id": 4,
+      "name": "Coblation Tonsillectomy",
+      "slug": "tonsillectomy-surgery"
+    },
+    {
+      "id": 5,
+      "name": "Epley Repositioning Maneuver",
+      "slug": "epley-maneuver"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "city": "New Delhi",
+      "area": "Jasola Vihar",
+      "slug": "jasola"
+    },
+    {
+      "id": 2,
+      "city": "New Delhi",
+      "area": "CR Park",
+      "slug": "cr-park"
+    },
+    {
+      "id": 3,
+      "city": "New Delhi",
+      "area": "Arjun Nagar / Safdarjung",
+      "slug": "arjun-nagar"
+    },
+    {
+      "id": 4,
+      "city": "Haryana",
+      "area": "Palwal",
+      "slug": "palwal"
+    },
+    {
+      "id": 5,
+      "city": "Uttar Pradesh",
+      "area": "Dhampur",
+      "slug": "dhampur"
+    }
+  ]
+}

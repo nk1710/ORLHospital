@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Which ENT Issues Are Most Common in the Summer & How to Prevent Them",
+    "slug": "which-ent-issues-are-most-common-in-the-summer",
+    "content": "\n      <h2>Understanding Summer ENT Conditions</h2>\n      <p>Summer brings seasonal heat, increased swimming pool use, and high AC usage—all of which trigger unique ear, nose, and throat challenges. Dr. (Prof.) Dhirendra Singh Kushwah outlines the most common conditions seen across Delhi NCR clinics:</p>\n      \n      <h3>1. Swimmer's Ear (Otitis Externa)</h3>\n      <p>Water trapped in the ear canal creates a moist environment for bacteria to multiply. Symptoms include pain when touching the outer ear, redness, itching, and yellowish discharge. Prevention tip: Keep ears dry with swimmer's plugs and avoid cotton buds.</p>\n\n      <h3>2. Allergic Rhinitis & Dust Sensitivity</h3>\n      <p>Hot, dry winds and suspended particulate matter in Delhi NCR trigger intense sneezing, water discharge from eyes, and nasal congestion. Modern antihistamines and nasal steroid sprays provide effective relief.</p>\n\n      <h3>3. Sinusitis from AC Temperature Fluctuations</h3>\n      <p>Rapid transitions between 42°C outdoor heat and 20°C air-conditioned indoor air cause mucosal swelling in nasal passages, trapping mucus and creating bacterial sinus infections.</p>\n    ",
+    "category": "Seasonal ENT Care",
+    "status": "published",
+    "author": "Dr. (Prof.) Dhirendra Singh Kushwah",
+    "created_at": "2026-06-15T10:00:00.000Z",
+    "updated_at": "2026-10-24T08:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Tympanoplasty & Eardrum Repair: Modern Microscopic & Endoscopic Techniques",
+    "slug": "tympanoplasty-and-eardrum-repair-techniques",
+    "content": "\n      <h2>Restoring Hearing and Stopping Ear Infections</h2>\n      <p>A perforated eardrum (tympanic membrane perforation) can lead to recurrent ear discharge and progressive conductive hearing loss. Modern tympanoplasty reconstructs the eardrum with high success rates exceeding 95%.</p>\n      \n      <h3>Endoscopic vs Microscopic Ear Surgery</h3>\n      <p>With high-definition transcanal endoscopic ear surgery (TEES), surgical repair is completed directly through the ear canal without requiring visible external skin incisions behind the ear. This ensures faster healing, minimal postoperative pain, and same-day discharge.</p>\n    ",
+    "category": "Ear Surgery (Otology)",
+    "status": "published",
+    "author": "Dr. (Prof.) Dhirendra Singh Kushwah",
+    "created_at": "2026-08-20T11:30:00.000Z",
+    "updated_at": "2026-10-24T08:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Chronic Sinusitis & FESS Surgery: What Patients Need to Know",
+    "slug": "chronic-sinusitis-and-fess-surgery-guide",
+    "content": "\n      <h2>When Medical Treatment Isn't Enough</h2>\n      <p>Functional Endoscopic Sinus Surgery (FESS) is the gold-standard minimally invasive procedure for chronic sinusitis unresponsive to antibiotics and nasal sprays. Using micro-telescopes and precision debriders, natural sinus drainage pathways are widened without external incisions.</p>\n    ",
+    "category": "Nose & Sinus",
+    "status": "published",
+    "author": "Dr. (Prof.) Dhirendra Singh Kushwah",
+    "created_at": "2026-09-10T14:15:00.000Z",
+    "updated_at": "2026-10-24T08:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Snoring, Sleep Apnea and Coblation Tonsillectomy in Children & Adults",
+    "slug": "snoring-sleep-apnea-coblation-tonsillectomy",
+    "content": "\n      <h2>Quiet Nights and Restful Sleep</h2>\n      <p>Loud snoring, daytime fatigue, and mouth breathing frequently indicate obstructive sleep apnea (OSA). Coblation technology uses low-temperature radiofrequency plasma to gently remove obstructive adenotonsillar tissue with virtually zero bleeding and rapid recovery.</p>\n    ",
+    "category": "Throat & Sleep",
+    "status": "published",
+    "author": "Dr. (Prof.) Dhirendra Singh Kushwah",
+    "created_at": "2026-10-05T09:00:00.000Z",
+    "updated_at": "2026-10-24T08:00:00.000Z"
+  }
+]

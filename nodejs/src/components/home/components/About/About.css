@@ -1,0 +1,265 @@
+.about-hospital-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-img-column {
+  position: relative;
+  height: 100%;
+}
+
+.doctor-card-frame {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  position: sticky;
+  top: 100px;
+}
+
+.doctor-img-container {
+  position: relative;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 420px;
+}
+
+.doctor-photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.doctor-experience-ribbon {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: #006d7a;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 109, 122, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ribbon-num {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.ribbon-text {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.doctor-quick-info {
+  padding: 20px;
+}
+
+.about-content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-badge-label {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #006d7a;
+  background: #e6f6f8;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.about-main-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 18px 0;
+}
+
+.doctor-credentials-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #008b9a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.about-bio-text p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+.about-bio-text p strong {
+  color: #0f172a;
+}
+
+.qualifications-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.qual-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+}
+
+.qual-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #e6f6f8;
+  color: #006d7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.qual-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.qual-sub {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.clinical-pillars-box {
+  background: #f0fdfa;
+  border: 1px solid #ccfbf1;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+
+.pillars-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #134e4a;
+}
+
+.about-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.about-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #006d7a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 109, 122, 0.25);
+  transition: all 0.2s ease;
+}
+
+.about-btn-primary:hover {
+  background: #00535d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 109, 122, 0.35);
+}
+
+.about-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.about-btn-outline:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .doctor-card-frame {
+    position: static;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .about-hospital-section {
+    padding: 50px 0;
+  }
+  .about-main-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .doctor-img-container {
+    height: 340px;
+  }
+  .about-action-bar {
+    flex-direction: column;
+  }
+  .about-btn-primary,
+  .about-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,63 @@
+.procedure-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.hospital-table-wrapper {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.hospital-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.hospital-table th {
+  background: #0a1628;
+  color: #ffffff;
+  padding: 16px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.hospital-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.hospital-table tbody tr:hover td {
+  background-color: #f8fafc;
+}
+
+.hospital-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.proc-pill {
+  display: inline-block;
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid #ccfbf1;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .procedure-section {
+    padding: 50px 0;
+  }
+}

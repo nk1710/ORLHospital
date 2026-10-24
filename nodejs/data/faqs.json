@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Where can I consult Dr. (Prof.) Dhirendra Singh Kushwah in South Delhi?",
+    "answer": "Dr. Kushwah consults across premier hospital centers in South Delhi: Jasola Vihar (ORL International Hospital), CR Park (Chittaranjan Park Clinic), and Arjun Nagar (near Safdarjung Enclave).",
+    "category": "Appointments & Locations"
+  },
+  {
+    "id": 2,
+    "question": "What is the recovery time for tympanoplasty (eardrum repair surgery)?",
+    "answer": "Most patients return to light desk work within 3 to 5 days. Complete eardrum healing occurs over 4 to 6 weeks, during which water must be kept strictly out of the operated ear.",
+    "category": "Ear Surgery"
+  },
+  {
+    "id": 3,
+    "question": "Is sinus surgery (FESS) painful?",
+    "answer": "Modern Functional Endoscopic Sinus Surgery is performed under general anesthesia so patients feel zero pain during the procedure. Postoperative discomfort is mild and easily managed with prescribed painkillers for 2 to 3 days.",
+    "category": "Sinus & Nose"
+  },
+  {
+    "id": 4,
+    "question": "What causes sudden vertigo and spinning sensations?",
+    "answer": "The most common cause is Benign Paroxysmal Positional Vertigo (BPPV), where calcium crystals dislodge into inner ear canals. It can be successfully corrected in a single OPD visit using the Epley canalith repositioning maneuver.",
+    "category": "Vertigo & Hearing"
+  },
+  {
+    "id": 5,
+    "question": "How do I book an emergency or OPD consultation?",
+    "answer": "You can book an appointment directly through our online appointment form on this website, or call our 24x7 hospital helpline at +91-9311449825.",
+    "category": "Appointments & Locations"
+  }
+]
