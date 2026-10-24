@@ -71,13 +71,13 @@ const Navbar = () => {
     <>
       <AppointmentModal open={appointmentOpen} onClose={() => setAppointmentOpen(false)} />
 
-      <header className="nav sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all">
-        <div className="nav-inner w-full max-w-[1600px] mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
+      <header className="nav sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all w-full">
+        <div className="nav-inner w-full max-w-[1600px] mx-auto px-3 sm:px-6 flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo */}
           <Link
             href="/"
-            className="nav-logo flex items-center gap-3.5 no-underline group shrink-0"
+            className="nav-logo flex items-center gap-2 sm:gap-3.5 no-underline group shrink min-w-0"
             aria-label="Dr. Dhirendra Singh Kushwah - Home"
           >
             <Image
@@ -85,7 +85,7 @@ const Navbar = () => {
               alt="Dr. (Prof.) Dhirendra Singh Kushwah ENT Specialist & Surgeon"
               width={140}
               height={42}
-              className="w-auto h-9 sm:h-10 shrink-0 object-contain transition-transform group-hover:scale-[1.02]"
+              className="w-auto h-8 sm:h-9 md:h-10 shrink-0 object-contain transition-transform group-hover:scale-[1.02]"
               priority
             />
             <div className="nav-doctor-title">
@@ -356,24 +356,25 @@ const Navbar = () => {
           </nav>
 
           {/* Mobile Menu Hamburger + Quick Actions (<1024px) */}
-          <div className="nav-mobile-group">
+          <div className="nav-mobile-group flex items-center gap-1.5 sm:gap-2 shrink-0">
             <a
               href="tel:+919311449825"
-              className="inline-flex p-2 rounded-lg bg-teal-50 text-teal-700 hover:bg-teal-100 transition"
+              className="hidden sm:inline-flex p-2 rounded-lg bg-teal-50 text-teal-700 hover:bg-teal-100 transition"
               aria-label="Call Hospital"
             >
-              <Phone size={18} />
+              <Phone size={17} />
             </a>
             <button
               type="button"
               onClick={openAppointment}
-              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-teal-600 text-white text-xs font-bold hover:bg-teal-700 transition whitespace-nowrap"
+              className="inline-flex items-center gap-1 px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-lg bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs sm:text-sm font-bold transition whitespace-nowrap shadow-xs"
             >
+              <Calendar size={13} className="hidden xs:inline text-teal-100" />
               <span>Book OPD</span>
             </button>
             <button
               type="button"
-              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
