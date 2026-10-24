@@ -35,15 +35,14 @@ html {
   font-size: 16px;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
+  overflow-x: clip;
   font-family: 'Inter', sans-serif;
   color: var(--navy);
   background: var(--white);

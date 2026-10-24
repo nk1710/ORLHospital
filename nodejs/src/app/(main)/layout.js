@@ -44,7 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="w-full max-w-full overflow-x-hidden">
+    <html lang="en" className="w-full max-w-full overflow-x-clip">
       <head>
         {/* GTM scripts — dataLayer init + container loader */}
         <GTMScript />
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${barlow.variable} ${gilda.variable} w-full max-w-full overflow-x-hidden text-gray-700 relative`}>
+      <body className={`${barlow.variable} ${gilda.variable} w-full max-w-full overflow-x-clip text-gray-700`}>
         <GTMNoScript />
         <GTMProvider />
         <TopBar />
