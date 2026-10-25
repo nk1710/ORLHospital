@@ -3,28 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../ui/SectionTitle";
-import { getPool } from "@/lib/db";
-
-async function getBlogs() {
-  try {
-    const pool = getPool();
-
-    const [rows] = await pool.execute(
-      "SELECT * FROM blogs WHERE status = ? ORDER BY created_at DESC",
-      ["published"]
-    );
-
-    return rows;
-  } catch (error) {
-    console.error("Blog fetch error:", error);
-    return [];
-  }
-}
+import { getAllBlogs } from "@/lib/blog";
 
 export default async function LatestBlogs() {
-  const blogs = await getBlogs();
-  const limitedBlogs = blogs;
-  console.log(limitedBlogs);
+  const blogs = await getAllBlogs();
+  const limitedBlogs = blogs || [];
 
   return (
     <section className="w-full pt-8 md:pt-12 pb-8 bg-slate-50">
@@ -35,8 +18,8 @@ export default async function LatestBlogs() {
 
           {limitedBlogs.map((blog, index) => (
             <Link
-              key={index}
-              href={`blog/${blog.slug}` || "#"}
+              key={blog.slug || index}
+              href={`/blog/${blog.slug}`}
               className="
                 group block bg-white rounded-2xl overflow-hidden
                 shadow-sm hover:shadow-xl

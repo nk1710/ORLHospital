@@ -1,24 +1,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { getPool } from "@/lib/db"
+import { getAllBlogs } from "@/lib/blog";
 
 export const revalidate = 60;
-
-async function getBlogs() {
-  try {
-    const pool = getPool();
-    const [rows] = await pool.execute(
-      "SELECT * FROM blogs WHERE status = ? ORDER BY created_at DESC",
-      ["published"]
-    );
-
-    return rows;
-  } catch (err) {
-    console.error("DB ERROR:", err);
-    return [];
-  }
-}
 
 
 export async function generateMetadata() {
@@ -59,7 +44,7 @@ export async function generateMetadata() {
 }
 
 export default async function BlogPage({ params }) {
-  const blogs = await getBlogs();
+  const blogs = await getAllBlogs();
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [

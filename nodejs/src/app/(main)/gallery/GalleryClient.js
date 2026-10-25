@@ -27,6 +27,35 @@ const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
   ssr: false,
 });
 
+// Helper component for rock-solid, high-performance responsive gallery images (mobile & desktop)
+function GalleryCard({ item, label, onClick, priority = false }) {
+  return (
+    <div
+      onClick={onClick}
+      className="group relative h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border border-slate-800/80 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex items-center justify-center p-2"
+    >
+      <img
+        src={item.src}
+        alt={item.alt || label}
+        loading={priority ? "eager" : "lazy"}
+        decoding="async"
+        className="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-105"
+      />
+
+      <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+        <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+          <ZoomIn className="w-4 h-4" />
+        </span>
+      </div>
+      <div className="absolute bottom-2 left-2 right-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="inline-block px-2.5 py-1 rounded-md bg-slate-950/90 border border-slate-700/60 text-[11px] text-white font-medium truncate max-w-full shadow-xs">
+          {label}
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export default function GalleryClient() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -148,43 +177,13 @@ export default function GalleryClient() {
           {/* Photo Grid — Clean, image-focused UI */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {otItems.map((item, idx) => (
-              <div
+              <GalleryCard
                 key={item.id}
+                item={item}
+                label={`OT Procedure #${idx + 1}`}
                 onClick={() => openLightboxAt(item.src)}
-                className="group relative h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/80 cursor-pointer shadow-xs hover:shadow-xl transition-all"
-              >
-                {/* Ambient Blurred Backdrop */}
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover object-center blur-lg opacity-25 scale-110 pointer-events-none"
-                />
-
-                {/* Main Image: Totally fits inside the div, no image goes outside, complete view */}
-                <div className="absolute inset-1.5 sm:inset-2 flex items-center justify-center">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <ZoomIn className="w-4 h-4" />
-                  </span>
-                </div>
-                <div className="absolute bottom-2 left-2 right-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block px-2.5 py-1 rounded-md bg-slate-950/90 border border-slate-700/60 text-[11px] text-white font-medium truncate max-w-full shadow-xs">
-                    OT Procedure #{idx + 1}
-                  </span>
-                </div>
-              </div>
+                priority={idx < 4}
+              />
             ))}
           </div>
         </section>
@@ -209,43 +208,12 @@ export default function GalleryClient() {
           {/* Photo Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {internationalItems.map((item, idx) => (
-              <div
+              <GalleryCard
                 key={item.id}
+                item={item}
+                label={`International Care #${idx + 1}`}
                 onClick={() => openLightboxAt(item.src)}
-                className="group relative h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/80 cursor-pointer shadow-xs hover:shadow-xl transition-all"
-              >
-                {/* Ambient Blurred Backdrop */}
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover object-center blur-lg opacity-25 scale-110 pointer-events-none"
-                />
-
-                {/* Main Image: Totally fits inside the div, no image goes outside, complete view */}
-                <div className="absolute inset-1.5 sm:inset-2 flex items-center justify-center">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <ZoomIn className="w-4 h-4" />
-                  </span>
-                </div>
-                <div className="absolute bottom-2 left-2 right-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block px-2.5 py-1 rounded-md bg-slate-950/90 border border-slate-700/60 text-[11px] text-white font-medium truncate max-w-full shadow-xs">
-                    International Care #{idx + 1}
-                  </span>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </section>
@@ -283,29 +251,16 @@ export default function GalleryClient() {
               {/* Before Card */}
               <div
                 onClick={() => openLightboxAt("/images/pediatric-cochlear-implant-child-before-surgery.jpeg")}
-                className="group relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 cursor-pointer shadow-xs hover:shadow-xl transition"
+                className="group relative rounded-2xl overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border border-slate-800 cursor-pointer shadow-xs hover:shadow-xl transition"
               >
-                <div
-                  style={{ minHeight: "380px", height: "420px" }}
-                  className="relative w-full"
-                >
-                  <Image
+                <div className="relative w-full h-72 sm:h-96 p-2.5 flex items-center justify-center">
+                  <img
                     src="/images/pediatric-cochlear-implant-child-before-surgery.jpeg"
                     alt="Pediatric cochlear implant patient when boy was small before surgery"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                    className="object-cover blur-lg opacity-25 scale-110 pointer-events-none"
-                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
                   />
-                  <div className="absolute inset-2 flex items-center justify-center">
-                    <Image
-                      src="/images/pediatric-cochlear-implant-child-before-surgery.jpeg"
-                      alt="Small child diagnosed with profound deafness before surgery by Dr Dhirendra Singh Kushwah"
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </div>
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-bold shadow-md uppercase tracking-wider">
                       Before Surgery (Small Child)
@@ -327,29 +282,16 @@ export default function GalleryClient() {
               {/* After Card */}
               <div
                 onClick={() => openLightboxAt("/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg")}
-                className="group relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 cursor-pointer shadow-xs hover:shadow-xl transition"
+                className="group relative rounded-2xl overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border border-slate-800 cursor-pointer shadow-xs hover:shadow-xl transition"
               >
-                <div
-                  style={{ minHeight: "380px", height: "420px" }}
-                  className="relative w-full"
-                >
-                  <Image
+                <div className="relative w-full h-72 sm:h-96 p-2.5 flex items-center justify-center">
+                  <img
                     src="/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg"
                     alt="Pediatric cochlear implant patient post-activation smiling recovery"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                    className="object-cover blur-lg opacity-25 scale-110 pointer-events-none"
-                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
                   />
-                  <div className="absolute inset-2 flex items-center justify-center">
-                    <Image
-                      src="/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg"
-                      alt="Happy child smiling after successful cochlear implant activation by Dr Dhirendra Singh Kushwah"
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </div>
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold shadow-md uppercase tracking-wider">
                       After Surgery &amp; Activation
@@ -448,43 +390,12 @@ export default function GalleryClient() {
           {/* Photo Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {patientItems.map((item, idx) => (
-              <div
+              <GalleryCard
                 key={item.id}
+                item={item}
+                label={`Patient Care #${idx + 1}`}
                 onClick={() => openLightboxAt(item.src)}
-                className="group relative h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/80 cursor-pointer shadow-xs hover:shadow-xl transition-all"
-              >
-                {/* Ambient Blurred Backdrop */}
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover object-center blur-lg opacity-25 scale-110 pointer-events-none"
-                />
-
-                {/* Main Image: Totally fits inside the div, no image goes outside, complete view */}
-                <div className="absolute inset-1.5 sm:inset-2 flex items-center justify-center">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <ZoomIn className="w-4 h-4" />
-                  </span>
-                </div>
-                <div className="absolute bottom-2 left-2 right-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block px-2.5 py-1 rounded-md bg-slate-950/90 border border-slate-700/60 text-[11px] text-white font-medium truncate max-w-full shadow-xs">
-                    Patient Care #{idx + 1}
-                  </span>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </section>
@@ -509,43 +420,12 @@ export default function GalleryClient() {
           {/* Photo Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {conferenceItems.map((item, idx) => (
-              <div
+              <GalleryCard
                 key={item.id}
+                item={item}
+                label={`Global Trip #${idx + 1}`}
                 onClick={() => openLightboxAt(item.src)}
-                className="group relative h-48 sm:h-56 lg:h-64 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/80 cursor-pointer shadow-xs hover:shadow-xl transition-all"
-              >
-                {/* Ambient Blurred Backdrop */}
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover object-center blur-lg opacity-25 scale-110 pointer-events-none"
-                />
-
-                {/* Main Image: Totally fits inside the div, no image goes outside, complete view */}
-                <div className="absolute inset-1.5 sm:inset-2 flex items-center justify-center">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <ZoomIn className="w-4 h-4" />
-                  </span>
-                </div>
-                <div className="absolute bottom-2 left-2 right-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block px-2.5 py-1 rounded-md bg-slate-950/90 border border-slate-700/60 text-[11px] text-white font-medium truncate max-w-full shadow-xs">
-                    Global Trip #{idx + 1}
-                  </span>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </section>
@@ -570,43 +450,12 @@ export default function GalleryClient() {
           {/* Photo Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             {teamItems.map((item, idx) => (
-              <div
+              <GalleryCard
                 key={item.id}
+                item={item}
+                label={`Hospital Team & Leadership #${idx + 1}`}
                 onClick={() => openLightboxAt(item.src)}
-                className="group relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/80 cursor-pointer shadow-xs hover:shadow-xl transition-all"
-              >
-                {/* Ambient Blurred Backdrop */}
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover object-center blur-lg opacity-25 scale-110 pointer-events-none"
-                />
-
-                {/* Main Image: Totally fits inside the div, no image goes outside, complete view */}
-                <div className="absolute inset-2 flex items-center justify-center">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                    className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-white/95 text-teal-800 shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <ZoomIn className="w-4 h-4" />
-                  </span>
-                </div>
-                <div className="absolute bottom-3 left-3 right-3 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block px-3 py-1.5 rounded-lg bg-slate-950/90 border border-slate-700/60 text-xs text-white font-semibold shadow-xs">
-                    Hospital Team &amp; Leadership #{idx + 1}
-                  </span>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </section>

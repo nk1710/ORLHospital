@@ -1,5 +1,22 @@
 // /lib/blog.js
 import { getPool } from "./db";
+import fallbackBlogs from "../../data/blogs.json";
+
+export async function getAllBlogs() {
+  try {
+    const pool = getPool();
+    const [rows] = await pool.execute(
+      "SELECT * FROM blogs WHERE status = ? ORDER BY created_at DESC",
+      ["published"]
+    );
+    if (rows && rows.length > 0) {
+      return rows;
+    }
+  } catch (error) {
+    console.error("DB Error in getAllBlogs:", error?.message);
+  }
+  return fallbackBlogs || [];
+}
 
 export async function getBlogFromDB(slug) {
   try {
@@ -13,13 +30,16 @@ export async function getBlogFromDB(slug) {
       [slug]
     );
 
-    if (!rows.length) return null;
-
-    return rows[0];
+    if (rows && rows.length > 0) {
+      return rows[0];
+    }
   } catch (error) {
-    console.error("DB Error:", error);
-    return null;
+    console.error("DB Error:", error?.message);
   }
+
+  // Fallback to static blogs when DB has no rows or is disconnected
+  const fallback = fallbackBlogs.find((b) => b.slug === slug);
+  return fallback || null;
 }
 
 /**

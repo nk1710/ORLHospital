@@ -1,39 +1,18 @@
 import { cache } from "react";
 import { generateSchema } from "@/lib/schemaGenerator";
 import { notFound } from "next/navigation";
-import { getPool } from "@/lib/db";
-import { formatBlogContent } from "@/lib/blog";
+import { getBlogFromDB, getAllBlogs, formatBlogContent } from "@/lib/blog";
 
 export const revalidate = 60; // ISR — revalidate every 60s
 
 export const getBlog = cache(async (slug) => {
-  try {
-    if (!slug) return null;
-
-    const pool = getPool(); // ✅ inside try
-
-    const [rows] = await pool.execute(
-      `SELECT * FROM blogs WHERE slug = ? AND status = ? LIMIT 1`,
-      [slug, "published"]
-    );
-
-    return rows[0] ?? null;
-  } catch (error) {
-    console.error("DB Error:", error?.message, error?.stack);
-    return null;
-  }
+  if (!slug) return null;
+  return await getBlogFromDB(slug);
 });
 
 export async function generateStaticParams() {
-  try {
-    const pool = getPool();
-    const [rows] = await pool.execute(
-      "SELECT slug FROM blogs WHERE status = 'published'"
-    );
-    return rows.map((row) => ({ slug: row.slug }));
-  } catch {
-    return [];
-  }
+  const blogs = await getAllBlogs();
+  return (blogs || []).map((blog) => ({ slug: blog.slug }));
 }
 
 export async function generateMetadata({ params }) {
