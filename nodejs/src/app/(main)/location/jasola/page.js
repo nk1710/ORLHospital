@@ -82,31 +82,30 @@ const Adddres_one = () => (
 export async function generateMetadata() {
   return {
     title:
-      "Best ENT Surgeon in Jasola, South Delhi | ENT Specialist | Dr. Dhirendra Singh Kushwah",
+      "Best ENT Doctor & Surgeon in Jasola, South Delhi | Dr. Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, experienced ENT specialist and surgeon in Jasola Vihar, South Delhi. Expert treatment for ear, nose, throat, sinus, hearing and voice conditions at ORL International Group of Hospitals.",
+      "Consult Dr. Dhirendra Singh Kushwah, top-rated ENT doctor & specialist surgeon in Jasola Vihar, South Delhi. Advanced care for ear, nose, throat, sinus & hearing disorders.",
 
     keywords: [
-      "best ENT surgeon in Delhi",
+      "best ENT doctor in Jasola",
+      "best ENT doctor in Jasola Vihar",
+      "best ENT doctor in South Delhi",
       "best ENT surgeon in Jasola",
-      "best ENT surgeon in South Delhi",
-      "best ENT specialist in Delhi",
       "ENT specialist in Jasola",
       "ENT doctor in Jasola",
       "ENT surgeon in Jasola",
       "ENT specialist in Jasola Vihar",
       "ENT doctor in Jasola Vihar",
       "ENT surgeon in Jasola Vihar",
+      "best ENT surgeon in Delhi",
       "ENT specialist in South Delhi",
       "ENT doctor in South Delhi",
       "ENT surgeon in South Delhi",
       "ENT clinic in Jasola",
       "ENT clinic in Jasola Vihar",
-      "best ENT doctor in Jasola Vihar",
       "sinus specialist in Jasola",
       "sinus surgeon in South Delhi",
-      "sinus surgery in South Delhi",
       "ear specialist in South Delhi",
       "hearing loss specialist in Delhi",
       "cochlear implant surgeon in Delhi",
@@ -128,10 +127,10 @@ export async function generateMetadata() {
 
     openGraph: {
       title:
-        "Best ENT Surgeon in Jasola, South Delhi | Dr. Dhirendra Singh Kushwah",
+        "Best ENT Doctor & Surgeon in Jasola, South Delhi | Dr. Dhirendra Singh Kushwah",
 
       description:
-        "Experienced ENT specialist and surgeon providing comprehensive ear, nose and throat care in Jasola Vihar, South Delhi.",
+        "Top-rated ENT doctor & specialist surgeon providing advanced ear, nose, throat, and sinus care in Jasola Vihar, South Delhi.",
 
       url: "https://www.drdhirendrasinghkushwah.in/location/jasola",
 
@@ -467,7 +466,7 @@ export default async function JasolaPage() {
             </span>
 
             <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-              Best ENT Surgeon in Jasola, South Delhi
+              Best ENT Doctor & Surgeon in Jasola, South Delhi
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
