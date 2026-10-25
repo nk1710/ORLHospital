@@ -6358,10 +6358,16 @@ h5 {
 }
 .about-banner {
   background: url(/images/stethoscope-copy-space.webp);
-  height: 500px;
+  height: 480px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 640px) {
+  .about-banner {
+    height: 240px;
+    background-position: center center;
+  }
 }
 .blog-content {
   font-size: 1.05rem;

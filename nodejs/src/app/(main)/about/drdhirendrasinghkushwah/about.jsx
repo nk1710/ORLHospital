@@ -16,7 +16,7 @@ export default function DoctorImage({ src, alt, name, qualification }) {
         <img
           src={src}
           alt={alt}
-          className="w-120 h-80 object-cover border-4 border-teal-400 shadow-lg"
+          className="w-full max-w-sm sm:max-w-md h-auto max-h-80 object-contain sm:object-cover rounded-xl border-4 border-teal-400 shadow-lg"
           onError={() => setImgError(true)}
         />
       ) : (

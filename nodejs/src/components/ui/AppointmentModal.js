@@ -187,27 +187,27 @@ export default function AppointmentModal({ open, onClose }) {
                             name="department"
                             value={formData.department}
                             onChange={handleChange}
-                            className={inputStyle + " pr-10 cursor-pointer appearance-none"}
+                            className={inputStyle + " pr-10 cursor-pointer appearance-none text-white [&>option]:bg-slate-900 [&>option]:text-white"}
                         >
-                            <option value="">Select Department</option>
-                            <option value="Ear (Otology)">Ear (Otology)</option>
-                            <option value="Cochlear and Hearing implants">
+                            <option value="" className="bg-slate-900 text-white">Select Department</option>
+                            <option value="Ear (Otology)" className="bg-slate-900 text-white">Ear (Otology)</option>
+                            <option value="Cochlear and Hearing implants" className="bg-slate-900 text-white">
                                 Cochlear Implants
                             </option>
-                            <option value="Nose and Sinus (Rhinology)">
+                            <option value="Nose and Sinus (Rhinology)" className="bg-slate-900 text-white">
                                 Nose and Sinus
                             </option>
-                            <option value="Voice and Throat (Laryngology)">
+                            <option value="Voice and Throat (Laryngology)" className="bg-slate-900 text-white">
                                 Voice and Throat
                             </option>
-                            <option value="Dizziness and Vertigo (Neuro-otology)">
+                            <option value="Dizziness and Vertigo (Neuro-otology)" className="bg-slate-900 text-white">
                                 Dizziness / Vertigo
                             </option>
-                            <option value="Paediatric ENT Diagnostics">
+                            <option value="Paediatric ENT Diagnostics" className="bg-slate-900 text-white">
                                 Paediatric ENT
                             </option>
-                            <option value="Head and Neck">Head and Neck</option>
-                            <option value="Skull Base Surgery">Skull Base Surgery</option>
+                            <option value="Head and Neck" className="bg-slate-900 text-white">Head and Neck</option>
+                            <option value="Skull Base Surgery" className="bg-slate-900 text-white">Skull Base Surgery</option>
                         </select>
                         <ChevronDown strokeWidth={1} className={iconStyle} />
                     </div>
@@ -312,6 +312,15 @@ export default function AppointmentModal({ open, onClose }) {
           height: 1px;
           background: linear-gradient(to right, transparent, #e2e8f0, transparent);
           margin: 1.25rem 0;
+        }
+
+        .appt-modal select {
+          color: #ffffff !important;
+        }
+        .appt-modal select option {
+          background-color: #0f172a !important;
+          color: #ffffff !important;
+          padding: 8px 12px;
         }
 
         /* ── Form grid ── */

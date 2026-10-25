@@ -252,7 +252,9 @@
 
 @media (max-width: 640px) {
   .doctor-img-container {
-    height: 340px;
+    height: auto;
+    min-height: 360px;
+    aspect-ratio: 4 / 5;
   }
   .about-action-bar {
     flex-direction: column;

@@ -44,18 +44,19 @@ const About = () => (
         {/* DOCTOR IMAGE & CREDENTIAL BLOCK */}
         <div className="about-img-column lg:col-span-5">
           <div className="doctor-card-frame bg-slate-50 border border-slate-200/80 rounded-2xl p-4 shadow-sm relative">
-            <div className="doctor-img-container relative rounded-xl overflow-hidden aspect-[4/5] bg-slate-100">
+            <div className="doctor-img-container relative rounded-xl overflow-hidden aspect-[4/5] bg-gradient-to-b from-teal-50 to-slate-100">
               <Image
                 src="/images/banner/dhirendra kushwah.webp"
                 alt="Dr. (Prof.) Dhirendra Singh Kushwah - Best ENT Specialist and Surgeon in Delhi"
                 fill
                 sizes="(max-width: 768px) 100vw, 420px"
-                className="object-cover object-top"
+                className="object-contain object-bottom sm:object-cover sm:object-top"
                 priority
+                unoptimized
               />
-              <div className="doctor-experience-ribbon absolute bottom-4 left-4 bg-teal-800 text-white px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
-                <span className="ribbon-num text-2xl font-black">25+</span>
-                <span className="ribbon-text text-xs font-semibold leading-tight">Years Surgical<br />Experience</span>
+              <div className="doctor-experience-ribbon absolute bottom-3 left-3 bg-teal-800/95 backdrop-blur-xs text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl shadow-lg flex items-center gap-2">
+                <span className="ribbon-num text-xl sm:text-2xl font-black">25+</span>
+                <span className="ribbon-text text-[10px] sm:text-xs font-semibold leading-tight">Years Surgical<br />Experience</span>
               </div>
             </div>
 
