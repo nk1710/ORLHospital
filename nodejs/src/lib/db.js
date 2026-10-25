@@ -1,49 +1,120 @@
 // lib/db.js
 import mysql from "mysql2/promise";
 import bcrypt from "bcrypt";
+import fallbackBlogs from "../../data/blogs.json";
 
 let pool;
 let migrationsPromise = null;
 
 async function checkAndRunMigrations(dbPool) {
-    try {
-        console.log("[DB Migration] Checking columns of users table...");
-        const [columns] = await dbPool.query("DESCRIBE users;");
-        const hasRoleColumn = columns.some(c => c.Field === 'role');
+  try {
+    // 1. Ensure users table exists
+    await dbPool.query(`
+      CREATE TABLE IF NOT EXISTS users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(255) DEFAULT 'Dr. (Prof.) Dhirendra Singh Kushwah',
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password_hash VARCHAR(255) NOT NULL,
+        role VARCHAR(50) DEFAULT 'SUPER_ADMIN',
+        is_active TINYINT DEFAULT 1,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `);
 
-        if (!hasRoleColumn) {
-            console.log("[DB Migration] Adding role column to users table...");
-            await dbPool.query("ALTER TABLE users ADD COLUMN role VARCHAR(50) DEFAULT 'USER' AFTER password_hash;");
-            console.log("[DB Migration] role column added successfully.");
-        } else {
-            console.log("[DB Migration] role column already exists.");
-        }
-
-        //const email = 'drdhirendrasinghent@gmail.com';
-        //const password = 'admin123';
-        const saltRounds = 10;
-        //const passwordHash = await bcrypt.hash(password, saltRounds);
-
-        const [users] = await dbPool.query("SELECT id FROM users WHERE email = ?;", [email]);
-
-        if (users.length > 0) {
-            console.log(`[DB Migration] User ${email} exists. Updating to SUPER_ADMIN with hashed password...`);
-            await dbPool.query(
-                "UPDATE users SET role = 'SUPER_ADMIN', password_hash = ?, is_active = 1 WHERE email = ?;",
-                [passwordHash, email]
-            );
-            console.log("[DB Migration] User updated successfully.");
-        } else {
-            console.log(`[DB Migration] User ${email} does not exist. Creating new SUPER_ADMIN user...`);
-            await dbPool.query(
-                "INSERT INTO users (name, email, password_hash, role, is_active) VALUES (?, ?, ?, ?, ?);",
-                ['drdhirendrademo', email, passwordHash, 'SUPER_ADMIN', 1]
-            );
-            console.log("[DB Migration] User created successfully.");
-        }
-    } catch (err) {
-        console.error("[DB Migration] Migration failed:", err);
+    // Ensure super admin user exists
+    const adminEmail = "drdhirendrasinghent@gmail.com";
+    const [existingUsers] = await dbPool.query("SELECT id FROM users WHERE email = ? LIMIT 1", [adminEmail]);
+    if (!existingUsers || existingUsers.length === 0) {
+      const defaultHash = await bcrypt.hash("admin123", 10);
+      await dbPool.query(
+        "INSERT INTO users (name, email, password_hash, role, is_active) VALUES (?, ?, ?, 'SUPER_ADMIN', 1)",
+        ["Dr. (Prof.) Dhirendra Singh Kushwah", adminEmail, defaultHash]
+      );
     }
+
+    // 2. Ensure enquiries table exists
+    await dbPool.query(`
+      CREATE TABLE IF NOT EXISTS enquiries (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        type VARCHAR(50) DEFAULT 'appointment',
+        name VARCHAR(255) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        email VARCHAR(255),
+        city VARCHAR(255),
+        department VARCHAR(255) DEFAULT 'General ENT',
+        message TEXT,
+        status VARCHAR(50) DEFAULT 'New',
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `);
+
+    // 3. Ensure callback_requests table exists
+    await dbPool.query(`
+      CREATE TABLE IF NOT EXISTS callback_requests (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        city VARCHAR(255),
+        department VARCHAR(255) DEFAULT 'General ENT',
+        message TEXT,
+        status VARCHAR(50) DEFAULT 'New',
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `);
+
+    // 4. Ensure blogs table exists
+    await dbPool.query(`
+      CREATE TABLE IF NOT EXISTS blogs (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(500) NOT NULL,
+        slug VARCHAR(500) UNIQUE NOT NULL,
+        excerpt TEXT,
+        featured_image VARCHAR(500),
+        category VARCHAR(100) DEFAULT 'General ENT',
+        content LONGTEXT NOT NULL,
+        author_name VARCHAR(255) DEFAULT 'Dr. (Prof.) Dhirendra Singh Kushwah',
+        status VARCHAR(50) DEFAULT 'published',
+        featured TINYINT DEFAULT 0,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `);
+
+    // Seed blogs if table has 0 rows
+    const [existingBlogs] = await dbPool.query("SELECT COUNT(*) as count FROM blogs");
+    if (existingBlogs && existingBlogs[0]?.count === 0 && Array.isArray(fallbackBlogs)) {
+      for (const b of fallbackBlogs) {
+        await dbPool.query(
+          `INSERT IGNORE INTO blogs (title, slug, excerpt, featured_image, category, content, author_name, status, featured, created_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+          [
+            b.title,
+            b.slug,
+            b.excerpt || "",
+            b.featured_image || "/images/fallback.jpg",
+            b.category || "General ENT",
+            b.content || "",
+            b.author_name || b.author || "Dr. (Prof.) Dhirendra Singh Kushwah",
+            b.status || "published",
+            b.featured ? 1 : 0,
+            b.created_at ? new Date(b.created_at) : new Date(),
+          ]
+        );
+      }
+    }
+
+    // 5. Ensure sessions table exists
+    await dbPool.query(`
+      CREATE TABLE IF NOT EXISTS sessions (
+        id VARCHAR(128) PRIMARY KEY,
+        user_id INT,
+        expires_at DATETIME,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `);
+  } catch (err) {
+    console.warn("[DB Migration] Table auto-provision note:", err.message);
+  }
 }
 
 export function getPool() {
@@ -76,17 +147,10 @@ export function getPool() {
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
         waitForConnections: true,
-        connectionLimit: 2,
+        connectionLimit: 4,
         connectTimeout: 10000,
     });
-console.log("[DB ENV CHECK]", {
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT,
-  passwordExists: !!process.env.DB_PASSWORD,
-  passwordLength: process.env.DB_PASSWORD?.length
-});
+
     if (!migrationsPromise) {
         migrationsPromise = checkAndRunMigrations(pool);
     }

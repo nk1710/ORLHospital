@@ -59,9 +59,9 @@ export default function LoginPage() {
 
               {/* Error */}
               {state?.error && (
-                <p className="text-sm text-red-500 text-center">
+                <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600 text-center font-medium">
                   {state.error}
-                </p>
+                </div>
               )}
 
               {/* Button */}
@@ -83,19 +83,6 @@ export default function LoginPage() {
                   "Login to Hospital CMS"
                 )}
               </Button>
-
-              {/* Local Dev Credentials Helper */}
-              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-1 text-slate-600">
-                <div className="font-semibold text-slate-800">Admin Login Credentials:</div>
-                <div className="flex justify-between">
-                  <span>Email:</span>
-                  <code className="text-teal-700 font-bold select-all">drdhirendrasinghent@gmail.com</code>
-                </div>
-                <div className="flex justify-between">
-                  <span>Password:</span>
-                  <code className="text-teal-700 font-bold select-all">admin123</code>
-                </div>
-              </div>
             </form>
 
             <p className="text-center text-sm text-gray-500">

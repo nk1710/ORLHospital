@@ -16,8 +16,8 @@ export default function StatsSection({ stats = {} }) {
   const cards = [
     {
       title: "Total Patient Enquiries",
-      value: stats.totalEnquiries ?? 8,
-      subtext: `${stats.newLeadsCount ?? 2} new requiring attention`,
+      value: stats.totalEnquiries !== undefined ? stats.totalEnquiries : "—",
+      subtext: `${stats.newLeadsCount ?? 0} new requiring attention`,
       icon: MessageSquare,
       color: "text-teal-600",
       bg: "bg-teal-50",
@@ -27,7 +27,7 @@ export default function StatsSection({ stats = {} }) {
     },
     {
       title: "Callback Requests",
-      value: stats.callbackCount ?? 3,
+      value: stats.callbackCount !== undefined ? stats.callbackCount : "—",
       subtext: "Urgent phone enquiries",
       icon: PhoneCall,
       color: "text-amber-600",
@@ -38,7 +38,7 @@ export default function StatsSection({ stats = {} }) {
     },
     {
       title: "Published Medical Blogs",
-      value: stats.blogsCount ?? 24,
+      value: stats.blogsCount ?? 8,
       subtext: "Clinical guides & SEO articles",
       icon: FileText,
       color: "text-teal-700",

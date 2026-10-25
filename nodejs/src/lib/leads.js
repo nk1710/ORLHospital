@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getPool } from "./db";
+import { getAllBlogs } from "./blog";
 
 const DATA_FILE = path.resolve(process.cwd(), "data", "leads.json");
 
@@ -88,31 +89,64 @@ export async function recordLead({
 export async function getAllLeads() {
   const localLeads = readLocalLeads();
 
-  // Try fetching DB leads and merge
+  // Try fetching DB leads from enquiries & callback_requests and merge
   try {
     const pool = getPool();
-    const [rows] = await pool.execute("SELECT * FROM enquiries ORDER BY id DESC LIMIT 50");
-    if (Array.isArray(rows) && rows.length > 0) {
-      const dbLeads = rows.map((r) => ({
-        id: `DB-${r.id}`,
-        name: r.name,
-        phone: r.phone || r.number || "",
-        email: r.email || "",
-        city: r.city || "",
-        department: r.department || "General ENT",
-        message: r.message || "",
-        type: r.type || "appointment",
-        status: r.status || "New",
-        created_at: r.created_at || new Date().toISOString(),
-      }));
 
-      // Combine DB leads with local leads (avoiding duplicates by phone+name)
-      const existingKeys = new Set(localLeads.map((l) => `${l.name}_${l.phone}`));
-      for (const dbl of dbLeads) {
-        if (!existingKeys.has(`${dbl.name}_${dbl.phone}`)) {
-          localLeads.push(dbl);
+    // 1. Enquiries
+    try {
+      const [rows] = await pool.execute("SELECT * FROM enquiries ORDER BY id DESC LIMIT 100");
+      if (Array.isArray(rows) && rows.length > 0) {
+        const dbLeads = rows.map((r) => ({
+          id: `DB-${r.id}`,
+          name: r.name,
+          phone: r.phone || r.number || "",
+          email: r.email || "",
+          city: r.city || "",
+          department: r.department || "General ENT",
+          message: r.message || "",
+          type: r.type || "appointment",
+          status: r.status || "New",
+          created_at: r.created_at ? new Date(r.created_at).toISOString() : new Date().toISOString(),
+        }));
+
+        const existingKeys = new Set(localLeads.map((l) => `${l.name}_${l.phone}`));
+        for (const dbl of dbLeads) {
+          if (!existingKeys.has(`${dbl.name}_${dbl.phone}`)) {
+            localLeads.push(dbl);
+          }
         }
       }
+    } catch (enqErr) {
+      // Table may not have been created yet
+    }
+
+    // 2. Callback Requests
+    try {
+      const [cbRows] = await pool.execute("SELECT * FROM callback_requests ORDER BY id DESC LIMIT 100");
+      if (Array.isArray(cbRows) && cbRows.length > 0) {
+        const cbLeads = cbRows.map((r) => ({
+          id: `CB-${r.id}`,
+          name: r.name,
+          phone: r.phone || "",
+          email: "",
+          city: r.city || "",
+          department: r.department || "General ENT",
+          message: r.message || "Urgent Callback Requested",
+          type: "callback",
+          status: r.status || "New",
+          created_at: r.created_at ? new Date(r.created_at).toISOString() : new Date().toISOString(),
+        }));
+
+        const existingKeys = new Set(localLeads.map((l) => `${l.name}_${l.phone}`));
+        for (const cbl of cbLeads) {
+          if (!existingKeys.has(`${cbl.name}_${cbl.phone}`)) {
+            localLeads.push(cbl);
+          }
+        }
+      }
+    } catch (cbErr) {
+      // Table may not have been created yet
     }
   } catch (e) {
     // DB not available, use local store
@@ -122,14 +156,38 @@ export async function getAllLeads() {
 }
 
 export async function updateLeadStatus(id, newStatus) {
+  let updated = false;
+
+  // 1. Update in local storage
   const leads = readLocalLeads();
   const index = leads.findIndex((l) => l.id === id);
   if (index !== -1) {
     leads[index].status = newStatus;
     writeLocalLeads(leads);
-    return true;
+    updated = true;
   }
-  return false;
+
+  // 2. Update in MySQL Database
+  try {
+    const pool = getPool();
+    if (typeof id === "string" && id.startsWith("DB-")) {
+      const dbId = id.replace("DB-", "");
+      await pool.execute("UPDATE enquiries SET status = ? WHERE id = ?", [newStatus, dbId]);
+      updated = true;
+    } else if (typeof id === "string" && id.startsWith("CB-")) {
+      const cbId = id.replace("CB-", "");
+      await pool.execute("UPDATE callback_requests SET status = ? WHERE id = ?", [newStatus, cbId]);
+      updated = true;
+    } else {
+      // Try both by ID
+      await pool.execute("UPDATE enquiries SET status = ? WHERE id = ?", [newStatus, id]).catch(() => {});
+      await pool.execute("UPDATE callback_requests SET status = ? WHERE id = ?", [newStatus, id]).catch(() => {});
+    }
+  } catch (dbErr) {
+    console.warn("[Leads Service] Could not update DB lead status:", dbErr.message);
+  }
+
+  return updated;
 }
 
 export async function getLiveDashboardMetrics() {
@@ -184,13 +242,21 @@ export async function getLiveDashboardMetrics() {
     });
   }
 
+  let blogsCount = 8;
+  try {
+    const b = await getAllBlogs();
+    if (Array.isArray(b) && b.length > 0) {
+      blogsCount = b.length;
+    }
+  } catch {}
+
   return {
     totalEnquiries,
     newLeadsCount,
     callbackCount,
     specialtiesCount: 15,
     branchesCount: 5,
-    blogsCount: 24,
+    blogsCount,
     faqsCount: 18,
     deptCounts,
     branchCounts,
