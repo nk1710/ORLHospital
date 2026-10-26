@@ -36,9 +36,9 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
 */
 export async function generateMetadata() {
   return {
-    title: "ENT Specialist in Delhi | Sinus, Hearing Loss & Vertigo | Dr. Dhirendra Singh Kushwah",
+    title: "Best ENT Specialist in Delhi | Dr. Dhirendra Singh Kushwah",
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, a leading ENT Specialist, ENT Doctor & ENT Surgeon in Delhi(Jasola Vihar/Sarita Vihar, CR Park, Safadarjung Enclave). Expert treatment for sinus disorders, hearing loss, vertigo, cochlear implants, and advanced ENT care. Book your appointment today.",
+      "Consult Dr. Dhirendra Singh Kushwah, top ENT specialist & surgeon in Delhi (Jasola & CR Park). Expert care for sinus, ear, hearing & vertigo. Book appointment.",
     keywords: [
       "Best specialist in Delhi",
       "Top ENT specialist in Delhi",
@@ -67,9 +67,9 @@ export async function generateMetadata() {
       canonical: "https://www.drdhirendrasinghkushwah.in/"
     },
     openGraph: {
-      title: "ENT Specialist & Otorhinolaryngology Surgeon in Delhi NCR | Dr. Kushwah",
+      title: "Best ENT Specialist in Delhi | Dr. Dhirendra Singh Kushwah",
       description:
-        "Expert ENT (Otorhinolaryngology) care in South Delhi. Dr. Dhirendra Singh Kushwah is a leading ENT specialist for vertigo, head-neck, allergy and sinus treatments in Jasola, CR Park, and NCR.",
+        "Consult Dr. Dhirendra Singh Kushwah, top ENT specialist & surgeon in Delhi (Jasola & CR Park). Expert care for sinus, ear, hearing & vertigo.",
       url: "https://www.drdhirendrasinghkushwah.in/",
       type: "website",
       images: [

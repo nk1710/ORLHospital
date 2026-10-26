@@ -25,6 +25,17 @@ const gilda = Gilda_Display({
 });
 
 export const metadata = {
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.ico", sizes: "16x16" },
+    ],
+    apple: [
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   verification: {
     google: "YKYIuUZB4kIbBS87Jm9egPfAsKsjQ9PmfMY4jgmhxcc",
   },
@@ -46,6 +57,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="w-full max-w-full overflow-x-clip">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         {/* GTM scripts — dataLayer init + container loader */}
         <GTMScript />
         <script
