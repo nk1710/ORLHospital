@@ -122,7 +122,7 @@ const Specialities = () => (
         </h2>
 
         <p className="specialities-intro text-base text-slate-600 mt-3 leading-relaxed">
-          <strong>Dr. (Prof.) Dhirendra Singh Kushwah</strong> offers state-of-the-art diagnostic evaluations and cutting-edge minimally invasive microsurgery across all subspecialties of Otorhinolaryngology.
+          Dr. (Prof.) Dhirendra Singh Kushwah offers state-of-the-art diagnostic evaluations and cutting-edge minimally invasive microsurgery across all subspecialties of Otorhinolaryngology.
         </p>
       </div>
 

@@ -11,7 +11,7 @@ const CTASection = () => (
         <h2>Book Your ENT Consultation in Delhi Today</h2>
         <p>
           Don't let ear, nose, or throat (ENT) problems go undiagnosed. Consult{' '}
-          <strong>Dr. (Prof.) Dhirendra Singh Kushwah</strong> — Senior ENT Specialist &amp;
+          Dr. (Prof.) Dhirendra Singh Kushwah — Senior ENT Specialist &amp;
           Head-Neck Surgeon in Delhi for accurate diagnosis and evidence-based surgical treatment at Jasola Vihar, CR Park, and Arjun Nagar (Safdarjung Enclave).
         </p>
 

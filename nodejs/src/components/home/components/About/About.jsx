@@ -61,9 +61,9 @@ const About = () => (
             </div>
 
             <div className="doctor-quick-info mt-4 pt-3 border-t border-slate-200/60">
-              <h3 className="m-0 text-slate-900 font-bold text-lg" itemProp="name">
+              <p className="m-0 text-slate-900 font-bold text-lg" itemProp="name">
                 Dr. (Prof.) Dhirendra Singh Kushwah
-              </h3>
+              </p>
               <p className="text-teal-800 text-xs font-semibold m-0 mt-0.5">
                 Senior Consultant ENT &amp; Head-Neck Surgeon
               </p>
@@ -106,7 +106,7 @@ const About = () => (
               <strong>Dr. (Prof.) Dhirendra Singh Kushwah</strong> is a renowned <strong>ENT Specialist, ENT Doctor, and Head &amp; Neck Surgeon in Delhi</strong> with more than 25 years of surgical mastery. He provides comprehensive diagnostic and operative care to patients from South Delhi (Jasola, CR Park, Safdarjung Enclave), Delhi NCR, across India, and international patients.
             </p>
             <p>
-              He completed his <strong>MBBS from Jiwaji University, Gwalior (1999)</strong> and earned his <strong>MS in Otorhinolaryngology from Rani Durgawati University, Jabalpur (2005)</strong>. A pioneer in minimally invasive techniques, Dr. Kushwah specializes in pain-free packless septoplasty, stitchless ear microsurgery, cochlear bionic implants, and skull base surgery.
+              He completed his <strong>MBBS</strong> (Jiwaji University, 1999) and earned his <strong>MS in ENT (Otorhinolaryngology)</strong> from Rani Durgawati University, Jabalpur (2005). A pioneer in minimally invasive techniques, Dr. Kushwah specializes in pain-free packless septoplasty, stitchless ear microsurgery, cochlear bionic implants, and skull base surgery.
             </p>
           </div>
 

@@ -48,7 +48,7 @@ export default function Departments() {
       link: "/specialities/cochlear-hearing-implants",
     },
     {
-      title: "Skull Base Surgery",
+      title: "Skull Base Unit",
       img: "/images/skull.webp",
       icon: "/images/icon5.png",
       description:
