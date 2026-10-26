@@ -78,9 +78,9 @@ const GMBBar = () => {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Calendar className="text-teal-300 w-5 h-5" />
-              <h3 className="text-white text-lg md:text-xl font-bold m-0">
+              <h2 className="text-white text-lg md:text-xl font-bold m-0">
                 Fast-Track OPD &amp; Surgery Consultation
-              </h3>
+              </h2>
             </div>
             <p className="text-slate-300 text-xs md:text-sm m-0">
               Consult Dr. (Prof.) Dhirendra Singh Kushwah at Jasola Vihar, CR Park, or Arjun Nagar

@@ -130,9 +130,9 @@ const About = () => (
 
           {/* CLINICAL EXCELLENCE BULLETS */}
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 mb-2.5">
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-800 mb-2.5">
               Key Surgical Milestones:
-            </h4>
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
               {clinicalHighlights.map((text, i) => (
                 <div key={i} className="flex items-center gap-2">

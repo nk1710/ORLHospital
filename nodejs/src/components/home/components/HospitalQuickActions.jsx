@@ -46,6 +46,7 @@ export default function HospitalQuickActions() {
   return (
     <section className="hospital-actions-section" aria-label="Hospital Quick Services">
       <div className="inner">
+        <h2 className="sr-only">Emergency Services and Clinical Quick Actions</h2>
         <div className="hospital-actions-grid">
           {hospitalPillars.map((item, i) => {
             const Icon = item.icon;

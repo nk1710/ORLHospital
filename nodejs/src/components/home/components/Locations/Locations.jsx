@@ -181,9 +181,9 @@ const Locations = () => (
 
       {/* Coverage Tags */}
       <div className="mt-12 p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 text-center sm:text-left">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 text-center sm:text-left">
           Key Service Areas Across Delhi NCR:
-        </h4>
+        </p>
         <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
           {areas.map((area) => (
             <span key={area} className="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">

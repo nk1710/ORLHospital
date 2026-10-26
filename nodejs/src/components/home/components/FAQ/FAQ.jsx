@@ -157,7 +157,7 @@ const FAQ = () => {
         {/* Quick Helpline Box */}
         <div className="mt-12 p-6 rounded-2xl bg-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
-            <h4 className="text-lg font-bold">Have a specific ENT question or medical emergency?</h4>
+            <p className="text-lg font-bold">Have a specific ENT question or medical emergency?</p>
             <p className="text-sm text-slate-300 mt-1">Our clinical desk is available to assist you with appointment schedules and patient guidance.</p>
           </div>
           <a
