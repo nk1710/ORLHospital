@@ -248,36 +248,43 @@ export default async function Facilities() {
       {/* =========================================================
           TOP SECTION - START DIRECTLY WITH SIR'S PHOTO & INFRASTRUCTURE
       ========================================================== */}
-      <section className="bg-slate-50 border-b border-slate-200">
+      <section className="bg-slate-50 border-b border-slate-200" style={{ backgroundColor: "#f8fafc" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14">
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"
-            className="mb-6 flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium"
+            className="mb-6 flex items-center gap-2 text-xs sm:text-sm font-medium"
+            style={{ color: "#64748b" }}
           >
-            <Link href="/" className="hover:text-teal-700 transition-colors">
+            <Link href="/" className="hover:text-teal-700 transition-colors" style={{ color: "#64748b" }}>
               Home
             </Link>
-            <ChevronRight size={14} className="text-slate-400" />
-            <span className="text-teal-700 font-semibold">Facilities</span>
+            <ChevronRight size={14} style={{ color: "#94a3b8" }} />
+            <span style={{ color: "#0f766e" }} className="font-semibold">Facilities</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-4">
-              <span className="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold bg-teal-100/80 text-teal-900 uppercase tracking-wider border border-teal-200">
+              <span
+                className="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border"
+                style={{ backgroundColor: "#ccfbf1", color: "#115e59", borderColor: "#99f6e4" }}
+              >
                 Technology &amp; Equipment
               </span>
 
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h1
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight"
+                style={{ color: "#0f172a" }}
+              >
                 State-of-the-Art Clinical &amp; Surgical Infrastructure
               </h1>
 
-              <p className="text-sm sm:text-base font-semibold text-teal-800">
+              <p className="text-sm sm:text-base font-semibold" style={{ color: "#0f766e" }}>
                 World-Class ENT Care Facilities by Dr. (Prof.) Dhirendra Singh Kushwah
               </p>
 
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed pt-1">
+              <p className="text-sm sm:text-base leading-relaxed pt-1" style={{ color: "#334155" }}>
                 Choosing the right ENT specialist is critical when dealing with complex
                 ear, nose, throat, or hearing challenges. Dr. (Prof.) Dhirendra Singh
                 Kushwah brings over 25 years of surgical mastery, equipped with
@@ -290,7 +297,8 @@ export default async function Facilities() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-3">
                 <a
                   href="tel:+919311449825"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-700"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold shadow-sm transition hover:opacity-90"
+                  style={{ backgroundColor: "#0d9488", color: "#ffffff" }}
                 >
                   <Phone size={17} />
                   <span>Call Hospital: +91-9311449825</span>
@@ -300,7 +308,8 @@ export default async function Facilities() {
                   href="https://wa.me/919311449825?text=Hello%20Doctor,%20I%20would%20like%20to%20know%20more%20about%20your%20ENT%20facilities."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-600 bg-emerald-50 px-5 py-3.5 text-sm font-bold text-emerald-800 transition hover:bg-emerald-100"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border px-5 py-3.5 text-sm font-bold transition hover:opacity-90"
+                  style={{ backgroundColor: "#ecfdf5", color: "#065f46", borderColor: "#059669" }}
                 >
                   <MessageCircle size={17} />
                   <span>WhatsApp Desk</span>
@@ -308,7 +317,8 @@ export default async function Facilities() {
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 hover:text-slate-900"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border px-5 py-3.5 text-sm font-semibold transition hover:bg-slate-50"
+                  style={{ backgroundColor: "#ffffff", color: "#334155", borderColor: "#cbd5e1" }}
                 >
                   <span>Book Appointment</span>
                   <ArrowRight size={15} />
@@ -316,7 +326,7 @@ export default async function Facilities() {
               </div>
 
               {/* 3 Quick Bullets */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2 text-xs font-semibold text-slate-700">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2 text-xs font-semibold" style={{ color: "#334155" }}>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
                   <span>100% Modular OTs</span>
@@ -335,13 +345,16 @@ export default async function Facilities() {
             {/* Right Column - Sir's Photo */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg p-3">
-                <div className="relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[4/5] bg-slate-100">
+                <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-slate-100">
                   <FacilityImage
                     src="/images/dhirendra kushwah.webp"
                     alt="Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Specialist & Surgeon"
                     className="w-full h-full object-cover object-top"
                   />
-                  <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-teal-900/95 text-white p-3 shadow-md backdrop-blur-xs flex items-center justify-between text-xs">
+                  <div
+                    className="absolute bottom-3 left-3 right-3 rounded-xl p-3 shadow-md backdrop-blur-xs flex items-center justify-between text-xs"
+                    style={{ backgroundColor: "rgba(19, 78, 74, 0.95)", color: "#ffffff" }}
+                  >
                     <div>
                       <div className="font-extrabold text-sm sm:text-base">
                         Dr. (Prof.) Dhirendra Singh Kushwah
@@ -350,7 +363,10 @@ export default async function Facilities() {
                         Senior ENT Specialist &amp; Surgeon
                       </div>
                     </div>
-                    <span className="font-bold text-teal-300 border border-teal-400/40 px-2 py-1 rounded-md text-[10px] sm:text-xs">
+                    <span
+                      className="font-bold border px-2 py-1 rounded-md text-[10px] sm:text-xs"
+                      style={{ color: "#5eead4", borderColor: "rgba(45, 212, 191, 0.4)" }}
+                    >
                       25+ Yrs Exp
                     </span>
                   </div>
