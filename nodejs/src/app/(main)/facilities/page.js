@@ -1,14 +1,11 @@
 import Link from "next/link";
 import FacilityImage from "./facilities";
 import { FaqAccordion } from "@/components/ui/custom";
-import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import {
   ShieldCheck,
   CheckCircle2,
   Phone,
   MessageCircle,
-  ArrowRight,
-  Activity,
   Microscope,
   Waves,
   Eye,
@@ -16,38 +13,38 @@ import {
   Zap,
   MapPin,
   ChevronRight,
-  Award,
+  Clock,
+  CreditCard,
+  Building2,
+  BedDouble,
+  HeartPulse,
+  Sparkles,
 } from "lucide-react";
 
 export async function generateMetadata() {
   const url = "https://www.drdhirendrasinghkushwah.in/facilities";
 
   return {
-    title:
-      "World-Class ENT Care Facilities | Dr. (Prof.) Dhirendra Singh Kushwah",
+    title: "Hospital Facilities & Technology | Dr. (Prof.) Dhirendra Singh Kushwah",
     description:
-      "Explore advanced ENT diagnostic and surgical facilities by Dr. (Prof.) Dhirendra Singh Kushwah: modular OTs, Zeiss microscopes, Storz 4K endoscopy, cochlear implants & audiology suites.",
+      "Explore state-of-the-art ENT hospital facilities: modular laminar-flow OTs, Carl Zeiss surgical microscopes, Karl Storz 4K endoscopy, cochlear implant & audiology labs in Delhi NCR.",
     keywords: [
-      "ENT specialist in Delhi",
-      "ENT facilities in Delhi",
+      "ENT hospital facilities Delhi",
       "best ENT hospital in Delhi",
-      "cochlear implant facility Delhi",
       "modular OT ENT surgery Delhi",
-      "Karl Storz endoscopy ENT Delhi",
+      "Karl Storz 4K endoscopy Delhi",
       "Zeiss ear surgery microscope Delhi",
-      "audiology lab Delhi",
-      "newborn hearing screening Delhi",
-      "sinus surgery clinic Jasola",
-      "ENT hospital Jasola Vihar",
+      "cochlear implant facility Delhi",
+      "audiology lab South Delhi",
+      "ORL International Hospital Jasola",
       "Dr Dhirendra Singh Kushwah facilities",
     ],
     authors: [{ name: "Dr. (Prof.) Dhirendra Singh Kushwah" }],
     alternates: { canonical: url },
     openGraph: {
-      title:
-        "World-Class ENT Care Facilities | Dr. (Prof.) Dhirendra Singh Kushwah",
+      title: "Hospital Facilities & Technology | Dr. (Prof.) Dhirendra Singh Kushwah",
       description:
-        "Explore advanced ENT surgical and diagnostic facilities: modular OTs, Zeiss microscopes, 4K endoscopy, cochlear implants, and audiology suites in South Delhi.",
+        "Modern modular OTs, Zeiss microscopes, Karl Storz 4K endoscopy, and cochlear implant facilities under Dr. (Prof.) Dhirendra Singh Kushwah.",
       url: url,
       siteName: "Dr. (Prof.) Dhirendra Singh Kushwah ENT Hospital",
       type: "website",
@@ -63,10 +60,9 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image",
-      title:
-        "World-Class ENT Care Facilities | Dr. (Prof.) Dhirendra Singh Kushwah",
+      title: "Hospital Facilities & Technology | Dr. (Prof.) Dhirendra Singh Kushwah",
       description:
-        "Advanced modular OTs, Zeiss microscopes, Storz 4K endoscopy, and cochlear implant facilities in Delhi NCR.",
+        "Advanced modular OTs, Zeiss microscopes, Storz 4K endoscopy, and audiology suites in Delhi NCR.",
     },
     robots: { index: true, follow: true },
   };
@@ -79,8 +75,7 @@ export default async function Facilities() {
     name: "Dr. (Prof.) Dhirendra Singh Kushwah ENT Hospital & Facilities",
     url: "https://www.drdhirendrasinghkushwah.in/facilities",
     logo: "https://www.drdhirendrasinghkushwah.in/images/logo.png",
-    image:
-      "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
+    image: "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
     description:
       "State-of-the-art ENT hospital offering modular laminar-flow operation theatres, Zeiss surgical microscopes, Karl Storz 4K endoscopy, cochlear implant suites, and complete audiology labs.",
     address: {
@@ -104,32 +99,27 @@ export default async function Facilities() {
       {
         "@type": "MedicalProcedure",
         name: "Endoscopic Sinus & Skull Base Surgery",
-        description:
-          "Minimally invasive FESS surgery using high-definition 4K endoscopic systems.",
+        description: "Minimally invasive FESS surgery using high-definition Karl Storz 4K endoscopy.",
       },
       {
         "@type": "MedicalProcedure",
         name: "Microscopic Ear Surgery",
-        description:
-          "High-magnification Zeiss microscopic surgical repair for eardrum perforation and hearing reconstruction.",
+        description: "High-magnification Zeiss microscopic surgical repair for eardrum perforation and hearing restoration.",
       },
       {
         "@type": "MedicalProcedure",
         name: "Coblation Plasma Surgery",
-        description:
-          "Bloodless low-temperature surgical removal of tonsils and adenoids.",
+        description: "Bloodless low-temperature surgical removal of tonsils and adenoids.",
       },
       {
         "@type": "MedicalProcedure",
         name: "Cochlear & Brainstem Implant Program",
-        description:
-          "Comprehensive bionic hearing restoration with post-implant AVT rehabilitation.",
+        description: "Comprehensive bionic hearing restoration with post-implant AVT rehabilitation.",
       },
       {
         "@type": "MedicalProcedure",
         name: "Sound-Treated Audiological Testing",
-        description:
-          "PTA, Impedance Tympanometry, BERA, ASSR, and newborn OAE hearing screening.",
+        description: "PTA, Impedance Tympanometry, BERA, ASSR, and newborn OAE hearing screening.",
       },
     ],
     openingHours: "Mo-Su 09:00-20:00",
@@ -137,7 +127,7 @@ export default async function Facilities() {
 
   const faqItems = [
     {
-      q: "What surgical infrastructure is available at Dr. (Prof.) Dhirendra Singh Kushwah's hospital?",
+      q: "What surgical infrastructure is available at the hospital?",
       a: "Our hospital features ultra-modern modular operation theatres equipped with HEPA laminar air filtration, Carl Zeiss operating microscopes, Karl Storz 4K HD endoscopic visualization towers, and low-temperature Coblation plasma surgical systems for painless, bloodless procedures.",
     },
     {
@@ -150,11 +140,11 @@ export default async function Facilities() {
     },
     {
       q: "How does video endoscopy benefit ENT diagnosis?",
-      a: "High-definition video endoscopy displays the ear canal, eardrum, nasal passages, sinus pathways, and vocal cords on a high-resolution monitor in real-time. This provides clear diagnostic precision and allows patients to see their condition clearly.",
+      a: "High-definition video endoscopy displays the ear canal, eardrum, nasal passages, sinus pathways, and vocal cords on a high-resolution monitor in real-time. This provides clear diagnostic precision and allows patients to see and understand their condition clearly.",
     },
     {
       q: "Where are the clinical and surgical centers located?",
-      a: "Surgeries and advanced consultations are conducted at ORL International Group of Hospitals (Plot No. 89, Pocket 1, Jasola Vihar, New Delhi - 110025), with outpatient OPD facilities at CR Park (J-1981, Market No. 1) and Arjun Nagar (Safdarjung Enclave).",
+      a: "Surgeries and advanced consultations are conducted at ORL International Hospital (Plot No. 89, Pocket 1, Jasola Vihar, New Delhi - 110025), with outpatient OPD facilities at CR Park (J-1981, Market No. 1) and Arjun Nagar (Safdarjung Enclave).",
     },
     {
       q: "Are cashless insurance and mediclaim facilities available for surgeries?",
@@ -162,143 +152,159 @@ export default async function Facilities() {
     },
   ];
 
-  const facilityHighlights = [
+  const facilities = [
     {
+      title: "Modular Operation Theatres (OT)",
+      category: "Surgical Infrastructure",
+      icon: ShieldCheck,
+      desc: "Ultra-modern surgical suites equipped with Class 10,000 HEPA-filtered laminar airflow and positive pressure ventilation to ensure zero-infection sterile conditions.",
+      points: ["100% HEPA laminar airflow", "Advanced multi-parameter anaesthesia monitors"],
+      image: "/images/NewImages/OT.jpeg",
+    },
+    {
+      title: "Carl Zeiss Surgical Microscopes",
+      category: "Ear Microsurgery",
       icon: Microscope,
-      title: "Modular Operation Theatres",
-      badge: "Infection Control",
-      desc: "HEPA-filtered laminar airflow, positive pressure ventilation, and rigorous sterile protocols ensuring maximum safety for delicate microsurgery.",
-      points: [
-        "Class 10,000 sterile laminar airflow",
-        "Multi-parameter surgical anaesthesia monitors",
-        "Dedicated post-operative recovery bays",
-      ],
-      img: "/images/NewImages/OT1.jpeg",
+      desc: "High-magnification German optical microscopes providing unmatched depth perception for delicate stitchless tympanoplasty, ossicular chain reconstruction, and stapedotomy.",
+      points: ["Sub-millimeter surgical accuracy", "Maximum hearing preservation"],
+      image: "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-02.webp",
     },
     {
+      title: "Karl Storz 4K HD Video Endoscopy",
+      category: "Sinus & Skull Base",
       icon: Eye,
-      title: "Carl Zeiss Operating Microscopes",
-      badge: "Microsurgery",
-      desc: "High-magnification surgical visualization for stitchless tympanoplasty, ossiculoplasty, and stapedotomy with hearing preservation.",
-      points: [
-        "Unrivalled stereoscopic depth & clarity",
-        "Preserves delicate middle-ear ossicles",
-        "Micro-instrumentation for stitchless repair",
-      ],
-      img: "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-02.webp",
+      desc: "Ultra-high definition video endoscopy towers allowing clear visualization of intricate nasal sinuses, polyps, and skull base structures with zero external incisions.",
+      points: ["4K real-time surgical visualization", "Minimally invasive with rapid recovery"],
+      image: "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-03.webp",
     },
     {
+      title: "Coblation Plasma Surgical System",
+      category: "Bloodless Care",
       icon: Zap,
-      title: "Karl Storz 4K HD Endoscopy",
-      badge: "Sinus & Skull Base",
-      desc: "Next-generation 4K ultra-definition video towers for precision Functional Endoscopic Sinus Surgery (FESS) and skull base defect repairs.",
-      points: [
-        "Crystal-clear visualization of sinus anatomy",
-        "Minimally invasive with zero external scars",
-        "Faster recovery with packless techniques",
-      ],
-      img: "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-03.webp",
+      desc: "Gentle low-temperature molecular plasma technology (<60°C) for virtually bloodless, low-pain tonsillectomy, adenoidectomy, and turbinate reduction in children and adults.",
+      points: ["Minimal post-operative pain", "Same-day or 24-hour discharge"],
+      image: "/images/NewImages/OT2.jpeg",
     },
     {
-      icon: Volume2,
-      title: "Cochlear & Auditory Implant Suite",
-      badge: "700+ Implants",
-      desc: "End-to-end bionic hearing restoration: pre-operative CT/MRI candidate evaluation, precise surgical placement, and telemetry verification.",
-      points: [
-        "Cochlear, BAHA, Bonebridge & ABI systems",
-        "Neural response telemetry (NRT) verification",
-        "Full post-implant processor programming",
-      ],
-      img: "/images/fwdupdatesontheentswebsite/facility9.png",
-    },
-    {
-      icon: Waves,
       title: "Sound-Treated Audiology Suite",
-      badge: "Diagnostic Lab",
-      desc: "Double-walled acoustic chambers equipped with calibrated diagnostic audiometers, tympanometers, and electrophysiological testing units.",
-      points: [
-        "Pure Tone (PTA) & Speech Audiometry",
-        "BERA / ABR & ASSR threshold testing",
-        "OAE newborn hearing screening tests",
-      ],
-      img: "/images/fwdupdatesontheentswebsite/drdhirendrasinghkushwah-ENT-Surgeon.png",
+      category: "Diagnostic Lab",
+      icon: Waves,
+      desc: "Double-walled acoustic chambers equipped with calibrated diagnostic audiometers for Pure Tone Audiometry (PTA), Impedance Tympanometry, BERA/ABR, and newborn OAE screening.",
+      points: ["Full diagnostic hearing battery", "Universal newborn screening"],
+      image: "/images/fwdupdatesontheentswebsite/facility9.png",
     },
     {
-      icon: Activity,
-      title: "Coblation Plasma Surgical Unit",
-      badge: "Bloodless Care",
-      desc: "Gentle low-temperature molecular plasma technology for virtually bloodless, low-pain tonsillectomy, adenoidectomy, and turbinate reduction.",
-      points: [
-        "Operating temperature under 60°C (prevents burns)",
-        "Drastically reduced post-op pain for children",
-        "Same-day or 24-hour rapid discharge",
-      ],
-      img: "/images/NewImages/OT2.jpeg",
+      title: "Cochlear Implant & Bionic Hearing Program",
+      category: "700+ Implants",
+      icon: Volume2,
+      desc: "Complete bionic hearing restoration: pre-operative CT/MRI candidate evaluation, precise surgical implantation, telemetry verification, and dedicated post-implant AVT speech therapy.",
+      points: ["Cochlear & BAHA implant systems", "In-house Auditory Verbal Therapy (AVT)"],
+      image: "/images/fwdupdatesontheentswebsite/drdhirendrasinghkushwah-ENT-Surgeon.png",
+    },
+  ];
+
+  const amenities = [
+    {
+      icon: HeartPulse,
+      title: "24x7 Emergency ENT Care",
+      desc: "Immediate emergency attention for foreign bodies in ear/nose/throat, nasal bleeding (epistaxis), and acute airway trauma.",
+    },
+    {
+      icon: CreditCard,
+      title: "Cashless Mediclaim & TPA",
+      desc: "Hassle-free cashless hospitalization and reimbursement support across all major private and PSU health insurance providers.",
+    },
+    {
+      icon: BedDouble,
+      title: "Comfortable Inpatient Day Care",
+      desc: "Clean, hygienic, air-conditioned patient recovery rooms with attentive nursing care for comfortable post-operative monitoring.",
+    },
+    {
+      icon: Building2,
+      title: "In-House Pharmacy & Diagnostics",
+      desc: "Immediate on-premise access to prescribed medicines, surgical disposables, and routine ENT pre-operative laboratory investigations.",
+    },
+  ];
+
+  const centers = [
+    {
+      tag: "Main Surgical Hospital",
+      name: "ORL International Hospital",
+      address: "Plot No. 89, Pocket 1, Jasola Vihar, New Delhi - 110025",
+      landmark: "Above Kotak Bank, Near Jasola Apollo Metro Station",
+      timing: "Open Daily · 24x7 Emergency",
+      features: "Modular OTs · Inpatient Wards · Audiology Lab",
+    },
+    {
+      tag: "South Delhi Clinic",
+      name: "Dr. Kushwah ENT Clinic, CR Park",
+      address: "J-1981, Chittaranjan Park, New Delhi – 110019",
+      landmark: "Near Market No. 1, Below ICICI Bank",
+      timing: "Monday – Saturday (OPD)",
+      features: "Outpatient OPD · Video Endoscopy · Hearing Care",
+    },
+    {
+      tag: "Safdarjung Enclave",
+      name: "ENT & Gynae Clinic, Arjun Nagar",
+      address: "19-C, Basement, Arjun Nagar, Safdarjung Enclave, New Delhi – 110029",
+      landmark: "Near Sukhmani Hospital",
+      timing: "Evening OPD by Appointment",
+      features: "Consultations · Post-Op Follow-ups",
     },
   ];
 
   return (
-    <div className="bg-white text-slate-800">
-      {/* Structured Schema Data */}
+    <div className="min-h-screen bg-slate-50/50 text-slate-800">
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
 
       {/* =========================================================
-          TOP SECTION - START DIRECTLY WITH SIR'S PHOTO & INFRASTRUCTURE
+          HERO SECTION - CLEAN, WELCOMING, USER-FRIENDLY
       ========================================================== */}
-      <section className="bg-slate-50 border-b border-slate-200" style={{ backgroundColor: "#f8fafc" }}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14">
+      <section className="relative overflow-hidden bg-white border-b border-slate-200">
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-50/40 via-white to-slate-50/60 pointer-events-none" />
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"
-            className="mb-6 flex items-center gap-2 text-xs sm:text-sm font-medium"
-            style={{ color: "#64748b" }}
+            className="mb-5 flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-500"
           >
-            <Link href="/" className="hover:text-teal-700 transition-colors" style={{ color: "#64748b" }}>
+            <Link href="/" className="hover:text-teal-700 transition-colors">
               Home
             </Link>
-            <ChevronRight size={14} style={{ color: "#94a3b8" }} />
-            <span style={{ color: "#0f766e" }} className="font-semibold">Facilities</span>
+            <ChevronRight size={14} className="text-slate-400" />
+            <span className="text-teal-700 font-semibold">Facilities</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Content Column */}
+            {/* Left Content */}
             <div className="lg:col-span-7 space-y-4">
-              <span
-                className="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border"
-                style={{ backgroundColor: "#ccfbf1", color: "#115e59", borderColor: "#99f6e4" }}
-              >
-                Technology &amp; Equipment
-              </span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-50 text-teal-800 border border-teal-200/80">
+                <Sparkles size={14} className="text-teal-600" />
+                <span>NABH Standard ENT Infrastructure</span>
+              </div>
 
-              <h1
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight"
-                style={{ color: "#0f172a" }}
-              >
-                State-of-the-Art Clinical &amp; Surgical Infrastructure
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                World-Class ENT Facilities &amp; Technology
               </h1>
 
-              <p className="text-sm sm:text-base font-semibold" style={{ color: "#0f766e" }}>
-                World-Class ENT Care Facilities by Dr. (Prof.) Dhirendra Singh Kushwah
+              <p className="text-sm sm:text-base md:text-lg font-medium text-teal-800">
+                Led by Dr. (Prof.) Dhirendra Singh Kushwah &middot; 25+ Years Experience
               </p>
 
-              <p className="text-sm sm:text-base leading-relaxed pt-1" style={{ color: "#334155" }}>
-                Choosing the right ENT specialist is critical when dealing with complex
-                ear, nose, throat, or hearing challenges. Dr. (Prof.) Dhirendra Singh
-                Kushwah brings over 25 years of surgical mastery, equipped with
-                modular laminar-flow operation theatres, Carl Zeiss surgical microscopes,
-                Karl Storz 4K HD video endoscopy, and comprehensive audiology suites
-                across Jasola Vihar and South Delhi.
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+                Equipped with ultra-modern modular operation theatres, Carl Zeiss surgical microscopes, Karl Storz 4K HD video endoscopy, and complete sound-treated audiology labs designed for accurate diagnosis, painless surgery, and faster patient recovery.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-3">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <a
                   href="tel:+919311449825"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold shadow-sm transition hover:opacity-90"
-                  style={{ backgroundColor: "#0d9488", color: "#ffffff" }}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-700"
                 >
                   <Phone size={17} />
                   <span>Call Hospital: +91-9311449825</span>
@@ -308,41 +314,42 @@ export default async function Facilities() {
                   href="https://wa.me/919311449825?text=Hello%20Doctor,%20I%20would%20like%20to%20know%20more%20about%20your%20ENT%20facilities."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border px-5 py-3.5 text-sm font-bold transition hover:opacity-90"
-                  style={{ backgroundColor: "#ecfdf5", color: "#065f46", borderColor: "#059669" }}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-600 bg-emerald-50 px-5 py-3.5 text-sm font-bold text-emerald-800 transition hover:bg-emerald-100"
                 >
-                  <MessageCircle size={17} />
+                  <MessageCircle size={17} className="text-emerald-600" />
                   <span>WhatsApp Desk</span>
                 </a>
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border px-5 py-3.5 text-sm font-semibold transition hover:bg-slate-50"
-                  style={{ backgroundColor: "#ffffff", color: "#334155", borderColor: "#cbd5e1" }}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
                 >
                   <span>Book Appointment</span>
-                  <ArrowRight size={15} />
                 </Link>
               </div>
 
-              {/* 3 Quick Bullets */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2 text-xs font-semibold" style={{ color: "#334155" }}>
+              {/* Key Trust Strip */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-700">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
-                  <span>100% Modular OTs</span>
+                  <CheckCircle2 size={15} className="text-teal-600 shrink-0" />
+                  <span>Modular OTs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
-                  <span>15,000+ Surgeries</span>
+                  <CheckCircle2 size={15} className="text-teal-600 shrink-0" />
+                  <span>Zeiss &amp; Storz 4K</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
+                  <CheckCircle2 size={15} className="text-teal-600 shrink-0" />
                   <span>700+ Implants</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={15} className="text-teal-600 shrink-0" />
+                  <span>Cashless TPA</span>
                 </div>
               </div>
             </div>
 
-            {/* Right Column - Sir's Photo */}
+            {/* Right Photo Column */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg p-3">
                 <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-slate-100">
@@ -351,10 +358,7 @@ export default async function Facilities() {
                     alt="Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Specialist & Surgeon"
                     className="w-full h-full object-cover object-top"
                   />
-                  <div
-                    className="absolute bottom-3 left-3 right-3 rounded-xl p-3 shadow-md backdrop-blur-xs flex items-center justify-between text-xs"
-                    style={{ backgroundColor: "rgba(19, 78, 74, 0.95)", color: "#ffffff" }}
-                  >
+                  <div className="absolute bottom-3 left-3 right-3 rounded-xl p-3 shadow-md backdrop-blur-xs bg-teal-900/90 text-white flex items-center justify-between text-xs">
                     <div>
                       <div className="font-extrabold text-sm sm:text-base">
                         Dr. (Prof.) Dhirendra Singh Kushwah
@@ -363,10 +367,7 @@ export default async function Facilities() {
                         Senior ENT Specialist &amp; Surgeon
                       </div>
                     </div>
-                    <span
-                      className="font-bold border px-2 py-1 rounded-md text-[10px] sm:text-xs"
-                      style={{ color: "#5eead4", borderColor: "rgba(45, 212, 191, 0.4)" }}
-                    >
+                    <span className="font-bold border border-teal-300/40 bg-teal-800/80 px-2.5 py-1 rounded-md text-teal-200 text-[10px] sm:text-xs">
                       25+ Yrs Exp
                     </span>
                   </div>
@@ -378,73 +379,56 @@ export default async function Facilities() {
       </section>
 
       {/* =========================================================
-          MEDICAL REVIEW BADGE
-      ========================================================== */}
-      <section className="bg-white border-b border-slate-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
-          <MedicalReviewBadge procedureName="Advanced ENT Hospital Facilities &amp; Technology" />
-        </div>
-      </section>
-
-      {/* =========================================================
-          KEY INFRASTRUCTURE PILLARS (CARD GRID)
+          CORE FACILITIES GRID - CLEAN, VISUAL, PATIENT-FRIENDLY
       ========================================================== */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/60">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200/80">
               Technology &amp; Equipment
             </span>
             <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
               State-of-the-Art Clinical &amp; Surgical Infrastructure
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-              Every procedure is backed by globally recognized surgical
-              instruments ensuring patient safety, microscopic accuracy, and
-              comfortable same-day recovery.
+              Every facility has been designed to meet strict international sterilization and clinical safety standards, providing patients with superior outcomes and comfortable same-day care.
             </p>
           </div>
 
           <div className="mt-10 sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {facilityHighlights.map((item, idx) => {
-              const IconComp = item.icon;
+            {facilities.map((facility, index) => {
+              const IconComp = facility.icon;
               return (
                 <article
-                  key={idx}
-                  className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:shadow-lg hover:border-teal-300"
+                  key={index}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:shadow-md hover:border-teal-300"
                 >
                   {/* Card Image */}
                   <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-100">
                     <FacilityImage
-                      src={item.img}
-                      alt={item.title}
-                      className="h-full w-full object-cover"
+                      src={facility.image}
+                      alt={facility.title}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-lg bg-teal-700/95 px-2.5 py-1 text-xs font-bold text-white shadow-sm">
+                    <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-lg bg-teal-800/90 backdrop-blur-xs px-2.5 py-1 text-xs font-bold text-white shadow-sm">
                       <IconComp size={14} />
-                      <span>{item.badge}</span>
+                      <span>{facility.category}</span>
                     </div>
                   </div>
 
-                  {/* Card Content */}
+                  {/* Card Body */}
                   <div className="flex flex-1 flex-col p-5 sm:p-6">
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                      {item.title}
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
+                      {facility.title}
                     </h3>
                     <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      {item.desc}
+                      {facility.desc}
                     </p>
 
-                    <div className="mt-4 pt-4 border-t border-slate-100 space-y-2">
-                      {item.points.map((pt, pIdx) => (
-                        <div
-                          key={pIdx}
-                          className="flex items-start gap-2 text-xs sm:text-sm text-slate-700"
-                        >
-                          <CheckCircle2
-                            size={14}
-                            className="text-teal-600 shrink-0 mt-0.5"
-                          />
+                    <div className="mt-4 pt-4 border-t border-slate-100 space-y-1.5">
+                      {facility.points.map((pt, pIdx) => (
+                        <div key={pIdx} className="flex items-start gap-2 text-xs font-medium text-slate-700">
+                          <CheckCircle2 size={14} className="text-teal-600 shrink-0 mt-0.5" />
                           <span>{pt}</span>
                         </div>
                       ))}
@@ -458,424 +442,104 @@ export default async function Facilities() {
       </section>
 
       {/* =========================================================
-          DETAILED SECTION 1: ADVANCED DIAGNOSTIC SUITES
+          PATIENT AMENITIES & REASSURANCE
       ========================================================== */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-50 border-y border-slate-200">
+      <section className="py-12 sm:py-16 bg-slate-50 border-y border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Visual Column */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md p-3">
-                <div className="rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
-                  <FacilityImage
-                    src="/images/ORL-Hospital-Facility-ENT-Surgeon-Dr-Dhirendra-Singh-Kushwah.png"
-                    alt="Advanced ENT Diagnostic & Endoscopy Equipment"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-3 bg-teal-50 rounded-lg mt-3 border border-teal-100 flex items-center justify-between text-xs text-teal-900 font-semibold">
-                  <span className="flex items-center gap-1.5">
-                    <CheckCircle2 size={14} className="text-teal-600" />
-                    HD Video Endoscopy
-                  </span>
-                  <span>Transparent Diagnosis</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Content Column */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 uppercase tracking-wider border border-teal-200/60">
-                Precision Diagnosis
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Advanced Diagnostic Facilities for Ear, Nose &amp; Throat
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Accurate diagnosis is the cornerstone of successful clinical
-                treatment. Dr. (Prof.) Dhirendra Singh Kushwah’s outpatient clinics
-                are equipped with modern visual tools, allowing patients to
-                clearly see and understand their own findings in real time.
-              </p>
-
-              <div className="space-y-3 pt-2">
-                <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-xs">
-                  <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                    <Eye size={17} className="text-teal-600" />
-                    Video Endoscopy of Ear, Nose &amp; Larynx
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Provides high-magnification views of the ear canal, eardrum
-                    perforation, deviated septum, sinus ostia, and vocal cords on
-                    an external monitor for complete transparency.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-xs">
-                  <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                    <Activity size={17} className="text-teal-600" />
-                    Allergy Testing — Blood &amp; Skin Prick Tests
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Pinpoints exact environmental and dietary allergens triggering
-                    chronic rhinitis, sneezing, and recurrent sinusitis, enabling
-                    targeted treatment plans.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-xs">
-                  <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                    <Waves size={17} className="text-teal-600" />
-                    Specialized Balance &amp; Vertigo Evaluation Lab
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Differentiates inner-ear vestibular balance disorders (such as
-                    BPPV, Meniere’s) from neurological causes to establish
-                    precise medical rehabilitation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          DETAILED SECTION 2: SURGICAL EXCELLENCE & MODULAR OTS
-      ========================================================== */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Content Column */}
-            <div className="lg:col-span-7 space-y-4">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 uppercase tracking-wider border border-teal-200/60">
-                Minimally Invasive Surgery
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Modern Surgical Suites &amp; Infection-Controlled Theatres
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Operating within dedicated hospital OT suites in South Delhi, Dr.
-                Kushwah performs delicate microsurgical and endoscopic procedures
-                designed to reduce surgical trauma and accelerate recovery.
-              </p>
-
-              <div className="space-y-3 pt-2">
-                <div className="rounded-xl bg-slate-50 border border-slate-200 p-4">
-                  <h3 className="text-base font-bold text-slate-900">
-                    Endoscopic Sinus (FESS) &amp; Skull Base Surgery
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Utilizing 4K Karl Storz optical towers and micro-debriders for
-                    gentle clearance of nasal polyps, chronic sinus blockage, and
-                    CSF leak repairs without external scars.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-slate-50 border border-slate-200 p-4">
-                  <h3 className="text-base font-bold text-slate-900">
-                    High-Precision Microscopic Ear Surgery
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Stitchless tympanoplasty (eardrum repair), mastoidectomy for
-                    cholesteatoma, ossicular reconstruction, and stapedotomy under
-                    high-magnification Carl Zeiss microscopes.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-slate-50 border border-slate-200 p-4">
-                  <h3 className="text-base font-bold text-slate-900">
-                    Coblation Plasma &amp; Radiofrequency Surgery
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Low-temperature plasma enables bloodless removal of tonsils
-                    and adenoids with significantly less post-operative pain for
-                    both children and adults.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Visual Column */}
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md p-3">
-                <div className="rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
-                  <FacilityImage
-                    src="/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-01.webp"
-                    alt="Dr. Dhirendra Singh Kushwah Operating in Modular OT"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-3 bg-teal-50 rounded-lg mt-3 border border-teal-100 flex items-center justify-between text-xs text-teal-900 font-semibold">
-                  <span className="flex items-center gap-1.5">
-                    <ShieldCheck size={14} className="text-teal-600" />
-                    Modular OT Suite
-                  </span>
-                  <span>Laminar Airflow Filtration</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          DETAILED SECTION 3: COCHLEAR IMPLANT & AUDITORY PROGRAM
-      ========================================================== */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-900 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-300 uppercase tracking-wider border border-teal-400/30">
-              Pioneering Bionic Hearing
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-100/60 px-3 py-1 rounded-full">
+              Patient-First Care
             </span>
-            <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-              Cochlear Implant &amp; Auditory Brainstem Implant Program
+            <h2 className="mt-3 text-2xl sm:text-3xl font-extrabold text-slate-900">
+              Hospital Amenities Designed for Your Comfort
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-              Dr. (Prof.) Dhirendra Singh Kushwah leads one of North India’s most
-              established cochlear implant centres, having successfully guided
-              over{" "}
-              <strong className="text-teal-300 font-semibold">
-                700+ implant recipients
-              </strong>{" "}
-              from congenital deaf infants to senior adults.
+            <p className="mt-2 text-xs sm:text-sm text-slate-600">
+              From admission to discharge, we prioritize your family's convenience and safety.
             </p>
           </div>
 
-          <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            <div className="rounded-xl border border-slate-800 bg-slate-800/60 p-5">
-              <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-                <Volume2 size={18} className="text-teal-400" />
-                Cochlear Implants (CI)
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Directly stimulates the auditory nerve endings inside the
-                cochlea, transforming sound into electrical impulses for
-                profound hearing loss.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-slate-800 bg-slate-800/60 p-5">
-              <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-                <Waves size={18} className="text-teal-400" />
-                BAHA &amp; Bonebridge
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Bone-conduction hearing implants that bypass ear canal atresia,
-                chronic drainage, or single-sided deafness via skull bone
-                conduction.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-slate-800 bg-slate-800/60 p-5">
-              <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-                <Microscope size={18} className="text-teal-400" />
-                Auditory Brainstem Implants
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Specialized implant for cases where the auditory nerve is absent,
-                stimulating the brainstem auditory nuclei directly.
-              </p>
-            </div>
-          </div>
-
-          {/* Post-Implant AVT Strip */}
-          <div className="mt-6 sm:mt-8 rounded-xl border border-teal-500/30 bg-teal-950/40 p-5 sm:p-6">
-            <h3 className="text-base sm:text-lg font-bold text-teal-300">
-              End-to-End Post-Implant Speech Rehabilitation &amp; AVT
-            </h3>
-            <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Surgery is only step one. Our in-house audiological rehabilitation
-              team delivers digital processor mapping, telemetry checks, and
-              one-on-one Auditory Verbal Therapy (AVT) to help children develop
-              natural spoken language for mainstream education.
-            </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {amenities.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs transition hover:shadow-md hover:border-teal-200"
+                >
+                  <div className="inline-flex p-3 rounded-xl bg-teal-50 text-teal-700 mb-3">
+                    <IconComp size={22} />
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          DETAILED SECTION 4: COMPLETE AUDIOLOGY & SPEECH LABS
+          HOSPITAL & CLINIC CENTERS
       ========================================================== */}
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Visual Column */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md p-3">
-                <div className="rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
-                  <FacilityImage
-                    src="/images/fwdupdatesontheentswebsite/facility9.png"
-                    alt="Audiology and Hearing Evaluation Lab"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-3 bg-teal-50 rounded-lg mt-3 border border-teal-100 flex items-center justify-between text-xs text-teal-900 font-semibold">
-                  <span className="flex items-center gap-1.5">
-                    <Volume2 size={14} className="text-teal-600" />
-                    Sound-Treated Chambers
-                  </span>
-                  <span>Calibrated Audiometers &amp; BERA</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Content Column */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 uppercase tracking-wider border border-teal-200/60">
-                Hearing &amp; Speech Diagnostics
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Complete Audiological &amp; Speech-Language Pathology Lab
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                From universal newborn hearing screening to adult vestibular
-                testing, our specialized diagnostic labs provide certified
-                evaluations for all age groups.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">
-                    Pure Tone Audiogram (PTA)
-                  </h4>
-                  <p className="mt-1 text-xs text-slate-600">
-                    Standardized hearing acuity test classifying conductive,
-                    sensorineural, or mixed hearing loss.
-                  </p>
-                </div>
-
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">
-                    Impedance Tympanometry
-                  </h4>
-                  <p className="mt-1 text-xs text-slate-600">
-                    Evaluates middle-ear pressure, fluid effusion, and Eustachian
-                    tube patency in adults and children.
-                  </p>
-                </div>
-
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">
-                    BERA / ABR Testing
-                  </h4>
-                  <p className="mt-1 text-xs text-slate-600">
-                    Electrophysiological assessment of brainstem auditory evoked
-                    potentials for infants and non-cooperative patients.
-                  </p>
-                </div>
-
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5">
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">
-                    OAE Newborn Screening
-                  </h4>
-                  <p className="mt-1 text-xs text-slate-600">
-                    Quick, non-invasive otoacoustic emission test checking outer
-                    hair cell function within the first days of life.
-                  </p>
-                </div>
-              </div>
-
-              {/* Speech Therapy Overview */}
-              <div className="mt-3 rounded-xl border border-teal-200 bg-teal-50/60 p-4 text-xs sm:text-sm text-slate-700">
-                <strong className="text-teal-900 font-bold block mb-1">
-                  Speech &amp; Voice Pathology Services:
-                </strong>
-                Therapy for childhood stuttering, articulation delays, post-stroke
-                speech challenges, and vocal cord nodule voice training.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          BRANCH CLINICS & HOSPITAL CENTRES
-      ========================================================== */}
-      <section className="py-12 sm:py-16 md:py-20 bg-slate-50 border-t border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/60">
-              Locations
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/80">
+              Hospital Locations
             </span>
             <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Hospital &amp; Clinic Centers in Delhi NCR
+              Our Hospital &amp; Consultation Centers
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-              Consult Dr. (Prof.) Dhirendra Singh Kushwah across convenient
-              hospital and outpatient facilities in South Delhi.
+            <p className="mt-2 text-sm sm:text-base text-slate-600">
+              Visit Dr. (Prof.) Dhirendra Singh Kushwah at our specialized surgical hospital or outpatient clinics across South Delhi.
             </p>
           </div>
 
-          <div className="mt-8 sm:mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Center 1: Jasola Vihar */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs hover:border-teal-400 transition-colors">
-              <div className="flex items-center gap-2 text-teal-700 font-bold text-xs uppercase tracking-wider mb-2">
-                <MapPin size={16} />
-                <span>Primary Hospital Centre</span>
-              </div>
-              <h3 className="text-lg font-bold text-slate-900">
-                ORL International Hospital, Jasola
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Plot No. 89, Pocket 1, Jasola Vihar, New Delhi - 110025 (Above
-                Kotak Bank, Near Jasola Apollo Metro).
-              </p>
-              <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                <span>Modular OT &amp; Surgeries</span>
-                <span className="font-semibold text-teal-700">Open Daily</span>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {centers.map((center, cIdx) => (
+              <div
+                key={cIdx}
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50/50 p-6 shadow-xs hover:border-teal-400 hover:bg-white transition-all"
+              >
+                <div>
+                  <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-teal-100 text-teal-800 mb-3">
+                    {center.tag}
+                  </span>
+                  <h3 className="text-lg font-bold text-slate-900">{center.name}</h3>
+                  <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <MapPin size={15} className="inline mr-1 text-teal-600" />
+                    {center.address}
+                  </p>
+                  <p className="mt-1 text-xs text-slate-500 italic">
+                    {center.landmark}
+                  </p>
+                </div>
 
-            {/* Center 2: CR Park */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs hover:border-teal-400 transition-colors">
-              <div className="flex items-center gap-2 text-teal-700 font-bold text-xs uppercase tracking-wider mb-2">
-                <MapPin size={16} />
-                <span>South Delhi Clinic</span>
+                <div className="mt-5 pt-4 border-t border-slate-200/70 space-y-2 text-xs">
+                  <div className="flex items-center gap-1.5 text-teal-700 font-semibold">
+                    <Clock size={14} />
+                    <span>{center.timing}</span>
+                  </div>
+                  <div className="text-slate-500">
+                    <strong>Facilities:</strong> {center.features}
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
-                Dr. Kushwah ENT Clinic, CR Park
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                J-1981, Near Market No. 1, Below ICICI Bank, Bipin Chandra Pal
-                Marg, Chittaranjan Park, New Delhi – 110019.
-              </p>
-              <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                <span>OPD &amp; Endoscopy</span>
-                <span className="font-semibold text-teal-700">Mon - Sat</span>
-              </div>
-            </div>
-
-            {/* Center 3: Arjun Nagar */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs hover:border-teal-400 transition-colors">
-              <div className="flex items-center gap-2 text-teal-700 font-bold text-xs uppercase tracking-wider mb-2">
-                <MapPin size={16} />
-                <span>Safdarjung Center</span>
-              </div>
-              <h3 className="text-lg font-bold text-slate-900">
-                ENT &amp; Gynae Clinic, Arjun Nagar
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                19-C, Basement, Arjun Nagar, Safdarjung Enclave, Near Sukhmani
-                Hospital, New Delhi – 110029.
-              </p>
-              <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                <span>Consultations</span>
-                <span className="font-semibold text-teal-700">Evening OPD</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          FAQ ACCORDION SECTION
+          FAQ ACCORDION
       ========================================================== */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white border-t border-slate-200">
+      <section className="py-12 sm:py-16 md:py-20 bg-slate-50 border-t border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/60">
-              Frequently Asked Questions
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 bg-teal-100/60 px-3 py-1 rounded-full">
+              Patient Questions
             </span>
             <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
               Hospital Facilities &amp; Equipment FAQs
@@ -887,19 +551,17 @@ export default async function Facilities() {
       </section>
 
       {/* =========================================================
-          BOTTOM CTA SECTION
+          CLEAN, ATTRACTIVE BOTTOM CTA
       ========================================================== */}
-      <section className="py-10 sm:py-14 bg-gradient-to-r from-teal-700 via-teal-800 to-slate-900 text-white">
+      <section className="py-10 sm:py-14 bg-gradient-to-r from-teal-800 via-teal-700 to-slate-900 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">
-                Need Advanced ENT Surgical or Diagnostic Care?
+                Experience Advanced ENT Care in South Delhi
               </h2>
               <p className="mt-2 text-xs sm:text-sm md:text-base text-teal-100 max-w-2xl">
-                Consult Dr. (Prof.) Dhirendra Singh Kushwah at our advanced
-                Jasola Vihar hospital or CR Park clinic. Cashless mediclaim
-                accepted for all surgical procedures.
+                Consult Dr. (Prof.) Dhirendra Singh Kushwah at our Jasola Vihar hospital or CR Park clinic. Cashless mediclaim accepted for all surgical procedures.
               </p>
             </div>
 
