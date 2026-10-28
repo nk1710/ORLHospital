@@ -2,6 +2,11 @@
 const nextConfig = {
   poweredByHeader: false,
   output: "standalone",
+  experimental: {
+    cpus: 1,
+    workerThreads: false,
+    webpackBuildWorker: false,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
