@@ -16,6 +16,7 @@ import {
   Zap,
   MapPin,
   ChevronRight,
+  Award,
 } from "lucide-react";
 
 export async function generateMetadata() {
@@ -53,7 +54,7 @@ export async function generateMetadata() {
       locale: "en_IN",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/ORL-Hospital-Facility-ENT-Surgeon-Dr-Dhirendra-Singh-Kushwah.png",
+          url: "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
           width: 1200,
           height: 630,
           alt: "Dr. (Prof.) Dhirendra Singh Kushwah ENT Hospital Facilities",
@@ -79,7 +80,7 @@ export default async function Facilities() {
     url: "https://www.drdhirendrasinghkushwah.in/facilities",
     logo: "https://www.drdhirendrasinghkushwah.in/images/logo.png",
     image:
-      "https://www.drdhirendrasinghkushwah.in/images/ORL-Hospital-Facility-ENT-Surgeon-Dr-Dhirendra-Singh-Kushwah.png",
+      "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
     description:
       "State-of-the-art ENT hospital offering modular laminar-flow operation theatres, Zeiss surgical microscopes, Karl Storz 4K endoscopy, cochlear implant suites, and complete audiology labs.",
     address: {
@@ -237,7 +238,7 @@ export default async function Facilities() {
   ];
 
   return (
-    <>
+    <div className="bg-white text-slate-800">
       {/* Structured Schema Data */}
       <script
         type="application/ld+json"
@@ -245,52 +246,51 @@ export default async function Facilities() {
       />
 
       {/* =========================================================
-          HERO SECTION - CLEAN, SIMPLE & ELEGANT (NO WIREFRAME GRID)
+          TOP SECTION - START DIRECTLY WITH SIR'S PHOTO & INFRASTRUCTURE
       ========================================================== */}
-      <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16 md:pt-16 md:pb-20">
+      <section className="bg-slate-50 border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14">
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"
-            className="mb-4 sm:mb-6 flex items-center gap-2 text-xs sm:text-sm text-slate-400"
+            className="mb-6 flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium"
           >
-            <Link href="/" className="hover:text-teal-300 transition-colors">
+            <Link href="/" className="hover:text-teal-700 transition-colors">
               Home
             </Link>
-            <ChevronRight size={14} className="text-slate-600" />
-            <span className="text-teal-400 font-medium">Facilities</span>
+            <ChevronRight size={14} className="text-slate-400" />
+            <span className="text-teal-700 font-semibold">Facilities</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Content */}
-            <div className="lg:col-span-7 space-y-4 sm:space-y-6">
-              {/* Trust Pill */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-teal-500/30 bg-teal-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-teal-300">
-                <ShieldCheck size={16} className="text-teal-400 shrink-0" />
-                <span>NABH Standard Surgical Infrastructure</span>
-              </div>
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-4">
+              <span className="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold bg-teal-100/80 text-teal-900 uppercase tracking-wider border border-teal-200">
+                Technology &amp; Equipment
+              </span>
 
-              {/* H1 Heading */}
-              <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                World-Class ENT Care Facilities &amp; Technology
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                State-of-the-Art Clinical &amp; Surgical Infrastructure
               </h1>
 
-              {/* Subtitle */}
-              <p className="text-sm sm:text-base md:text-lg leading-relaxed text-slate-300">
-                Equipped with ultra-modern modular operation theatres, Carl
-                Zeiss surgical microscopes, Karl Storz 4K HD video endoscopy,
-                and sound-treated audiology labs led by{" "}
-                <strong className="text-white font-semibold">
-                  Dr. (Prof.) Dhirendra Singh Kushwah
-                </strong>{" "}
+              <p className="text-sm sm:text-base font-semibold text-teal-800">
+                World-Class ENT Care Facilities by Dr. (Prof.) Dhirendra Singh Kushwah
+              </p>
+
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed pt-1">
+                Choosing the right ENT specialist is critical when dealing with complex
+                ear, nose, throat, or hearing challenges. Dr. (Prof.) Dhirendra Singh
+                Kushwah brings over 25 years of surgical mastery, equipped with
+                modular laminar-flow operation theatres, Carl Zeiss surgical microscopes,
+                Karl Storz 4K HD video endoscopy, and comprehensive audiology suites
                 across Jasola Vihar and South Delhi.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-3">
                 <a
                   href="tel:+919311449825"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-teal-500"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-700"
                 >
                   <Phone size={17} />
                   <span>Call Hospital: +91-9311449825</span>
@@ -300,7 +300,7 @@ export default async function Facilities() {
                   href="https://wa.me/919311449825?text=Hello%20Doctor,%20I%20would%20like%20to%20know%20more%20about%20your%20ENT%20facilities."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-5 py-3.5 text-sm font-bold text-emerald-300 transition hover:bg-emerald-500/20"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-600 bg-emerald-50 px-5 py-3.5 text-sm font-bold text-emerald-800 transition hover:bg-emerald-100"
                 >
                   <MessageCircle size={17} />
                   <span>WhatsApp Desk</span>
@@ -308,72 +308,53 @@ export default async function Facilities() {
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-sm font-semibold text-slate-200 transition hover:bg-white/10 hover:text-white"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 hover:text-slate-900"
                 >
                   <span>Book Appointment</span>
                   <ArrowRight size={15} />
                 </Link>
               </div>
+
+              {/* 3 Quick Bullets */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2 text-xs font-semibold text-slate-700">
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
+                  <span>100% Modular OTs</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
+                  <span>15,000+ Surgeries</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 size={16} className="text-teal-600 shrink-0" />
+                  <span>700+ Implants</span>
+                </div>
+              </div>
             </div>
 
-            {/* Right Visual Card */}
+            {/* Right Column - Sir's Photo */}
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-800/60 shadow-2xl p-2.5 sm:p-3">
-                <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-900">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg p-3">
+                <div className="relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[4/5] bg-slate-100">
                   <FacilityImage
-                    src="/images/ORL-Hospital-Facility-ENT-Surgeon-Dr-Dhirendra-Singh-Kushwah.png"
-                    alt="Dr. Dhirendra Singh Kushwah ENT Hospital Facilities"
-                    className="w-full h-full object-cover"
+                    src="/images/dhirendra kushwah.webp"
+                    alt="Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Specialist & Surgeon"
+                    className="w-full h-full object-cover object-top"
                   />
+                  <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-teal-900/95 text-white p-3 shadow-md backdrop-blur-xs flex items-center justify-between text-xs">
+                    <div>
+                      <div className="font-extrabold text-sm sm:text-base">
+                        Dr. (Prof.) Dhirendra Singh Kushwah
+                      </div>
+                      <div className="text-teal-200 text-[11px] sm:text-xs">
+                        Senior ENT Specialist &amp; Surgeon
+                      </div>
+                    </div>
+                    <span className="font-bold text-teal-300 border border-teal-400/40 px-2 py-1 rounded-md text-[10px] sm:text-xs">
+                      25+ Yrs Exp
+                    </span>
+                  </div>
                 </div>
-                <div className="p-3 sm:p-4 mt-2 bg-slate-900/80 rounded-xl flex items-center justify-between text-xs text-slate-300">
-                  <span className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 size={15} className="text-teal-400" />
-                    Jasola Vihar Hospital Centre
-                  </span>
-                  <span className="text-teal-300 font-semibold">
-                    100% Modular OTs
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Clean Metric Strip */}
-          <div className="mt-8 sm:mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-            <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-black text-teal-400">
-                25+ Years
-              </div>
-              <div className="mt-1 text-xs sm:text-sm text-slate-300">
-                Surgical &amp; Clinical Excellence
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-black text-teal-400">
-                15,000+
-              </div>
-              <div className="mt-1 text-xs sm:text-sm text-slate-300">
-                Micro &amp; Endoscopic Surgeries
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-black text-teal-400">
-                700+
-              </div>
-              <div className="mt-1 text-xs sm:text-sm text-slate-300">
-                Cochlear Implant Recipients
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-black text-teal-400">
-                100%
-              </div>
-              <div className="mt-1 text-xs sm:text-sm text-slate-300">
-                Modular HEPA-Filtered OTs
               </div>
             </div>
           </div>
@@ -383,7 +364,7 @@ export default async function Facilities() {
       {/* =========================================================
           MEDICAL REVIEW BADGE
       ========================================================== */}
-      <section className="bg-slate-50 border-b border-slate-200">
+      <section className="bg-white border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
           <MedicalReviewBadge procedureName="Advanced ENT Hospital Facilities &amp; Technology" />
         </div>
@@ -928,6 +909,6 @@ export default async function Facilities() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
