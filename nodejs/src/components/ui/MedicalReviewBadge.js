@@ -16,9 +16,9 @@ export default function MedicalReviewBadge({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         {/* Doctor Micro Profile */}
         <div className="flex items-center gap-3.5">
-          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-teal-600 shadow-xs">
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-teal-600 shadow-xs bg-teal-50">
             <Image
-              src="/images/dr-kushwah-banner.webp"
+              src="/images/doctors/dr-dhirendra.webp"
               alt="Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Surgeon"
               width={56}
               height={56}
