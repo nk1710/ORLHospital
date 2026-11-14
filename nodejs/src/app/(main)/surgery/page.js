@@ -108,34 +108,62 @@ export default function SurgeryHubPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-24 text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-950 via-slate-900 to-slate-950 opacity-90" />
+      <section 
+        className="relative overflow-hidden py-16 sm:py-24 text-white"
+        style={{
+          backgroundColor: "#020617",
+          background: "linear-gradient(135deg, #020617 0%, #041f22 50%, #020617 100%)",
+          color: "#ffffff"
+        }}
+      >
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
-          <div className="inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-500/10 px-4 py-1.5 text-xs font-semibold text-teal-300 mb-6">
-            <Sparkles className="h-4 w-4" />
+          <div 
+            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold mb-6"
+            style={{
+              backgroundColor: "rgba(20, 184, 166, 0.15)",
+              border: "1px solid rgba(45, 212, 191, 0.35)",
+              color: "#5eead4"
+            }}
+          >
+            <Sparkles className="h-4 w-4" style={{ color: "#5eead4" }} />
             <span>Transparent Pricing &bull; 100% Cashless Mediclaim &bull; 0% EMI</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto">
+          <h1 
+            className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto"
+            style={{ color: "#ffffff", textShadow: "0 2px 4px rgba(0,0,0,0.4)" }}
+          >
             Advanced ENT Surgery Costs &amp; Packages in Delhi
           </h1>
 
-          <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Led by <strong>Dr. (Prof.) Dhirendra Singh Kushwah</strong> (25+ Years Experience). We offer minimally invasive, stitchless, and packless surgical solutions with transparent packages and seamless cashless insurance approvals.
+          <p 
+            className="mt-6 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed"
+            style={{ color: "#cbd5e1" }}
+          >
+            Led by <strong style={{ color: "#ffffff" }}>Dr. (Prof.) Dhirendra Singh Kushwah</strong> (25+ Years Experience). We offer minimally invasive, stitchless, and packless surgical solutions with transparent packages and seamless cashless insurance approvals.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 text-xs sm:text-sm font-semibold">
-            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full border border-white/15">
-              <ShieldCheck className="h-4 w-4 text-emerald-400" />
+            <div 
+              className="flex items-center gap-2 px-4 py-2 rounded-full"
+              style={{ backgroundColor: "rgba(255, 255, 255, 0.1)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff" }}
+            >
+              <ShieldCheck className="h-4 w-4" style={{ color: "#34d399" }} />
               <span>Cashless TPA Approved</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full border border-white/15">
-              <Award className="h-4 w-4 text-teal-400" />
+            <div 
+              className="flex items-center gap-2 px-4 py-2 rounded-full"
+              style={{ backgroundColor: "rgba(255, 255, 255, 0.1)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff" }}
+            >
+              <Award className="h-4 w-4" style={{ color: "#2dd4bf" }} />
               <span>15,000+ Surgeries</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full border border-white/15">
-              <Stethoscope className="h-4 w-4 text-cyan-400" />
+            <div 
+              className="flex items-center gap-2 px-4 py-2 rounded-full"
+              style={{ backgroundColor: "rgba(255, 255, 255, 0.1)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff" }}
+            >
+              <Stethoscope className="h-4 w-4" style={{ color: "#38bdf8" }} />
               <span>Carl Zeiss &amp; Karl Storz Tech</span>
             </div>
           </div>

@@ -41,18 +41,41 @@ export default function PacklessSeptoplastyCostPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
 
-      <section className="bg-slate-950 py-14 sm:py-20 text-white relative">
+      <section 
+        className="py-14 sm:py-20 text-white relative"
+        style={{
+          backgroundColor: "#020617",
+          background: "linear-gradient(135deg, #020617 0%, #041f22 50%, #020617 100%)",
+          color: "#ffffff"
+        }}
+      >
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-900/60 px-3.5 py-1 rounded-full border border-teal-500/30">
+          <span 
+            className="text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full border inline-block"
+            style={{
+              backgroundColor: "rgba(20, 184, 166, 0.2)",
+              borderColor: "rgba(45, 212, 191, 0.35)",
+              color: "#5eead4"
+            }}
+          >
             Painless Rhinologic Surgery
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold mt-4 tracking-tight leading-tight">
+          <h1 
+            className="text-3xl sm:text-5xl font-extrabold mt-4 tracking-tight leading-tight"
+            style={{ color: "#ffffff", textShadow: "0 2px 4px rgba(0,0,0,0.4)" }}
+          >
             Packless Septoplasty Cost in Delhi
-            <span className="block text-teal-300 text-xl sm:text-2xl font-semibold mt-2">
+            <span 
+              className="block text-xl sm:text-2xl font-bold mt-2"
+              style={{ color: "#2dd4bf" }}
+            >
               Breathe Freely Instantly &bull; No Painful Gauze Packing &bull; Cashless TPA
             </span>
           </h1>
-          <p className="mt-4 text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+          <p 
+            className="mt-4 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed"
+            style={{ color: "#cbd5e1" }}
+          >
             Struggling to breathe through one side of your nose, chronic mouth breathing, or sleep disruption? Experience modern packless deviated septum correction.
           </p>
         </div>
