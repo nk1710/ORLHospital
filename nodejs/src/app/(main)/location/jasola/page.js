@@ -178,6 +178,17 @@ export default async function JasolaPage() {
 
         priceRange: "₹₹₹",
 
+        image:
+          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
+
         sameAs: [
           "https://www.facebook.com/people/Dr-Dhirendra-Singh-Kushwah/61560817359879/",
           "https://www.instagram.com/dr.dhirendrasinghkushwah",
@@ -262,6 +273,19 @@ export default async function JasolaPage() {
           "https://www.drdhirendrasinghkushwah.in/location/jasola",
 
         telephone: "+91-9311449825",
+
+        priceRange: "₹₹",
+
+        image:
+          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
 
         address: {
           "@type": "PostalAddress",

@@ -36,10 +36,14 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
 */
 export async function generateMetadata() {
   return {
-    title: "Best ENT Specialist in Delhi | Dr. Dhirendra Singh Kushwah",
+    title: "Best ENT Doctor in Jasola, South Delhi | Dr. Dhirendra Singh Kushwah",
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, top ENT specialist & surgeon in Delhi (Jasola & CR Park). Expert care for sinus, ear, hearing & vertigo. Book appointment.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top-rated ENT doctor & surgeon near Jasola Vihar, South Delhi. 25+ yrs experience in Sinus, Ear Surgery, Hearing & Vertigo. Book appointment.",
     keywords: [
+      "best ent doctor near jasola",
+      "best ent doctor in jasola",
+      "best ent doctor in jasola vihar",
+      "best ent doctor south delhi",
       "Best specialist in Delhi",
       "Top ENT specialist in Delhi",
      "ENT specialist in Delhi",
@@ -335,6 +339,15 @@ export default async function Home() {
         "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-jasola",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - Jasola",
         "telephone": "+91-9311449825",
+        "priceRange": "₹₹",
+        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "725",
+          "reviewCount": "725"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Plot No. 89, Pocket-1, Near Living Style Mall, Jasola Vihar",
@@ -347,6 +360,12 @@ export default async function Home() {
           "@type": "GeoCoordinates",
           "latitude": "28.535200",
           "longitude": "77.270000"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
         }
       },
 
@@ -474,7 +493,7 @@ export default async function Home() {
 
       {/* Semantic H1 for Search Engines & Accessibility */}
       <h1 className="sr-only">
-        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Specialist &amp; Ear Nose Throat Surgeon in Delhi
+        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Doctor &amp; Surgeon in Jasola, South Delhi
       </h1>
 
       {/* 1. Hero Showcase */}
