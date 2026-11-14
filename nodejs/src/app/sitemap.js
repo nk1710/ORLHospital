@@ -75,6 +75,20 @@ export default async function sitemap() {
     changeFrequency: "weekly",
   }));
 
+  // Dedicated Surgery Cost & Package Hubs
+  const surgeryRoutes = [
+    "/surgery",
+    "/surgery/tympanoplasty-cost-delhi",
+    "/surgery/sinus-fess-cost-delhi",
+    "/surgery/packless-septoplasty-cost-delhi",
+    "/surgery/coblation-tonsillectomy-cost-delhi",
+    "/surgery/cochlear-implant-cost-india",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    priority: 0.95,
+    changeFrequency: "weekly",
+  }));
+
   // Dynamic Blog Articles
   let blogRoutes = [];
   try {
@@ -96,6 +110,7 @@ export default async function sitemap() {
     ...locationRoutes,
     ...conditionRoutes,
     ...specialityRoutes,
+    ...surgeryRoutes,
     ...blogRoutes,
   ];
 
