@@ -37,7 +37,10 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   verification: {
-    google: "YKYIuUZB4kIbBS87Jm9egPfAsKsjQ9PmfMY4jgmhxcc",
+    google: [
+      "6IevyyztYbzXRViCI2BuMc7oLTS5GqBxQQTRQSN_AR4",
+      "YKYIuUZB4kIbBS87Jm9egPfAsKsjQ9PmfMY4jgmhxcc",
+    ],
   },
   other: {
     "geo.region": "IN-DL",

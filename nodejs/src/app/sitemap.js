@@ -1,4 +1,6 @@
-export default function sitemap() {
+import { getAllBlogs } from "@/lib/blog";
+
+export default async function sitemap() {
   const baseUrl = "https://www.drdhirendrasinghkushwah.in";
   const now = new Date();
 
@@ -73,18 +75,34 @@ export default function sitemap() {
     changeFrequency: "weekly",
   }));
 
+  // Dynamic Blog Articles
+  let blogRoutes = [];
+  try {
+    const blogs = await getAllBlogs();
+    if (blogs && blogs.length > 0) {
+      blogRoutes = blogs.map((b) => ({
+        url: `${baseUrl}/blog/${b.slug}`,
+        priority: 0.85,
+        changeFrequency: "weekly",
+        lastModified: b.updated_at ? new Date(b.updated_at) : now,
+      }));
+    }
+  } catch (err) {
+    console.error("Error generating blog sitemaps:", err);
+  }
+
   const allUrls = [
     ...coreRoutes,
     ...locationRoutes,
     ...conditionRoutes,
     ...specialityRoutes,
+    ...blogRoutes,
   ];
 
   return allUrls.map((entry) => ({
     url: entry.url,
-    lastModified: now,
+    lastModified: entry.lastModified || now,
     changeFrequency: entry.changeFrequency,
     priority: entry.priority,
   }));
 }
-
