@@ -14,6 +14,7 @@ const Navbar = () => {
     specialities: false,
     conditions: false,
     locations: false,
+    surgery: false,
   });
   const [activeDesktopDropdown, setActiveDesktopDropdown] = useState(null);
   const [appointmentOpen, setAppointmentOpen] = useState(false);
@@ -58,7 +59,7 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
-    setMobileDropdowns({ specialities: false, conditions: false, locations: false });
+    setMobileDropdowns({ specialities: false, conditions: false, locations: false, surgery: false });
     setActiveDesktopDropdown(null);
   };
 
@@ -229,6 +230,89 @@ const Navbar = () => {
                   >
                     All Surgical Procedures &rarr;
                   </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Surgeries & Cost Packages Dropdown */}
+            <div
+              className="nav-item-dropdown relative group"
+              onMouseEnter={() => handleMouseEnter("surgery")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                type="button"
+                onClick={() => toggleDesktopDropdown("surgery")}
+                className={`nav-drop-trigger flex items-center gap-1 font-medium whitespace-nowrap transition-colors ${
+                  activeDesktopDropdown === "surgery" ? "text-teal-700" : "text-slate-700 hover:text-teal-700"
+                }`}
+                aria-haspopup="true"
+                aria-expanded={activeDesktopDropdown === "surgery"}
+              >
+                <span className="nav-label-long">Surgery Costs</span>
+                <span className="nav-label-short">Surgeries</span>
+                <span className="ml-1 inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">
+                  Cashless
+                </span>
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${
+                    activeDesktopDropdown === "surgery" ? "rotate-180 text-teal-700" : "text-slate-400 group-hover:rotate-180"
+                  }`}
+                />
+              </button>
+              <div
+                className={`nav-dropdown-menu absolute left-0 top-full pt-1.5 w-72 z-50 ${
+                  activeDesktopDropdown === "surgery" ? "nav-dropdown-open" : ""
+                }`}
+              >
+                <div className="bg-white rounded-xl shadow-xl border border-slate-100 p-2">
+                  <Link
+                    href="/surgery"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm font-bold text-teal-800 bg-teal-50/70 hover:bg-teal-100 rounded-lg transition-colors mb-1"
+                  >
+                    All Surgery Packages &amp; Cashless Hub &rarr;
+                  </Link>
+                  <Link
+                    href="/surgery/tympanoplasty-cost-delhi"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Tympanoplasty (Eardrum Repair)
+                  </Link>
+                  <Link
+                    href="/surgery/sinus-fess-cost-delhi"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    FESS Sinus Surgery (HD Endoscopy)
+                  </Link>
+                  <Link
+                    href="/surgery/packless-septoplasty-cost-delhi"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Packless Septoplasty (DNS Repair)
+                  </Link>
+                  <Link
+                    href="/surgery/coblation-tonsillectomy-cost-delhi"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Coblation Tonsillectomy (Plasma)
+                  </Link>
+                  <Link
+                    href="/surgery/cochlear-implant-cost-india"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Cochlear Implant Surgery (Bionic Ear)
+                  </Link>
+                  <div className="border-t border-slate-100 mt-1 pt-1.5 px-3 py-1 flex items-center justify-between text-[11px] text-slate-500 font-medium">
+                    <span>100% Cashless Mediclaim</span>
+                    <span className="text-emerald-600 font-bold">All TPAs</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -443,6 +527,45 @@ const Navbar = () => {
                       {item.label}
                     </Link>
                   ))}
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Surgery Costs Accordion */}
+            <div className="border-t border-slate-100 pt-2">
+              <button
+                type="button"
+                onClick={() => toggleMobileDropdown("surgery")}
+                className="w-full flex items-center justify-between px-3 py-2 text-base font-semibold text-slate-800"
+              >
+                <div className="flex items-center gap-2">
+                  <span>ENT Surgeries &amp; Costs</span>
+                  <span className="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">
+                    Cashless
+                  </span>
+                </div>
+                <ChevronDown size={18} className={`transition-transform ${mobileDropdowns.surgery ? "rotate-180" : ""}`} />
+              </button>
+              {mobileDropdowns.surgery && (
+                <div className="pl-4 space-y-1.5 mt-1 border-l-2 border-teal-100 ml-3">
+                  <Link href="/surgery" onClick={closeMobileMenu} className="block py-1.5 text-sm font-bold text-teal-800">
+                    All Surgery Packages &amp; Hub &rarr;
+                  </Link>
+                  <Link href="/surgery/tympanoplasty-cost-delhi" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Tympanoplasty (Eardrum Repair)
+                  </Link>
+                  <Link href="/surgery/sinus-fess-cost-delhi" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    FESS Sinus Surgery (HD Endoscopy)
+                  </Link>
+                  <Link href="/surgery/packless-septoplasty-cost-delhi" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Packless Septoplasty (DNS Repair)
+                  </Link>
+                  <Link href="/surgery/coblation-tonsillectomy-cost-delhi" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Coblation Tonsillectomy (Plasma)
+                  </Link>
+                  <Link href="/surgery/cochlear-implant-cost-india" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Cochlear Implant Surgery (Bionic Ear)
+                  </Link>
                 </div>
               )}
             </div>
