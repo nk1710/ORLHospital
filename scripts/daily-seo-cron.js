@@ -103,6 +103,70 @@ const TOPIC_MATRIX = [
     titleSuggestion: "Otosclerosis Hearing Loss: How Microscopic Stapedotomy Restores Hearing",
     hubLink: "/specialities/stapedotomy-surgery",
     hubAnchor: "Stapedotomy Surgery in Delhi NCR"
+  },
+  {
+    keyword: "Tympanoplasty Surgery Cost in Delhi",
+    category: "Ear Surgery (Otology)",
+    target: "India",
+    titleSuggestion: "Tympanoplasty Surgery Cost in Delhi: Stitchless Eardrum Repair & Cashless Packages",
+    hubLink: "/surgery/tympanoplasty-cost-delhi",
+    hubAnchor: "Tympanoplasty Surgery Cost & Cashless Mediclaim in Delhi"
+  },
+  {
+    keyword: "FESS Sinus Surgery Cost in Delhi",
+    category: "Nose & Sinus (Rhinology)",
+    target: "India",
+    titleSuggestion: "FESS Sinus Surgery Cost in Delhi: Endoscopic Polyp Removal & Insurance Coverage",
+    hubLink: "/surgery/sinus-fess-cost-delhi",
+    hubAnchor: "FESS Sinus Surgery Cost & Daycare Packages Delhi"
+  },
+  {
+    keyword: "Packless Septoplasty Cost in Delhi",
+    category: "Nose & Sinus (Rhinology)",
+    target: "India",
+    titleSuggestion: "Packless Septoplasty Cost in Delhi: Pain-Free DNS Correction Without Nasal Packing",
+    hubLink: "/surgery/packless-septoplasty-cost-delhi",
+    hubAnchor: "Packless Septoplasty Cost & Cashless Insurance Delhi"
+  },
+  {
+    keyword: "Coblation Tonsillectomy Cost in Delhi",
+    category: "Throat & Pediatric ENT",
+    target: "India",
+    titleSuggestion: "Coblation Tonsillectomy Cost in Delhi: Gentle Plasma Tonsil Surgery for Kids & Adults",
+    hubLink: "/surgery/coblation-tonsillectomy-cost-delhi",
+    hubAnchor: "Coblation Tonsillectomy Surgery Cost Delhi"
+  },
+  {
+    keyword: "Cochlear Implant Surgery Cost in India",
+    category: "Cochlear & Bionic Hearing",
+    target: "International",
+    titleSuggestion: "Cochlear Implant Surgery Cost in India: Advanced Bionic Hearing for Global & Domestic Patients",
+    hubLink: "/surgery/cochlear-implant-cost-india",
+    hubAnchor: "Cochlear Implant Cost & Hospital Packages in India"
+  },
+  {
+    keyword: "Cashless Mediclaim for ENT Surgery in Delhi",
+    category: "ENT Surgeries & Insurance",
+    target: "India",
+    titleSuggestion: "100% Cashless Mediclaim ENT Surgery in Delhi: Complete TPA & Hospital Guide",
+    hubLink: "/surgery",
+    hubAnchor: "Cashless ENT Surgery Desk & Packages"
+  },
+  {
+    keyword: "Best Ear Surgeon in Delhi for Western UP & Meerut Patients",
+    category: "Ear Surgery (Otology)",
+    target: "India",
+    titleSuggestion: "Why Patients from Western UP (Meerut, Moradabad, Bijnor) Choose Dr. Kushwah for Ear Surgery",
+    hubLink: "/surgery/tympanoplasty-cost-delhi",
+    hubAnchor: "Advanced Ear Surgery & Tympanoplasty in Delhi"
+  },
+  {
+    keyword: "Chronic Sinus Surgery in Delhi for Faridabad & Noida Patients",
+    category: "Nose & Sinus (Rhinology)",
+    target: "India",
+    titleSuggestion: "Sinus Specialist & FESS Center in Delhi NCR for Faridabad, Noida & Gurgaon Patients",
+    hubLink: "/surgery/sinus-fess-cost-delhi",
+    hubAnchor: "Endoscopic Sinus Surgery Center Delhi NCR"
   }
 ];
 
@@ -205,6 +269,12 @@ Category: "${nextTopic.category}"
 Target Audience: "${nextTopic.target}"
 Required Internal Link: Point naturally to "${nextTopic.hubLink}" using anchor text "${nextTopic.hubAnchor}".
 
+Key Clinical & Conversion Guidelines:
+- Emphasize minimally invasive techniques (Stitchless Endoscopic Ear, Karl Storz HD FESS, Quilted Packless Septoplasty, Coblation Plasma Tonsillectomy).
+- Highlight 100% Cashless Mediclaim insurance coverage (All TPAs accepted) and 0% interest EMI options.
+- Include a high-converting "VIP Surgical Lead & Consultation Box" in HTML highlighting WhatsApp report review at +91 9311449825.
+- Mention Dr. Kushwah's 25+ years experience and 15,000+ successful ENT surgeries.
+
 Generate a comprehensive, doctor-grade medical article in JSON format ONLY:
 {
   "title": "Compelling H1 Title (under 65 chars)",
@@ -212,7 +282,7 @@ Generate a comprehensive, doctor-grade medical article in JSON format ONLY:
   "meta_description": "Click-worthy meta description with CTA (140-155 chars)",
   "slug": "url-friendly-slug-with-hyphens",
   "excerpt": "2-sentence summary hook explaining the condition and Dr. Kushwah's modern minimally invasive treatment.",
-  "content": "Full HTML content with <h2>, <h3>, <p>, <ul>, <li>, internal link, and 3-4 FAQs. Include medical disclaimer at end."
+  "content": "Full HTML content with <h2>, <h3>, <p>, <ul>, <li>, internal link, VIP lead desk CTA box, and 3-4 FAQs. Include medical disclaimer at end."
 }
 Return raw JSON ONLY. No markdown code blocks.
 `;
