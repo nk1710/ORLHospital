@@ -1,0 +1,36 @@
+name: Autonomous Daily SEO Auto-Pilot
+
+on:
+  schedule:
+    # Runs every morning at 03:30 UTC (09:00 AM IST)
+    - cron: '30 3 * * *'
+  workflow_dispatch: # Allows manual 1-click trigger directly from GitHub website
+
+permissions:
+  contents: write
+
+jobs:
+  run-daily-seo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Daily Medical SEO Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/daily-seo-cron.js
+
+      - name: Commit & Push Changes to Main
+        run: |
+          git config --global user.name "Dr. Kushwah SEO Bot"
+          git config --global user.email "seo-bot@drdhirendrasinghkushwah.in"
+          git add nodejs/data/blogs.json
+          git commit -m "content(seo): automated daily medical article published [skip ci]" || echo "No changes to commit"
+          git push origin main
