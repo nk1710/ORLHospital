@@ -72,13 +72,17 @@ const AddressOne = () => (
 export async function generateMetadata() {
   return {
     title:
-      "Best ENT Surgeon in Arjun Nagar, Safdarjung Enclave | ENT Specialist",
+      "Best ENT Doctor & Surgeon in Safdarjung Enclave, South Delhi | Near Me | Dr. Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, experienced ENT specialist and surgeon in Arjun Nagar, Safdarjung Enclave, South Delhi. Expert care for sinus, ear, hearing, nose, throat and voice conditions.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top-rated ENT specialist & surgeon near you in Safdarjung Enclave & Arjun Nagar, South Delhi. 25+ yrs experience.",
 
     keywords: [
-      // Primary Arjun Nagar keywords
+      "best ENT doctor near me",
+      "best ENT doctor in Safdarjung Enclave",
+      "best ENT doctor in South Delhi",
+      "best ENT surgeon in Safdarjung Enclave",
+      "ENT specialist in Safdarjung Enclave",
       "best ENT surgeon in Arjun Nagar",
       "ENT specialist in Arjun Nagar",
       "ENT doctor in Arjun Nagar",
@@ -212,6 +216,14 @@ export default async function ArjunNagarPage() {
 
         priceRange: "₹₹₹",
 
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
+
         sameAs: [
           "https://www.facebook.com/people/Dr-Dhirendra-Singh-Kushwah/61560817359879/",
           "https://www.instagram.com/dr.dhirendrasinghkushwah",
@@ -303,6 +315,19 @@ export default async function ArjunNagarPage() {
           "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar",
 
         telephone: "+91-9311449825",
+
+        priceRange: "₹₹",
+
+        image:
+          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
 
         medicalSpecialty: "Otolaryngology",
 

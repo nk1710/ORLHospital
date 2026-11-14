@@ -17,10 +17,14 @@ export async function generateMetadata() {
 
   return {
     title:
-      "Hospital & Clinic Locations in Delhi NCR | Dr.(Prof.) Dhirendra Singh Kushwah",
+      "Best ENT Clinics Near Me in South Delhi & New Delhi | Locations & OPD | Dr. Kushwah",
     description:
-      "Find Dr.(Prof.) Dhirendra Singh Kushwah's hospital & clinic locations across Delhi NCR, Haryana & UP: Jasola Vihar, CR Park, Safdarjung Enclave, Palwal & Dhampur. View OPD timings, addresses, and book your visit.",
+      "Find the best ENT doctor and hospital clinic near you across South Delhi (Jasola Vihar, CR Park, Safdarjung Enclave), Palwal & Dhampur. Book OPD consultation with Dr. Dhirendra Singh Kushwah.",
     keywords: [
+      "best ENT doctor near me",
+      "best ENT clinic near me",
+      "best ENT specialist in South Delhi",
+      "best ENT doctor in New Delhi",
       "ENT Clinic Jasola Vihar",
       "ENT Doctor CR Park Delhi",
       "ENT Clinic Safdarjung Enclave",

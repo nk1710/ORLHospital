@@ -70,12 +70,20 @@ const AddressOne = () => (
 export async function generateMetadata() {
   return {
     title:
-      "Best ENT Surgeon in CR Park, South Delhi | ENT Specialist | Dr. Dhirendra Singh Kushwah",
+      "Best ENT Doctor & Surgeon in CR Park, South Delhi | Near Me | Dr. Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, experienced ENT specialist and surgeon in CR Park, Chittaranjan Park, South Delhi. Expert care for ear, nose, throat, sinus, hearing and voice conditions.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top-rated ENT specialist & surgeon near you in CR Park, Chittaranjan Park, Greater Kailash & Kalkaji, South Delhi. 25+ yrs experience.",
 
     keywords: [
+      "best ENT doctor near me",
+      "best ENT doctor in CR Park",
+      "best ENT surgeon in CR Park",
+      "ENT specialist in CR Park",
+      "ENT doctor in CR Park",
+      "best ENT doctor in South Delhi",
+      "ENT specialist near Greater Kailash",
+      "ENT doctor near Kalkaji",
       "best ENT surgeon in CR Park",
       "ENT specialist in CR Park",
       "ENT doctor in CR Park",
@@ -187,6 +195,14 @@ export default async function CRParkPage() {
 
         priceRange: "₹₹₹",
 
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
+
         sameAs: [
           "https://www.facebook.com/people/Dr-Dhirendra-Singh-Kushwah/61560817359879/",
           "https://www.instagram.com/dr.dhirendrasinghkushwah",
@@ -278,6 +294,19 @@ export default async function CRParkPage() {
           "https://www.drdhirendrasinghkushwah.in/location/cr-park",
 
         telephone: "+91-9311449825",
+
+        priceRange: "₹₹",
+
+        image:
+          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          ratingCount: "725",
+          reviewCount: "725",
+        },
 
         medicalSpecialty: "Otolaryngology",
 

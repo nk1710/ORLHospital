@@ -36,17 +36,23 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
 */
 export async function generateMetadata() {
   return {
-    title: "Best ENT Doctor in Jasola, South Delhi | Dr. Dhirendra Singh Kushwah",
+    title: "Best ENT Doctor in South Delhi & New Delhi | Near Me | Dr. Dhirendra Singh Kushwah",
     description:
-      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top-rated ENT doctor & surgeon near Jasola Vihar, South Delhi. 25+ yrs experience in Sinus, Ear Surgery, Hearing & Vertigo. Book appointment.",
+      "Looking for the best ENT doctor near you? Consult Dr. (Prof.) Dhirendra Singh Kushwah, top-rated ENT specialist & surgeon in South Delhi (Jasola, CR Park, Safdarjung Enclave). 25+ yrs experience in Ear, Sinus, Hearing & Vertigo.",
     keywords: [
-      "best ent doctor near jasola",
+      "best ent doctor near me",
+      "best ent doctor in south delhi",
+      "best ent doctor in new delhi",
+      "best ent specialist near me",
+      "ent doctor near me",
+      "top ent doctor in new delhi",
       "best ent doctor in jasola",
+      "best ent doctor in cr park",
+      "best ent doctor in safdarjung enclave",
+      "best ent doctor near jasola",
       "best ent doctor in jasola vihar",
-      "best ent doctor south delhi",
-      "Best specialist in Delhi",
-      "Top ENT specialist in Delhi",
-     "ENT specialist in Delhi",
+      "best ent surgeon in south delhi",
+      "ENT specialist in Delhi",
       "ENT doctor in Delhi",
       "ENT surgeon in Delhi",
       "Dr Dhirendra Singh Kushwah",
@@ -493,7 +499,7 @@ export default async function Home() {
 
       {/* Semantic H1 for Search Engines & Accessibility */}
       <h1 className="sr-only">
-        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Doctor &amp; Surgeon in Jasola, South Delhi
+        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Doctor &amp; Surgeon in South Delhi &amp; New Delhi (Near Me)
       </h1>
 
       {/* 1. Hero Showcase */}
