@@ -11,6 +11,7 @@ import "../home/components/Navbar/Navbar.css";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({
+    about: false,
     specialities: false,
     conditions: false,
     locations: false,
@@ -59,7 +60,13 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
-    setMobileDropdowns({ specialities: false, conditions: false, locations: false, surgery: false });
+    setMobileDropdowns({
+      about: false,
+      specialities: false,
+      conditions: false,
+      locations: false,
+      surgery: false,
+    });
     setActiveDesktopDropdown(null);
   };
 
@@ -101,12 +108,62 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="nav-links nav-links-desktop" aria-label="Main Navigation">
-            <Link
-              href="/about/drdhirendrasinghkushwah"
-              className="text-slate-700 hover:text-teal-700 font-medium transition-colors whitespace-nowrap"
+            {/* About & Hospital Dropdown */}
+            <div
+              className="nav-item-dropdown relative group"
+              onMouseEnter={() => handleMouseEnter("about")}
+              onMouseLeave={handleMouseLeave}
             >
-              About
-            </Link>
+              <button
+                type="button"
+                onClick={() => toggleDesktopDropdown("about")}
+                className={`nav-drop-trigger flex items-center gap-1 font-medium whitespace-nowrap transition-colors ${
+                  activeDesktopDropdown === "about" ? "text-teal-700" : "text-slate-700 hover:text-teal-700"
+                }`}
+                aria-haspopup="true"
+                aria-expanded={activeDesktopDropdown === "about"}
+              >
+                <span>About</span>
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${
+                    activeDesktopDropdown === "about" ? "rotate-180 text-teal-700" : "text-slate-400 group-hover:rotate-180"
+                  }`}
+                />
+              </button>
+              <div
+                className={`nav-dropdown-menu absolute left-0 top-full pt-1.5 w-72 z-50 ${
+                  activeDesktopDropdown === "about" ? "nav-dropdown-open" : ""
+                }`}
+              >
+                <div className="bg-white rounded-xl shadow-xl border border-slate-100 p-2">
+                  <Link
+                    href="/about/drdhirendrasinghkushwah"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm font-semibold text-slate-800 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Dr. Dhirendra Singh Kushwah
+                    <span className="block text-[11px] font-normal text-slate-500">Senior Consultant &bull; 25+ Yrs Exp</span>
+                  </Link>
+                  <Link
+                    href="/facilities"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Hospital Facilities &amp; Tech
+                    <span className="block text-[11px] font-normal text-slate-500">Karl Storz HD &bull; Zeiss Microscopy</span>
+                  </Link>
+                  <Link
+                    href="/gallery"
+                    onClick={() => setActiveDesktopDropdown(null)}
+                    className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
+                  >
+                    Moments &amp; Case Gallery
+                    <span className="block text-[11px] font-normal text-slate-500">Cochlear Cases &bull; Clinical Highlights</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             {/* Conditions Dropdown */}
             <div
@@ -394,18 +451,6 @@ const Navbar = () => {
             </div>
 
             <Link
-              href="/facilities"
-              className="text-slate-700 hover:text-teal-700 font-medium transition-colors whitespace-nowrap"
-            >
-              Facilities
-            </Link>
-            <Link
-              href="/gallery"
-              className="text-slate-700 hover:text-teal-700 font-medium transition-colors whitespace-nowrap"
-            >
-              Gallery
-            </Link>
-            <Link
               href="/featuredblog"
               className="text-slate-700 hover:text-teal-700 font-medium transition-colors whitespace-nowrap"
             >
@@ -471,13 +516,30 @@ const Navbar = () => {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="nav-mobile-drawer bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 max-h-[calc(100vh-5rem)] overflow-y-auto animate-in slide-in-from-top-2">
-            <Link
-              href="/about/drdhirendrasinghkushwah"
-              onClick={closeMobileMenu}
-              className="block px-3 py-2 text-base font-semibold text-slate-800 rounded-lg hover:bg-slate-50"
-            >
-              About Dr. Kushwah
-            </Link>
+            {/* Mobile About & Hospital Accordion */}
+            <div>
+              <button
+                type="button"
+                onClick={() => toggleMobileDropdown("about")}
+                className="w-full flex items-center justify-between px-3 py-2 text-base font-semibold text-slate-800"
+              >
+                <span>About &amp; Hospital</span>
+                <ChevronDown size={18} className={`transition-transform ${mobileDropdowns.about ? "rotate-180" : ""}`} />
+              </button>
+              {mobileDropdowns.about && (
+                <div className="pl-4 space-y-1.5 mt-1 border-l-2 border-teal-100 ml-3">
+                  <Link href="/about/drdhirendrasinghkushwah" onClick={closeMobileMenu} className="block py-1.5 text-sm font-semibold text-slate-800">
+                    Dr. Dhirendra Singh Kushwah
+                  </Link>
+                  <Link href="/facilities" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Hospital Facilities &amp; Technology
+                  </Link>
+                  <Link href="/gallery" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
+                    Moments &amp; Case Gallery
+                  </Link>
+                </div>
+              )}
+            </div>
 
             {/* Mobile Conditions Accordion */}
             <div className="border-t border-slate-100 pt-2">
@@ -601,12 +663,6 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link href="/facilities" onClick={closeMobileMenu} className="block px-3 py-2 text-base font-semibold text-slate-800">
-              Facilities
-            </Link>
-            <Link href="/gallery" onClick={closeMobileMenu} className="block px-3 py-2 text-base font-semibold text-slate-800">
-              Moments &amp; Gallery
-            </Link>
             <Link href="/featuredblog" onClick={closeMobileMenu} className="block px-3 py-2 text-base font-semibold text-slate-800">
               Health Articles
             </Link>
