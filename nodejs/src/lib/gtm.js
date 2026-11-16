@@ -4,7 +4,7 @@
 // Import { gtmPageview, gtmEvent } wherever you need tracking.
 // ─────────────────────────────────────────────────────────────
 
-export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID; // e.g. G-XXXXXXX
+export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "G-T33BSPH0Z0"; // Google Tag ID
 
 // ── Base gtag function ────────────────────────────────────────
 export function gtag() {
