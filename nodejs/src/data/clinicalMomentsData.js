@@ -1,55 +1,5 @@
 export const CLINICAL_MOMENTS = [
   {
-    "id": "ot-01",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #01",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-01.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
-    "id": "ot-02",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #02",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-02.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
-    "id": "ot-03",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #03",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-03.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
-    "id": "ot-04",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #04",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-04.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
-    "id": "ot-05",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #05",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-05.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
     "id": "ot-06",
     "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #06",
     "category": "ot",
@@ -76,16 +26,6 @@ export const CLINICAL_MOMENTS = [
     "categoryLabel": "Surgical OT & Procedures",
     "badge": "Microscopic & Endoscopic Surgery",
     "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-08.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
-    "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
-  },
-  {
-    "id": "ot-09",
-    "title": "Advanced ENT Surgical Procedure in Laminar Airflow OT #09",
-    "category": "ot",
-    "categoryLabel": "Surgical OT & Procedures",
-    "badge": "Microscopic & Endoscopic Surgery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-09.webp",
     "alt": "Dr. (Prof.) Dhirendra Singh Kushwah performing precision ENT surgery in advanced laminar operating theater New Delhi",
     "caption": "Dr. (Prof.) Dhirendra Singh Kushwah performing advanced microscopic and endoscopic ear and skull base surgery using high-precision German magnification systems."
   },
@@ -228,16 +168,6 @@ export const CLINICAL_MOMENTS = [
     "src": "/images/cochlear-implant/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
     "alt": "Happy child smiling after successful cochlear implant surgery and processor activation by Dr Dhirendra Singh Kushwah",
     "caption": "Post-operative activation milestone: happy child smiling with external sound processor in place, demonstrating sound awareness."
-  },
-  {
-    "id": "patients-01",
-    "title": "Patient Consultation & Successful Recovery #01",
-    "category": "patients",
-    "categoryLabel": "Patient Care & Recovery",
-    "badge": "Successful Clinical Recovery",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-patient-consultation-recovery-01.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah with happy recovering ENT patient at hospital clinic New Delhi",
-    "caption": "Personalized bedside consultation and post-operative follow-up ensuring complete, complication-free healing."
   },
   {
     "id": "patients-02",
