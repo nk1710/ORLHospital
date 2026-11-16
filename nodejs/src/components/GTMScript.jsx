@@ -8,32 +8,28 @@
 //   <GTMScript />        → inside <head>
 //   <GTMNoScript />      → first child of <body>
 // ─────────────────────────────────────────────────────────────
-import Script from "next/script";
 import { GTM_ID } from "@/lib/gtm";
 
-// Injected into <head> — initialises dataLayer before GTM loads
-// so any dataLayerPush() calls before the container fires are queued.
+// Injected into <head> — renders standard Google tag scripts into raw SSR HTML
+// so Google Tag Assistant and connection crawlers detect it immediately.
 export function GTMScript() {
-  if (!GTM_ID) return null;
+  const tagId = GTM_ID || "G-T33BSPH0Z0";
 
   return (
     <>
-      {/* dataLayer init — must run before GTM container script */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}
+      {/* Google tag (gtag.js) */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${tagId}`}
       />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
+      <script
+        id="google-tag-init"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GTM_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${tagId}');
           `,
         }}
       />
