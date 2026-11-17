@@ -194,7 +194,7 @@ export default async function Footer() {
         <div>
           <strong className="block text-slate-200 mb-2 uppercase tracking-wider font-semibold">Our Branches:</strong>
           <ul className="space-y-1">
-            <li><Link href="/location/jasola" className="hover:text-teal-300">Jasola Hospital</Link></li>
+            <li><Link href="/location/jasola" className="hover:text-teal-300">Best ENT Doctor in Jasola (ORL Hospital)</Link></li>
             <li><Link href="/location/cr-park" className="hover:text-teal-300">CR Park Clinic</Link></li>
             <li><Link href="/location/arjun-nagar" className="hover:text-teal-300">Safdarjung Clinic</Link></li>
             <li><Link href="/location/palwal" className="hover:text-teal-300">Palwal Center (Haryana)</Link></li>

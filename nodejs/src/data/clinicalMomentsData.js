@@ -360,16 +360,6 @@ export const CLINICAL_MOMENTS = [
     "caption": "Exchange of advanced surgical knowledge, international medical fellowships, and faculty presentations on modern otology and rhinology."
   },
   {
-    "id": "conferences-11",
-    "title": "International Conference & Academic Outreach #11",
-    "category": "conferences",
-    "categoryLabel": "Conferences & Global Trips",
-    "badge": "Global Faculty & Fellowship",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-global-conference-fellowship-11.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah participating in international otolaryngology surgical conference and global academic workshop",
-    "caption": "Exchange of advanced surgical knowledge, international medical fellowships, and faculty presentations on modern otology and rhinology."
-  },
-  {
     "id": "conferences-12",
     "title": "International Conference & Academic Outreach #12",
     "category": "conferences",
@@ -388,16 +378,6 @@ export const CLINICAL_MOMENTS = [
     "src": "/images/clinical-moments/dr-dhirendra-kushwah-global-conference-fellowship-13.webp",
     "alt": "Dr. (Prof.) Dhirendra Singh Kushwah participating in international otolaryngology surgical conference and global academic workshop",
     "caption": "Exchange of advanced surgical knowledge, international medical fellowships, and faculty presentations on modern otology and rhinology."
-  },
-  {
-    "id": "team-01",
-    "title": "Hospital Clinical Team & Leadership #01",
-    "category": "team",
-    "categoryLabel": "Hospital Team & Milestones",
-    "badge": "Clinical Team Excellence",
-    "src": "/images/clinical-moments/dr-dhirendra-kushwah-hospital-team-leadership-01.webp",
-    "alt": "Dr. (Prof.) Dhirendra Singh Kushwah with senior ENT nursing and surgical hospital team New Delhi",
-    "caption": "Our dedicated team of clinical assistants, audiologists, and OT technicians working together to ensure round-the-clock patient safety."
   },
   {
     "id": "team-02",

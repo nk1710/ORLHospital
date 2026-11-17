@@ -409,7 +409,7 @@ const Navbar = () => {
                     onClick={() => setActiveDesktopDropdown(null)}
                     className="block px-3.5 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-800 rounded-lg transition-colors"
                   >
-                    Jasola &mdash; Hospital Center
+                    Jasola &mdash; Best ENT Doctor &amp; Hospital
                   </Link>
                   <Link
                     href="/location/cr-park"
@@ -645,7 +645,7 @@ const Navbar = () => {
               {mobileDropdowns.locations && (
                 <div className="pl-4 space-y-1.5 mt-1 border-l-2 border-teal-100 ml-3">
                   <Link href="/location/jasola" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
-                    Jasola &mdash; Hospital Center
+                    Jasola &mdash; Best ENT Doctor &amp; Hospital
                   </Link>
                   <Link href="/location/cr-park" onClick={closeMobileMenu} className="block py-1.5 text-sm text-slate-600">
                     CR Park &mdash; Clinic Center

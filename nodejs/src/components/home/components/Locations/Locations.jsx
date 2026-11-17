@@ -8,11 +8,11 @@ const clinicLocations = [
     id: 'clinic-jasola',
     badge: 'Main Surgical Facility',
     type: 'Hospital Center',
-    title: 'Primary ENT Hospital \u2014 Jasola Vihar',
+    title: 'Best ENT Doctor & Hospital — Jasola Vihar',
     address: 'Plot No. 89, Pocket-1, Near Living Style Mall, Jasola Vihar, New Delhi - 110025',
     metro: 'Jasola Vihar Shaheen Bagh (Pink Line)',
     phone: '+919311449825',
-    hours: 'Mon \u2013 Sat: 9:00 AM \u2013 8:00 PM',
+    hours: 'Mon – Sat: 9:00 AM – 8:00 PM',
     speciality: 'Comprehensive ENT & Advanced Surgeries (FESS, Tympanoplasty, Cochlear)',
     mapUrl: 'https://maps.google.com/?q=Plot+No.+89+Pocket-1+Jasola+Vihar+New+Delhi',
     pageUrl: '/location/jasola',
@@ -156,13 +156,19 @@ const Locations = () => (
             </div>
 
             <div className="loc-card-actions pt-4 border-t border-slate-100 flex items-center gap-2">
+              <Link
+                href={loc.pageUrl}
+                className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold transition-colors"
+              >
+                <span>View Clinic</span>
+              </Link>
               <a
                 href={`tel:${loc.phone}`}
                 className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-800 text-xs font-bold transition-colors"
                 aria-label={`Call ${loc.title}`}
               >
                 <Phone size={14} />
-                <span>Call Center</span>
+                <span>Call</span>
               </a>
               <a
                 href={loc.mapUrl}
@@ -172,7 +178,7 @@ const Locations = () => (
                 aria-label={`Directions to ${loc.title}`}
               >
                 <Navigation size={14} />
-                <span>Directions</span>
+                <span>Map</span>
               </a>
             </div>
           </article>
