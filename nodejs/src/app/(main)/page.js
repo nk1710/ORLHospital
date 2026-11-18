@@ -36,9 +36,9 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
 */
 export async function generateMetadata() {
   return {
-    title: "Best ENT Doctor in Delhi NCR | Dr. Dhirendra Singh Kushwah",
+    title: "Best ENT Doctor in South Delhi & Jasola | Dr. Dhirendra Singh Kushwah",
     description:
-      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top ENT surgeon in Delhi NCR. 25+ yrs expertise in sinus, stitchless ear surgery & hearing. Book appointment today.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah, top ENT surgeon in South Delhi & Jasola Vihar. 25+ yrs expertise in sinus, stitchless ear surgery & hearing care.",
     keywords: [
       "best ent doctor near me",
       "best ent doctor in south delhi",
@@ -499,7 +499,7 @@ export default async function Home() {
 
       {/* Semantic H1 for Search Engines & Accessibility */}
       <h1 className="sr-only">
-        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Doctor &amp; Surgeon in South Delhi &amp; New Delhi (Near Me)
+        Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Doctor &amp; Surgeon in Jasola &amp; South Delhi
       </h1>
 
       {/* 1. Hero Showcase */}
