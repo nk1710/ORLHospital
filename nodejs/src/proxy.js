@@ -4,12 +4,11 @@ import { verifyJWT } from "./lib/auth/jwt";
 //import { getPool } from "./lib/db";
 
 export async function proxy(request) {
-  // ── www redirect (must be first) 
+  // ── www and domain redirect (.in -> .com, non-www -> www)
   const host = (request.headers.get("host") || "").split(":")[0]; // strip port if any
-  const targetHost = "www.drdhirendrasinghkushwah.in";
+  const targetHost = "www.drdhirendrasinghkushwah.com";
   
-  // Redirect non-www to www only if not already on www
-  if (host === "drdhirendrasinghkushwah.in" && host !== targetHost) {
+  if (host === "drdhirendrasinghkushwah.in" || host === "www.drdhirendrasinghkushwah.in" || host === "drdhirendrasinghkushwah.com") {
     const url = request.nextUrl.clone();
     url.host = targetHost;
     url.protocol = "https:";

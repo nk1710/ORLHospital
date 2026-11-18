@@ -22,10 +22,51 @@ const nextConfig = {
         protocol: "https",
         hostname: "drdhirendrasinghkushwah.in",
       },
+      {
+        protocol: "https",
+        hostname: "www.drdhirendrasinghkushwah.com",
+      },
+      {
+        protocol: "https",
+        hostname: "drdhirendrasinghkushwah.com",
+      },
     ],
   },
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "drdhirendrasinghkushwah.in",
+          },
+        ],
+        destination: "https://www.drdhirendrasinghkushwah.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.drdhirendrasinghkushwah.in",
+          },
+        ],
+        destination: "https://www.drdhirendrasinghkushwah.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "drdhirendrasinghkushwah.com",
+          },
+        ],
+        destination: "https://www.drdhirendrasinghkushwah.com/:path*",
+        permanent: true,
+      },
       {
         source: "/specialities/ent-and-gynae-clinic",
         destination: "/",
