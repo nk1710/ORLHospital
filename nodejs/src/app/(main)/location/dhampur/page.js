@@ -46,14 +46,14 @@ export async function generateMetadata() {
     ],
     alternates: {
       canonical:
-        "https://www.drdhirendrasinghkushwah.in/location/dhampur",
+        "https://www.drdhirendrasinghkushwah.com/location/dhampur",
     },
     openGraph: {
       title:
         "Best ENT Surgeon in Dhampur, UP | Dr. Dhirendra Singh Kushwah",
       description:
         "Expert ENT consultation and treatment for ear, nose, sinus, hearing, throat, voice and balance conditions in Dhampur, Uttar Pradesh.",
-      url: "https://www.drdhirendrasinghkushwah.in/location/dhampur",
+      url: "https://www.drdhirendrasinghkushwah.com/location/dhampur",
       type: "website",
       locale: "en_IN",
       siteName: "Dr. Dhirendra Singh Kushwah",
@@ -104,8 +104,8 @@ const schemaData = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.drdhirendrasinghkushwah.in/#website",
-      url: "https://www.drdhirendrasinghkushwah.in/",
+      "@id": "https://www.drdhirendrasinghkushwah.com/#website",
+      url: "https://www.drdhirendrasinghkushwah.com/",
       name: "Dr. Dhirendra Singh Kushwah",
       inLanguage: "en-IN",
     },
@@ -113,9 +113,9 @@ const schemaData = {
     {
       "@type": "Physician",
       "@id":
-        "https://www.drdhirendrasinghkushwah.in/#dr-dhirendra-singh-kushwah",
+        "https://www.drdhirendrasinghkushwah.com/#dr-dhirendra-singh-kushwah",
       name: "Dr. Dhirendra Singh Kushwah",
-      url: "https://www.drdhirendrasinghkushwah.in/",
+      url: "https://www.drdhirendrasinghkushwah.com/",
       telephone: "+91-9311449825",
       email: "drdhirendrasingent@gmail.com",
       medicalSpecialty: "Otolaryngology",
@@ -137,9 +137,9 @@ const schemaData = {
     {
       "@type": "MedicalClinic",
       "@id":
-        "https://www.drdhirendrasinghkushwah.in/location/dhampur#clinic",
+        "https://www.drdhirendrasinghkushwah.com/location/dhampur#clinic",
       name: "Dr. Dhirendra Singh Kushwah ENT Clinic Dhampur",
-      url: "https://www.drdhirendrasinghkushwah.in/location/dhampur",
+      url: "https://www.drdhirendrasinghkushwah.com/location/dhampur",
       telephone: "+91-9311449825",
       medicalSpecialty: "Otolaryngology",
       address: {
@@ -163,13 +163,13 @@ const schemaData = {
       ],
       physician: {
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#dr-dhirendra-singh-kushwah",
+          "https://www.drdhirendrasinghkushwah.com/#dr-dhirendra-singh-kushwah",
       },
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.drdhirendrasinghkushwah.in/location/dhampur#faq",
+      "@id": "https://www.drdhirendrasinghkushwah.com/location/dhampur#faq",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
@@ -183,25 +183,25 @@ const schemaData = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.drdhirendrasinghkushwah.in/location/dhampur#breadcrumb",
+        "https://www.drdhirendrasinghkushwah.com/location/dhampur#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.drdhirendrasinghkushwah.in/",
+          item: "https://www.drdhirendrasinghkushwah.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Locations",
-          item: "https://www.drdhirendrasinghkushwah.in/location",
+          item: "https://www.drdhirendrasinghkushwah.com/location",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Dhampur",
-          item: "https://www.drdhirendrasinghkushwah.in/location/dhampur",
+          item: "https://www.drdhirendrasinghkushwah.com/location/dhampur",
         },
       ],
     },

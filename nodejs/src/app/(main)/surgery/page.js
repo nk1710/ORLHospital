@@ -18,7 +18,7 @@ export const metadata = {
     "dr dhirendra singh kushwah surgery"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery",
   },
 };
 
@@ -90,7 +90,7 @@ export default function SurgeryHubPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "ENT Surgery Cost & Cashless Packages in Delhi",
-    "url": "https://www.drdhirendrasinghkushwah.in/surgery",
+    "url": "https://www.drdhirendrasinghkushwah.com/surgery",
     "description": "Transparent ENT surgery costs in Delhi for Tympanoplasty, FESS, Septoplasty & Cochlear Implants with 100% Cashless Mediclaim.",
     "provider": {
       "@type": "Physician",

@@ -3,7 +3,7 @@ import FaqClient from "./FaqClient";
 import { HelpCircle, Phone, Sparkles } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/faq";
+  const url = "https://www.drdhirendrasinghkushwah.com/faq";
 
   return {
     title:

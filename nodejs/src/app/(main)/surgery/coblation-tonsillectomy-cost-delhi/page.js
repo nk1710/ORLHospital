@@ -14,7 +14,7 @@ export const metadata = {
     "tonsil surgery cashless insurance delhi"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery/coblation-tonsillectomy-cost-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery/coblation-tonsillectomy-cost-delhi",
   },
 };
 

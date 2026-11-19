@@ -13,7 +13,7 @@ import {
 import GalleryClient from "./GalleryClient";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/gallery";
+  const url = "https://www.drdhirendrasinghkushwah.com/gallery";
 
   return {
     title:
@@ -45,7 +45,7 @@ export async function generateMetadata() {
       locale: "en_IN",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-01.webp",
+          url: "https://www.drdhirendrasinghkushwah.com/images/clinical-moments/dr-dhirendra-kushwah-ent-surgery-operation-theater-01.webp",
           width: 1200,
           height: 800,
           alt: "Dr. (Prof.) Dhirendra Singh Kushwah in Operation Theater",
@@ -67,7 +67,7 @@ export async function generateMetadata() {
 }
 
 export default function GalleryPage() {
-  const pageUrl = "https://www.drdhirendrasinghkushwah.in/gallery";
+  const pageUrl = "https://www.drdhirendrasinghkushwah.com/gallery";
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -80,7 +80,7 @@ export default function GalleryPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.drdhirendrasinghkushwah.in/",
+            item: "https://www.drdhirendrasinghkushwah.com/",
           },
           {
             "@type": "ListItem",
@@ -101,7 +101,7 @@ export default function GalleryPage() {
           "@type": "Physician",
           name: "Dr. (Prof.) Dhirendra Singh Kushwah",
           medicalSpecialty: "Otolaryngology",
-          url: "https://www.drdhirendrasinghkushwah.in/",
+          url: "https://www.drdhirendrasinghkushwah.com/",
         },
       },
     ],

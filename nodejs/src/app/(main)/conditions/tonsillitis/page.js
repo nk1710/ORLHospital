@@ -20,7 +20,7 @@ export const metadata = {
         "Learn about tonsillitis symptoms, causes, types, diagnosis and treatment. Understand recurrent tonsillitis, tonsil stones, tonsillectomy and when to see an ENT specialist in Delhi.",
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/tonsillitis",
+            "https://www.drdhirendrasinghkushwah.com/conditions/tonsillitis",
     },
 };
 

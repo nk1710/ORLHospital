@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/neuro-otology" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/neuro-otology" // update if needed
 
   return {
     title:
@@ -64,7 +64,7 @@ export default async function DepartmentPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Dizziness and Vertigo (Neuro-Otology) - Dr. Dhirendra Singh Kushwah",
-    "url": "https://www.drdhirendrasinghkushwah.in/neuro-otology",
+    "url": "https://www.drdhirendrasinghkushwah.com/neuro-otology",
     "mainEntity": {
       "@type": "MedicalCondition",
       "name": "Dizziness and Vertigo",
@@ -128,7 +128,7 @@ export default async function DepartmentPage() {
         "name": "Dr. Dhirendra Singh Kushwah",
         "medicalSpecialty": "Neuro-Otology",
         "jobTitle": "Neuro-Otology & ENT Surgeon",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "telephone": "+91-9311449825"
       }
     }

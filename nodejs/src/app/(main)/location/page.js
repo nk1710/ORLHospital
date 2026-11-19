@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/location";
+  const url = "https://www.drdhirendrasinghkushwah.com/location";
 
   return {
     title:
@@ -187,11 +187,11 @@ export default async function LocationHubPage() {
     "@context": "https://schema.org",
     "@graph": LOCATIONS_DATA.map((loc) => ({
       "@type": "MedicalClinic",
-      "@id": `https://www.drdhirendrasinghkushwah.in${loc.slug}/#clinic`,
+      "@id": `https://www.drdhirendrasinghkushwah.com${loc.slug}/#clinic`,
       name: loc.name,
       description: loc.type,
       telephone: loc.phone,
-      url: `https://www.drdhirendrasinghkushwah.in${loc.slug}`,
+      url: `https://www.drdhirendrasinghkushwah.com${loc.slug}`,
       address: {
         "@type": "PostalAddress",
         streetAddress: loc.address,

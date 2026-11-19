@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/pediatric-ent" // update with actual URL
+  const url = "https://www.drdhirendrasinghkushwah.com/pediatric-ent" // update with actual URL
 
   return {
     title:
@@ -64,7 +64,7 @@ export default async function DepartmentPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Pediatric ENT Specialists in Delhi - Dr. Dhirendra Singh Kushwah",
-    "url": "https://www.drdhirendrasinghkushwah.in/pediatric-ent",
+    "url": "https://www.drdhirendrasinghkushwah.com/pediatric-ent",
     "mainEntity": {
       "@type": "MedicalCondition",
       "name": "Pediatric ENT Conditions",
@@ -115,7 +115,7 @@ export default async function DepartmentPage() {
         "name": "Dr. Dhirendra Singh Kushwah",
         "medicalSpecialty": "Pediatric ENT",
         "jobTitle": "ENT Surgeon & Pediatric ENT Specialist",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "telephone": "+91-9311449825"
       }
     }

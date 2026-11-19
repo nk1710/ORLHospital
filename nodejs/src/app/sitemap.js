@@ -1,7 +1,7 @@
 import { getAllBlogs } from "@/lib/blog";
 
 export default async function sitemap() {
-  const baseUrl = "https://www.drdhirendrasinghkushwah.in";
+  const baseUrl = "https://www.drdhirendrasinghkushwah.com";
   const now = new Date();
 
   // Core Static Pages

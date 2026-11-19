@@ -23,7 +23,7 @@ export const metadata = {
         "Paediatric ENT care in Delhi for children with ear infections, hearing loss, enlarged adenoids, tonsils, snoring, mouth breathing, allergies, sinus problems and other ear, nose and throat conditions.",
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/paediatric-ent",
+            "https://www.drdhirendrasinghkushwah.com/conditions/paediatric-ent",
     },
 };
 

@@ -13,7 +13,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/voice-throat",
+            "https://www.drdhirendrasinghkushwah.com/conditions/voice-throat",
     },
 };
 

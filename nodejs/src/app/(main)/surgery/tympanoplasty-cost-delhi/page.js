@@ -16,7 +16,7 @@ export const metadata = {
     "best tympanoplasty surgeon in delhi"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery/tympanoplasty-cost-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery/tympanoplasty-cost-delhi",
   },
 };
 

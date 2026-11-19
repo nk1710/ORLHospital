@@ -6,7 +6,7 @@ export const revalidate = 86400;
 export default async function VisualSitemap() {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://www.drdhirendrasinghkushwah.in";
+    "https://www.drdhirendrasinghkushwah.com";
 
   const paths = await getAllValidPaths();
   const urls = paths.map(({ location, problem, intent }) => (`${baseUrl}/${location}/${problem}/`))

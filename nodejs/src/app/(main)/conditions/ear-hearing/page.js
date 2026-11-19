@@ -8,7 +8,7 @@ import { Ear, Headphones, ShieldAlert, Award, Calendar, Activity } from "lucide-
 //     title: "Ear & Hearing Conditions — Diagnosis & Treatment | Dr.(Prof.) Dhirendra Singh kushwah, New Delhi",
 //     description: "Suffering from hearing loss, ear infections, tinnitus, or vertigo? Dr.(Prof.) Dhirendra Singh kushwah, a leading otology specialist in New Delhi, offers advanced ear care for children and adults. Book a consultation today.",
 //     alternates: {
-//         canonical: "drdhirendrasinghkushwah.in/conditions/ear-hearing",
+//         canonical: "drdhirendrasinghkushwah.com/conditions/ear-hearing",
 //     },
 // };
 export const metadata = {
@@ -20,7 +20,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/ear-hearing",
+            "https://www.drdhirendrasinghkushwah.com/conditions/ear-hearing",
     },
 };
 
@@ -200,7 +200,7 @@ const earHearingTreatments = [
                 "@type": "MedicalCondition",
                 "name": "Ear & Hearing Conditions",
                 "description": "A comprehensive overview of ear and hearing conditions including infections, hearing loss, tinnitus, and balance disorders.",
-                "url": "https://www.drdhirendrasinghkushwah.in/conditions/ear-hearing",
+                "url": "https://www.drdhirendrasinghkushwah.com/conditions/ear-hearing",
                 "associatedAnatomy": {
                     "@type": "AnatomicalStructure",
                     "name": "Ear",
@@ -224,8 +224,8 @@ const earHearingTreatments = [
             {
                 "@type": "Physician",
                 "name": "Dr.(Prof.) Dhirendra Singh kushwah",
-                "url": "https://www.drdhirendrasinghkushwah.in/",
-                "image": "https://www.drdhirendrasinghkushwah.in/images/dherendra_patient.png",
+                "url": "https://www.drdhirendrasinghkushwah.com/",
+                "image": "https://www.drdhirendrasinghkushwah.com/images/dherendra_patient.png",
                 "description": "Senior ENT and Otology Specialist in New Delhi with over 25 years of experience",
                 "medicalSpecialty": "Otology",
                 "qualifications": [
@@ -275,7 +275,7 @@ const earHearingTreatments = [
             },
             {
                 "@type": "FAQPage",
-                "url": "https://www.drdhirendrasinghkushwah.in/conditions/ear-hearing",
+                "url": "https://www.drdhirendrasinghkushwah.com/conditions/ear-hearing",
                 "mainEntity": faqItems.map((item, index) => ({
                     "@type": "Question",
                     "name": item.q,

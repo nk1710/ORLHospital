@@ -7,7 +7,7 @@ import {
 import { DoctorImage, FaqAccordion } from "@/components/ui/custom";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/conditions";
+  const url = "https://www.drdhirendrasinghkushwah.com/conditions";
 
   return {
     title:
@@ -65,7 +65,7 @@ export default async function EarHearingPage() {
     "physician": {
       "@type": "Physician",
       "name": "Dr.(Prof.) Dhirendra Singh kushwah",
-      "image": "https://www.drdhirendrasinghkushwah.in/images/dherendra_patient.png",
+      "image": "https://www.drdhirendrasinghkushwah.com/images/dherendra_patient.png",
       "medicalSpecialty": "Otology",
       "description": "Senior ENT and otology specialist in New Delhi with over 25 years of experience. Over 700 cochlear and auditory brainstem implant recipients under his care."
     }

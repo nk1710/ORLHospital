@@ -36,7 +36,7 @@ export function UserBaseTemplate({ name, fields }) {
                 <td style="padding:20px 32px;border-bottom:1px solid #e5e7eb;">
                   
                   <img 
-                    src="https://www.drdhirendrasinghkushwah.in/images/medical-logo.png" 
+                    src="https://www.drdhirendrasinghkushwah.com/images/medical-logo.png" 
                     height="40"
                     style="display:block;margin-bottom:10px;"
                   />

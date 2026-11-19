@@ -3,7 +3,7 @@ import { FaqAccordion } from './faq-accordion'
 import { Facebook, Instagram, Linkedin, Phone, X, Youtube, Mail } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/about/drdhirendrasinghkushwah"
+  const url = "https://www.drdhirendrasinghkushwah.com/about/drdhirendrasinghkushwah"
 
   return {
     title: "Top ENT Doctor in India | Dr.(Prof.) Dhirendra Singh Kushwah (25+ Years Experience)",
@@ -52,14 +52,14 @@ export default function AboutPage() {
     "@graph": [
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/about/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/about/#physician",
         name: "Dr. Dhirendra Singh Kushwah",
         alternateName: "Best ENT Surgeon in Delhi",
         medicalSpecialty: "Otolaryngology",
         jobTitle: "ENT Surgeon & Skull Base Specialist",
         description: "Senior Consultant ENT Specialist, Cochlear Implant & Endoscopic Sinus Surgeon, Head and Neck Surgeon, Specialist in OSA (Sleep) Surgery with over 25 years of clinical excellence.",
-        image: "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
-        url: "https://www.drdhirendrasinghkushwah.in/",
+        image: "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
+        url: "https://www.drdhirendrasinghkushwah.com/",
         telephone: "+919311449825",
         priceRange: "₹₹₹",
         areaServed: { "@type": "City", name: "Delhi" },
@@ -90,11 +90,11 @@ export default function AboutPage() {
       },
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic",
         name: "ORL International Group of Hospitals – ENT Department",
-        url: "https://www.drdhirendrasinghkushwah.in/",
+        url: "https://www.drdhirendrasinghkushwah.com/",
         telephone: "+919311449825",
-        image: "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        image: "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Plot No. 89, Pocket 1, Jasola Vihar",

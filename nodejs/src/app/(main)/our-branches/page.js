@@ -7,12 +7,12 @@ export const metadata = {
   title: "ENT Hospital & Clinic Branches in Delhi NCR | Dr. (Prof.) Dhirendra Singh Kushwah",
   description: "Visit Dr. (Prof.) Dhirendra Singh Kushwah across 5 premier ENT hospital & clinic centers: Jasola Vihar, CR Park, Arjun Nagar (Safdarjung), Palwal & Dhampur. Book OPD consultation.",
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/our-branches",
+    canonical: "https://www.drdhirendrasinghkushwah.com/our-branches",
   },
   openGraph: {
     title: "ENT Hospital & Clinic Centers in Delhi NCR | Dr. Kushwah",
     description: "State-of-the-art ENT surgical facilities and OPD consultation clinics across South Delhi, Haryana & UP.",
-    url: "https://www.drdhirendrasinghkushwah.in/our-branches",
+    url: "https://www.drdhirendrasinghkushwah.com/our-branches",
   },
 };
 

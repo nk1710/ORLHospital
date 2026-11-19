@@ -8,7 +8,7 @@ import { Wind, ShieldAlert, Award, Calendar, Activity } from "lucide-react";
 //     title: "Nose & Sinus Treatment in New Delhi | Expert Sinus Specialist & ENT Surgeon",
 //     description: "Get advanced nose & sinus treatment in New Delhi for sinusitis, DNS, nasal blockage, allergies, polyps, snoring, and endoscopic sinus surgery with expert ENT care by Dr. Dhirendra Singh Kushwah.",
 //     alternates: {
-//         canonical: "drdhirendrasinghkushwah.in/conditions/nose-sinus-treatment",
+//         canonical: "drdhirendrasinghkushwah.com/conditions/nose-sinus-treatment",
 //     },
 // };
 export const metadata = {
@@ -20,7 +20,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/nose-sinus-treatment",
+            "https://www.drdhirendrasinghkushwah.com/conditions/nose-sinus-treatment",
     },
 };
 

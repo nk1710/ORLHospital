@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/feedback";
+  const url = "https://www.drdhirendrasinghkushwah.com/feedback";
 
   return {
     title:

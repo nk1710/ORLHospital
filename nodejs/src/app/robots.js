@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://www.drdhirendrasinghkushwah.in";
+  const baseUrl = "https://www.drdhirendrasinghkushwah.com";
 
   return {
     rules: [

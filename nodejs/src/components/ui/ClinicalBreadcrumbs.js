@@ -5,7 +5,7 @@ import { ChevronRight, Home } from "lucide-react";
 export default function ClinicalBreadcrumbs({ items = [] }) {
   if (!items || items.length === 0) return null;
 
-  const siteUrl = "https://www.drdhirendrasinghkushwah.in";
+  const siteUrl = "https://www.drdhirendrasinghkushwah.com";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

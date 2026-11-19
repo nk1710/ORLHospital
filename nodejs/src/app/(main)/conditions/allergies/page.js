@@ -22,7 +22,7 @@ export const metadata = {
         "Learn about allergies and allergic rhinitis, including symptoms, causes, common triggers, diagnosis, treatment and prevention. Know when to see an ENT specialist for persistent nasal allergy symptoms in Delhi.",
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/allergies",
+            "https://www.drdhirendrasinghkushwah.com/conditions/allergies",
     },
 };
 

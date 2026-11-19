@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/nose-sinus-rhinology" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology" // update if needed
 
   return {
     title:
@@ -65,18 +65,18 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/nose-sinus-rhinology",
-        "url": "https://www.drdhirendrasinghkushwah.in/nose-sinus-rhinology",
+        "@id": "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology",
+        "url": "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology",
         "name": "Best Nose and Sinus Surgeon in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced rhinology treatments for sinusitis, nasal blockage, deviated septum, and breathing disorders using modern surgical techniques.",
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#rhinology"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#rhinology"
         }
       },
   
       {
         "@type": "MedicalSpecialty",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#rhinology",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#rhinology",
         "name": "Rhinology (Nose and Sinus Surgery)",
         "description": "Rhinology is a branch of ENT that focuses on diagnosis and treatment of nasal and sinus disorders including sinusitis, nasal obstruction, and breathing problems.",
   
@@ -104,7 +104,7 @@ export default async function DepartmentPage() {
   
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "medicalSpecialty": "Otolaryngology",
         "jobTitle": "ENT Specialist",

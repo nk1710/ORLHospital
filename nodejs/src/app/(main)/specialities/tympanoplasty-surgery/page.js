@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export async function generateMetadata() {
   const url =
-    "https://www.drdhirendrasinghkushwah.in/specialities/tympanoplasty-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/tympanoplasty-surgery";
 
   return {
     title:
@@ -77,7 +77,7 @@ export async function generateMetadata() {
 
 export default async function DepartmentPage() {
   const pageUrl =
-    "https://www.drdhirendrasinghkushwah.in/specialities/tympanoplasty-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/tympanoplasty-surgery";
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -139,7 +139,7 @@ export default async function DepartmentPage() {
         ],
         provider: {
           "@id":
-            "https://www.drdhirendrasinghkushwah.in/#physician",
+            "https://www.drdhirendrasinghkushwah.com/#physician",
         },
 
         availableAtOrFrom: {

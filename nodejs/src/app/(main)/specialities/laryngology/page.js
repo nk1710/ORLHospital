@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/laryngology"
+  const url = "https://www.drdhirendrasinghkushwah.com/laryngology"
 
   return {
     title:
@@ -66,8 +66,8 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/laryngoloy",
-        "url": "https://www.drdhirendrasinghkushwah.in/laryngology",
+        "@id": "https://www.drdhirendrasinghkushwah.com/laryngoloy",
+        "url": "https://www.drdhirendrasinghkushwah.com/laryngology",
         "name": "Best Laryngology Surgeon in India – Dr. Dhirendra Singh Kushwah",
         "description": "Expert laryngology care for voice, throat, and vocal cord disorders including hoarseness, swallowing difficulty, and airway issues.",
         "medicalAudience": {
@@ -75,13 +75,13 @@ export default async function DepartmentPage() {
           "audienceType": "Patient"
         },
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#laryngology"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#laryngology"
         }
       },
   
       {
         "@type": "MedicalSpecialty",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#laryngology",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#laryngology",
         "name": "Laryngology",
         "description": "A branch of ENT focused on disorders of the larynx, voice, throat, and airway including vocal cord conditions and swallowing disorders.",
         "relevantSpecialty": {
@@ -125,11 +125,11 @@ export default async function DepartmentPage() {
   
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "jobTitle": "Laryngology & ENT Specialist",
         "medicalSpecialty": "Otolaryngology",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "telephone": "+91-9311449825",
         "sameAs": [
           "https://www.facebook.com/people/Dr-Dhirendra-Singh-Kushwah/61560817359879/",

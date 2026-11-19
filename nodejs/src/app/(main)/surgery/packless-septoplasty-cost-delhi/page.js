@@ -15,7 +15,7 @@ export const metadata = {
     "septoplasty cashless insurance delhi"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery/packless-septoplasty-cost-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery/packless-septoplasty-cost-delhi",
   },
 };
 

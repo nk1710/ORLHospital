@@ -44,7 +44,7 @@ export function buildEmailTemplate({ title, subtitle, fields }) {
                   <tr>
                     <td>
                       <img 
-                        src="https://www.drdhirendrasinghkushwah.in/images/medical-logo.png" 
+                        src="https://www.drdhirendrasinghkushwah.com/images/medical-logo.png" 
                         height="36" 
                         style="display:block;"
                       />

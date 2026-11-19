@@ -122,7 +122,7 @@ export async function generateMetadata() {
 
     alternates: {
       canonical:
-        "https://www.drdhirendrasinghkushwah.in/location/jasola",
+        "https://www.drdhirendrasinghkushwah.com/location/jasola",
     },
 
     openGraph: {
@@ -132,7 +132,7 @@ export async function generateMetadata() {
       description:
         "Top-rated ENT doctor & specialist surgeon providing advanced ear, nose, throat, and sinus care in Jasola Vihar, South Delhi. 25+ years experience.",
 
-      url: "https://www.drdhirendrasinghkushwah.in/location/jasola",
+      url: "https://www.drdhirendrasinghkushwah.com/location/jasola",
 
       type: "website",
     },
@@ -146,19 +146,19 @@ export default async function JasolaPage() {
       {
         "@type": "WebSite",
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#website",
-        url: "https://www.drdhirendrasinghkushwah.in/",
+          "https://www.drdhirendrasinghkushwah.com/#website",
+        url: "https://www.drdhirendrasinghkushwah.com/",
         name: "Dr.(Prof.) Dhirendra Singh Kushwah ENT Specialist",
         publisher: {
           "@id":
-            "https://www.drdhirendrasinghkushwah.in/#physician",
+            "https://www.drdhirendrasinghkushwah.com/#physician",
         },
       },
 
       {
         "@type": "Physician",
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#physician",
+          "https://www.drdhirendrasinghkushwah.com/#physician",
 
         name: "Dr.(Prof.) Dhirendra Singh Kushwah",
 
@@ -169,17 +169,17 @@ export default async function JasolaPage() {
 
         medicalSpecialty: "Otolaryngology",
 
-        url: "https://www.drdhirendrasinghkushwah.in/",
+        url: "https://www.drdhirendrasinghkushwah.com/",
 
         image:
-          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
 
         telephone: "+91-9311449825",
 
         priceRange: "₹₹₹",
 
         image:
-          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
 
         aggregateRating: {
           "@type": "AggregateRating",
@@ -239,23 +239,23 @@ export default async function JasolaPage() {
         worksFor: [
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-jasola",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-jasola",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-crpark",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-crpark",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-arjun",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-arjun",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-dhampur",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-dhampur",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-palwal",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-palwal",
           },
         ],
       },
@@ -264,20 +264,20 @@ export default async function JasolaPage() {
         "@type": "MedicalClinic",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#clinic-jasola",
+          "https://www.drdhirendrasinghkushwah.com/#clinic-jasola",
 
         name:
           "Dr.(Prof.) Dhirendra Singh Kushwah ENT Clinic - Jasola",
 
         url:
-          "https://www.drdhirendrasinghkushwah.in/location/jasola",
+          "https://www.drdhirendrasinghkushwah.com/location/jasola",
 
         telephone: "+91-9311449825",
 
         priceRange: "₹₹",
 
         image:
-          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
 
         aggregateRating: {
           "@type": "AggregateRating",
@@ -348,7 +348,7 @@ export default async function JasolaPage() {
         "@type": "FAQPage",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/location/jasola#faq",
+          "https://www.drdhirendrasinghkushwah.com/location/jasola#faq",
 
         mainEntity: [
           {
@@ -427,7 +427,7 @@ export default async function JasolaPage() {
         "@type": "BreadcrumbList",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/location/jasola#breadcrumbs",
+          "https://www.drdhirendrasinghkushwah.com/location/jasola#breadcrumbs",
 
         itemListElement: [
           {
@@ -438,7 +438,7 @@ export default async function JasolaPage() {
             name: "Home",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/",
+              "https://www.drdhirendrasinghkushwah.com/",
           },
 
           {
@@ -449,7 +449,7 @@ export default async function JasolaPage() {
             name: "Locations",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/location",
+              "https://www.drdhirendrasinghkushwah.com/location",
           },
 
           {
@@ -460,7 +460,7 @@ export default async function JasolaPage() {
             name: "Jasola",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/location/jasola",
+              "https://www.drdhirendrasinghkushwah.com/location/jasola",
           },
         ],
       },

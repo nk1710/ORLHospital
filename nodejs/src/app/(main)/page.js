@@ -23,8 +23,8 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
 <meta name="revisit-after" content="1 days">
     <meta property="og:title" content="Dr. Dhirendra Singh Kushwah – Best ENT Specialist in Delhi | Ear Nose Throat Surgeon">
 <meta property="og:description" content="Dr. Dhirendra Singh Kushwah is a leading ENT specialist in Delhi with 25+ years experience in sinus surgery, cochlear implant, hearing loss, vertigo & snoring treatment. Book appointment today.">
-<meta property="og:image" content="https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp">
-<meta property="og:url" content="https://www.drdhirendrasinghkushwah.in/">
+<meta property="og:image" content="https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp">
+<meta property="og:url" content="https://www.drdhirendrasinghkushwah.com/">
 <meta property="og:type" content="website">
     <meta name="author" content="Dr. Dhirendra Singh kushwah">
     <meta name="description"
@@ -32,7 +32,7 @@ import ExperienceCarousel from "@/components/homee/ExperienceCarousel";
     <meta name="keywords"
         content="ENT specialist in Delhi, ENT doctor in Delhi, ENT surgeon in Delhi, Dr Dhirendra Singh Kushwah, sinus surgery Delhi, cochlear implant Delhi, hearing loss treatment Delhi, vertigo treatment Delhi">
     <!-- Canonical -->
-    <link rel="canonical" href="https://www.drdhirendrasinghkushwah.in/">
+    <link rel="canonical" href="https://www.drdhirendrasinghkushwah.com/">
 */
 export async function generateMetadata() {
   return {
@@ -74,17 +74,17 @@ export async function generateMetadata() {
     language: "English",
     revisitAfter: "1 days",
     alternates: {
-      canonical: "https://www.drdhirendrasinghkushwah.in/"
+      canonical: "https://www.drdhirendrasinghkushwah.com/"
     },
     openGraph: {
       title: "Best ENT Specialist in Delhi | Dr. Dhirendra Singh Kushwah",
       description:
         "Consult Dr. Dhirendra Singh Kushwah, top ENT specialist & surgeon in Delhi (Jasola & CR Park). Expert care for sinus, ear, hearing & vertigo.",
-      url: "https://www.drdhirendrasinghkushwah.in/",
+      url: "https://www.drdhirendrasinghkushwah.com/",
       type: "website",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          url: "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
           width: 1200,
           height: 630,
           alt: "Dr. Dhirendra Singh Kushwah ENT Specialist Delhi"
@@ -95,7 +95,7 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: "Dr. (Prof.) Dhirendra Singh Kushwah — Best ENT Specialist & Surgeon in Delhi",
       description: "25+ Years Experience in Stitchless Ear Surgery, Packless Septoplasty, Cochlear Implants & FESS. South Delhi.",
-      images: ["https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp"]
+      images: ["https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp"]
     }
   }
 };
@@ -107,15 +107,15 @@ export default async function Home() {
 
       {
         "@type": "WebSite",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#website",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#website",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "name": "Dr. Dhirendra Singh Kushwah ENT Specialist in Delhi",
-        "publisher": { "@id": "https://www.drdhirendrasinghkushwah.in/#physician" }
+        "publisher": { "@id": "https://www.drdhirendrasinghkushwah.com/#physician" }
       },
 
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "alternateName": "Dr. Dhirendra Singh Kushwah ENT Specialist in Delhi",
         "jobTitle": "Top ENT Specialist & Surgeon in Delhi",
@@ -132,7 +132,7 @@ export default async function Home() {
         },
         "description": "Dr. Dhirendra Singh Kushwah is a leading ENT specialist in Delhi with 25+ years experience in sinus surgery, cochlear implant, hearing loss, vertigo & snoring treatment. Book appointment today",
         "affiliation": [
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-crpark" }
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-crpark" }
         ],
         "alumniOf": {
           "@type": "CollegeOrUniversity",
@@ -226,8 +226,8 @@ export default async function Home() {
           "Nasopharyngeal Angiofibroma",
           "Glomus Tumours"
         ],
-        "url": "https://www.drdhirendrasinghkushwah.in/",
-        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
+        "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
         "telephone": "+91-9311449825",
         "priceRange": "₹₹₹",
         "sameAs": [
@@ -306,17 +306,17 @@ export default async function Home() {
           { "@type": "MedicalProcedure", "name": "Endoscopic Sinus Surgery" }
         ],
         "worksFor": [
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-crpark" },
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-jasola" },
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-arjun" },
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-dhampur" },
-          { "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-palwal" }
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-crpark" },
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-jasola" },
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-arjun" },
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-dhampur" },
+          { "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-palwal" }
         ]
       },
 
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-crpark",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-crpark",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - CR Park",
         "telephone": "+91-9311449825",
         "address": {
@@ -342,11 +342,11 @@ export default async function Home() {
 
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-jasola",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-jasola",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - Jasola",
         "telephone": "+91-9311449825",
         "priceRange": "₹₹",
-        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
@@ -377,7 +377,7 @@ export default async function Home() {
 
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-arjun",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-arjun",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - Arjun Nagar",
         "telephone": "+91-9311449825",
         "address": {
@@ -397,7 +397,7 @@ export default async function Home() {
 
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-dhampur",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-dhampur",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - Dhampur",
         "telephone": "+91-9311449825",
         "address": {
@@ -417,7 +417,7 @@ export default async function Home() {
 
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#clinic-palwal",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#clinic-palwal",
         "name": "Dr Dhirendra Singh Kushwah ENT Clinic - Palwal",
         "telephone": "+91-9311449825",
         "address": {
@@ -437,25 +437,25 @@ export default async function Home() {
 
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#breadcrumbs",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#breadcrumbs",
         "itemListElement": [
-          { "@type": "ListItem", "position": 2, "name": "Book Appointment", "item": "https://www.drdhirendrasinghkushwah.in/contact.html" },
-          { "@type": "ListItem", "position": 4, "name": "Best Septoplasty (Pain free pack less septoplasty) Surgery In Delhi", "item": "https://www.drdhirendrasinghkushwah.in/septoplasty.html" },
-          { "@type": "ListItem", "position": 5, "name": "Cochlear and Hearing Implants Available in Delhi", "item": "https://www.drdhirendrasinghkushwah.in/cochlear-hearing.html" },
-          { "@type": "ListItem", "position": 6, "name": "Children (Paediatric) ENT Doctors In Delhi", "item": "https://www.drdhirendrasinghkushwah.in/diagnchildern.html" },
-          { "@type": "ListItem", "position": 7, "name": "Stapedotomy Surgery In Delhi, India", "item": "https://www.drdhirendrasinghkushwah.in/stapedo.html" },
-          { "@type": "ListItem", "position": 8, "name": "Voice And Throat (Laryngology) Surgery In Delhi", "item": "https://www.drdhirendrasinghkushwah.in/voice-throat.html" }
+          { "@type": "ListItem", "position": 2, "name": "Book Appointment", "item": "https://www.drdhirendrasinghkushwah.com/contact.html" },
+          { "@type": "ListItem", "position": 4, "name": "Best Septoplasty (Pain free pack less septoplasty) Surgery In Delhi", "item": "https://www.drdhirendrasinghkushwah.com/septoplasty.html" },
+          { "@type": "ListItem", "position": 5, "name": "Cochlear and Hearing Implants Available in Delhi", "item": "https://www.drdhirendrasinghkushwah.com/cochlear-hearing.html" },
+          { "@type": "ListItem", "position": 6, "name": "Children (Paediatric) ENT Doctors In Delhi", "item": "https://www.drdhirendrasinghkushwah.com/diagnchildern.html" },
+          { "@type": "ListItem", "position": 7, "name": "Stapedotomy Surgery In Delhi, India", "item": "https://www.drdhirendrasinghkushwah.com/stapedo.html" },
+          { "@type": "ListItem", "position": 8, "name": "Voice And Throat (Laryngology) Surgery In Delhi", "item": "https://www.drdhirendrasinghkushwah.com/voice-throat.html" }
         ]
       },
 
       {
         "@type": "MedicalBusiness",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#hospital",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#hospital",
         "name": "Dr. Dhirendra Singh Kushwah ENT Hospital & Clinics",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "telephone": "+91-9311449825",
         "priceRange": "₹₹",
-        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
         "medicalSpecialty": "Otolaryngologic",
         "aggregateRating": {
           "@type": "AggregateRating",

@@ -149,7 +149,7 @@ export async function generateMetadata() {
 
     alternates: {
       canonical:
-        "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar",
+        "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar",
     },
 
     openGraph: {
@@ -160,7 +160,7 @@ export async function generateMetadata() {
         "Experienced ENT specialist and surgeon providing comprehensive ear, nose and throat care in Arjun Nagar, Safdarjung Enclave, South Delhi.",
 
       url:
-        "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar",
+        "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar",
 
       type: "website",
     },
@@ -176,17 +176,17 @@ export default async function ArjunNagarPage() {
         "@type": "WebSite",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#website",
+          "https://www.drdhirendrasinghkushwah.com/#website",
 
         url:
-          "https://www.drdhirendrasinghkushwah.in/",
+          "https://www.drdhirendrasinghkushwah.com/",
 
         name:
           "Dr.(Prof.) Dhirendra Singh Kushwah ENT Specialist",
 
         publisher: {
           "@id":
-            "https://www.drdhirendrasinghkushwah.in/#physician",
+            "https://www.drdhirendrasinghkushwah.com/#physician",
         },
       },
 
@@ -194,7 +194,7 @@ export default async function ArjunNagarPage() {
         "@type": "Physician",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#physician",
+          "https://www.drdhirendrasinghkushwah.com/#physician",
 
         name:
           "Dr.(Prof.) Dhirendra Singh Kushwah",
@@ -207,10 +207,10 @@ export default async function ArjunNagarPage() {
         medicalSpecialty: "Otolaryngology",
 
         url:
-          "https://www.drdhirendrasinghkushwah.in/",
+          "https://www.drdhirendrasinghkushwah.com/",
 
         image:
-          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
 
         telephone: "+91-9311449825",
 
@@ -281,23 +281,23 @@ export default async function ArjunNagarPage() {
         worksFor: [
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-arjun",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-arjun",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-crpark",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-crpark",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-jasola",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-jasola",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-dhampur",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-dhampur",
           },
           {
             "@id":
-              "https://www.drdhirendrasinghkushwah.in/#clinic-palwal",
+              "https://www.drdhirendrasinghkushwah.com/#clinic-palwal",
           },
         ],
       },
@@ -306,20 +306,20 @@ export default async function ArjunNagarPage() {
         "@type": "MedicalClinic",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/#clinic-arjun",
+          "https://www.drdhirendrasinghkushwah.com/#clinic-arjun",
 
         name:
           "Dr.(Prof.) Dhirendra Singh Kushwah ENT Clinic - Arjun Nagar",
 
         url:
-          "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar",
+          "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar",
 
         telephone: "+91-9311449825",
 
         priceRange: "₹₹",
 
         image:
-          "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
 
         aggregateRating: {
           "@type": "AggregateRating",
@@ -402,7 +402,7 @@ export default async function ArjunNagarPage() {
         "@type": "FAQPage",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar#faq",
+          "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar#faq",
 
         mainEntity: [
           {
@@ -495,7 +495,7 @@ export default async function ArjunNagarPage() {
         "@type": "BreadcrumbList",
 
         "@id":
-          "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar#breadcrumbs",
+          "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar#breadcrumbs",
 
         itemListElement: [
           {
@@ -506,7 +506,7 @@ export default async function ArjunNagarPage() {
             name: "Home",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/",
+              "https://www.drdhirendrasinghkushwah.com/",
           },
 
           {
@@ -517,7 +517,7 @@ export default async function ArjunNagarPage() {
             name: "Locations",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/location",
+              "https://www.drdhirendrasinghkushwah.com/location",
           },
 
           {
@@ -528,7 +528,7 @@ export default async function ArjunNagarPage() {
             name: "Arjun Nagar",
 
             item:
-              "https://www.drdhirendrasinghkushwah.in/location/arjun-nagar",
+              "https://www.drdhirendrasinghkushwah.com/location/arjun-nagar",
           },
         ],
       },

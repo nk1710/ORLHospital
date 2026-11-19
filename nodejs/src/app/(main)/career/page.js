@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/career";
+  const url = "https://www.drdhirendrasinghkushwah.com/career";
 
   return {
     title: "Careers & Clinical Fellowships | ORL International Hospitals Delhi",

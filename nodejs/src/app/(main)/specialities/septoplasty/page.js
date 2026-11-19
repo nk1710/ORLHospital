@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/septoplasty" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/septoplasty" // update if needed
 
   return {
     title:
@@ -111,7 +111,7 @@ export default async function DepartmentPage() {
     },
     "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.drdhirendrasinghkushwah.in/septoplasty"
+    "@id": "https://www.drdhirendrasinghkushwah.com/septoplasty"
   }
   }
   return (

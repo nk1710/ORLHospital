@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/stapedotomy" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/stapedotomy" // update if needed
 
   return {
     title:
@@ -66,18 +66,18 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/stapedo.html",
-        "url": "https://www.drdhirendrasinghkushwah.in/stapedo.html",
+        "@id": "https://www.drdhirendrasinghkushwah.com/stapedo.html",
+        "url": "https://www.drdhirendrasinghkushwah.com/stapedo.html",
         "name": "Best Stapedotomy Surgeon in Delhi – Dr Dhirendra Singh Kushwah",
         "description": "Advanced stapedotomy surgery for otosclerosis and hearing loss by experienced ENT specialist. Safe and effective ear microsurgery.",
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#stapedotomy"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#stapedotomy"
         }
       },
   
       {
         "@type": "SurgicalProcedure",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#stapedotomy",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#stapedotomy",
         "name": "Stapedotomy Surgery",
         "alternateName": "Stapes Surgery",
         "description": "Stapedotomy is a microsurgical procedure used to treat otosclerosis by creating a small opening in the stapes bone and inserting a prosthesis to restore hearing.",
@@ -113,7 +113,7 @@ export default async function DepartmentPage() {
         ],
   
         "provider": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#physician"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#physician"
         },
   
         "availableAtOrFrom": {

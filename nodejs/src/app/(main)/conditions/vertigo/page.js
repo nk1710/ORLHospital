@@ -23,7 +23,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.in/conditions/vertigo",
+            "https://www.drdhirendrasinghkushwah.com/conditions/vertigo",
     },
 };
 

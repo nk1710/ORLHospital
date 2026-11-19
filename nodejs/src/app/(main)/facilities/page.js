@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/facilities";
+  const url = "https://www.drdhirendrasinghkushwah.com/facilities";
 
   return {
     title: "Hospital Facilities & Technology | Dr. (Prof.) Dhirendra Singh Kushwah",
@@ -51,7 +51,7 @@ export async function generateMetadata() {
       locale: "en_IN",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
+          url: "https://www.drdhirendrasinghkushwah.com/images/dhirendra%20kushwah.webp",
           width: 1200,
           height: 630,
           alt: "Dr. (Prof.) Dhirendra Singh Kushwah ENT Hospital Facilities",
@@ -73,9 +73,9 @@ export default async function Facilities() {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     name: "Dr. (Prof.) Dhirendra Singh Kushwah ENT Hospital & Facilities",
-    url: "https://www.drdhirendrasinghkushwah.in/facilities",
-    logo: "https://www.drdhirendrasinghkushwah.in/images/logo.png",
-    image: "https://www.drdhirendrasinghkushwah.in/images/dhirendra%20kushwah.webp",
+    url: "https://www.drdhirendrasinghkushwah.com/facilities",
+    logo: "https://www.drdhirendrasinghkushwah.com/images/logo.png",
+    image: "https://www.drdhirendrasinghkushwah.com/images/dhirendra%20kushwah.webp",
     description:
       "State-of-the-art ENT hospital offering modular laminar-flow operation theatres, Zeiss surgical microscopes, Karl Storz 4K endoscopy, cochlear implant suites, and complete audiology labs.",
     address: {

@@ -1,5 +1,5 @@
 export function generateSchema(blog) {
-    const baseUrl = "https://www.drdhirendrasinghkushwah.in/blog/";
+    const baseUrl = "https://www.drdhirendrasinghkushwah.com/blog/";
   
     // 🔹 MEDICAL SCHEMA
     if (blog.schema_type === "MedicalWebPage") {
@@ -51,7 +51,7 @@ export function generateSchema(blog) {
         "name": "ENT & Gynae Clinic",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.drdhirendrasinghkushwah.in/logo.png"
+          "url": "https://www.drdhirendrasinghkushwah.com/logo.png"
         }
       },
   

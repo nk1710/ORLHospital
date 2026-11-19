@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/head-neck-surgery" // update with actual URL
+  const url = "https://www.drdhirendrasinghkushwah.com/head-neck-surgery" // update with actual URL
 
   return {
     title:
@@ -65,18 +65,18 @@ export default async function HeadSpecialityPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/head-neck-surgery",
-        "url": "https://www.drdhirendrasinghkushwah.in/head-neck-surgery",
+        "@id": "https://www.drdhirendrasinghkushwah.com/head-neck-surgery",
+        "url": "https://www.drdhirendrasinghkushwah.com/head-neck-surgery",
         "name": "Head and Neck Surgery Specialist in India – Dr Dhirendra Singh Kushwah",
         "description": "Expert head and neck surgery in India for thyroid disorders, tumors, airway problems, salivary gland diseases, and complex reconstructive procedures by Dr. Dhirendra Singh Kushwah.",
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#headneck-surgery"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#headneck-surgery"
         }
       },
   
       {
         "@type": "MedicalProcedure",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#headneck-surgery",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#headneck-surgery",
         "name": "Head and Neck Surgery",
         "alternateName": "ENT Head & Neck Procedures",
         "description": "Surgical procedures for conditions affecting the head and neck, including tumors, thyroid disorders, voice and airway issues, and salivary gland diseases, using modern minimally invasive techniques.",
@@ -94,13 +94,13 @@ export default async function HeadSpecialityPage() {
           "Complex airway problems"
         ],
         "physician": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#physician"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#physician"
         }
       },
   
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "medicalSpecialty": "Otolaryngology",
         "jobTitle": "Head and Neck Surgery Specialist",

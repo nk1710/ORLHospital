@@ -17,7 +17,7 @@ import {
 
 export async function generateMetadata() {
   const url =
-    "https://www.drdhirendrasinghkushwah.in/tonsillectomy-surgery";
+    "https://www.drdhirendrasinghkushwah.com/tonsillectomy-surgery";
 
   return {
     title:
@@ -141,10 +141,10 @@ const faqs = [
 
 export default async function DepartmentPage() {
   const url =
-    "https://www.drdhirendrasinghkushwah.in/tonsillectomy-surgery";
+    "https://www.drdhirendrasinghkushwah.com/tonsillectomy-surgery";
 
   const physicianId =
-    "https://www.drdhirendrasinghkushwah.in/#physician";
+    "https://www.drdhirendrasinghkushwah.com/#physician";
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -238,7 +238,7 @@ export default async function DepartmentPage() {
         name: "Dr. Dhirendra Singh Kushwah",
         jobTitle: "ENT Specialist Surgeon",
         medicalSpecialty: "Otolaryngology",
-        url: "https://www.drdhirendrasinghkushwah.in/",
+        url: "https://www.drdhirendrasinghkushwah.com/",
         telephone: "+91-9311449825",
         address: {
           "@type": "PostalAddress",
@@ -284,7 +284,7 @@ export default async function DepartmentPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.drdhirendrasinghkushwah.in/",
+            item: "https://www.drdhirendrasinghkushwah.com/",
           },
           {
             "@type": "ListItem",

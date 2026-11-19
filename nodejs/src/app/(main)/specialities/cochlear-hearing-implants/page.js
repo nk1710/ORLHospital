@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/specialities/cochlear-hearing-implants";
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/cochlear-hearing-implants";
 
   return {
     title:
@@ -59,7 +59,7 @@ export async function generateMetadata() {
       locale: "en_IN",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
+          url: "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
           width: 960,
           height: 1280,
           alt: "Pediatric Cochlear Implant Patient After Surgery and Switch-On Activation",
@@ -73,7 +73,7 @@ export async function generateMetadata() {
       description:
         "Expert hearing implant solutions for profound deafness in children and adults. Real pediatric recovery videos & case studies.",
       images: [
-        "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
+        "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
       ],
     },
 
@@ -91,7 +91,7 @@ export default async function DepartmentPage() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Cochlear and Hearing Implants in Delhi, India",
-    "url": "https://www.drdhirendrasinghkushwah.in/specialities/cochlear-hearing-implants",
+    "url": "https://www.drdhirendrasinghkushwah.com/specialities/cochlear-hearing-implants",
     "description":
       "Comprehensive clinical guide and patient recovery documentation for pediatric and adult cochlear implant surgery by Dr. (Prof.) Dhirendra Singh Kushwah in Delhi NCR.",
     "mainEntity": [
@@ -125,9 +125,9 @@ export default async function DepartmentPage() {
         "description":
           "Follow-up hospital visit showing the boy returning to visit Dr. (Prof.) Dhirendra Singh Kushwah, demonstrating natural hearing response and sound detection.",
         "thumbnailUrl":
-          "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
+          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
         "contentUrl":
-          "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-hearing-response-recovery-video-1.mp4",
+          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-hearing-response-recovery-video-1.mp4",
         "uploadDate": "2026-10-24T12:00:00+05:30",
       },
       {
@@ -136,9 +136,9 @@ export default async function DepartmentPage() {
         "description":
           "Recorded on the same hospital visit day: the boy interacting happily with Dr. Kushwah, demonstrating fluent speech comprehension and active communication.",
         "thumbnailUrl":
-          "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
+          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
         "contentUrl":
-          "https://www.drdhirendrasinghkushwah.in/images/pediatric-cochlear-implant-speech-rehabilitation-video-2.mp4",
+          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-speech-rehabilitation-video-2.mp4",
         "uploadDate": "2026-10-24T12:00:00+05:30",
       },
     ],
@@ -147,7 +147,7 @@ export default async function DepartmentPage() {
       "name": "Dr. (Prof.) Dhirendra Singh Kushwah",
       "medicalSpecialty": "Otolaryngology & Skull Base Surgery",
       "jobTitle": "Senior ENT & Cochlear Implant Surgeon",
-      "url": "https://www.drdhirendrasinghkushwah.in/",
+      "url": "https://www.drdhirendrasinghkushwah.com/",
       "telephone": "+91-9311449825",
     },
   };

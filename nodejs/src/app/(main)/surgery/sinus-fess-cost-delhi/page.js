@@ -15,7 +15,7 @@ export const metadata = {
     "sinus specialist in delhi"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery/sinus-fess-cost-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery/sinus-fess-cost-delhi",
   },
 };
 

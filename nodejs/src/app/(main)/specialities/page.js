@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/specialities";
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities";
 
   return {
     title:
@@ -54,7 +54,7 @@ export async function generateMetadata() {
       locale: "en_IN",
       images: [
         {
-          url: "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+          url: "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
           width: 1200,
           height: 630,
           alt: "Dr. Dhirendra Singh Kushwah ENT Super-Specialities",
@@ -292,11 +292,11 @@ export default async function SpecialitiesHubPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": "https://www.drdhirendrasinghkushwah.in/specialities/#medicalbusiness",
+    "@id": "https://www.drdhirendrasinghkushwah.com/specialities/#medicalbusiness",
     name: "Dr.(Prof.) Dhirendra Singh Kushwah - ENT Super-Specialities Department",
-    url: "https://www.drdhirendrasinghkushwah.in/specialities",
+    url: "https://www.drdhirendrasinghkushwah.com/specialities",
     telephone: "+91-9311449825",
-    image: "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+    image: "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
     medicalSpecialty: [
       "Otolaryngology",
       "PediatricOtolaryngology",
@@ -322,7 +322,7 @@ export default async function SpecialitiesHubPage() {
           "@type": "MedicalProcedure",
           name: item.title,
           description: item.description,
-          url: `https://www.drdhirendrasinghkushwah.in${item.slug}`,
+          url: `https://www.drdhirendrasinghkushwah.com${item.slug}`,
         },
       })),
     },

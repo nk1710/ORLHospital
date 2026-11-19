@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/mastoidectomy"
+  const url = "https://www.drdhirendrasinghkushwah.com/mastoidectomy"
 
   return {
     title:
@@ -66,18 +66,18 @@ export default async function DepartmentPage() {
 
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/mastoidectomy",
-        "url": "https://www.drdhirendrasinghkushwah.in/mastoidectomy",
+        "@id": "https://www.drdhirendrasinghkushwah.com/mastoidectomy",
+        "url": "https://www.drdhirendrasinghkushwah.com/mastoidectomy",
         "name": "Best Mastoidectomy Surgeon in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced mastoidectomy surgery in India for chronic ear infections, cholesteatoma, and hearing restoration performed by expert ENT surgeon Dr. Dhirendra Singh Kushwah.",
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#mastoidectomy"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#mastoidectomy"
         }
       },
 
       {
         "@type": "MedicalProcedure",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#mastoidectomy",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#mastoidectomy",
         "name": "Mastoidectomy Surgery",
         "alternateName": "Ear Surgery for Mastoid Bone",
         "description": "Mastoidectomy is a surgical procedure to remove infected tissue from the mastoid bone, treating conditions like cholesteatoma and chronic ear infections to restore ear health and hearing.",
@@ -94,13 +94,13 @@ export default async function DepartmentPage() {
           "Mastoid bone infection"
         ],
         "physician": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#physician"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#physician"
         }
       },
 
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "medicalSpecialty": "Otolaryngology",
         "jobTitle": "ENT Specialist",

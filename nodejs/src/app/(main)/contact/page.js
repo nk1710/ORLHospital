@@ -107,13 +107,13 @@ export async function generateMetadata() {
     ],
     authors: [{ name: "Dr.(Prof.) Dhirendra Singh kushwah" }],
     alternates: {
-      canonical: "https://www.drdhirendrasinghkushwah.in/contact",
+      canonical: "https://www.drdhirendrasinghkushwah.com/contact",
     },
     openGraph: {
       title: "Schedule Your ENT Consultation in Delhi – Dr.(Prof.) Dhirendra Singh Kushwah",
       description:
         "Book your appointment with Delhi’s trusted ENT specialist, Dr.(Prof.) Dhirendra Singh Kushwah. Clinics in CR Park, Jasola & Arjun Nagar. Call +91-9311449825 today.",
-      url: "https://www.drdhirendrasinghkushwah.in/contact",
+      url: "https://www.drdhirendrasinghkushwah.com/contact",
       siteName: "Dr.(Prof.) Dhirendra Singh kushwah ENT",
       type: "website",
       locale: "en_IN",
@@ -134,11 +134,11 @@ export default async function ContactPage() {
 
       {
         "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#physician",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
         "name": "Dr.(Prof.) Dhirendra Singh Kushwah",
         "alternateName": "Best ENT Surgeon in Delhi",
-        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "telephone": "+91-9311449825",
         "priceRange": "₹₹₹",
         "medicalSpecialty": "Otolaryngology",
@@ -308,13 +308,13 @@ export default async function ContactPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "ENT Facilities",
-            "item": "https://www.drdhirendrasinghkushwah.in/facilities.html"
+            "item": "https://www.drdhirendrasinghkushwah.com/facilities.html"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Book Appointment",
-            "item": "https://www.drdhirendrasinghkushwah.in/contact.html"
+            "item": "https://www.drdhirendrasinghkushwah.com/contact.html"
           }
         ]
       }

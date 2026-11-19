@@ -5,7 +5,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/ear" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/ear" // update if needed
 
   return {
     title:
@@ -65,9 +65,9 @@ export default async function OtologyPage() {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Dr. Dhirendra Singh Kushwah ENT & Otology Clinic",
-    "url": "https://www.drdhirendrasinghkushwah.in",
-    "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/9.webp",
-    "logo": "https://www.drdhirendrasinghkushwah.in/.png",
+    "url": "https://www.drdhirendrasinghkushwah.com",
+    "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/9.webp",
+    "logo": "https://www.drdhirendrasinghkushwah.com/.png",
     "description": "Expert Otology care in Delhi, India. Dr. Dhirendra Singh Kushwah specializes in diagnosing and treating ear conditions, hearing loss, tinnitus, vertigo, eardrum perforations, and congenital ear disorders, using advanced ear surgery techniques.",
     "address": {
       "@type": "PostalAddress",
@@ -86,7 +86,7 @@ export default async function OtologyPage() {
     "founder": {
       "@type": "Physician",
       "name": "Dr. Dhirendra Singh Kushwah",
-      "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+      "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
       "description": "Renowned Otology Specialist in India with over 25 years of experience in diagnosing and treating complex ear conditions, hearing loss, vertigo, tinnitus, and performing ear surgeries.",
       "alumniOf": "Jiwaji University, Gwalior",
       "medicalSpecialty": ["Otology", "ENT", "Ear Surgery"],

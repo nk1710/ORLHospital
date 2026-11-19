@@ -5,7 +5,7 @@ import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-rea
 
 export async function generateMetadata() {
   const url =
-    "https://www.drdhirendrasinghkushwah.in/specialities/ossiculoplasty-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/ossiculoplasty-surgery";
 
   return {
     title:
@@ -76,7 +76,7 @@ export async function generateMetadata() {
 
 export default async function DepartmentPage() {
   const pageUrl =
-    "https://www.drdhirendrasinghkushwah.in/specialities/ossiculoplasty-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/ossiculoplasty-surgery";
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -135,7 +135,7 @@ export default async function DepartmentPage() {
 
         provider: {
           "@id":
-            "https://www.drdhirendrasinghkushwah.in/#physician",
+            "https://www.drdhirendrasinghkushwah.com/#physician",
         },
 
         availableAtOrFrom: {

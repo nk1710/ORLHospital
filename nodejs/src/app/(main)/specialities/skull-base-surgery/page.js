@@ -4,7 +4,7 @@ import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/skull-base-surgery" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/skull-base-surgery" // update if needed
 
   return {
     title:
@@ -66,18 +66,18 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.in/skull-base-surgery.html",
-        "url": "https://www.drdhirendrasinghkushwah.in/skull-base-surgery.html",
+        "@id": "https://www.drdhirendrasinghkushwah.com/skull-base-surgery.html",
+        "url": "https://www.drdhirendrasinghkushwah.com/skull-base-surgery.html",
         "name": "Best Skull Base Surgery Specialist in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced skull base surgery for tumors, nerve disorders, and complex conditions using minimally invasive techniques.",
         "mainEntity": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#skullbasesurgery"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#skullbasesurgery"
         }
       },
   
       {
         "@type": "MedicalProcedure",
-        "@id": "https://www.drdhirendrasinghkushwah.in/#skullbasesurgery",
+        "@id": "https://www.drdhirendrasinghkushwah.com/#skullbasesurgery",
         "name": "Skull Base Surgery",
         "description": "Skull base surgery is an advanced medical procedure used to treat tumors, nerve disorders, and structural problems located at the base of the skull using minimally invasive and endoscopic techniques.",
         "procedureType": "Surgical",
@@ -115,7 +115,7 @@ export default async function DepartmentPage() {
         ],
   
         "provider": {
-          "@id": "https://www.drdhirendrasinghkushwah.in/#physician"
+          "@id": "https://www.drdhirendrasinghkushwah.com/#physician"
         },
   
         "availableAtOrFrom": {

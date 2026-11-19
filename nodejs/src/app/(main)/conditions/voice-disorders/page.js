@@ -18,7 +18,7 @@ export const metadata = {
     "Learn about voice disorders, hoarseness, vocal cord problems, causes, symptoms, diagnosis and treatment. Consult Dr. Dhirendra Singh Kushwah, ENT Specialist in Delhi.",
   alternates: {
     canonical:
-      "https://www.drdhirendrasinghkushwah.in/conditions/voice-disorders",
+      "https://www.drdhirendrasinghkushwah.com/conditions/voice-disorders",
   },
 };
 

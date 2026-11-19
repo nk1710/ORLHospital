@@ -15,7 +15,7 @@ export const metadata = {
     "pediatric cochlear implant cost"
   ],
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/surgery/cochlear-implant-cost-india",
+    canonical: "https://www.drdhirendrasinghkushwah.com/surgery/cochlear-implant-cost-india",
   },
 };
 

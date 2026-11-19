@@ -23,13 +23,13 @@ export async function generateMetadata() {
     ],
     authors: [{ name: "Dr. Dhirendra Singh kushwah" }],
     alternates: {
-      canonical: "https://www.drdhirendrasinghkushwah.in/blog.html",
+      canonical: "https://www.drdhirendrasinghkushwah.com/blog.html",
     },
     openGraph: {
       title: "Best ENT Doctor Blog in India | Dr. Dhirendra Singh kushwah",
       description:
         "Explore ENT health insights and advice from Dr. Dhirendra Singh kushwah, one of India’s top ENT specialists. Stay informed about treatments, surgeries, and patient care.",
-      url: "https://www.drdhirendrasinghkushwah.in/blog.html",
+      url: "https://www.drdhirendrasinghkushwah.com/blog.html",
       siteName: "Dr Dhirendra Singh kushwah ENT Blog",
       type: "website",
       locale: "en_IN",
@@ -52,12 +52,12 @@ export default async function BlogPage({ params }) {
         "@type": "Physician",
         "name": "Dr. Dhirendra Singh Kushwah",
         "alternateName": "Best ENT Surgeon in Delhi",
-        "image": "https://www.drdhirendrasinghkushwah.in/images/gallery/11.webp",
+        "image": "https://www.drdhirendrasinghkushwah.com/images/gallery/11.webp",
         "medicalSpecialty": "Otolaryngology",
         "jobTitle": "ENT Surgeon",
         "telephone": "+91-9311449825",
         "priceRange": "₹₹₹",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "J-1981, Near Market No 1, Below ICICI Bank, Bipin Chandra Pal Marg, CR Park-110019",
@@ -121,7 +121,7 @@ export default async function BlogPage({ params }) {
       },
       {
         "@type": "WebSite",
-        "url": "https://www.drdhirendrasinghkushwah.in/",
+        "url": "https://www.drdhirendrasinghkushwah.com/",
         "name": "Dr. Dhirendra Singh Kushwah - ENT & Gynae Clinic",
         "publisher": {
           "@type": "Physician",

@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "Learn about nasal blockage, common causes, symptoms, diagnosis and treatment options. Consult Dr. Dhirendra Singh Kushwah, experienced ENT specialist and surgeon in Delhi.",
   alternates: {
-    canonical: "https://www.drdhirendrasinghkushwah.in/conditions/nasal-blockage",
+    canonical: "https://www.drdhirendrasinghkushwah.com/conditions/nasal-blockage",
   },
 };
 

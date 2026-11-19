@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.in/ent-and-gyane-clinic"
+  const url = "https://www.drdhirendrasinghkushwah.com/ent-and-gyane-clinic"
 
   return {
     title:
@@ -61,9 +61,9 @@ export default function DepartmentPage() {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Dr. Pooja Choudhary ENT & Gynae Clinic",
-    "url": "https://www.drdhirendrasinghkushwah.in",
-    "logo": "https://www.drdhirendrasinghkushwah.in/images/logo.png",
-    "image": "https://www.drdhirendrasinghkushwah.in/images/dr-pooja.webp",
+    "url": "https://www.drdhirendrasinghkushwah.com",
+    "logo": "https://www.drdhirendrasinghkushwah.com/images/logo.png",
+    "image": "https://www.drdhirendrasinghkushwah.com/images/dr-pooja.webp",
     "description": "Top ENT and Gynecology specialist in India. Dr. Pooja Choudhary offers high-risk pregnancy management, infertility treatment including IVF, laparoscopic gynecological procedures, antenatal and postnatal care, PCOS management, and women's preventive health.",
     "address": [
       {
@@ -94,7 +94,7 @@ export default function DepartmentPage() {
     "founder": {
       "@type": "Physician",
       "name": "Dr. Pooja Choudhary",
-      "image": "https://www.drdhirendrasinghkushwah.in/images/dr-pooja.webp",
+      "image": "https://www.drdhirendrasinghkushwah.com/images/dr-pooja.webp",
       "description": "Senior Consultant Obstetrician & Gynaecologist specializing in high-risk pregnancies, infertility, laparoscopic gynecological surgery, and IVF.",
       "alumniOf": ["MBBS", "MD", "FICOG", "DMAS Fellowship IVF"],
       "medicalSpecialty": [
