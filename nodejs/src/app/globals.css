@@ -7017,48 +7017,42 @@ h5 {
 }
 
 /* =========================================================================
-   100% INVISIBLE TRANSLATION ENGINE STYLING
-   Hides all third-party frames, toolbars, tooltips, and top margins.
-   Only our custom in-house navbar toggler button is visible.
+   FLOATING LANGUAGE DOCK (Right side mirroring WhatsApp on left)
 ========================================================================= */
-.goog-te-banner-frame,
-.goog-te-banner-frame.skiptranslate,
-iframe.goog-te-banner-frame,
-#goog-gt-tt,
-.goog-te-balloon-frame,
-.goog-tooltip,
-.goog-tooltip:hover {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
+.desktop-floating-language-dock {
+  display: flex !important;
+  position: fixed !important;
+  right: 16px !important;
+  bottom: 120px !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  z-index: 9999 !important;
 }
 
-body {
-  top: 0px !important;
-  position: static !important;
-}
-
-#google_translate_element {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-.goog-text-highlight {
-  background-color: transparent !important;
-  box-shadow: none !important;
+@media (max-width: 767px) {
+  .desktop-floating-language-dock {
+    bottom: 76px !important; /* Floats smoothly right above mobile sticky bottom conversion bar */
+    right: 12px !important;
+  }
 }
 
 /* RTL layout adjustments for Arabic, Urdu, Persian */
-html[lang="ar"],
-html[lang="ur"],
-html[lang="fa"] {
+html[dir="rtl"] {
   direction: rtl !important;
   text-align: right !important;
 }
 
-html[lang="ar"] .text-right,
-html[lang="ur"] .text-right,
-html[lang="fa"] .text-right {
+html[dir="rtl"] .text-right {
   text-align: left !important;
+}
+
+html[dir="rtl"] .desktop-floating-socials-stack {
+  left: auto !important;
+  right: 16px !important;
+}
+
+html[dir="rtl"] .desktop-floating-language-dock {
+  right: auto !important;
+  left: 16px !important;
+  align-items: flex-start !important;
 }

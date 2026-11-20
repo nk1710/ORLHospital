@@ -2,6 +2,7 @@ import { Barlow, Gilda_Display } from "next/font/google";
 import "@/app/globals.css";
 
 import FloatingSocials from "@/components/ui/FloatingSocials";
+import FloatingLanguageDock from "@/components/ui/FloatingLanguageDock";
 import TopBar from "@/components/home/components/TopBar/TopBar";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
@@ -91,33 +92,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-
-        {/* Global Multi-Language Translation Engine (Full-Site Translation) */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              function googleTranslateElementInit() {
-                try {
-                  new google.translate.TranslateElement({
-                    pageLanguage: 'en',
-                    includedLanguages: 'hi,bn,pa,ur,gu,mr,en,ar,ru,sw,fr,fa,ne',
-                    autoDisplay: false
-                  }, 'google_translate_element');
-                } catch(e){}
-              }
-            `,
-          }}
-        />
-        <script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          async
-          defer
-        />
       </head>
       <body className={`${barlow.variable} ${gilda.variable} w-full max-w-full overflow-x-clip text-gray-700`}>
-        {/* Hidden Container for Translation Engine */}
-        <div id="google_translate_element" style={{ display: 'none' }} aria-hidden="true" />
-
         <GTMNoScript />
         <GTMProvider />
         <TopBar />
@@ -127,6 +103,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
         <FloatingSocials />
+        <FloatingLanguageDock />
         {/* <AutoPopupModal /> */}
         <ChatCTA />
       </body>
