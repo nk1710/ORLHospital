@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, Phone, Calendar } from "lucide-react";
 import { SPECIALITIES } from "@/data/constants";
 import AppointmentModal from "@/components/ui/AppointmentModal";
+import LanguageSelector from "@/components/ui/LanguageSelector";
 import "../home/components/Navbar/Navbar.css";
 
 const Navbar = () => {
@@ -473,6 +474,9 @@ const Navbar = () => {
               <span>+91-9311449825</span>
             </a>
 
+            {/* In-House Multi-Language Selector Dropdown */}
+            <LanguageSelector />
+
             {/* Book Appointment CTA */}
             <button
               type="button"
@@ -486,6 +490,9 @@ const Navbar = () => {
 
           {/* Mobile Menu Hamburger + Quick Actions (<1024px) */}
           <div className="nav-mobile-group flex items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Mobile Quick Language Toggler */}
+            <LanguageSelector isMobile={true} />
+
             <a
               href="tel:+919311449825"
               className="hidden sm:inline-flex p-2 rounded-lg bg-teal-50 text-teal-700 hover:bg-teal-100 transition"
@@ -516,6 +523,14 @@ const Navbar = () => {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="nav-mobile-drawer bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 max-h-[calc(100vh-5rem)] overflow-y-auto animate-in slide-in-from-top-2">
+            {/* Drawer Full-Width Language Selector */}
+            <div className="pb-3 border-b border-slate-100">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">
+                Select Language / भाषा चुनें
+              </span>
+              <LanguageSelector isDrawer={true} />
+            </div>
+
             {/* Mobile About & Hospital Accordion */}
             <div>
               <button
