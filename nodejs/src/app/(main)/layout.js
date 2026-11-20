@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
         <GTMProvider />
         <TopBar />
         <NavBar />
-        <main className="w-full items-center">
+        <main className="w-full items-center pb-16 md:pb-0">
           {children}
         </main>
         <Footer />
