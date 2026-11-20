@@ -7015,3 +7015,50 @@ h5 {
   transform: scale(0.96) !important;
   filter: brightness(0.9) !important;
 }
+
+/* =========================================================================
+   100% INVISIBLE TRANSLATION ENGINE STYLING
+   Hides all third-party frames, toolbars, tooltips, and top margins.
+   Only our custom in-house navbar toggler button is visible.
+========================================================================= */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+#google_translate_element {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* RTL layout adjustments for Arabic, Urdu, Persian */
+html[lang="ar"],
+html[lang="ur"],
+html[lang="fa"] {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+html[lang="ar"] .text-right,
+html[lang="ur"] .text-right,
+html[lang="fa"] .text-right {
+  text-align: left !important;
+}

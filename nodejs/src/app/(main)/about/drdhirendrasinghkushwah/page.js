@@ -6,17 +6,18 @@ export async function generateMetadata() {
   const url = "https://www.drdhirendrasinghkushwah.com/about/drdhirendrasinghkushwah"
 
   return {
-    title: "Top ENT Doctor in India | Dr.(Prof.) Dhirendra Singh Kushwah (25+ Years Experience)",
+    title: "Dr. (Prof.) Dhirendra Singh Kushwah | Best ENT Surgeon in Delhi NCR (25+ Yrs Exp)",
     description:
       "Dr.(Prof.) Dhirendra Singh Kushwah is a distinguished Senior Consultant ENT Specialist and Skull Base Surgeon in Delhi with 25+ years of experience. Head of ENT Department at ORL International Group of Hospitals. Expert in Cochlear Implants, FESS, and Skull Base Surgery.",
     keywords: [
+      "Dr.(Prof.) Dhirendra Singh Kushwah",
+      "Dr Dhirendra Singh Kushwah ENT",
       "Best ENT doctor in India",
       "Top ENT specialist India",
       "ENT doctor in Delhi",
       "Cochlear implant surgeon India",
       "Skull base surgeon India",
       "ENT clinic Delhi",
-      "Dr.(Prof.) Dhirendra Singh Kushwah",
       "Ear Nose Throat specialist India",
       "FESS surgeon Delhi",
       "Sleep apnea surgeon Delhi",
@@ -26,7 +27,7 @@ export async function generateMetadata() {
     authors: [{ name: "Dr. Dhirendra Singh Kushwah" }],
     alternates: { canonical: url },
     openGraph: {
-      title: "Dr.(Prof.) Dhirendra Singh Kushwah - Top ENT Doctor in India",
+      title: "Dr. (Prof.) Dhirendra Singh Kushwah | Best ENT Surgeon in Delhi NCR",
       description:
         "25+ years of expertise in ENT care, cochlear implants, and advanced surgeries. Head of ENT at ORL International Group of Hospitals, Delhi.",
       url: url,

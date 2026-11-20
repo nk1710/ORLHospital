@@ -9,12 +9,22 @@ export default function LanguageSelector({ isMobile = false, isDrawer = false, c
   const [currentLang, setCurrentLang] = useState("en");
   const dropdownRef = useRef(null);
 
-  // Initialize from storage on mount
+  // Initialize from storage or cookie on mount
   useEffect(() => {
-    const saved = getStoredLanguage();
-    setCurrentLang(saved);
-    if (saved !== "en") {
-      applyLanguage(saved);
+    let activeLang = "en";
+    try {
+      const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/);
+      if (match && match[1] && LANGUAGES.some((l) => l.code === match[1])) {
+        activeLang = match[1];
+      } else {
+        const saved = getStoredLanguage();
+        if (saved) activeLang = saved;
+      }
+    } catch (e) {}
+
+    setCurrentLang(activeLang);
+    if (activeLang !== "en") {
+      applyLanguage(activeLang);
     }
   }, []);
 
@@ -43,8 +53,56 @@ export default function LanguageSelector({ isMobile = false, isDrawer = false, c
 
   const handleSelect = (code) => {
     setCurrentLang(code);
-    applyLanguage(code);
     setIsOpen(false);
+
+    // 1. Save in localStorage
+    try {
+      localStorage.setItem("orl_preferred_lang", code);
+    } catch (e) {}
+
+    // 2. Set googtrans cookie for full-site translation across all pages
+    try {
+      const hostname = window.location.hostname;
+      const domainParts = hostname.split(".");
+      const rootDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join(".")}` : "";
+
+      const setCookie = (name, value) => {
+        document.cookie = `${name}=${value}; path=/; max-age=31536000;`;
+        if (rootDomain) {
+          document.cookie = `${name}=${value}; domain=${rootDomain}; path=/; max-age=31536000;`;
+        }
+      };
+
+      if (code === "en") {
+        setCookie("googtrans", "/en/en");
+        document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        if (rootDomain) {
+          document.cookie = `googtrans=; domain=${rootDomain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+        }
+      } else {
+        setCookie("googtrans", `/en/${code}`);
+      }
+    } catch (e) {}
+
+    // 3. Set HTML dir and lang
+    const isRtl = ["ar", "ur", "fa"].includes(code);
+    document.documentElement.lang = code;
+    document.documentElement.dir = isRtl ? "rtl" : "ltr";
+
+    // 4. Trigger full DOM translation
+    const combo = document.querySelector(".goog-te-combo");
+    if (combo) {
+      combo.value = code;
+      combo.dispatchEvent(new Event("change"));
+    } else {
+      window.location.reload();
+      return;
+    }
+
+    // 5. In-house instant dictionary backup
+    try {
+      applyLanguage(code);
+    } catch (e) {}
   };
 
   const currentMeta = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[6]; // English default

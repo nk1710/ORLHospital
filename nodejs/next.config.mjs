@@ -73,6 +73,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/contact.html",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/about.html",
+        destination: "/about/drdhirendrasinghkushwah",
+        permanent: true,
+      },
+      {
+        source: "/gallery.html",
+        destination: "/gallery",
+        permanent: true,
+      },
+      {
+        source: "/facilities.html",
+        destination: "/facilities",
+        permanent: true,
+      },
+      {
         source: "/best-ent-doctor-jasola-delhi.html",
         destination: "/location/jasola",
         permanent: true,
