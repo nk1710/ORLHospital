@@ -9,16 +9,25 @@ export default function FloatingLanguageDock() {
   const [currentLang, setCurrentLang] = useState("en");
   const dockRef = useRef(null);
 
-  // Initialize from storage on mount
+  // Initialize from cookie or storage on mount
   useEffect(() => {
+    try {
+      const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+      if (match && match[1] && LANGUAGES.some((l) => l.code === match[1])) {
+        setCurrentLang(match[1]);
+        if (["ar", "ur", "fa"].includes(match[1])) {
+          document.documentElement.dir = "rtl";
+        }
+        return;
+      }
+    } catch (e) {}
+
     const saved = getStoredLanguage();
-    setCurrentLang(saved);
-    if (saved !== "en") {
-      // Delay slightly for React hydration to complete before walking DOM
-      const timer = setTimeout(() => {
-        applyLanguage(saved);
-      }, 100);
-      return () => clearTimeout(timer);
+    if (saved) {
+      setCurrentLang(saved);
+      if (["ar", "ur", "fa"].includes(saved)) {
+        document.documentElement.dir = "rtl";
+      }
     }
   }, []);
 
@@ -46,9 +55,44 @@ export default function FloatingLanguageDock() {
   }, [isOpen]);
 
   const handleSelect = (code) => {
-    setCurrentLang(code);
-    applyLanguage(code);
     setIsOpen(false);
+    setCurrentLang(code);
+
+    try {
+      localStorage.setItem("orl_preferred_lang", code);
+    } catch (e) {}
+
+    const host = window.location.hostname;
+    const parts = host.split(".");
+    const rootDomain = parts.length > 2 ? "." + parts.slice(-2).join(".") : "." + host;
+
+    const setCookieString = (val) => {
+      document.cookie = `googtrans=${val}; path=/; max-age=31536000;`;
+      document.cookie = `googtrans=${val}; domain=${host}; path=/; max-age=31536000;`;
+      if (rootDomain) {
+        document.cookie = `googtrans=${val}; domain=${rootDomain}; path=/; max-age=31536000;`;
+      }
+    };
+
+    if (code === "en") {
+      document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      document.cookie = `googtrans=; domain=${host}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+      if (rootDomain) {
+        document.cookie = `googtrans=; domain=${rootDomain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+      }
+      setCookieString("/en/en");
+      document.documentElement.dir = "ltr";
+    } else {
+      setCookieString(`/en/${code}`);
+      if (["ar", "ur", "fa"].includes(code)) {
+        document.documentElement.dir = "rtl";
+      } else {
+        document.documentElement.dir = "ltr";
+      }
+    }
+
+    // Reload page to let translation engine convert 100% of all DOM text nodes
+    window.location.reload();
   };
 
   const currentMeta = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[6]; // English default

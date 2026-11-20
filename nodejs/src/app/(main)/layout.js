@@ -92,8 +92,46 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
+        {/* Global Multi-Language Translation Engine (Full-Site Deep Translation) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function googleTranslateElementInit() {
+                try {
+                  new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'hi,bn,pa,ur,gu,mr,en,ar,ru,sw,fr,fa,ne',
+                    autoDisplay: false
+                  }, 'google_translate_element');
+                } catch(e){}
+              }
+            `,
+          }}
+        />
+        <script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          async
+          defer
+        />
       </head>
       <body className={`${barlow.variable} ${gilda.variable} w-full max-w-full overflow-x-clip text-gray-700`}>
+        {/* Hidden Container for Translation Engine (Positioned offscreen, initialized cleanly) */}
+        <div
+          id="google_translate_element"
+          style={{
+            position: "absolute",
+            top: "-9999px",
+            left: "-9999px",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+            opacity: 0,
+            pointerEvents: "none"
+          }}
+          aria-hidden="true"
+        />
+
         <GTMNoScript />
         <GTMProvider />
         <TopBar />
