@@ -17,11 +17,13 @@ export async function generateMetadata() {
 
   return {
     title:
-      "Clinical Gallery & Global Moments | Dr. (Prof.) Dhirendra Singh Kushwah ENT Surgeon Delhi",
+      "Dr. (Prof.) Dhirendra Singh Kushwah — Clinical Gallery & Surgical Moments | Delhi",
     description:
-      "Explore the clinical gallery of Dr. (Prof.) Dhirendra Singh Kushwah: advanced ear & skull base surgeries in laminar OT, international medical tourism patients, global academic conferences, and patient recovery stories in New Delhi.",
+      "Explore verified clinical gallery & surgical moments of Dr. (Prof.) Dhirendra Singh Kushwah: advanced ear & skull base surgeries in laminar OT, cochlear implants & recovery stories at ORL Hospital Delhi.",
     keywords: [
       "Dr Dhirendra Singh Kushwah gallery",
+      "Dr Dhirendra Singh photos",
+      "Dr Dhirendra Singh Kushwah ENT surgeon Delhi",
       "ENT surgery OT photos Delhi",
       "International patient ENT surgery India",
       "Micro ear surgery gallery",
@@ -36,7 +38,7 @@ export async function generateMetadata() {
     },
     openGraph: {
       title:
-        "Clinical Gallery & Global Moments | Dr. (Prof.) Dhirendra Singh Kushwah",
+        "Dr. (Prof.) Dhirendra Singh Kushwah — Clinical Gallery & Surgical Moments",
       description:
         "Real moments of surgical precision in laminar OT, international medical tourism patients, and global academic fellowships by Senior ENT Surgeon Dr. Dhirendra Singh Kushwah.",
       url,
@@ -139,7 +141,7 @@ export default function GalleryPage() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight drop-shadow-sm">
-              Clinical Excellence &amp; Global Moments
+              Dr. (Prof.) Dhirendra Singh Kushwah — Clinical Gallery &amp; Surgical Moments
             </h1>
 
             <p className="mt-4 text-base sm:text-lg text-slate-100 leading-relaxed font-normal max-w-3xl">

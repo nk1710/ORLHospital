@@ -62,11 +62,11 @@ export function buildMetadata({ location, problem, intent }) {
 
   const titlePattern = int
     ? int.metaTitlePattern
-    : "{problem} in {location} – ENT Specialist | {doctor}";
+    : "Best {problem} Treatment in {location} | {doctor}";
 
   const descPattern = int
     ? int.metaDescPattern
-    : "Consult {doctor}, MS ENT Specialist, for {problem} in {location}. Expert diagnosis and treatment. Call {phone}.";
+    : "Consult {doctor}, Senior ENT Specialist (25+ Yrs Exp) for {problem} in {location}. Expert audiometry, stitchless ear surgery & advanced daycare care. Call {phone}.";
 
   return {
     title: fill(titlePattern, loc, prob, int),

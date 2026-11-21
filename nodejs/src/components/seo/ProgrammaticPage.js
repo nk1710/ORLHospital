@@ -1,6 +1,7 @@
 import Script from "next/script";
 import Link from "next/link";
 import { DOCTOR } from "@/data/seo-data";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 
 export default function ProgrammaticPage({
   h1,
@@ -120,6 +121,11 @@ export default function ProgrammaticPage({
             </Link>
           </div>
         </section>
+
+        {/* Interactive Bilingual Patient Care Finder, Fear-Killers & 2nd Opinion Desk */}
+        <div className="mb-10">
+          <PatientCareFinder />
+        </div>
         {/* Locality details */}
         {location.nearbyAreas?.length > 0 && (
           <section className="mb-8">

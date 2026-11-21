@@ -73,6 +73,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/head-neck-surgery",
+        destination: "/specialities/head-neck-surgery",
+        permanent: true,
+      },
+      {
         source: "/contact.html",
         destination: "/contact",
         permanent: true,

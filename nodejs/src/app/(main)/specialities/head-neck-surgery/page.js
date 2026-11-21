@@ -1,30 +1,32 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/head-neck-surgery" // update with actual URL
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/head-neck-surgery";
 
   return {
     title:
-      "Top Head and Neck Surgeon in India | Advanced ENT Surgery - Dr. Dhirendra Singh Kushwah",
+      "Best Head and Neck Surgeon in Delhi NCR | Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, leading Head and Neck Surgery Specialist in India. Expert care for tumors, cancers, reconstructive surgery, and advanced ENT procedures. Book your consultation today.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp), leading Head and Neck Surgeon in Delhi NCR. Specialized care for thyroid, salivary gland tumors, airway & reconstructive ENT surgery. Call +91-9311449825.",
 
     keywords: [
-      "Head and Neck Surgery India",
+      "best head and neck surgeon in delhi",
+      "head and neck surgeon in delhi ncr",
+      "head and neck surgical oncologist delhi",
+      "thyroid surgeon south delhi",
+      "salivary gland tumor surgery delhi",
+      "skull base surgeon delhi",
       "ENT head and neck surgeon Delhi",
-      "Tumor and cancer ENT surgery",
-      "Reconstructive ENT surgery",
-      "Skull base surgery Delhi",
-      "Advanced ENT treatments India",
-      "Best ENT doctor Delhi",
       "Dr Dhirendra Singh Kushwah",
+      "ORL hospital Jasola",
     ],
 
-    authors: [{ name: "Dr. Dhirendra Singh Kushwah" }],
+    authors: [{ name: "Dr. (Prof.) Dhirendra Singh Kushwah" }],
 
     alternates: {
       canonical: url,
@@ -32,11 +34,11 @@ export async function generateMetadata() {
 
     openGraph: {
       title:
-        "Head and Neck Surgery Specialist in India | Advanced ENT Care",
+        "Best Head and Neck Surgeon in Delhi NCR | Dr. (Prof.) Dhirendra Singh Kushwah",
       description:
-        "Expert treatment for head and neck tumors, cancer, and reconstructive ENT surgery by Dr. Dhirendra Singh Kushwah.",
+        "Expert surgical care for thyroid, head & neck tumors, salivary gland disease & reconstruction by Dr. (Prof.) Dhirendra Singh Kushwah.",
       url: url,
-      siteName: "Dr. Dhirendra Singh Kushwah",
+      siteName: "Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Surgeon",
       type: "article",
       locale: "en_IN",
     },
@@ -44,9 +46,9 @@ export async function generateMetadata() {
     twitter: {
       card: "summary_large_image",
       title:
-        "Top Head and Neck Surgeon in India",
+        "Best Head and Neck Surgeon in Delhi NCR | Dr. (Prof.) Dhirendra Singh Kushwah",
       description:
-        "Advanced ENT surgery for head and neck conditions by Dr. Dhirendra Singh Kushwah.",
+        "Advanced ENT surgery for thyroid, salivary & head-neck conditions by Dr. (Prof.) Dhirendra Singh Kushwah.",
     },
 
     robots: {
@@ -55,7 +57,7 @@ export async function generateMetadata() {
     },
 
     category: "healthcare",
-  }
+  };
 }
 
 export default async function HeadSpecialityPage() {
@@ -65,10 +67,10 @@ export default async function HeadSpecialityPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.com/head-neck-surgery",
-        "url": "https://www.drdhirendrasinghkushwah.com/head-neck-surgery",
-        "name": "Head and Neck Surgery Specialist in India – Dr Dhirendra Singh Kushwah",
-        "description": "Expert head and neck surgery in India for thyroid disorders, tumors, airway problems, salivary gland diseases, and complex reconstructive procedures by Dr. Dhirendra Singh Kushwah.",
+        "@id": "https://www.drdhirendrasinghkushwah.com/specialities/head-neck-surgery",
+        "url": "https://www.drdhirendrasinghkushwah.com/specialities/head-neck-surgery",
+        "name": "Head and Neck Surgery Specialist in Delhi NCR – Dr. (Prof.) Dhirendra Singh Kushwah",
+        "description": "Expert head and neck surgery in Delhi NCR for thyroid disorders, tumors, airway problems, salivary gland diseases, and complex reconstructive procedures by Dr. (Prof.) Dhirendra Singh Kushwah.",
         "mainEntity": {
           "@id": "https://www.drdhirendrasinghkushwah.com/#headneck-surgery"
         }
@@ -292,6 +294,11 @@ export default async function HeadSpecialityPage() {
           </div>
 
         </div>
+      </div>
+
+      {/* Interactive Bilingual Patient Care Finder, Fear-Killers & 2nd Opinion Desk */}
+      <div className="pt-6">
+        <PatientCareFinder />
       </div>
     </main>
     </>

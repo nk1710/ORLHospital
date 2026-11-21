@@ -5,12 +5,12 @@
 // ─────────────────────────────────────────────────────────────
 
 export const DOCTOR = {
-  name: "Dr. Dhirendra Singh Kushwah",
-  credentials: "MBBS, MS | ENT Specialist",
+  name: "Dr. (Prof.) Dhirendra Singh Kushwah",
+  credentials: "MBBS, MS (ENT) | Senior Consultant ENT Surgeon",
   tagline: "Excellence, Noble, Trustworthy",
   phone: "+919311449825",
   email: "drdhirendrasinghent@gmail.com",
-  domain: process.env.NEXT_PUBLIC_SITE_URL,
+  domain: process.env.NEXT_PUBLIC_SITE_URL || "https://www.drdhirendrasinghkushwah.com",
 };
 
 // ── Locations ────────────────────────────────────────────────

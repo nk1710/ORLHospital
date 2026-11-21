@@ -1,24 +1,38 @@
 import Link from "next/link";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 import "./HearingLoss.css";
 
 export const metadata = {
   title:
-    "Hearing Loss Treatment in Delhi | ENT Specialist & Hearing Loss Surgeon",
+    "Best Hearing Loss Treatment in Delhi | Dr. (Prof.) Dhirendra Singh Kushwah",
   description:
-    "Learn about hearing loss symptoms, causes, types, risk factors, prevention, diagnosis and treatment. Consult Dr.(Prof.) Dhirendra Singh Kushwah, ENT Specialist & Surgeon in Delhi.",
+    "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp) for hearing loss treatment in Delhi. Expert care for eardrum perforation, stitchless tympanoplasty, tinnitus & cochlear implants. Call +91-9311449825.",
   keywords: [
-    "hearing loss",
-    "hearing loss treatment",
-    "hearing loss treatment in Delhi",
+    "best hearing loss treatment in delhi",
+    "hearing loss doctor delhi",
+    "hearing loss surgeon delhi",
     "ENT specialist for hearing loss",
-    "hearing loss doctor in Delhi",
-    "hearing loss symptoms",
-    "causes of hearing loss",
-    "types of hearing loss",
-    "hearing test Delhi",
-    "cochlear implant Delhi",
-    "hearing loss surgeon Delhi",
+    "tympanoplasty surgery delhi",
+    "stitchless ear surgery delhi",
+    "cochlear implant delhi",
+    "eardrum perforation treatment",
+    "hearing test delhi",
+    "audiometry test jasola",
+    "Dr Dhirendra Singh Kushwah",
   ],
+  alternates: {
+    canonical: "https://www.drdhirendrasinghkushwah.com/conditions/hearingloss",
+  },
+  openGraph: {
+    title:
+      "Best Hearing Loss Treatment in Delhi | Dr. (Prof.) Dhirendra Singh Kushwah",
+    description:
+      "Advanced medical & stitchless surgical care for hearing loss, eardrum holes, and tinnitus by Senior ENT Surgeon Dr. (Prof.) Dhirendra Singh Kushwah.",
+    url: "https://www.drdhirendrasinghkushwah.com/conditions/hearingloss",
+    siteName: "Dr. (Prof.) Dhirendra Singh Kushwah - Senior ENT Surgeon",
+    type: "article",
+    locale: "en_IN",
+  },
 };
 
 export default function HearingLossPage() {
@@ -1818,6 +1832,11 @@ export default function HearingLossPage() {
         </div>
 
       </section>
+
+      {/* Interactive Bilingual Patient Care Finder, Fear-Killers & 2nd Opinion Desk */}
+      <div className="my-10">
+        <PatientCareFinder />
+      </div>
 
     </main>
   );
