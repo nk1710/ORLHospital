@@ -1,5 +1,6 @@
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import {
   Activity,
   AlertCircle,
@@ -17,14 +18,14 @@ import {
 
 export async function generateMetadata() {
   const url =
-    "https://www.drdhirendrasinghkushwah.com/tonsillectomy-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/tonsillectomy-surgery";
 
   return {
     title:
-      "Best Tonsillectomy Surgeon in Delhi | Tonsil Removal Specialist - Dr. Dhirendra Singh Kushwah",
+      "Best Tonsillectomy Surgeon in Delhi | Coblation Plasma Specialist - Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, an experienced ENT surgeon in Delhi for tonsillectomy and tonsil removal surgery. Evaluation and treatment for recurrent tonsillitis, enlarged tonsils, tonsil stones, swallowing problems and sleep-related breathing difficulties.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp) in Delhi for Coblation Plasma Tonsillectomy. Minimal pain, zero bleeding, rapid 48-hr recovery, 100% cashless mediclaim.",
 
     keywords: [
       "Tonsillectomy Surgeon in Delhi",
@@ -1557,6 +1558,14 @@ export default async function DepartmentPage() {
           </div>
         </div>
       </section>
+
+      {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+      <div className="max-w-5xl mx-auto px-4">
+        <SurgeryLeadDesk 
+          procedureName="Coblation Plasma Tonsillectomy" 
+          customMessage="Hello Dr. Kushwah, I want to check Coblation Plasma Tonsillectomy surgery package cost and 100% cashless mediclaim at ORL Hospital." 
+        />
+      </div>
 
       {/* FINAL CTA */}
       <section className="px-4 py-14 md:py-20">

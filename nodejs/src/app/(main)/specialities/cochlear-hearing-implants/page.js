@@ -4,6 +4,7 @@ import Link from "next/link";
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import {
   Award,
   ShieldCheck,
@@ -695,6 +696,12 @@ export default async function DepartmentPage() {
               </div>
             </div>
           </section>
+
+          {/* VIP Surgical Desk & 100% Cashless / Insurance Support */}
+          <SurgeryLeadDesk 
+            procedureName="Cochlear Implant Surgery (Bionic Ear)" 
+            customMessage="Hello Dr. Kushwah, I am inquiring about Cochlear Implant candidacy, package cost and insurance/TPA support at ORL Hospital." 
+          />
 
           {/* Bottom Consultation CTA */}
           <section

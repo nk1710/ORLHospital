@@ -1,26 +1,20 @@
 import React from 'react';
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { DoctorImage, FaqAccordion } from "@/components/ui/custom";
 import { Wind, ShieldAlert, Award, Calendar, Activity } from "lucide-react";
 
-// export const metadata = {
-//     title: "Nose & Sinus Treatment in New Delhi | Expert Sinus Specialist & ENT Surgeon",
-//     description: "Get advanced nose & sinus treatment in New Delhi for sinusitis, DNS, nasal blockage, allergies, polyps, snoring, and endoscopic sinus surgery with expert ENT care by Dr. Dhirendra Singh Kushwah.",
-//     alternates: {
-//         canonical: "drdhirendrasinghkushwah.com/conditions/nose-sinus-treatment",
-//     },
-// };
 export const metadata = {
     title:
-        "Nose & Sinus Specialist in Delhi | Dr. Dhirendra Singh Kushwah",
+        "Nose & Sinus Specialist in Delhi | Packless Septoplasty & FESS | Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-        "Expert nose and sinus care in Delhi for sinusitis, nasal blockage, nasal polyps, deviated septum, allergies and other rhinology conditions, with advanced ENT evaluation and treatment.",
+        "Expert nose and sinus surgical care in Delhi by Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp). Packless septoplasty, FESS, sinus polyps & allergy treatment. 100% cashless mediclaim.",
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.com/conditions/nose-sinus-treatment",
+            "https://www.drdhirendrasinghkushwah.com/conditions/nose-sinus",
     },
 };
 
@@ -1288,6 +1282,14 @@ export default async function NoseSinusPage() {
 </section>
 
             <FaqAccordion faqItems={faqItems} />
+
+            {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+            <div className="max-w-5xl mx-auto px-4">
+              <SurgeryLeadDesk 
+                procedureName="Packless Septoplasty & FESS Sinus Surgery" 
+                customMessage="Hello Dr. Kushwah, I have nasal blockage / sinus problem and want to check surgery package cost & 100% cashless insurance at ORL Hospital." 
+              />
+            </div>
 
             {/* CONTACT CTA */}
 <section className="py-16 px-4">

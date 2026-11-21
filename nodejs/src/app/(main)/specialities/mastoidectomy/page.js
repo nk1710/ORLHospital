@@ -1,17 +1,18 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/mastoidectomy"
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/mastoidectomy";
 
   return {
     title:
-      "Best Mastoidectomy Surgeon in Delhi | Cholesteatoma & Ear Infection Surgery - Dr. Dhirendra Singh Kushwah",
+      "Best Mastoidectomy Surgeon in Delhi | Cholesteatoma & Ear Surgery Specialist - Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, an experienced ENT surgeon in Delhi specializing in mastoidectomy surgery for chronic ear infections and cholesteatoma. Safe and advanced treatment for long-term ear health and hearing preservation.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp) in Delhi for mastoidectomy surgery for chronic ear pus & cholesteatoma. 100% cashless mediclaim.",
 
     keywords: [
       "Mastoidectomy surgery Delhi",
@@ -306,6 +307,12 @@ export default async function DepartmentPage() {
                 Early treatment can prevent complications and ensure better hearing outcomes. Consult a specialist today for safe and effective ear care and long-term relief.
               </p>
             </div>
+
+            {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+            <SurgeryLeadDesk 
+              procedureName="Mastoidectomy (Ear Bone & Pus Surgery)" 
+              customMessage="Hello Dr. Kushwah, I want to check Mastoidectomy surgery package cost and 100% cashless mediclaim at ORL Hospital." 
+            />
 
         </div>
       </div>

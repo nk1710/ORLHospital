@@ -1,10 +1,11 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/stapedotomy" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/stapedotomy-surgery" // update if needed
 
   return {
     title:
@@ -321,6 +322,14 @@ export default async function DepartmentPage() {
             <p className="text-slate-600">
               Take the first step towards better hearing by consulting an experienced specialist. Early treatment can significantly improve outcomes and quality of life.
             </p>
+          </div>
+
+          {/* VIP High-Converting Surgery Lead Desk */}
+          <div className="mt-8">
+            <SurgeryLeadDesk 
+              procedureName="Stapedotomy (Otosclerosis Surgery)" 
+              customMessage="Hello Dr. Kushwah, I want to check Stapedotomy hearing surgery package cost and cashless insurance at ORL Hospital." 
+            />
           </div>
 
         </div>

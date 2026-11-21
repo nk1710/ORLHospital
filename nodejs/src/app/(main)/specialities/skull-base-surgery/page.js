@@ -1,10 +1,11 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/skull-base-surgery" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/skull-base-surgery" // update if needed
 
   return {
     title:
@@ -371,6 +372,14 @@ export default async function DepartmentPage() {
             <p className="text-slate-600">
               Take the first step towards advanced and safe treatment by consulting an experienced specialist. Early diagnosis and expert care can significantly improve outcomes.
             </p>
+          </div>
+
+          {/* VIP High-Converting Surgery Lead Desk */}
+          <div className="mt-8">
+            <SurgeryLeadDesk 
+              procedureName="Endoscopic Skull Base Surgery" 
+              customMessage="Hello Dr. Kushwah, I want to check Skull Base surgery evaluation and cashless insurance at ORL Hospital." 
+            />
           </div>
 
         </div>

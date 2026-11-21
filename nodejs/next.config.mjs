@@ -78,6 +78,61 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/septoplasty",
+        destination: "/specialities/septoplasty",
+        permanent: true,
+      },
+      {
+        source: "/nose-sinus-rhinology",
+        destination: "/specialities/nose-sinus-rhinology",
+        permanent: true,
+      },
+      {
+        source: "/mastoidectomy",
+        destination: "/specialities/mastoidectomy",
+        permanent: true,
+      },
+      {
+        source: "/skull-base-surgery",
+        destination: "/specialities/skull-base-surgery",
+        permanent: true,
+      },
+      {
+        source: "/stapedotomy",
+        destination: "/specialities/stapedotomy-surgery",
+        permanent: true,
+      },
+      {
+        source: "/tonsillectomy-surgery",
+        destination: "/specialities/tonsillectomy-surgery",
+        permanent: true,
+      },
+      {
+        source: "/pediatric-ent",
+        destination: "/specialities/pediatric-ent",
+        permanent: true,
+      },
+      {
+        source: "/laryngology",
+        destination: "/specialities/laryngology",
+        permanent: true,
+      },
+      {
+        source: "/conditions/head-neck",
+        destination: "/specialities/head-neck-surgery",
+        permanent: true,
+      },
+      {
+        source: "/conditions/nose-sinus-treatment",
+        destination: "/conditions/nose-sinus",
+        permanent: true,
+      },
+      {
+        source: "/conditions/voice-throat",
+        destination: "/conditions/voice-throat-disorders-treatment-delhi",
+        permanent: true,
+      },
+      {
         source: "/contact.html",
         destination: "/contact",
         permanent: true,

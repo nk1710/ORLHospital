@@ -1,6 +1,7 @@
 import React from 'react';
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { DoctorImage, FaqAccordion } from "@/components/ui/custom";
 import { Ear, Headphones, ShieldAlert, Award, Calendar, Activity } from "lucide-react";
 
@@ -607,6 +608,14 @@ const earHearingTreatments = [
           </div>
         </div>
       </section> */}
+
+            {/* VIP High-Converting Surgery Lead Desk */}
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 my-10">
+                <SurgeryLeadDesk 
+                    procedureName="Stitchless Tympanoplasty & Micro-Ear Surgery" 
+                    customMessage="Hello Dr. Kushwah, I have ear discharge / eardrum hole / hearing loss and want to check ear surgery package cost & 100% cashless insurance at ORL Hospital." 
+                />
+            </div>
 
             <section className="py-20 px-4 md:px-8 bg-white">
                 <div className="max-w-4xl mx-auto bg-teal-600 rounded-[40px] p-8 md:p-12 text-center shadow-2xl">

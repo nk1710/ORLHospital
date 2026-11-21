@@ -134,9 +134,10 @@ export default function SurgeryLeadDesk({
                 href={`https://wa.me/919311449825?text=${whatsappText}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2.5 rounded-xl px-5 py-3.5 text-sm font-bold transition hover:opacity-95"
+                className="w-full flex items-center justify-center gap-2.5 rounded-xl px-5 py-3.5 text-sm font-bold transition hover:opacity-95 pcf-whatsapp-pulse cursor-pointer"
                 style={{
                   backgroundColor: "#059669",
+                  background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
                   color: "#ffffff",
                   boxShadow: "0 4px 15px rgba(5, 150, 105, 0.45)"
                 }}
@@ -157,6 +158,19 @@ export default function SurgeryLeadDesk({
                 <Phone className="h-4 w-4" style={{ color: "#ffffff" }} />
                 <span style={{ color: "#ffffff" }}>Call Surgery Desk: +91 9311449825</span>
               </a>
+            </div>
+
+            {/* Insurance Badges */}
+            <div className="pt-2 flex flex-wrap items-center justify-center gap-1.5 text-[10px] font-semibold" style={{ color: "#5eead4" }}>
+              <span>✓ Star Health</span>
+              <span>&bull;</span>
+              <span>✓ Care</span>
+              <span>&bull;</span>
+              <span>✓ HDFC ERGO</span>
+              <span>&bull;</span>
+              <span>✓ ICICI</span>
+              <span>&bull;</span>
+              <span>✓ All TPAs Cashless</span>
             </div>
 
             <p 

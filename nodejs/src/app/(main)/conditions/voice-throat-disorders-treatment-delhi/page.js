@@ -1,6 +1,7 @@
 import React from 'react';
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { DoctorImage, FaqAccordion } from "@/components/ui/custom";
 import { Mic, ShieldAlert, Award, Calendar, Activity, Stethoscope } from "lucide-react";
 
@@ -13,7 +14,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://www.drdhirendrasinghkushwah.com/conditions/voice-throat",
+            "https://www.drdhirendrasinghkushwah.com/conditions/voice-throat-disorders-treatment-delhi",
     },
 };
 
@@ -1042,6 +1043,14 @@ export default async function VoiceThroatPage() {
             </section>
 
             <FaqAccordion faqItems={faqItems} />
+
+            {/* VIP High-Converting Surgery Lead Desk */}
+            <div className="max-w-6xl mx-auto px-4 my-10">
+                <SurgeryLeadDesk 
+                    procedureName="Coblation Plasma Tonsil & Voice Surgery" 
+                    customMessage="Hello Dr. Kushwah, I want to check throat/tonsil surgery package cost & 100% cashless insurance at ORL Hospital." 
+                />
+            </div>
 
             {/* CONTACT CTA */}
             <section className="py-16 px-4">

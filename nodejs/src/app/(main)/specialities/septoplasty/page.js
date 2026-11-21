@@ -1,17 +1,18 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/septoplasty" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/septoplasty";
 
   return {
     title:
-      "Best Septoplasty Surgeon in Delhi | Deviated Septum (DNS) Surgery Specialist - Dr. Dhirendra Singh Kushwah",
+      "Best Septoplasty Surgeon in Delhi | Packless DNS Surgery Specialist - Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, an experienced ENT surgeon in Delhi for septoplasty surgery to correct deviated septum (DNS). Improve breathing, relieve nasal blockage, and get safe, advanced treatment with expert care.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp) in Delhi for Packless Septoplasty to correct deviated septum (DNS). Zero cloth packing, breathe freely right after surgery, 100% cashless mediclaim.",
 
     keywords: [
       "Septoplasty surgery Delhi",
@@ -283,6 +284,12 @@ export default async function DepartmentPage() {
                 allowFullScreen
               />
             </div>
+
+            {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+            <SurgeryLeadDesk 
+              procedureName="Packless Septoplasty (DNS Surgery)" 
+              customMessage="Hello Dr. Kushwah, I want to check Packless Septoplasty (DNS) surgery package cost and 100% cashless mediclaim at ORL Hospital." 
+            />
 
           </div>
       </main>

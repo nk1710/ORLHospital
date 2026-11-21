@@ -7096,3 +7096,111 @@ body {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+/* =========================================================================
+   SURGICAL DESK & PATIENT CARE FINDER GLOBAL RESILIENT STYLES
+   Ensures 100% bulletproof contrast & rendering on all devices & browsers
+========================================================================= */
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+}
+
+.pcf-whatsapp-pulse {
+  animation: pulseGlow 2.5s infinite !important;
+}
+
+.pcf-btn-book {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35) !important;
+  border: none !important;
+}
+.pcf-btn-book:hover {
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%) !important;
+  transform: translateY(-1px);
+}
+.pcf-btn-book svg,
+.pcf-btn-book span {
+  color: #ffffff !important;
+}
+
+.pcf-btn-whatsapp-ask {
+  background: #16a34a !important;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.35) !important;
+  border: 1px solid #15803d !important;
+}
+.pcf-btn-whatsapp-ask:hover {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%) !important;
+  transform: translateY(-1px);
+}
+.pcf-btn-whatsapp-ask svg,
+.pcf-btn-whatsapp-ask span {
+  color: #ffffff !important;
+}
+
+.pcf-second-opinion-banner {
+  background-color: #041d1a !important;
+  background: linear-gradient(135deg, #041d1a 0%, #064e3b 50%, #031a17 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(45, 212, 191, 0.35) !important;
+  box-shadow: 0 20px 45px rgba(2, 44, 34, 0.35) !important;
+}
+
+.pcf-second-opinion-banner h3 {
+  color: #ffffff !important;
+}
+
+.pcf-second-opinion-banner p {
+  color: #e2e8f0 !important;
+}
+
+.pcf-badge-second-opinion {
+  background-color: #f59e0b !important;
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+.pcf-badge-second-opinion svg,
+.pcf-badge-second-opinion span {
+  color: #0f172a !important;
+}
+
+.pcf-btn-whatsapp-parchi {
+  background: #25d366 !important;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+  border: none !important;
+}
+.pcf-btn-whatsapp-parchi:hover {
+  background: linear-gradient(135deg, #20ba5a 0%, #0e7368 100%) !important;
+  transform: translateY(-1px);
+}
+.pcf-btn-whatsapp-parchi svg,
+.pcf-btn-whatsapp-parchi span {
+  color: #ffffff !important;
+}
+
+.pcf-btn-call-desk {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px);
+}
+.pcf-btn-call-desk:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+}
+.pcf-btn-call-desk span {
+  color: #ffffff !important;
+}
+.pcf-btn-call-desk svg {
+  color: #5eead4 !important;
+}
+

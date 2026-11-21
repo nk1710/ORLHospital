@@ -1,17 +1,18 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
-  const url = "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology" // update if needed
+  const url = "https://www.drdhirendrasinghkushwah.com/specialities/nose-sinus-rhinology";
 
   return {
     title:
-      "Best Nose & Sinus Surgeon in Delhi | Sinusitis & Nasal Treatment Specialist - Dr. Dhirendra Singh Kushwah",
+      "Best Nose & Sinus Surgeon in Delhi | FESS Specialist - Dr. (Prof.) Dhirendra Singh Kushwah",
 
     description:
-      "Consult Dr. Dhirendra Singh Kushwah, an experienced ENT specialist in Delhi for advanced nose and sinus treatments. विशेषज्ञ care for sinusitis, nasal blockage, deviated septum (DNS), and allergies with modern surgical and non-surgical solutions.",
+      "Consult Dr. (Prof.) Dhirendra Singh Kushwah (25+ Yrs Exp) in Delhi for FESS sinus surgery, chronic sinusitis, nasal polyps & DNS. Daycare micro-FESS, no packing, 100% cashless mediclaim.",
 
     keywords: [
       "Nose and sinus doctor Delhi",
@@ -350,6 +351,12 @@ export default async function DepartmentPage() {
                 allowFullScreen
               />
             </div>
+
+            {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+            <SurgeryLeadDesk 
+              procedureName="FESS Endoscopic Sinus Surgery" 
+              customMessage="Hello Dr. Kushwah, I want to check FESS Endoscopic Sinus Surgery package cost and 100% cashless mediclaim at ORL Hospital." 
+            />
         </div>
     </main>
     </>

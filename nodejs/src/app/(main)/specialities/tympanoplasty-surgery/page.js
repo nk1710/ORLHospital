@@ -1,6 +1,7 @@
 import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope, Sparkles } from "lucide-react";
 import Link from "next/link";
 
@@ -891,6 +892,12 @@ export default async function DepartmentPage() {
 
           </div>
         </section>
+
+        {/* VIP Surgical Desk & 100% Cashless Mediclaim */}
+        <SurgeryLeadDesk 
+          procedureName="Stitchless Tympanoplasty (Eardrum Repair)" 
+          customMessage="Hello Dr. Kushwah, I want to check Stitchless Tympanoplasty (Eardrum Repair) surgery package cost and 100% cashless mediclaim at ORL Hospital." 
+        />
 
         {/* =====================================================
             FINAL CTA

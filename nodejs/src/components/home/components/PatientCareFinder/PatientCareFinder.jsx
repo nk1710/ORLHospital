@@ -270,19 +270,19 @@ export default function PatientCareFinder() {
                       className="pcf-btn-book px-5 py-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer flex items-center gap-2"
                       style={{ backgroundColor: "#0d9488", color: "#ffffff" }}
                     >
-                      <span>Book Consultation (अपॉइंटमेंट लें)</span>
-                      <ArrowRight size={15} />
+                      <span style={{ color: "#ffffff" }}>Book Consultation (अपॉइंटमेंट लें)</span>
+                      <ArrowRight size={15} style={{ color: "#ffffff" }} />
                     </button>
 
                     <a
                       href={`https://wa.me/919311449825?text=${encodeURIComponent(currentCategory.waMessage)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="pcf-btn-whatsapp-ask px-4 py-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2"
+                      className="pcf-btn-whatsapp-ask px-4 py-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2 cursor-pointer"
                       style={{ backgroundColor: "#16a34a", color: "#ffffff" }}
                     >
-                      <MessageCircle size={15} />
-                      <span>Ask on WhatsApp (व्हाट्सएप पूछें)</span>
+                      <MessageCircle size={15} style={{ color: "#ffffff" }} />
+                      <span style={{ color: "#ffffff" }}>Ask on WhatsApp (व्हाट्सएप पूछें)</span>
                     </a>
 
                     <Link
