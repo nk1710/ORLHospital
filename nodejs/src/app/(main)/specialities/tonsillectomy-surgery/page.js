@@ -1,6 +1,7 @@
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import {
   Activity,
   AlertCircle,
@@ -142,7 +143,7 @@ const faqs = [
 
 export default async function DepartmentPage() {
   const url =
-    "https://www.drdhirendrasinghkushwah.com/tonsillectomy-surgery";
+    "https://www.drdhirendrasinghkushwah.com/specialities/tonsillectomy-surgery";
 
   const physicianId =
     "https://www.drdhirendrasinghkushwah.com/#physician";
@@ -295,6 +296,8 @@ export default async function DepartmentPage() {
           },
         ],
       },
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA,
     ],
   };
 

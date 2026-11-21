@@ -2,6 +2,7 @@ import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
@@ -67,8 +68,8 @@ export default async function DepartmentPage() {
 
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.com/mastoidectomy",
-        "url": "https://www.drdhirendrasinghkushwah.com/mastoidectomy",
+        "@id": "https://www.drdhirendrasinghkushwah.com/specialities/mastoidectomy",
+        "url": "https://www.drdhirendrasinghkushwah.com/specialities/mastoidectomy",
         "name": "Best Mastoidectomy Surgeon in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced mastoidectomy surgery in India for chronic ear infections, cholesteatoma, and hearing restoration performed by expert ENT surgeon Dr. Dhirendra Singh Kushwah.",
         "mainEntity": {
@@ -99,14 +100,8 @@ export default async function DepartmentPage() {
         }
       },
 
-      {
-        "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
-        "name": "Dr. Dhirendra Singh Kushwah",
-        "medicalSpecialty": "Otolaryngology",
-        "jobTitle": "ENT Specialist",
-        "url": "https://www.youtube.com/@dr.dhirendrasingh"
-      },
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA,
 
       {
         "@type": "VideoObject",

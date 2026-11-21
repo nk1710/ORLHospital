@@ -2,6 +2,7 @@ import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
@@ -66,8 +67,8 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology",
-        "url": "https://www.drdhirendrasinghkushwah.com/nose-sinus-rhinology",
+        "@id": "https://www.drdhirendrasinghkushwah.com/specialities/nose-sinus-rhinology",
+        "url": "https://www.drdhirendrasinghkushwah.com/specialities/nose-sinus-rhinology",
         "name": "Best Nose and Sinus Surgeon in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced rhinology treatments for sinusitis, nasal blockage, deviated septum, and breathing disorders using modern surgical techniques.",
         "mainEntity": {
@@ -103,14 +104,8 @@ export default async function DepartmentPage() {
         }
       },
   
-      {
-        "@type": "Physician",
-        "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
-        "name": "Dr. Dhirendra Singh Kushwah",
-        "medicalSpecialty": "Otolaryngology",
-        "jobTitle": "ENT Specialist",
-        "url": "https://www.youtube.com/@dr.dhirendrasingh"
-      },
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA,
   
       {
         "@type": "VideoObject",

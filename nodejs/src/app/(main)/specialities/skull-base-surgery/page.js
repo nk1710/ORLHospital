@@ -2,6 +2,7 @@ import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
@@ -67,8 +68,8 @@ export default async function DepartmentPage() {
   
       {
         "@type": "MedicalWebPage",
-        "@id": "https://www.drdhirendrasinghkushwah.com/skull-base-surgery.html",
-        "url": "https://www.drdhirendrasinghkushwah.com/skull-base-surgery.html",
+        "@id": "https://www.drdhirendrasinghkushwah.com/specialities/skull-base-surgery",
+        "url": "https://www.drdhirendrasinghkushwah.com/specialities/skull-base-surgery",
         "name": "Best Skull Base Surgery Specialist in India – Dr Dhirendra Singh Kushwah",
         "description": "Advanced skull base surgery for tumors, nerve disorders, and complex conditions using minimally invasive techniques.",
         "mainEntity": {
@@ -200,7 +201,9 @@ export default async function DepartmentPage() {
           }
   
         ]
-      }
+      },
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA
   
     ]
   }

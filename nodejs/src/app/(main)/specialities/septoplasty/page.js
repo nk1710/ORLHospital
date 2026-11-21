@@ -2,6 +2,7 @@ import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { buildSurgicalProcedureGraph } from "@/lib/surgicalSchema";
 import { Award, ShieldCheck, CheckCircle2, Phone, Stethoscope } from "lucide-react";
 
 export async function generateMetadata() {
@@ -61,60 +62,25 @@ export async function generateMetadata() {
 }
 
 export default async function DepartmentPage() {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "SurgicalProcedure",
-    "name": "Septoplasty (Pain Free Packless Septoplasty)",
-    "description": "Septoplasty is a surgical procedure used to correct a deviated nasal septum. The surgery straightens and repositions the cartilage and bone inside the nose to improve breathing and restore proper airflow without changing the external shape of the nose.",
-    "bodyLocation": "Nasal Septum",
-    "procedureType": "Surgical",
-    "relevantSpecialty": {
-      "@type": "MedicalSpecialty",
-      "name": "Otolaryngology"
-    },
-    "howPerformed": "During septoplasty surgery, the ENT surgeon gently lifts the nasal lining and straightens or repositions the deviated septum. Excess cartilage or bone causing obstruction may be removed or reshaped to allow smooth airflow through both nostrils.",
-    "preparation": "Before septoplasty, patients undergo an ENT evaluation and nasal examination. The doctor may advise avoiding certain medications, fasting before surgery, and arranging transportation after the procedure.",
-    "followup": "Most patients experience improved breathing within a few weeks. Follow-up visits help monitor healing and ensure proper nasal airflow recovery.",
-    "indication": [
+  const schemaData = buildSurgicalProcedureGraph({
+    pageUrl: "https://www.drdhirendrasinghkushwah.com/specialities/septoplasty",
+    pageName: "Best Septoplasty Surgeon in Delhi | Deviated Septum Specialist - Dr. Dhirendra Singh Kushwah",
+    pageDesc: "Packless, painless endoscopic septoplasty surgery in Delhi by Dr. (Prof.) Dhirendra Singh Kushwah. Breathe freely immediately with same-day daycare discharge.",
+    procedureName: "Septoplasty (Packless Deviated Septum Surgery)",
+    alternateNames: ["Deviated Nasal Septum Surgery", "DNS Surgery", "Packless Septoplasty", "Septal Reconstruction"],
+    bodyLocation: "Nasal Septum",
+    procedureDesc: "Septoplasty is a minimally invasive surgical procedure used to correct a deviated nasal septum (DNS) to restore proper airflow and eliminate chronic nasal obstruction.",
+    indications: [
       "Difficulty breathing through one or both nostrils",
-      "Frequent nasal blockage",
-      "Snoring or noisy breathing during sleep",
-      "Repeated sinus infections",
-      "Nosebleeds",
-      "Facial pressure or headaches",
-      "Postnasal drip",
-      "Reduced sense of smell"
+      "Chronic nasal blockage & congestion",
+      "Night snoring & sleep apnea",
+      "Recurrent sinus headache & pressure",
+      "Post-nasal drip & allergies",
+      "Frequent nosebleeds",
     ],
-    "riskFactor": [
-      "Bleeding",
-      "Infection",
-      "Temporary nasal swelling",
-      "Mild discomfort during recovery"
-    ],
-    "provider": {
-      "@type": "Physician",
-      "name": "Dr. Dhirendra Singh Kushwah",
-      "medicalSpecialty": "Otolaryngology",
-      "jobTitle": "ENT Specialist",
-      "url": "https://www.youtube.com/@dr.dhirendrasingh"
-    },
-    "availableAtOrFrom": {
-      "@type": "MedicalClinic",
-      "name": "ENT & Gynae Clinic",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "19-C, Arjun Nagar Safdarjung Enclave",
-        "addressLocality": "New Delhi",
-        "postalCode": "110029",
-        "addressCountry": "IN"
-      },
-      "telephone": "+91-9311449825"
-    },
-    "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.drdhirendrasinghkushwah.com/septoplasty"
-  }
-  }
+    preparation: "Detailed nasal endoscopy and CT PNS scan evaluation. Fasting instructions provided prior to same-day surgery.",
+    followup: "Same-day discharge. Routine follow-up at 1 week with immediate nasal breathing restoration.",
+  });
   return (
     <> 
     <script

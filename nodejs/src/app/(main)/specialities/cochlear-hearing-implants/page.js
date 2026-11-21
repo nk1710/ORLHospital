@@ -5,6 +5,7 @@ import AsideAppointmentForm from "@/components/ui/AsideAppointmentForm";
 import ClinicalBreadcrumbs from "@/components/ui/ClinicalBreadcrumbs";
 import MedicalReviewBadge from "@/components/ui/MedicalReviewBadge";
 import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import {
   Award,
   ShieldCheck,
@@ -90,67 +91,44 @@ export async function generateMetadata() {
 export default async function DepartmentPage() {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Cochlear and Hearing Implants in Delhi, India",
-    "url": "https://www.drdhirendrasinghkushwah.com/specialities/cochlear-hearing-implants",
-    "description":
-      "Comprehensive clinical guide and patient recovery documentation for pediatric and adult cochlear implant surgery by Dr. (Prof.) Dhirendra Singh Kushwah in Delhi NCR.",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "MedicalProcedure",
-        "name": "Pediatric & Adult Cochlear Implant Surgery",
-        "description":
-          "Surgical procedure for patients with severe or profound sensorineural hearing loss. Involves placing an internal multichannel electrode array into the cochlea to stimulate the auditory nerve directly.",
-        "procedureType": "SurgicalProcedure",
-        "bodyLocation": "Inner Ear & Auditory Nerve",
-        "howPerformed":
-          "Minimally invasive microscopic posterior tympanotomy and round window insertion with intraoperative neural response telemetry (NRT).",
-        "indication": [
-          "Infants and children born with congenital bilateral profound deafness",
-          "Pre-lingual and post-lingual pediatric hearing loss",
-          "Adults with progressive or sudden severe-to-profound sensorineural deafness not aided by hearing aids",
-          "Auditory neuropathy spectrum disorders",
-        ],
-        "possibleOutcome": [
-          "Bionic auditory perception across conversational frequencies",
-          "Age-appropriate speech and language acquisition",
-          "School readiness and mainstream education integration",
-          "Significantly improved social confidence and safety",
-        ],
+        "@type": "MedicalWebPage",
+        "@id": "https://www.drdhirendrasinghkushwah.com/specialities/cochlear-hearing-implants#webpage",
+        name: "Cochlear and Hearing Implants in Delhi, India",
+        url: "https://www.drdhirendrasinghkushwah.com/specialities/cochlear-hearing-implants",
+        description:
+          "Comprehensive clinical guide and patient recovery documentation for pediatric and adult cochlear implant surgery by Dr. (Prof.) Dhirendra Singh Kushwah in Delhi NCR.",
+        mainEntity: {
+          "@type": "SurgicalProcedure",
+          name: "Pediatric & Adult Cochlear Implant Surgery",
+          description:
+            "Surgical procedure for patients with severe or profound sensorineural hearing loss. Involves placing an internal multichannel electrode array into the cochlea to stimulate the auditory nerve directly.",
+          procedureType: "SurgicalProcedure",
+          bodyLocation: "Inner Ear & Auditory Nerve",
+          status: "Hospital Surgical Admission (100% Cashless Mediclaim)",
+          provider: {
+            "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
+          },
+          performer: {
+            "@id": "https://www.drdhirendrasinghkushwah.com/#physician",
+          },
+          hospitalAffiliation: {
+            "@id": "https://www.drdhirendrasinghkushwah.com/#hospital",
+          },
+          howPerformed:
+            "Minimally invasive microscopic posterior tympanotomy and round window insertion with intraoperative neural response telemetry (NRT).",
+          indication: [
+            "Infants and children born with congenital bilateral profound deafness",
+            "Pre-lingual and post-lingual pediatric hearing loss",
+            "Adults with progressive or sudden severe-to-profound sensorineural deafness not aided by hearing aids",
+            "Auditory neuropathy spectrum disorders",
+          ],
+        },
       },
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA,
     ],
-    "video": [
-      {
-        "@type": "VideoObject",
-        "name": "Cochlear Implant Patient Hospital Follow-Up Visit: Auditory Response",
-        "description":
-          "Follow-up hospital visit showing the boy returning to visit Dr. (Prof.) Dhirendra Singh Kushwah, demonstrating natural hearing response and sound detection.",
-        "thumbnailUrl":
-          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
-        "contentUrl":
-          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-hearing-response-recovery-video-1.mp4",
-        "uploadDate": "2026-10-24T12:00:00+05:30",
-      },
-      {
-        "@type": "VideoObject",
-        "name": "Cochlear Implant Patient Hospital Follow-Up Visit: Speech Comprehension",
-        "description":
-          "Recorded on the same hospital visit day: the boy interacting happily with Dr. Kushwah, demonstrating fluent speech comprehension and active communication.",
-        "thumbnailUrl":
-          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-child-after-surgery-activation.jpeg",
-        "contentUrl":
-          "https://www.drdhirendrasinghkushwah.com/images/pediatric-cochlear-implant-speech-rehabilitation-video-2.mp4",
-        "uploadDate": "2026-10-24T12:00:00+05:30",
-      },
-    ],
-    "expertConsideration": {
-      "@type": "Physician",
-      "name": "Dr. (Prof.) Dhirendra Singh Kushwah",
-      "medicalSpecialty": "Otolaryngology & Skull Base Surgery",
-      "jobTitle": "Senior ENT & Cochlear Implant Surgeon",
-      "url": "https://www.drdhirendrasinghkushwah.com/",
-      "telephone": "+91-9311449825",
-    },
   };
 
   return (
