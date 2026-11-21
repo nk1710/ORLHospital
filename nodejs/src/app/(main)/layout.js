@@ -142,7 +142,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <FloatingSocials />
         <FloatingLanguageDock />
-        <AutoPopupModal />
+        {/* <AutoPopupModal /> */}
         <ChatCTA />
       </body>
     </html>
