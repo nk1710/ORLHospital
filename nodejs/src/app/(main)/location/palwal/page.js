@@ -1,5 +1,6 @@
 import ContactForm from "@/components/forms/ContactForm";
 import Link from "next/link";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 
 export async function generateMetadata() {
   return {
@@ -365,6 +366,9 @@ export default function PalwalLocationPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Bilingual Patient Care Finder & Free 2nd Opinion Desk */}
+      <PatientCareFinder />
 
       {/* SERVICES */}
       <section className="py-20 bg-slate-50">

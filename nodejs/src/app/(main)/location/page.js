@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 import {
   Building2,
   Clock,
@@ -405,6 +406,9 @@ export default async function LocationHubPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Bilingual Patient Care Finder & Free 2nd Opinion Desk */}
+      <PatientCareFinder />
 
       {/* ────────────────── BOTTOM CTA ────────────────── */}
       <section className="py-14 bg-teal-700 text-white text-center px-4 sm:px-6">

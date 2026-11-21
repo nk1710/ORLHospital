@@ -1,4 +1,5 @@
 import ContactForm from "@/components/forms/ContactForm";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 
 const Adddres_one = () => (
   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -550,6 +551,9 @@ export default async function JasolaPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Bilingual Patient Care Finder & Free 2nd Opinion Desk */}
+      <PatientCareFinder />
 
       {/* =========================================================
           SERVICES

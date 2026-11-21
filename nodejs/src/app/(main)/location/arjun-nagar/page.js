@@ -1,4 +1,5 @@
 import ContactForm from "@/components/forms/ContactForm";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 
 const AddressOne = () => (
   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -631,6 +632,9 @@ export default async function ArjunNagarPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Bilingual Patient Care Finder & Free 2nd Opinion Desk */}
+      <PatientCareFinder />
 
       {/* =========================================================
           SERVICES
