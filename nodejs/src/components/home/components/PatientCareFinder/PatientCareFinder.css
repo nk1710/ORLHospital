@@ -1,0 +1,62 @@
+/* PatientCareFinder.css - High-Trust Bilingual Patient Triage */
+
+.pcf-container {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.pcf-tab-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pcf-tab-active {
+  background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+  border-color: transparent !important;
+}
+
+.pcf-tab-active svg {
+  color: #ffffff !important;
+}
+
+.pcf-tab-active .pcf-tab-sub {
+  color: #ccfbf1 !important;
+}
+
+.pcf-chip {
+  transition: all 0.2s ease;
+}
+
+.pcf-chip:hover {
+  transform: translateY(-1px);
+  border-color: #0d9488;
+  background-color: #f0fdfa;
+}
+
+.pcf-card-gradient {
+  background: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%);
+}
+
+.pcf-review-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pcf-review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(37, 211, 102, 0);
+  }
+}
+
+.pcf-whatsapp-pulse {
+  animation: pulseGlow 2.5s infinite;
+}

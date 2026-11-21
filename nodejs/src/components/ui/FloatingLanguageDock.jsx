@@ -9,25 +9,44 @@ export default function FloatingLanguageDock() {
   const [currentLang, setCurrentLang] = useState("en");
   const dockRef = useRef(null);
 
-  // Initialize from cookie or storage on mount
+  // Initialize from cookie or storage on mount and sync with translation engine
   useEffect(() => {
+    let activeLang = "en";
     try {
       const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
       if (match && match[1] && LANGUAGES.some((l) => l.code === match[1])) {
-        setCurrentLang(match[1]);
-        if (["ar", "ur", "fa"].includes(match[1])) {
-          document.documentElement.dir = "rtl";
+        activeLang = match[1];
+      } else {
+        const saved = localStorage.getItem("orl_preferred_lang") || getStoredLanguage();
+        if (saved && LANGUAGES.some((l) => l.code === saved)) {
+          activeLang = saved;
         }
-        return;
       }
     } catch (e) {}
 
-    const saved = getStoredLanguage();
-    if (saved) {
-      setCurrentLang(saved);
-      if (["ar", "ur", "fa"].includes(saved)) {
+    if (activeLang && activeLang !== "en") {
+      setCurrentLang(activeLang);
+      if (["ar", "ur", "fa"].includes(activeLang)) {
         document.documentElement.dir = "rtl";
       }
+
+      // Automatically sync with Google Translate select combo once DOM element mounts
+      let attempts = 0;
+      const interval = setInterval(() => {
+        attempts++;
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          if (select.value !== activeLang) {
+            select.value = activeLang;
+            select.dispatchEvent(new Event("change"));
+          }
+          clearInterval(interval);
+        } else if (attempts > 30) {
+          clearInterval(interval);
+        }
+      }, 150);
+
+      return () => clearInterval(interval);
     }
   }, []);
 
@@ -69,7 +88,7 @@ export default function FloatingLanguageDock() {
     const setCookieString = (val) => {
       document.cookie = `googtrans=${val}; path=/; max-age=31536000;`;
       document.cookie = `googtrans=${val}; domain=${host}; path=/; max-age=31536000;`;
-      if (rootDomain) {
+      if (rootDomain && rootDomain !== "." + host) {
         document.cookie = `googtrans=${val}; domain=${rootDomain}; path=/; max-age=31536000;`;
       }
     };
@@ -77,7 +96,7 @@ export default function FloatingLanguageDock() {
     if (code === "en") {
       document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
       document.cookie = `googtrans=; domain=${host}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
-      if (rootDomain) {
+      if (rootDomain && rootDomain !== "." + host) {
         document.cookie = `googtrans=; domain=${rootDomain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
       }
       setCookieString("/en/en");
@@ -91,8 +110,19 @@ export default function FloatingLanguageDock() {
       }
     }
 
-    // Reload page to let translation engine convert 100% of all DOM text nodes
-    window.location.reload();
+    // Immediately trigger Google Translate dropdown if available in DOM
+    try {
+      const select = document.querySelector(".goog-te-combo");
+      if (select) {
+        select.value = code;
+        select.dispatchEvent(new Event("change"));
+      }
+    } catch (err) {}
+
+    // Reload page to let translation engine convert 100% of all SSR & React DOM nodes
+    setTimeout(() => {
+      window.location.reload();
+    }, 150);
   };
 
   const currentMeta = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[6]; // English default

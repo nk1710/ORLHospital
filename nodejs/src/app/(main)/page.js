@@ -3,6 +3,7 @@ import HeroSlider from "@/components/homee/HeroSlider";
 import HospitalQuickActions from "@/components/home/components/HospitalQuickActions";
 import GMBBar from "@/components/home/components/GMBBar/GMBBar";
 import HospitalStats from "@/components/home/components/HospitalStats";
+import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
 import Departments from "../../components/homee/Departments";
 import About from "@/components/home/components/About/About";
 import Specialities from "@/components/home/components/Specialities/Specialities";
@@ -510,6 +511,9 @@ export default async function Home() {
 
       {/* 3. Fast-Track OPD Appointment Strip */}
       <GMBBar />
+
+      {/* 3.1 Patient Care Finder - Bilingual Symptom Triage, Fear-Killers, 2nd Opinion & Trust */}
+      <PatientCareFinder />
 
       {/* 4. Hospital Clinical Milestones & Trust Metrics */}
       <HospitalStats />
