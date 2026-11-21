@@ -2,86 +2,57 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  X, 
-  Phone, 
-  User, 
-  ShieldCheck, 
-  Sparkles, 
-  Clock, 
-  MessageCircle, 
-  CheckCircle2, 
-  FileText 
-} from "lucide-react";
-
-const CONCERN_OPTIONS = [
-  { id: "second_opinion", label: "📋 Free 2nd Opinion on Report", short: "2nd Opinion" },
-  { id: "nose_sinus", label: "👃 Nose Block / Sinus Surgery", short: "Nose/Sinus" },
-  { id: "ear_hearing", label: "👂 Ear Discharge / Eardrum", short: "Ear/Hearing" },
-  { id: "throat_tonsil", label: "🗣️ Tonsil / Voice / Throat", short: "Throat/Tonsil" },
-];
+import { X, Phone, User, CheckCircle2, MessageCircle } from "lucide-react";
 
 export default function AutoPopupModal() {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [concern, setConcern] = useState(CONCERN_OPTIONS[0].label);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
-  // Dismiss suppression key (24 hours)
   const DISMISS_KEY = "orl_callback_dismissed_until";
   const SUBMIT_KEY = "orl_callback_submitted";
 
   const handleClose = () => {
     setOpen(false);
     try {
-      // Suppress for 24 hours so user is NEVER spammed or annoyed
+      // 24 hour cool-off on dismiss
       const expireTime = Date.now() + 24 * 60 * 60 * 1000;
       localStorage.setItem(DISMISS_KEY, expireTime.toString());
-    } catch (e) {
-      // Storage access fail-safe
-    }
+    } catch (e) {}
   };
 
   useEffect(() => {
     try {
-      const alreadySubmitted = localStorage.getItem(SUBMIT_KEY);
-      if (alreadySubmitted === "true") return;
-
+      if (localStorage.getItem(SUBMIT_KEY) === "true") return;
       const dismissedUntil = localStorage.getItem(DISMISS_KEY);
       if (dismissedUntil && Date.now() < parseInt(dismissedUntil, 10)) {
-        return; // In cool-off period
+        return;
       }
-    } catch (e) {
-      // ignore storage errors
-    }
+    } catch (e) {}
 
     let minStayTimer = false;
     const stayRequirement = setTimeout(() => {
       minStayTimer = true;
-    }, 8000); // Must be on site at least 8 seconds for exit-intent
+    }, 8000);
 
-    // 1. Core Trigger: 25 Seconds Smart Timer
+    // 25 Seconds Timer
     const timer = setTimeout(() => {
       setOpen(true);
     }, 25000);
 
-    // 2. Desktop Exit Intent Trigger (Cursor leaving towards browser tab)
+    // Desktop Exit Intent
     const handleMouseLeave = (e) => {
       if (e.clientY <= 15 && minStayTimer && window.innerWidth > 768) {
         setOpen(true);
       }
     };
-
     document.addEventListener("mouseleave", handleMouseLeave);
 
-    // 3. Escape key closes modal
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        handleClose();
-      }
+      if (e.key === "Escape") handleClose();
     };
     window.addEventListener("keydown", handleKeyDown);
 
@@ -98,7 +69,7 @@ export default function AutoPopupModal() {
     setErrorMsg("");
 
     if (!name.trim()) {
-      setErrorMsg("Kripya apna naam darj karein.");
+      setErrorMsg("Kripya apna naam dalein.");
       return;
     }
 
@@ -108,7 +79,7 @@ export default function AutoPopupModal() {
       : cleanPhone;
 
     if (!/^[6-9][0-9]{9}$/.test(sanitized)) {
-      setErrorMsg("Kripya 10-digit ka valid mobile number dalein.");
+      setErrorMsg("Kripya 10-digit mobile number dalein.");
       return;
     }
 
@@ -121,23 +92,22 @@ export default function AutoPopupModal() {
         body: JSON.stringify({
           name: name.trim(),
           phone: sanitized,
-          concern: concern,
+          concern: "General ENT / Surgery Callback",
           pageUrl: typeof window !== "undefined" ? window.location.href : "Website",
         }),
       });
 
       const data = await res.json();
-
       if (data.success) {
         setSubmitted(true);
         try {
           localStorage.setItem(SUBMIT_KEY, "true");
         } catch (err) {}
       } else {
-        setErrorMsg(data.message || "Something went wrong. Please try again.");
+        setErrorMsg(data.message || "Something went wrong.");
       }
     } catch (err) {
-      setErrorMsg("Network error. Please call +91-9311449825 directly.");
+      setErrorMsg("Network error. Direct call: +91-9311449825");
     } finally {
       setLoading(false);
     }
@@ -146,113 +116,155 @@ export default function AutoPopupModal() {
   return (
     <AnimatePresence>
       {open && (
-        <div 
-          className="fixed inset-0 z-[99999] flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto"
-          style={{ backgroundColor: "rgba(15, 23, 42, 0.7)", backdropFilter: "blur(6px)" }}
+        <div
+          role="dialog"
+          aria-modal="true"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 999999,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "rgba(15, 23, 42, 0.65)",
+            backdropFilter: "blur(4px)",
+            padding: "16px",
+          }}
         >
           {/* Backdrop Click Dismiss */}
-          <div 
-            className="fixed inset-0"
+          <div
             onClick={handleClose}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              cursor: "pointer",
+            }}
             aria-hidden="true"
           />
 
-          {/* Modal Container */}
+          {/* Compact Modal Box (Center aligned, max 350px) */}
           <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            className="relative w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl overflow-hidden z-10 border border-teal-100 max-h-[92vh] flex flex-col"
-            style={{ color: "#0f172a" }}
+            initial={{ opacity: 0, scale: 0.92, y: 15 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.92, y: 15 }}
+            transition={{ duration: 0.2 }}
+            style={{
+              position: "relative",
+              width: "100%",
+              maxWidth: "350px",
+              backgroundColor: "#ffffff",
+              borderRadius: "20px",
+              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.4)",
+              overflow: "hidden",
+              zIndex: 10,
+              border: "1px solid #e2e8f0",
+              margin: "auto",
+            }}
           >
-            {/* Top Brand Bar */}
-            <div 
-              className="relative px-6 py-5 text-white shrink-0"
+            {/* Header */}
+            <div
               style={{
-                background: "linear-gradient(135deg, #041d1a 0%, #064e3b 50%, #022c22 100%)",
-                borderBottom: "1px solid rgba(45, 212, 191, 0.3)"
+                background: "linear-gradient(135deg, #0d9488 0%, #065f46 100%)",
+                padding: "16px 20px 14px",
+                color: "#ffffff",
+                position: "relative",
               }}
             >
-              {/* Close Button (Large Touch Target) */}
               <button
                 type="button"
                 onClick={handleClose}
-                aria-label="Close popup"
-                className="absolute right-4 top-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer border border-white/20"
+                aria-label="Close"
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "12px",
+                  width: "28px",
+                  height: "28px",
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  border: "none",
+                  color: "#ffffff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  fontSize: "14px",
+                  transition: "background 0.2s",
+                }}
               >
-                <X size={18} />
+                <X size={15} />
               </button>
 
-              <div className="flex items-center gap-2 mb-2">
-                <span 
-                  className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wide"
-                  style={{ backgroundColor: "#f59e0b", color: "#0f172a" }}
-                >
-                  <Sparkles size={12} />
-                  <span>VIP Doctor Callback Desk</span>
-                </span>
-                <span className="flex items-center gap-1 text-[11px] font-medium text-emerald-300">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  Live in Delhi NCR
+              <div style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "4px" }}>
+                <span
+                  style={{
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    backgroundColor: "#4ade80",
+                    display: "inline-block",
+                    boxShadow: "0 0 8px #4ade80",
+                  }}
+                />
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "#ccfbf1", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+                  Quick Doctor Callback
                 </span>
               </div>
 
-              <h3 
-                className="text-lg sm:text-xl font-black leading-snug tracking-tight text-white pr-6"
-                style={{ color: "#ffffff" }}
-              >
-                Need Quick Advice on ENT Surgery or Treatment?
-              </h3>
-              <p className="text-xs text-emerald-100 mt-1">
-                डॉ. धीरेंद्र सिंह कुशवाह की सीनियर टीम से <strong className="text-white font-bold">10 मिनट में कॉल</strong> पर सही सलाह पाएं।
+              <h4 style={{ fontSize: "16px", fontWeight: 800, margin: "0 0 2px", color: "#ffffff", lineHeight: 1.25 }}>
+                Free Doctor Consultation?
+              </h4>
+              <p style={{ fontSize: "12px", margin: 0, color: "#e6fffa", fontWeight: 500 }}>
+                10 मिनट में डॉ. कुशवाह की टीम से कॉल पाएं
               </p>
             </div>
 
-            {/* Modal Body */}
-            <div className="p-6 overflow-y-auto space-y-4">
+            {/* Content Body */}
+            <div style={{ padding: "18px 20px 16px" }}>
               {!submitted ? (
-                <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                   
-                  {/* Select Concern / Surgery Chips */}
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                      Aapko kis vishay me salah chahiye? (Choose Concern)
-                    </label>
-                    <div className="grid grid-cols-2 gap-2">
-                      {CONCERN_OPTIONS.map((opt) => (
-                        <button
-                          key={opt.id}
-                          type="button"
-                          onClick={() => setConcern(opt.label)}
-                          className={`text-left px-3 py-2 rounded-xl text-xs font-semibold transition border cursor-pointer ${
-                            concern === opt.label
-                              ? "bg-teal-50 border-teal-600 text-teal-900 shadow-xs ring-1 ring-teal-600"
-                              : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
-                          }`}
-                        >
-                          {opt.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
                   {/* Name Input */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">
-                      Aapka Naam (Patient Name) <span className="text-red-500">*</span>
+                    <label style={{ display: "block", fontSize: "11px", fontWeight: 700, color: "#334155", marginBottom: "4px" }}>
+                      Aapka Naam (Your Name)
                     </label>
-                    <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                        <User size={16} />
-                      </div>
+                    <div style={{ position: "relative" }}>
+                      <span
+                        style={{
+                          position: "absolute",
+                          left: "10px",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "#94a3b8",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <User size={15} />
+                      </span>
                       <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="e.g. Ramesh Kumar"
-                        className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600 bg-white"
-                        style={{ fontSize: "16px" }}
+                        placeholder="Ramesh Kumar"
+                        style={{
+                          width: "100%",
+                          padding: "9px 12px 9px 34px",
+                          borderRadius: "10px",
+                          border: "1px solid #cbd5e1",
+                          fontSize: "14px",
+                          color: "#0f172a",
+                          outline: "none",
+                          backgroundColor: "#f8fafc",
+                          boxSizing: "border-box",
+                        }}
                         required
                       />
                     </div>
@@ -260,11 +272,31 @@ export default function AutoPopupModal() {
 
                   {/* Phone Input */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">
-                      WhatsApp / Mobile No. <span className="text-red-500">*</span>
+                    <label style={{ display: "block", fontSize: "11px", fontWeight: 700, color: "#334155", marginBottom: "4px" }}>
+                      Mobile / WhatsApp Number
                     </label>
-                    <div className="relative flex rounded-xl border border-slate-300 overflow-hidden focus-within:ring-2 focus-within:ring-teal-600 focus-within:border-teal-600">
-                      <span className="inline-flex items-center px-3 text-xs font-bold bg-slate-100 text-slate-600 border-r border-slate-200 select-none">
+                    <div
+                      style={{
+                        display: "flex",
+                        borderRadius: "10px",
+                        border: "1px solid #cbd5e1",
+                        overflow: "hidden",
+                        backgroundColor: "#f8fafc",
+                      }}
+                    >
+                      <span
+                        style={{
+                          padding: "9px 10px",
+                          fontSize: "12px",
+                          fontWeight: 700,
+                          backgroundColor: "#f1f5f9",
+                          color: "#475569",
+                          borderRight: "1px solid #cbd5e1",
+                          display: "flex",
+                          alignItems: "center",
+                          userSelect: "none",
+                        }}
+                      >
                         +91
                       </span>
                       <input
@@ -273,19 +305,34 @@ export default function AutoPopupModal() {
                         onChange={(e) => setPhone(e.target.value)}
                         placeholder="10-digit mobile number"
                         maxLength={10}
-                        className="w-full px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none bg-white"
-                        style={{ fontSize: "16px" }}
+                        style={{
+                          width: "100%",
+                          padding: "9px 12px",
+                          fontSize: "14px",
+                          color: "#0f172a",
+                          border: "none",
+                          outline: "none",
+                          backgroundColor: "transparent",
+                          boxSizing: "border-box",
+                        }}
                         required
                       />
                     </div>
-                    <p className="text-[11px] text-slate-500 mt-1">
-                      Doctor&apos;s surgical team will call or WhatsApp on this number.
-                    </p>
                   </div>
 
-                  {/* Error Message */}
+                  {/* Error Notification */}
                   {errorMsg && (
-                    <div className="p-2.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold">
+                    <div
+                      style={{
+                        padding: "6px 10px",
+                        borderRadius: "8px",
+                        backgroundColor: "#fef2f2",
+                        border: "1px solid "#fecaca",
+                        color: "#b91c1c",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                      }}
+                    >
                       {errorMsg}
                     </div>
                   )}
@@ -294,71 +341,117 @@ export default function AutoPopupModal() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3.5 px-6 rounded-2xl text-white font-black text-sm tracking-wide shadow-lg transition flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
                     style={{
+                      marginTop: "4px",
+                      width: "100%",
+                      padding: "11px",
+                      borderRadius: "12px",
+                      backgroundColor: "#0d9488",
                       background: "linear-gradient(135deg, #0d9488 0%, #0f766e 100%)",
-                      boxShadow: "0 4px 15px rgba(13, 148, 136, 0.4)",
-                      color: "#ffffff"
+                      color: "#ffffff",
+                      fontSize: "13px",
+                      fontWeight: 800,
+                      border: "none",
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "8px",
+                      boxShadow: "0 4px 12px rgba(13, 148, 136, 0.35)",
+                      opacity: loading ? 0.7 : 1,
+                      transition: "transform 0.15s ease",
                     }}
                   >
                     {loading ? (
-                      <span>Sending Request...</span>
+                      "Connecting..."
                     ) : (
                       <>
-                        <Phone size={16} style={{ color: "#ffffff" }} />
-                        <span style={{ color: "#ffffff" }}>Get Free Callback in 10 Mins (तुरंत कॉल पाएं) ➔</span>
+                        <Phone size={14} style={{ color: "#ffffff" }} />
+                        <span>Call Me Back (कॉल पाएं) &rarr;</span>
                       </>
                     )}
                   </button>
 
-                  {/* Trust Highlights */}
-                  <div className="pt-2 border-t border-slate-100 grid grid-cols-3 gap-1 text-[10px] text-slate-500 text-center font-medium">
-                    <span className="flex items-center justify-center gap-1">
-                      <ShieldCheck size={12} className="text-emerald-600 shrink-0" />
-                      100% Cashless
-                    </span>
-                    <span className="flex items-center justify-center gap-1">
-                      <Clock size={12} className="text-emerald-600 shrink-0" />
-                      10-Min Response
-                    </span>
-                    <span className="flex items-center justify-center gap-1">
-                      <FileText size={12} className="text-emerald-600 shrink-0" />
-                      Free 2nd Opinion
-                    </span>
+                  <div
+                    style={{
+                      textAlign: "center",
+                      fontSize: "10px",
+                      color: "#94a3b8",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <span>🔒 100% Privacy</span>
+                    <span>&bull;</span>
+                    <span>Zero Spam Guarantee</span>
                   </div>
                 </form>
               ) : (
                 /* Success View */
-                <div className="text-center py-6 space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center">
-                    <CheckCircle2 size={36} />
+                <div style={{ textAlign: "center", padding: "10px 0 6px" }}>
+                  <div
+                    style={{
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "50%",
+                      backgroundColor: "#ecfdf5",
+                      color: "#10b981",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto 10px",
+                    }}
+                  >
+                    <CheckCircle2 size={30} />
                   </div>
-                  <h4 className="text-xl font-black text-slate-900">
-                    Request Received! (रिक्वेस्ट मिल गई)
-                  </h4>
-                  <p className="text-sm text-slate-600 max-w-sm mx-auto leading-relaxed">
-                    Shukriya <strong>{name}</strong>! Dr. (Prof.) Dhirendra Singh Kushwah ki team aapko agle <strong className="text-teal-700">10 se 15 minute</strong> me call karegi.
+                  <h5 style={{ fontSize: "16px", fontWeight: 800, color: "#0f172a", margin: "0 0 4px" }}>
+                    Request Sent! (रिक्वेस्ट मिल गई)
+                  </h5>
+                  <p style={{ fontSize: "12px", color: "#64748b", margin: "0 0 14px", lineHeight: 1.4 }}>
+                    Dr. Kushwah ki team aapko <strong style={{ color: "#0d9488" }}>10-15 minute</strong> me call karegi.
                   </p>
 
-                  <div className="pt-3 flex flex-col sm:flex-row gap-2 justify-center">
-                    <a
-                      href="https://wa.me/919311449825?text=Hello%20Dr.%20Dhirendra%20Singh%20Kushwah,%20maine%20website%20par%20callback%20request%20ki%20thi.%20Mujhe%20surgery/treatment%20ke%20baare%20me%20puchna%20hai."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-5 py-3 rounded-xl font-bold text-xs text-white flex items-center justify-center gap-2"
-                      style={{ backgroundColor: "#16a34a", color: "#ffffff" }}
-                    >
-                      <MessageCircle size={15} />
-                      <span>Chat on WhatsApp Directly</span>
-                    </a>
-                    <button
-                      type="button"
-                      onClick={handleClose}
-                      className="px-4 py-3 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer"
-                    >
-                      Close Window
-                    </button>
-                  </div>
+                  <a
+                    href="https://wa.me/919311449825?text=Hello%20Dr.%20Dhirendra%20Singh%20Kushwah,%20maine%20website%20par%20callback%20request%20ki%20thi."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "6px",
+                      padding: "8px 16px",
+                      borderRadius: "10px",
+                      backgroundColor: "#16a34a",
+                      color: "#ffffff",
+                      fontSize: "12px",
+                      fontWeight: 700,
+                      textDecoration: "none",
+                      width: "100%",
+                      boxSizing: "border-box",
+                      marginBottom: "6px",
+                    }}
+                  >
+                    <MessageCircle size={14} />
+                    <span>WhatsApp Par Baat Karein</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={handleClose}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "#94a3b8",
+                      fontSize: "11px",
+                      cursor: "pointer",
+                      padding: "4px",
+                    }}
+                  >
+                    Close Window
+                  </button>
                 </div>
               )}
             </div>
