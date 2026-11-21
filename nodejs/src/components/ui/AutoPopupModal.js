@@ -327,7 +327,7 @@ export default function AutoPopupModal() {
                         padding: "6px 10px",
                         borderRadius: "8px",
                         backgroundColor: "#fef2f2",
-                        border: "1px solid "#fecaca",
+                        border: "1px solid #fecaca",
                         color: "#b91c1c",
                         fontSize: "11px",
                         fontWeight: 600,
