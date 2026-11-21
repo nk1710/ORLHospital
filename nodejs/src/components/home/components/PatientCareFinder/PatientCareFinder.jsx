@@ -267,7 +267,8 @@ export default function PatientCareFinder() {
                     <button
                       type="button"
                       onClick={() => setAppointmentOpen(true)}
-                      className="px-5 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer flex items-center gap-2"
+                      className="pcf-btn-book px-5 py-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer flex items-center gap-2"
+                      style={{ backgroundColor: "#0d9488", color: "#ffffff" }}
                     >
                       <span>Book Consultation (अपॉइंटमेंट लें)</span>
                       <ArrowRight size={15} />
@@ -277,7 +278,8 @@ export default function PatientCareFinder() {
                       href={`https://wa.me/919311449825?text=${encodeURIComponent(currentCategory.waMessage)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2"
+                      className="pcf-btn-whatsapp-ask px-4 py-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2"
+                      style={{ backgroundColor: "#16a34a", color: "#ffffff" }}
                     >
                       <MessageCircle size={15} />
                       <span>Ask on WhatsApp (व्हाट्सएप पूछें)</span>
@@ -352,18 +354,33 @@ export default function PatientCareFinder() {
           </div>
 
           {/* ─── 5. HIGH-INTENT LEAD MAGNET: FREE 2ND OPINION WHATSAPP DESK ─── */}
-          <div className="bg-gradient-to-r from-slate-900 via-teal-950 to-slate-900 rounded-3xl p-6 sm:p-8 lg:p-10 text-white shadow-2xl border border-teal-900/40 mb-10">
+          <div
+            className="pcf-second-opinion-banner rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl mb-10"
+            style={{
+              background: "linear-gradient(135deg, #041d1a 0%, #064e3b 50%, #031a17 100%)",
+              color: "#ffffff"
+            }}
+          >
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="max-w-2xl space-y-2 text-center md:text-left">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black bg-amber-400 text-slate-950 tracking-wide uppercase">
+                <span
+                  className="pcf-badge-second-opinion inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black tracking-wide uppercase"
+                  style={{ backgroundColor: "#f59e0b", color: "#0f172a" }}
+                >
                   <FileText size={13} />
                   <span>SECOND OPINION DESK (दूसरी राय की सुविधा)</span>
                 </span>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight">
+                <h3
+                  className="text-xl sm:text-2xl lg:text-3xl font-black leading-tight"
+                  style={{ color: "#ffffff" }}
+                >
                   Advised Surgery Elsewhere? Get a FREE 2nd Opinion
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                  क्या किसी अन्य अस्पताल या डॉक्टर ने आपको सर्जरी बताई है? अपनी <strong>CT Scan / MRI रिपोर्ट या डॉक्टर की पर्ची</strong> व्हाट्सएप पर भेजें और डॉ. (प्रो.) धीरेंद्र सिंह कुशवाह से निष्पक्ष एवं सही सलाह लें।
+                <p
+                  className="text-xs sm:text-sm leading-relaxed font-normal"
+                  style={{ color: "#e2e8f0" }}
+                >
+                  क्या किसी अन्य अस्पताल या डॉक्टर ने आपको सर्जरी बताई है? अपनी <strong style={{ color: "#ffffff", fontWeight: 700 }}>CT Scan / MRI रिपोर्ट या डॉक्टर की पर्ची</strong> व्हाट्सएप पर भेजें और डॉ. (प्रो.) धीरेंद्र सिंह कुशवाह से निष्पक्ष एवं सही सलाह लें।
                 </p>
               </div>
 
@@ -372,7 +389,11 @@ export default function PatientCareFinder() {
                   href="https://wa.me/919311449825?text=Hello%20Dr.%20Dhirendra%20Singh%20Kushwah,%20maine%20doosre%20doctor%20ko%20dikhaya%20tha%20unhone%20surgery%20boli%20hai.%20Main%20apni%20report/parchi%20bhej%20kar%20second%20opinion%20lena%20chahta%20hoon."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pcf-whatsapp-pulse w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-sm shadow-xl transition flex items-center justify-center gap-2.5 cursor-pointer"
+                  className="pcf-btn-whatsapp-parchi pcf-whatsapp-pulse w-full sm:w-auto px-6 py-3.5 rounded-2xl text-white font-extrabold text-sm shadow-xl transition flex items-center justify-center gap-2.5 cursor-pointer"
+                  style={{
+                    background: "linear-gradient(135deg, #25d366 0%, #128c7e 100%)",
+                    color: "#ffffff"
+                  }}
                 >
                   <MessageCircle size={18} />
                   <span>WhatsApp Par Parchi Bhejein</span>
@@ -380,9 +401,14 @@ export default function PatientCareFinder() {
 
                 <a
                   href="tel:+919311449825"
-                  className="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition flex items-center justify-center gap-2"
+                  className="pcf-btn-call-desk w-full sm:w-auto px-5 py-3.5 rounded-2xl font-bold text-sm transition flex items-center justify-center gap-2"
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.12)",
+                    color: "#ffffff",
+                    border: "1px solid rgba(255, 255, 255, 0.3)"
+                  }}
                 >
-                  <PhoneCall size={16} className="text-teal-400" />
+                  <PhoneCall size={16} style={{ color: "#5eead4" }} />
                   <span>Call +91-9311449825</span>
                 </a>
               </div>
