@@ -133,6 +133,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/blog.html",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
         source: "/contact.html",
         destination: "/contact",
         permanent: true,

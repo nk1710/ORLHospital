@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getAllBlogs } from "@/lib/blog";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 
 export const revalidate = 60;
 
@@ -23,13 +24,13 @@ export async function generateMetadata() {
     ],
     authors: [{ name: "Dr. Dhirendra Singh kushwah" }],
     alternates: {
-      canonical: "https://www.drdhirendrasinghkushwah.com/blog.html",
+      canonical: "https://www.drdhirendrasinghkushwah.com/blog",
     },
     openGraph: {
       title: "Best ENT Doctor Blog in India | Dr. Dhirendra Singh kushwah",
       description:
         "Explore ENT health insights and advice from Dr. Dhirendra Singh kushwah, one of India’s top ENT specialists. Stay informed about treatments, surgeries, and patient care.",
-      url: "https://www.drdhirendrasinghkushwah.com/blog.html",
+      url: "https://www.drdhirendrasinghkushwah.com/blog",
       siteName: "Dr Dhirendra Singh kushwah ENT Blog",
       type: "website",
       locale: "en_IN",
@@ -186,6 +187,15 @@ export default async function BlogPage({ params }) {
 
             </div>
           )}
+
+          {/* VIP High-Converting Surgery Lead Desk */}
+          <div className="mt-16">
+            <SurgeryLeadDesk 
+              procedureName="ENT Surgery & Consultation" 
+              customMessage="Hello Dr. Kushwah, I was reading your ENT blog and would like to inquire about surgical treatment package cost and 100% cashless insurance at ORL Hospital." 
+            />
+          </div>
+
         </div>
       </section>
     </>

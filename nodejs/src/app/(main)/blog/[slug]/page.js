@@ -2,6 +2,7 @@ import { cache } from "react";
 import { generateSchema } from "@/lib/schemaGenerator";
 import { notFound } from "next/navigation";
 import { getBlogFromDB, getAllBlogs, formatBlogContent } from "@/lib/blog";
+import SurgeryLeadDesk from "@/components/ui/SurgeryLeadDesk";
 
 export const revalidate = 60; // ISR — revalidate every 60s
 
@@ -19,9 +20,19 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = await getBlog(slug);
   if (!post) return {};
+  const canonicalUrl = `https://www.drdhirendrasinghkushwah.com/blog/${slug}`;
   return {
     title: post.meta_title || post.title,
     description: post.meta_description || post.excerpt,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: post.meta_title || post.title,
+      description: post.meta_description || post.excerpt,
+      url: canonicalUrl,
+      type: "article",
+    },
   };
 }
 
@@ -66,6 +77,14 @@ export default async function BlogPost({ params }) {
             __html: formattedContent,
           }}
         />
+
+        {/* VIP High-Converting Surgery & 2nd Opinion Lead Desk */}
+        <div className="mt-12 pt-8 border-t border-slate-200">
+          <SurgeryLeadDesk 
+            procedureName={blog.title ? `ENT Treatment & Surgery (${blog.title})` : "ENT Treatment & Surgery"}
+            customMessage={`Hello Dr. Kushwah, I read your article on "${blog.title}". I would like to inquire about treatment evaluation, surgery cost, and 100% cashless insurance at ORL Hospital.`}
+          />
+        </div>
       </div>
     </>
   );
