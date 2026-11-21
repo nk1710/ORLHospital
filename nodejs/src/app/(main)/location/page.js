@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PatientCareFinder from "@/components/home/components/PatientCareFinder/PatientCareFinder";
+import { DOCTOR_PHYSICIAN_SCHEMA, ORL_HOSPITAL_SCHEMA } from "@/lib/surgicalSchema";
 import {
   Building2,
   Clock,
@@ -186,20 +187,25 @@ const LOCATIONS_DATA = [
 export default async function LocationHubPage() {
   const schemaData = {
     "@context": "https://schema.org",
-    "@graph": LOCATIONS_DATA.map((loc) => ({
-      "@type": "MedicalClinic",
-      "@id": `https://www.drdhirendrasinghkushwah.com${loc.slug}/#clinic`,
-      name: loc.name,
-      description: loc.type,
-      telephone: loc.phone,
-      url: `https://www.drdhirendrasinghkushwah.com${loc.slug}`,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: loc.address,
-        addressLocality: loc.area,
-        addressCountry: "IN",
-      },
-    })),
+    "@graph": [
+      ...LOCATIONS_DATA.map((loc) => ({
+        "@type": "MedicalClinic",
+        "@id": `https://www.drdhirendrasinghkushwah.com${loc.slug}/#clinic`,
+        name: loc.name,
+        description: loc.type,
+        telephone: loc.phone,
+        url: `https://www.drdhirendrasinghkushwah.com${loc.slug}`,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: loc.address,
+          addressLocality: loc.area,
+          addressCountry: "IN",
+        },
+        aggregateRating: DOCTOR_PHYSICIAN_SCHEMA.aggregateRating,
+      })),
+      DOCTOR_PHYSICIAN_SCHEMA,
+      ORL_HOSPITAL_SCHEMA,
+    ],
   };
 
   return (

@@ -122,6 +122,14 @@ const schemaData = {
       medicalSpecialty: "Otolaryngology",
       description:
         "Senior ENT Specialist and Skull Base Surgeon with more than 25 years of clinical experience.",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "742",
+        reviewCount: "742",
+      },
       knowsAbout: [
         "Otolaryngology",
         "ENT",

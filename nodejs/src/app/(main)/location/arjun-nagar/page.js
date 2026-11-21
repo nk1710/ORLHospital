@@ -219,10 +219,10 @@ export default async function ArjunNagarPage() {
 
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.9",
+          ratingValue: "5.0",
           bestRating: "5",
-          ratingCount: "725",
-          reviewCount: "725",
+          ratingCount: "742",
+          reviewCount: "742",
         },
 
         sameAs: [
@@ -324,10 +324,10 @@ export default async function ArjunNagarPage() {
 
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.9",
+          ratingValue: "5.0",
           bestRating: "5",
-          ratingCount: "725",
-          reviewCount: "725",
+          ratingCount: "742",
+          reviewCount: "742",
         },
 
         medicalSpecialty: "Otolaryngology",
