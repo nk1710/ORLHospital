@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Get advanced sinus treatment in Delhi for chronic sinusitis, nasal blockage, and infections.",
   alternates: {
-    canonical: "https://yoursite.com/treatment/sinus-treatment-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/treatment",
   },
 };
 

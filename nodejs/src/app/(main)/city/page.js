@@ -4,12 +4,12 @@ export const metadata = {
   description:
     "Looking for the best ENT specialist in Delhi? Get expert treatment for sinus, hearing loss, ear pain, and throat problems.",
   alternates: {
-    canonical: "https://yoursite.com/ent-specialist-delhi",
+    canonical: "https://www.drdhirendrasinghkushwah.com/city",
   },
   openGraph: {
     title: "Best ENT Specialist in Delhi",
     description: "Expert ENT care in Delhi for all ear, nose, throat problems.",
-    url: "https://yoursite.com/ent-specialist-delhi",
+    url: "https://www.drdhirendrasinghkushwah.com/city",
   },
 };
 

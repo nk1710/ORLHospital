@@ -4,7 +4,7 @@ export const metadata = {
   description:
     "Learn about ear pain causes, symptoms, and effective treatment options.",
   alternates: {
-    canonical: "https://yoursite.com/problems/ear-pain-treatment",
+    canonical: "https://www.drdhirendrasinghkushwah.com/problems",
   },
 };
 
